@@ -1,0 +1,142 @@
+
+//引入重置样式表
+@import "./reset.scss";
+
+ //设置主颜色
+$mainColor:#b20fd3; 
+// 设置版型宽度为1200px
+$PlateWidth:1200px;
+
+// 楼层设置
+$floorWidth:1200px;    //楼层宽度
+
+$floorHeight:541px;    //
+$floormtHeight:38px;
+
+$floormtPaddingTop:32px;
+$floormcHeight:470px;
+
+$floormtTopHeight:38px;
+$floormtTopWidth:210px;
+
+
+//floor 中头部右边tab的样式
+$floorUlTabHeight:30px;
+$floorUlTabMarginTop:8px;
+$floorUlTabLiBgc:rgb(113, 158, 247);
+$floorH2_text:6px;
+
+$floormc_lWidth:210px;
+$floormc_lHeight:470px;
+
+$floormain_wrapWidth:990px;
+$floormain_wrapHeight:470px;
+
+a{
+    text-decoration: none;
+}
+a:hover{
+      color:$mainColor;  
+}
+//头部
+.h_top_wrap{
+    width:100%;
+    background: #f8f8f8;
+    color: #5e5e5e;
+    border-bottom: 1px solid #f3f3f3;
+    .h_top_body{
+        width: 1200px;
+        height: 30px;
+        margin:0 auto;
+        display: flex;
+        justify-content: space-between;
+        ul{
+            display: flex;
+            font: 400 12px/30px Arial,"Microsoft YaHei";
+        }
+        > ul > #gome-user{
+            margin-right: 12px;
+            position: relative;
+        }
+        b{
+            display: flex;
+            >a{
+                color: #888;
+            }
+            i{
+                position: absolute;
+                top: 12px;
+                right: -8px;
+                background-position: -62px -433px;
+                width: 7px;
+                height: 4px;
+                overflow: hidden;
+                background-image: url("../images/index/ui1.png");
+            }
+        }
+        
+    }
+}
+// 楼层
+.floor {
+    width:$floorWidth;
+    .mt{
+        height:$floormtHeight;
+        padding-top:$floormtPaddingTop;
+        display: flex;
+        justify-content: space-between;
+        .mtTop{
+            display: flex;
+            height:$floormtTopHeight ;
+            width:$floormtTopWidth;
+            .h2_text{
+                padding-left:$floorH2_text ;
+            }
+        }
+        ul.tab{
+            height: $floorUlTabHeight;
+            line-height: $floorUlTabHeight ;
+            //行高具有继承性
+            margin-top:$floorUlTabMarginTop;
+            display: flex;
+            li{
+                height: $floorUlTabHeight;
+                color: #000;
+                .current{
+                    background-color:$floorUlTabLiBgc;
+                    color: white;
+                }
+            }
+            
+        }
+    }
+    .mc{
+        height:$floormcHeight;
+        display: flex;
+        .mc_l{
+            width:$floormc_lWidth;
+            height: $floormc_lHeight;
+        }
+
+        &:first-child{
+            display: flex;
+            width:$floormain_wrapWidth;
+            height:$floormain_wrapHeight;
+            .mc_c{
+                width: 390px;
+                height: 470px;
+            }
+            .mc_r{
+                width: 600px;
+                height: 470px;
+            }
+
+
+        }
+        .main_wrap{
+            display: flex;
+            width:$floormain_wrapWidth;
+            height:$floormain_wrapHeight;
+        }
+    }
+}
