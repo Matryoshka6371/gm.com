@@ -35,15 +35,24 @@ $floormain_wrapHeight:470px;
 a{
     text-decoration: none;
 }
-a:hover{
-      color:$mainColor;  
-}
+
 //头部
+.h_top_wrap a {
+    color: #888;
+}
+.h_top_wrap  a:hover{
+    color: $mainColor;
+}
+.h_top_wrap li{
+    font: 400 12px/30px Arial,"Microsoft YaHei";
+}
 .h_top_wrap{
     width:100%;
     background: #f8f8f8;
     color: #5e5e5e;
     border-bottom: 1px solid #f3f3f3;
+    position: relative;
+    z-index: 999;
     .h_top_body{
         width: 1200px;
         height: 30px;
@@ -52,28 +61,86 @@ a:hover{
         justify-content: space-between;
         ul{
             display: flex;
-            font: 400 12px/30px Arial,"Microsoft YaHei";
         }
-        > ul > #gome-user{
+        ul #gome-user{
             margin-right: 12px;
             position: relative;
-        }
-        b{
-            display: flex;
-            >a{
-                color: #888;
-            }
-            i{
-                position: absolute;
-                top: 12px;
-                right: -8px;
-                background-position: -62px -433px;
-                width: 7px;
-                height: 4px;
+            width: 94px;
+            box-sizing: border-box;
+            b{
+                position: relative;
+                display: block;
+                padding: 0 20px 0 10px;
+                border: 1px solid #f8f8f8;
+                border-bottom: 0;
+                height: 30px;
                 overflow: hidden;
-                background-image: url("../images/index/ui1.png");
+                z-index: 9;
+                a{
+                    color: #888;
+                }
+                i{
+                    position: absolute;
+                    top: 12px;
+                    right:8px;
+                    background-position: -62px -433px;
+                    width: 7px;
+                    height: 4px;
+                    overflow: hidden;
+                    background-image: url("../images/index/ui1.png");
+                }
+            }
+            //顶部右边隐藏框样式
+            .public_down{
+                display: none;
+                #user-name{
+                    width: 290px;
+                    position: absolute;
+                    top: 30px;
+                    left: 0;
+                    padding: 10px 15px;
+                    display: flex;
+                    z-index: 8;
+                    i{
+                        background-image: url("../images/index/ui1.png");
+                        background-position: 0 -337px;
+                        width: 55px;
+                        height: 55px;
+                        border-radius: 50%;
+                    }
+                    div p {
+                        padding:10px 0  0 15px;
+                        width: 220px;
+                        a{
+                            color: #069;
+    
+                        }
+                    }
+                }
+            }
+            
+        }
+        > ul > #loginDiv-link{
+            height: 30px;
+            a:first-child{
+                margin-right: 10px;
+                line-height: 32px;
+            }
+            a:last-child{
+                color:$mainColor;
+                i{
+                    background-image: url("../images/index/ui1.png");
+                    display: inline-block;
+                    width: 12px;
+                    height: 13px;
+                    background-position: -145px -1496px;
+                    margin-left: 5px;
+                    margin-top: -4px;
+                    background-repeat: no-repeat;
+                }
             }
         }
+        
         
     }
 }
