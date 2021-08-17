@@ -85,6 +85,17 @@ a {
   display: flex;
 }
 
+.h_top_wrap .h_top_body ul > li > a > i {
+  position: absolute;
+  top: 12px;
+  right: 8px;
+  background-position: -62px -433px;
+  width: 7px;
+  height: 4px;
+  overflow: hidden;
+  background-image: url("../images/index/ui1.png");
+}
+
 .h_top_wrap .h_top_body ul #gome-user {
   margin-right: 12px;
   position: relative;
@@ -93,12 +104,12 @@ a {
 }
 
 .h_top_wrap .h_top_body ul #gome-user b {
+  height: 30px;
   position: relative;
   display: block;
   padding: 0 20px 0 10px;
   border: 1px solid #f8f8f8;
   border-bottom: 0;
-  height: 30px;
   overflow: hidden;
   z-index: 9;
 }
@@ -120,24 +131,26 @@ a {
 
 .h_top_wrap .h_top_body ul #gome-user .public_down {
   display: none;
+  width: 290px;
 }
 
 .h_top_wrap .h_top_body ul #gome-user .public_down #user-name {
-  width: 290px;
   position: absolute;
   top: 30px;
-  left: 0;
+  left: -1px;
   padding: 10px 15px;
   display: flex;
   z-index: 8;
 }
 
 .h_top_wrap .h_top_body ul #gome-user .public_down #user-name i {
-  background-image: url("../images/index/ui1.png");
-  background-position: 0 -337px;
   width: 55px;
   height: 55px;
-  border-radius: 50%;
+  border-radius: 50px;
+  background: url("../images/index/ui1.png");
+  display: inline-block;
+  vertical-align: middle;
+  background-position: 0 -337px;
 }
 
 .h_top_wrap .h_top_body ul #gome-user .public_down #user-name div p {
@@ -160,17 +173,86 @@ a {
 
 .h_top_wrap .h_top_body > ul > #loginDiv-link a:last-child {
   color: #b20fd3;
+  position: relative;
 }
 
-.h_top_wrap .h_top_body > ul > #loginDiv-link a:last-child i {
-  background-image: url("../images/index/ui1.png");
+.h_top_wrap .h_top_body > ul > #loginDiv-link i {
   display: inline-block;
   width: 12px;
   height: 13px;
   background-position: -145px -1496px;
   margin-left: 5px;
-  margin-top: -4px;
   background-repeat: no-repeat;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  margin-top: -8px;
+  margin-right: -20px;
+}
+
+.h_top_wrap .h_top_body #gome-top-right li {
+  position: relative;
+  height: 30px;
+  font: 12px/1.5;
+}
+
+.h_top_wrap .h_top_body #gome-top-right li b {
+  height: 30px;
+  display: block;
+  padding: 0 20px 0 10px;
+  overflow: hidden;
+  position: relative;
+  z-index: 9;
+  color: #888;
+}
+
+.h_top_wrap .h_top_body #gome-top-right li b .drop {
+  border: 1px solid #f8f8f8;
+  border-bottom: 0;
+}
+
+.h_top_wrap .h_top_body #gome-top-right li b .gm-icon {
+  font-family: 'iconfont' !important;
+  font-style: normal;
+  font-size: 17px;
+  color: #b20fd3;
+  background: 0 0;
+  line-height: 30px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.h_top_wrap .h_top_body #gome-top-right li b i {
+  display: inline-block;
+  position: absolute;
+  top: 12px;
+  right: 8px;
+  background-position: -62px -433px;
+  width: 7px;
+  height: 4px;
+  overflow: hidden;
+  vertical-align: middle;
+  background-image: url("../images/index/ui1.png");
+}
+
+.h_top_wrap .h_top_body #gome-top-right .gome-voice-read, .h_top_wrap .h_top_body #gome-top-right .gome-voice-read-endPlay {
+  width: 25px;
+  height: 31px;
+  cursor: pointer;
+  background: url("../images/index/1.head/horn.png") no-repeat center center;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.h_top_wrap .h_top_body #gome-top-right .tw-gome-tts_ws {
+  height: 31px;
+  width: 25px;
+  position: relative;
+}
+
+.h_top_wrap .h_top_body #gome-top-right:first-child a {
+  margin-right: 10px;
 }
 
 .floor {
