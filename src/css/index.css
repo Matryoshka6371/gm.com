@@ -132,6 +132,7 @@ a {
 .h_top_wrap .h_top_body ul #gome-user .public_down {
   display: none;
   width: 290px;
+  background-color: white;
 }
 
 .h_top_wrap .h_top_body ul #gome-user .public_down #user-name {
@@ -141,6 +142,7 @@ a {
   padding: 10px 15px;
   display: flex;
   z-index: 8;
+  background-color: white;
 }
 
 .h_top_wrap .h_top_body ul #gome-user .public_down #user-name i {
@@ -233,6 +235,7 @@ a {
   overflow: hidden;
   display: none;
   border: 1px solid #e6e6e6;
+  background-color: white;
 }
 
 .h_top_wrap .h_top_body #gome-top-right li .public_down > strong {
@@ -304,6 +307,7 @@ a {
 .h_top_wrap .h_top_body #gome-top-right #gome-enterprise .public_down {
   width: 295px;
   padding: 10px 15px;
+  background-color: white;
 }
 
 .h_top_wrap .h_top_body #gome-top-right #gome-enterprise .public_down > ul {
@@ -332,6 +336,7 @@ a {
 .h_top_wrap .h_top_body #gome-top-right #gome-service .public_down {
   width: 210px;
   padding: 10px 15px;
+  background-color: white;
 }
 
 .h_top_wrap .h_top_body #gome-top-right #gome-service .public_down ul {
@@ -373,7 +378,58 @@ a {
   left: 0;
   width: 1198px;
   position: absolute;
+  background-color: white;
   top: 30px;
+}
+
+.h_top_wrap .h_top_body #gome-top-right #gome-sitemap .public_down .itemflex {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.h_top_wrap .h_top_body #gome-top-right #gome-sitemap .public_down .itemflex dl {
+  border-left: 1px solid #f3f3f3;
+  padding: 0 15px 0 40px;
+  margin: 15px 0;
+}
+
+.h_top_wrap .h_top_body #gome-top-right #gome-sitemap .public_down .itemflex dl dt {
+  color: #5e5e5e;
+  font: 700 14px/14px Arial,"Microsoft YaHei";
+  margin: 0 0 14px;
+}
+
+.h_top_wrap .h_top_body #gome-top-right #gome-sitemap .public_down .itemflex dl dd {
+  display: flex;
+  min-height: 120px;
+  overflow: hidden;
+}
+
+.h_top_wrap .h_top_body #gome-top-right #gome-sitemap .public_down .itemflex dl dd ul {
+  display: block;
+  width: 75px;
+}
+
+.h_top_wrap .h_top_body #gome-top-right #gome-sitemap .public_down .itemflex dl.none {
+  border: none;
+}
+
+.h_top_wrap .h_top_body #gome-top-right #gome-qrcode .public_down {
+  position: absolute;
+  background-color: white;
+  top: 30px;
+  width: 130px;
+  background: #fff;
+  padding: 15px;
+}
+
+.h_top_wrap .h_top_body #gome-top-right #gome-qrcode .public_down a {
+  display: inline-block;
+  height: 170px;
+  width: 130px;
+  background: url("../images/index/ui1.png");
+  background-position: 0 -799px;
 }
 
 .h_top_wrap .h_top_body #gome-top-right .gm-icon {
@@ -405,6 +461,22 @@ a {
 
 .h_top_wrap .h_top_body #gome-top-right:first-child a {
   margin-right: 10px;
+}
+
+.gome-head {
+  width: 1200px;
+  height: 120px;
+  margin: 0 auto;
+  background-color: #069;
+}
+
+.gome-head #logo {
+  display: block;
+  width: 125px;
+  height: 56px;
+  text-indent: -99px;
+  overflow: hidden;
+  background: url("../images/index/1.head/logo.png") no-repeat 0 0;
 }
 
 .floor {

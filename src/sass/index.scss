@@ -36,7 +36,7 @@ a{
     text-decoration: none;
 }
 
-//头部
+//头部 top
 .h_top_wrap a {
     color: #888;
 }
@@ -72,7 +72,7 @@ a{
                     background-image: url("../images/index/ui1.png");
             }
         }
-        ul #gome-user{
+        ul #gome-user{  
             margin-right: 12px;
             position: relative;
             width: 94px;
@@ -106,6 +106,7 @@ a{
             .public_down{
                 display: none;
                 width: 290px;
+                background-color: white;
                 #user-name{
                     position: absolute;
                     top: 30px;
@@ -113,6 +114,7 @@ a{
                     padding: 10px 15px;
                     display: flex;
                     z-index: 8;
+                    background-color: white;
                     // 这个i 是下拉框内容老虎
                     i{
                         width: 55px;
@@ -162,9 +164,7 @@ a{
 
             }
         }
-
-
-        
+ 
         #gome-top-right{
             // 第二个li 
             li{
@@ -208,6 +208,7 @@ a{
                     overflow: hidden;
                     display: none;
                     border:1px solid #e6e6e6;
+                    background-color: white;
                     >strong{
                         display: block;
                         font-weight: 700;
@@ -275,6 +276,7 @@ a{
                 .public_down{
                     width: 295px;
                     padding: 10px 15px;
+                    background-color: white;
                 }
                 .public_down>ul{
                 width: 225px;
@@ -302,6 +304,7 @@ a{
                 .public_down{
                     width: 210px;
                     padding: 10px 15px;
+                    background-color: white;
                     ul{
                         padding: 0 0 10px 0;
                         overflow: hidden;
@@ -338,7 +341,54 @@ a{
                     left: 0;
                     width: 1198px;
                     position: absolute;
+                    background-color: white;
                     top: 30px;
+                    .itemflex{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-evenly;
+                        dl{
+                            border-left: 1px solid #f3f3f3;
+                            padding: 0 15px 0 40px;
+                            margin: 15px 0;
+                            dt{
+                                color: #5e5e5e;
+                                font: 700 14px/14px Arial,"Microsoft YaHei";
+                                margin: 0 0 14px;
+                            }
+                            dd{
+                                display: flex;
+                                min-height: 120px;
+                                overflow: hidden;
+                                ul{
+                                    display: block;
+                                    width: 75px;
+                                }
+                            }
+                        }
+                        dl.none{
+                            border:none
+                        }
+                    }
+                }
+            }
+
+            // 第六个li
+            #gome-qrcode{
+                .public_down{
+                    position: absolute;
+                    background-color: white;
+                    top: 30px;
+                    width: 130px;
+                    background: #fff;
+                    padding: 15px;
+                    a{
+                        display: inline-block;
+                        height: 170px;
+                        width: 130px;
+                        background: url("../images/index/ui1.png") ;
+                        background-position: 0 -799px;
+                    }
                 }
             }
 
@@ -379,6 +429,23 @@ a{
         
     }
 }
+
+// head开始
+.gome-head{
+    width:$PlateWidth;
+    height: 120px;
+    margin:0 auto;
+    background-color: #069;
+    #logo{
+        display: block;
+        width: 125px;
+        height: 56px;
+        text-indent: -99px;
+        overflow: hidden;
+        background: url("../images/index/1.head/logo.png") no-repeat 0 0;
+    }
+}
+//head结束
 // 楼层
 .floor {
     width:$floorWidth;
