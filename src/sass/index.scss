@@ -317,6 +317,10 @@ a{
                             position: relative;
                         }
                     }
+                    p{
+                        font: 700 12px/24px Arial,"Microsoft YaHei";
+                        color: #898989;
+                    }
                     &>a{
                         color: #fff;
                         background: #b20fd3;
@@ -436,13 +440,46 @@ a{
     height: 120px;
     margin:0 auto;
     background-color: #069;
+    position: relative;
     #logo{
-        display: block;
-        width: 125px;
-        height: 56px;
-        text-indent: -99px;
-        overflow: hidden;
-        background: url("../images/index/1.head/logo.png") no-repeat 0 0;
+        margin: 32px 10px 0 0;
+        float: left;
+        a{
+            display: block;
+            width: 125px;
+            height: 56px;
+            text-indent: -99px;
+            overflow: hidden;
+            background: url("../images/index/1.head/logo.png") no-repeat 0 0;
+        }
+    }
+    .topsearch{
+        position: absolute;
+        width: 500px;
+        top: 32px;
+        left: 385px;
+        z-index: 91;
+        .searchbox{
+            border: 1px solid $mainColor;
+            position: relative;
+            font-size: 14px;
+            height: 30px;
+            background: #fff;
+        }
+
+        .hotkeyword{
+            margin: 6px 0 0;
+            overflow: hidden;
+            line-height: 14px;
+            height: 14px;
+            font-size: 12px;
+            a{
+                color: #a5a5a5;
+            }
+            a.hightlight{
+                color:$mainColor;
+            }
+        }
     }
 }
 //head结束

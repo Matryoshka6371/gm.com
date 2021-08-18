@@ -353,6 +353,11 @@ a {
   position: relative;
 }
 
+.h_top_wrap .h_top_body #gome-top-right #gome-service .public_down p {
+  font: 700 12px/24px Arial,"Microsoft YaHei";
+  color: #898989;
+}
+
 .h_top_wrap .h_top_body #gome-top-right #gome-service .public_down > a {
   color: #fff;
   background: #b20fd3;
@@ -468,15 +473,53 @@ a {
   height: 120px;
   margin: 0 auto;
   background-color: #069;
+  position: relative;
 }
 
 .gome-head #logo {
+  margin: 32px 10px 0 0;
+  float: left;
+}
+
+.gome-head #logo a {
   display: block;
   width: 125px;
   height: 56px;
   text-indent: -99px;
   overflow: hidden;
   background: url("../images/index/1.head/logo.png") no-repeat 0 0;
+}
+
+.gome-head .topsearch {
+  position: absolute;
+  width: 500px;
+  top: 32px;
+  left: 385px;
+  z-index: 91;
+}
+
+.gome-head .topsearch .searchbox {
+  border: 1px solid #b20fd3;
+  position: relative;
+  font-size: 14px;
+  height: 30px;
+  background: #fff;
+}
+
+.gome-head .topsearch .hotkeyword {
+  margin: 6px 0 0;
+  overflow: hidden;
+  line-height: 14px;
+  height: 14px;
+  font-size: 12px;
+}
+
+.gome-head .topsearch .hotkeyword a {
+  color: #a5a5a5;
+}
+
+.gome-head .topsearch .hotkeyword a.hightlight {
+  color: #b20fd3;
 }
 
 .floor {

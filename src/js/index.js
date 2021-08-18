@@ -2,6 +2,8 @@
 // 使用jQuery实现顶部动态效果
 $(function () {
     //左边登录动态效果
+    //设置主要颜色
+    const $mainColor="#b20fd3";
     $("#gome-user").hover(function(){
          $("#gome-user b").css({
             border:"1px solid #e6e6e6", 
@@ -9,10 +11,9 @@ $(function () {
             borderTop:"none",
             backgroundColor:"white",
             padding:" 0 19px 1px 9px"
-
          })
          $("#gome-user b a").css({
-            color:"#b20fd3",
+            color:$mainColor,
          })
          $("#gome-user b i").css({
             backgroundPosition: "-55px -433px",
@@ -39,8 +40,9 @@ $(function () {
          })
     })
     //右边动态效果
-    $("#gome-top-right>li").hover(function(){
+    $("#gome-top-right>li").hover(function(evt){
         // 显示
+        let e=evt.target||evt.srcElement;
         $(this).children("b").css({
             border:"1px solid #e6e6e6", 
             borderBottom:"none",
@@ -54,11 +56,8 @@ $(function () {
        $(this).find("i").css({
             backgroundPosition: "-55px -433px",
          })
-         $("#gome-top-right>li>b>a").css({
-            color:"#b20fd3",
-         })
-        $(this).children("a").css({
-            color:"#b20fd3",
+        $(e).children("b a").css({
+            color:$mainColor,
          })
     },function(){
         $(this).children("b").css({
@@ -79,9 +78,10 @@ $(function () {
          $(this).children(".public_down").css({
             display:"none",
         })
-        
          //$(evt)拿到的是事件对象
     })
+
+    // head动态效果
 })
 
 //
