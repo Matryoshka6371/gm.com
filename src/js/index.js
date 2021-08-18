@@ -3,14 +3,12 @@
 $(function () {
     //左边登录动态效果
     $("#gome-user").hover(function(){
-        $("#gome-user").css({
-            border:"1px solid #e6e6e6",
-            backgroundColor:"white",
-            
-         })
          $("#gome-user b").css({
+            border:"1px solid #e6e6e6", 
+            borderBottom:"none",
+            borderTop:"none",
             backgroundColor:"white",
-            height:"35px",
+            padding:" 0 19px 1px 9px"
 
          })
          $("#gome-user b a").css({
@@ -20,20 +18,18 @@ $(function () {
             backgroundPosition: "-55px -433px",
          })
 
-         $(".public_down").css({
+         $("#gome-user .public_down").css({
             "display":"block",
         });
          $(" #user-name").css({
             border:"1px solid #e6e6e6",
         })
     },function(){
-        $(".public_down").css("display","none");
-        $("#gome-user").css({
-            border:"none",
-        })
+        $("#gome-user .public_down").css("display","none");
         $("#gome-user b").css({ 
+            border:"none",
             backgroundColor:"#f8f8f8",
-            height: 30
+            padding: "0 20px 0 10px"
         })
         $("#gome-user b a").css({
             color:" #888",
@@ -44,19 +40,46 @@ $(function () {
     })
     //右边动态效果
     $("#gome-top-right>li").hover(function(){
+        // 显示
+        $(this).children("b").css({
+            border:"1px solid #e6e6e6", 
+            borderBottom:"none",
+            borderTop:"none",
+            backgroundColor:"white",
+            padding:" 0 19px 1px 9px"
+        })
+        $(this).children(".public_down").css({
+            display:"block",
+        })
        $(this).find("i").css({
             backgroundPosition: "-55px -433px",
          })
-        $(this).find("li  a").css({
+         $("#gome-top-right>li>b>a").css({
+            color:"#b20fd3",
+         })
+        $(this).children("a").css({
             color:"#b20fd3",
          })
     },function(){
+        $(this).children("b").css({
+            border:"none",
+            backgroundColor:"#f8f8f8",
+            padding: "0 20px 0 10px"
+        })
         $(this).find("i").css({
             backgroundPosition: "-62px -433px",
          })
-        $(this).find("li  a").css({
+        $(this).children("a").css({
             color:"#888",
          })
+         //字体颜色,隐藏链接和顶部字体颜色`
+         $("#gome-top-right>li>b>a").css({
+            color:"#888",
+         })
+         $(this).children(".public_down").css({
+            display:"none",
+        })
+        
          //$(evt)拿到的是事件对象
     })
 })

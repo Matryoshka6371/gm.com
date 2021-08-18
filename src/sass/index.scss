@@ -51,9 +51,9 @@ a{
     background: #f8f8f8;
     color: #5e5e5e;
     border-bottom: 1px solid #f3f3f3;
-    position: relative;
     z-index: 999;
     .h_top_body{
+        position: relative;
         width: 1200px;
         height: 30px;
         margin:0 auto;
@@ -109,7 +109,7 @@ a{
                 #user-name{
                     position: absolute;
                     top: 30px;
-                    left: -1px;
+                    left: 0px;
                     padding: 10px 15px;
                     display: flex;
                     z-index: 8;
@@ -126,7 +126,7 @@ a{
                     div p {
                         padding:10px 0  0 15px;
                         width: 220px;
-                    a{
+                        a{
                             color: #069;
     
                         }
@@ -163,11 +163,15 @@ a{
             }
         }
 
+
+        
         #gome-top-right{
+            // 第二个li 
             li{
                 position: relative;
                 height: 30px;
                 font: 12px/1.5;
+                box-sizing: border-box;
                 // 这个b是有下拉内容准备的容器
                 b{ 
                     height: 30px;
@@ -180,18 +184,6 @@ a{
                     .drop{
                         border: 1px solid #f8f8f8;
                         border-bottom: 0;
-                    }
-                    .gm-icon{
-                        font-family: 'iconfont' !important;
-                        font-style: normal;
-                        font-size: 17px;
-                        color: $mainColor;
-                        background: 0 0;
-                        line-height: 30px;
-                        height: 30px;
-                        display: inline-block;
-                        vertical-align: middle;
-
                     }
                 i{  
                     display: inline-block;
@@ -206,6 +198,161 @@ a{
                     background-image: url("../images/index/ui1.png");
                     }
                 }
+
+                //隐藏样式
+                .public_down{
+                    width: 260px;
+                    position: absolute;
+                    top: 30px;
+                    left: 0px;
+                    overflow: hidden;
+                    display: none;
+                    border:1px solid #e6e6e6;
+                    >strong{
+                        display: block;
+                        font-weight: 700;
+                        padding: 10px 10px 0;
+                        color: #888;
+                        width: 240px;
+                        height: 24px;
+                        a{
+                            color: #069;
+                        }
+                    }
+                    #mygome-order{
+                        display: block;
+                        padding: 0 0 9px;
+                        margin: 0 10px;
+                        border-bottom: 1px solid #f3f3f3;
+                        overflow: hidden;
+                        li{
+                            display: block;
+                            float: left;
+                            width: 120px;
+                            line-height: 25px;
+                            height: 25px;
+                            font: 12px/24px Arial,"Microsoft YaHei";
+                            color: #888;
+                            position: relative;
+                        }
+                    }
+                    #mygome-coupon {
+                        padding-left: 10px;
+                        overflow: hidden;
+                        li{
+                            float: left;
+                            width: 200px;
+                            padding: 10px 0;
+                            line-height: 14px;
+                        }
+                      
+                    }
+                    #step_track{
+                            clear: both;
+                            background: #f8f8f8;
+                            padding: 10px;
+                            overflow: hidden;
+                    }
+                    #mygome-track {
+                        background: #f8f8f8;
+                        padding: 0 0 18px 10px;
+                        height: 50px;
+                        overflow: hidden;
+                        li{
+                            float: left;
+                            width: 50px;
+                            height: 50px;
+                            margin: 0 12px 10px 0;
+                            background: url("../images/index/ui1.png") 0 -397px;
+                        }
+                    }
+                    
+                }
+
+            }
+            //第三个li 企业采购
+            #gome-enterprise{
+                .public_down{
+                    width: 295px;
+                    padding: 10px 15px;
+                }
+                .public_down>ul{
+                width: 225px;
+                float: left;
+                flex-wrap: wrap;
+                >li{
+                    width: 75px;
+                    float: left;
+                }
+               }
+                .gome-qrcode{
+                    right: 0;
+                    top: 0;
+                    display: block;
+                    float:right;
+                    width: 80px;
+                    height: 80px;
+                    position: relative;
+                    margin-left: -10px;
+                    background-image: url("../images/index/1.head/enterprisescode.jpg");
+                }
+            }
+            //第四个li 服务中心
+            #gome-service{
+                .public_down{
+                    width: 210px;
+                    padding: 10px 15px;
+                    ul{
+                        padding: 0 0 10px 0;
+                        overflow: hidden;
+                        flex-wrap: wrap;
+                        li{
+                            float: left;
+                            font: 12px/24px Arial,"Microsoft YaHei";
+                            width: 33%;
+                            overflow: hidden;
+                            position: relative;
+                        }
+                    }
+                    &>a{
+                        color: #fff;
+                        background: #b20fd3;
+                        text-align: center;
+                        display: block;
+                        line-height: 25px;
+                        height: 25px;
+                        cursor: pointer;
+                        font-weight: 400;
+                        margin-top: 4px;
+                        em{
+                            color: white;
+                        }
+                    }
+                }
+            }
+            // 第五个li 网站导航
+            #gome-sitemap{
+                position: static;
+                .public_down{
+                    padding: 10px 0;
+                    left: 0;
+                    width: 1198px;
+                    position: absolute;
+                    top: 30px;
+                }
+            }
+
+            //字体 图标
+            .gm-icon{
+                font-family: 'iconfont' !important;
+                font-style: normal;
+                font-size: 17px;
+                color: $mainColor;
+                background: 0 0;
+                line-height: 30px;
+                height: 30px;
+                display: inline-block;
+                vertical-align: middle;
 
             }
             .gome-voice-read, .gome-voice-read-endPlay{

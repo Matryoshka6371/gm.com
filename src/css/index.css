@@ -69,11 +69,11 @@ a {
   background: #f8f8f8;
   color: #5e5e5e;
   border-bottom: 1px solid #f3f3f3;
-  position: relative;
   z-index: 999;
 }
 
 .h_top_wrap .h_top_body {
+  position: relative;
   width: 1200px;
   height: 30px;
   margin: 0 auto;
@@ -137,7 +137,7 @@ a {
 .h_top_wrap .h_top_body ul #gome-user .public_down #user-name {
   position: absolute;
   top: 30px;
-  left: -1px;
+  left: 0px;
   padding: 10px 15px;
   display: flex;
   z-index: 8;
@@ -194,6 +194,7 @@ a {
   position: relative;
   height: 30px;
   font: 12px/1.5;
+  box-sizing: border-box;
 }
 
 .h_top_wrap .h_top_body #gome-top-right li b {
@@ -211,18 +212,6 @@ a {
   border-bottom: 0;
 }
 
-.h_top_wrap .h_top_body #gome-top-right li b .gm-icon {
-  font-family: 'iconfont' !important;
-  font-style: normal;
-  font-size: 17px;
-  color: #b20fd3;
-  background: 0 0;
-  line-height: 30px;
-  height: 30px;
-  display: inline-block;
-  vertical-align: middle;
-}
-
 .h_top_wrap .h_top_body #gome-top-right li b i {
   display: inline-block;
   position: absolute;
@@ -234,6 +223,169 @@ a {
   overflow: hidden;
   vertical-align: middle;
   background-image: url("../images/index/ui1.png");
+}
+
+.h_top_wrap .h_top_body #gome-top-right li .public_down {
+  width: 260px;
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  overflow: hidden;
+  display: none;
+  border: 1px solid #e6e6e6;
+}
+
+.h_top_wrap .h_top_body #gome-top-right li .public_down > strong {
+  display: block;
+  font-weight: 700;
+  padding: 10px 10px 0;
+  color: #888;
+  width: 240px;
+  height: 24px;
+}
+
+.h_top_wrap .h_top_body #gome-top-right li .public_down > strong a {
+  color: #069;
+}
+
+.h_top_wrap .h_top_body #gome-top-right li .public_down #mygome-order {
+  display: block;
+  padding: 0 0 9px;
+  margin: 0 10px;
+  border-bottom: 1px solid #f3f3f3;
+  overflow: hidden;
+}
+
+.h_top_wrap .h_top_body #gome-top-right li .public_down #mygome-order li {
+  display: block;
+  float: left;
+  width: 120px;
+  line-height: 25px;
+  height: 25px;
+  font: 12px/24px Arial,"Microsoft YaHei";
+  color: #888;
+  position: relative;
+}
+
+.h_top_wrap .h_top_body #gome-top-right li .public_down #mygome-coupon {
+  padding-left: 10px;
+  overflow: hidden;
+}
+
+.h_top_wrap .h_top_body #gome-top-right li .public_down #mygome-coupon li {
+  float: left;
+  width: 200px;
+  padding: 10px 0;
+  line-height: 14px;
+}
+
+.h_top_wrap .h_top_body #gome-top-right li .public_down #step_track {
+  clear: both;
+  background: #f8f8f8;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.h_top_wrap .h_top_body #gome-top-right li .public_down #mygome-track {
+  background: #f8f8f8;
+  padding: 0 0 18px 10px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.h_top_wrap .h_top_body #gome-top-right li .public_down #mygome-track li {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin: 0 12px 10px 0;
+  background: url("../images/index/ui1.png") 0 -397px;
+}
+
+.h_top_wrap .h_top_body #gome-top-right #gome-enterprise .public_down {
+  width: 295px;
+  padding: 10px 15px;
+}
+
+.h_top_wrap .h_top_body #gome-top-right #gome-enterprise .public_down > ul {
+  width: 225px;
+  float: left;
+  flex-wrap: wrap;
+}
+
+.h_top_wrap .h_top_body #gome-top-right #gome-enterprise .public_down > ul > li {
+  width: 75px;
+  float: left;
+}
+
+.h_top_wrap .h_top_body #gome-top-right #gome-enterprise .gome-qrcode {
+  right: 0;
+  top: 0;
+  display: block;
+  float: right;
+  width: 80px;
+  height: 80px;
+  position: relative;
+  margin-left: -10px;
+  background-image: url("../images/index/1.head/enterprisescode.jpg");
+}
+
+.h_top_wrap .h_top_body #gome-top-right #gome-service .public_down {
+  width: 210px;
+  padding: 10px 15px;
+}
+
+.h_top_wrap .h_top_body #gome-top-right #gome-service .public_down ul {
+  padding: 0 0 10px 0;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.h_top_wrap .h_top_body #gome-top-right #gome-service .public_down ul li {
+  float: left;
+  font: 12px/24px Arial,"Microsoft YaHei";
+  width: 33%;
+  overflow: hidden;
+  position: relative;
+}
+
+.h_top_wrap .h_top_body #gome-top-right #gome-service .public_down > a {
+  color: #fff;
+  background: #b20fd3;
+  text-align: center;
+  display: block;
+  line-height: 25px;
+  height: 25px;
+  cursor: pointer;
+  font-weight: 400;
+  margin-top: 4px;
+}
+
+.h_top_wrap .h_top_body #gome-top-right #gome-service .public_down > a em {
+  color: white;
+}
+
+.h_top_wrap .h_top_body #gome-top-right #gome-sitemap {
+  position: static;
+}
+
+.h_top_wrap .h_top_body #gome-top-right #gome-sitemap .public_down {
+  padding: 10px 0;
+  left: 0;
+  width: 1198px;
+  position: absolute;
+  top: 30px;
+}
+
+.h_top_wrap .h_top_body #gome-top-right .gm-icon {
+  font-family: 'iconfont' !important;
+  font-style: normal;
+  font-size: 17px;
+  color: #b20fd3;
+  background: 0 0;
+  line-height: 30px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .h_top_wrap .h_top_body #gome-top-right .gome-voice-read, .h_top_wrap .h_top_body #gome-top-right .gome-voice-read-endPlay {
