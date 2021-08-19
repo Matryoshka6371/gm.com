@@ -127,7 +127,7 @@ $(function () {
     })
 
     //引入json数据格式
-    
+    //数据渲染
     $.getJSON("../../data/index/category.json",function(data){
         console.log(data);
         let mixId=[];
@@ -182,6 +182,21 @@ $(function () {
 
     })
     //渲染数据结束
+
+    // ul移入移出显示效果
+    $(".lisnav-ul").on("mouseenter","li",function(){
+        // console.log($(this));//li
+        $(this).addClass("bgw").siblings().removeClass("bgw")
+        $("#subnav").css({
+            display:"block"
+        })
+    })
+    $("#navBox").mouseleave(function(){
+        $(this).children("li").removeClass("bgw")
+        $("#subnav").css({
+            display:"none"
+        })
+    })
 
 })
 
