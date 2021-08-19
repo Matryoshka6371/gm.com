@@ -127,6 +127,7 @@ $(function () {
     })
 
     //引入json数据格式
+    
     $.getJSON("../../data/index/category.json",function(data){
         console.log(data);
         let mixId=[];
@@ -141,16 +142,47 @@ $(function () {
     })
     console.log(mixId);
     //对mixId进行去重
-    let newMixId=[...new Set(mixId)];
+    for(var i=0; i<mixId.length; i++){
+        for(var j=i+1; j<mixId.length; j++){
+            if(mixId[i].modelid==mixId[j].modelid){         //第一个等同于第二个，splice方法删除第二个
+                mixId.splice(j,1);
+                j--;
+            }
+        }
+    }
+    console.log(mixId);
+    
+     // 渲染li
+     let liStrHtml=``;
+     mixId.forEach((item1,index1)=>{
+                 liStrHtml+=`
+                     <li data-index=${index1} modelid=${item1.modelid}>
+                         <h3>
+                         </h3>
+                     </li>
+                 `
+     })
+     $("#lisnav-ul").html(liStrHtml);
+    //   渲染a
+    let matchArr=Array.from($("#lisnav-ul").children("li"));
+    console.log(matchArr);
+                for(let j=0;j<matchArr.length;j++){
+                  for(let i=0;i<data.length;i++){
+                    if(data[i].id.includes($(matchArr[j]).attr("modelid"))){
+                        console.log($(matchArr[j]).attr("modelid"));
+                       let catelink=$("<a data-code="+data[i].id+"href="+data[i].href+">"+data[i].des+"</a>")
+                       $(matchArr[j]).children("h3").append(catelink);
+                    }else{
+                        continue;
+                    }
+                }
+              }
+              
+          
 
-    let catrgoryStrHtml=``;
-           data.forEach((item,index)=>{
-            catrgoryStrHtml+=`
-                <a href=${item.href} data-code=${item.id}>${item.des}</a>
-            `
-           })
-        $("#lisnav-ul").html(catrgoryStrHtml)
     })
+    //渲染数据结束
+
 })
 
 
