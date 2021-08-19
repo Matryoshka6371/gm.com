@@ -16,12 +16,12 @@
     {"id":"1000036986-2","des":"洗衣机","href":"javascript:void(0)"},
 
     {"id":"1000037013-0","des":"厨房卫浴","href":"javascript:void(0)"},
-    {"id":"1000037013-0","des":"生活电器","href":"javascript:void(0)"},
-    {"id":"1000037013-0","des":"环境","href":"javascript:void(0)"},
+    {"id":"1000037013-1","des":"生活电器","href":"javascript:void(0)"},
+    {"id":"1000037013-2","des":"环境","href":"javascript:void(0)"},
 
     {"id":"1000037094-0","des":"家具","href":"javascript:void(0)"},
-    {"id":"1000037094-0","des":"建材","href":"javascript:void(0)"},
-    {"id":"1000037094-0","des":"欧洲厨房","href":"javascript:void(0)"},
+    {"id":"1000037094-1","des":"建材","href":"javascript:void(0)"},
+    {"id":"1000037094-2","des":"欧洲厨房","href":"javascript:void(0)"},
 
     {"id":"1000037121-0","des":"家居家纺","href":"javascript:void(0)"},
     {"id":"1000037121-1","des":"家居家装","href":"javascript:void(0)"},
@@ -44,9 +44,4 @@
 
     {"id":"1000037337-0","des":"国美管家","href":"javascript:void(0)"},
     {"id":"1000037337-1","des":"美锅优食","href":"javascript:void(0)"}
-
-
-
-
-
 ]

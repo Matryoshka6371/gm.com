@@ -1,5 +1,8 @@
 // 2021-08-17 16:50
 // 使用jQuery实现顶部动态效果
+
+
+
 $(function () {
     //左边登录动态效果
     //设置主要颜色
@@ -103,23 +106,52 @@ $(function () {
             "display": "none",
         })
     })
-    $(".search_type_item").on("mouseenter",function(){
+    $(".search_type_item").on("mouseenter", function () {
         $(this).addClass("hover_item").siblings().removeClass("hover_item")
     })
-    $(".topsearch .hotkeyword a").on("mouseenter",function(){
+    $(".topsearch .hotkeyword a").hover(function () {
         $(this).addClass("hoverhightlight").siblings().removeClass("hoverhightlight")
+    }, function () {
+        $(this).removeClass("hoverhightlight")
     })
-    $(".mygome_side").hover(function(){
+    $(".mygome_side").hover(function () {
         $("#hdrcarttext").css({
-            color:$mainColor,
-            "textDecoration":"underline"
+            color: $mainColor,
+            "textDecoration": "underline"
         })
-    },function(){
+    }, function () {
         $("#hdrcarttext").css({
-            color:"#5e5e5e",
-            "textDecoration":"none"
+            color: "#5e5e5e",
+            "textDecoration": "none"
         })
+    })
+
+    //引入json数据格式
+    $.getJSON("../../data/index/category.json",function(data){
+        console.log(data);
+        let mixId=[];
+        data.forEach((item,index)=>{
+        let mixObj={};
+        var mixIdr=item.id.split("-");
+        mixObj.modelid=mixIdr[0];
+        mixObj.id=mixIdr[1];
+        mixObj.index=index;
+        mixId.push(mixObj);
+        // mixId.push({modelid:mixIdr[0],id:mixIdr[1],index})
+    })
+    console.log(mixId);
+    //对mixId进行去重
+    let newMixId=[...new Set(mixId)];
+
+    let catrgoryStrHtml=``;
+           data.forEach((item,index)=>{
+            catrgoryStrHtml+=`
+                <a href=${item.href} data-code=${item.id}>${item.des}</a>
+            `
+           })
+        $("#lisnav-ul").html(catrgoryStrHtml)
     })
 })
+
 
 //
