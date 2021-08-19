@@ -258,14 +258,30 @@
             <a href="" target="_blank"></a>
         </div>
         <!-- logo end -->
+
+        <!-- topsearch start -->
         <div class="topsearch">
             <!-- searchbox start -->
-            <div class="serachbox">
+            <div class="searchbox">
                 <form action="" id="searchForm" method="get">
-                    <div class="search_type_box">
-                        
+                    <div class="search_type_down">
+                        <div class="search_type">
+                            <span class="search_type_selected">商品</span>
+                            <i class="arrow_down"></i>
+                        </div>
+                       
+                        <ul class="search_type_list">
+                            <li class="search_type_item">商品</li>
+                            <li class="search_type_item">店铺</li>
+                        </ul>
                     </div>
+                    <label id="keyLabel"></label>
+                    <input type="text" id="searchInput">
+                    <button type="button" class="search_btn">搜索</button>
                 </form>
+                <div>
+                    <div id="taste_button" class="voice-search"></div>
+                </div>
             </div>
             <!-- searchbox end -->
 
@@ -280,8 +296,62 @@
                 <a href="" class="hightlight">火锅食材开店</a>
             </div>
         </div>
+        <!-- topsearch end -->
+
+        <!-- 购物车部分 -->
+        <!-- mincart start -->
+        <div class="mygome_side">
+            <div>
+                <a href="">
+                    <em class="i-cart">
+                        <span class="shopnum"><span id="commerceItemQuantityId">0</span><i></i></span>
+                    </em>
+                    <span id="hdrcarttext">我的购物车</span>
+                    <b></b>
+                </a>
+            </div>
+        </div>
+        <!-- mincart end -->
+
+
+
+
     </div>
     <!-- head end -->
+
+    <!-- 商品分类 start -->
+    <div class="category_wrap">
+        <div class="category">
+            <div class="sidecategory">
+                <h2><a href="" target="_blank">全部商品分类</a></h2>
+                <div id="navBox" class="lisnav">
+                    <div class="lisbg"></div>
+                    <ul class="lisnav-ul">
+                        <li>
+                            <h3>
+                                <a href=""></a>
+                            </h3>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <ul class="mainnav">
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+            <div class="hdrsideRoll">
+
+            </div>
+        </div>
+    </div>
+    <!-- 商品分类 end -->
 
 </body>
 </html>

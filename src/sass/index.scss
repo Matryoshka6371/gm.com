@@ -59,6 +59,9 @@ a{
         margin:0 auto;
         display: flex;
         justify-content: space-between;
+        .public_down{
+            z-index: 999!important;
+        }
         ul{
             display: flex;
             >li>a>i{
@@ -179,7 +182,7 @@ a{
                     padding: 0 20px 0 10px;
                     overflow: hidden;
                     position: relative;
-                    z-index: 9;
+                    z-index: 999;
                     color: #888;
                     .drop{
                         border: 1px solid #f8f8f8;
@@ -436,11 +439,12 @@ a{
 
 // head开始
 .gome-head{
+
     width:$PlateWidth;
     height: 120px;
     margin:0 auto;
-    background-color: #069;
     position: relative;
+    // logo开始
     #logo{
         margin: 32px 10px 0 0;
         float: left;
@@ -453,6 +457,15 @@ a{
             background: url("../images/index/1.head/logo.png") no-repeat 0 0;
         }
     }
+    i.arrow_down{
+        position: absolute;
+        width: 11px;
+        height: 7px;
+        right: 9px;
+        top: 11px;
+        background:url("../images/index/ui1.png") -145px -1469px
+    }
+    //搜索框结束
     .topsearch{
         position: absolute;
         width: 500px;
@@ -465,6 +478,89 @@ a{
             font-size: 14px;
             height: 30px;
             background: #fff;
+
+            //搜索下拉框部分
+            .search_type_down{
+                position: absolute;
+                top: 0;
+                left: 0;
+                font-family: 'Microsoft YaHei';
+                font-size: 14px;
+                color: #a5a5a5;
+                float: left;
+                width: 62px;
+                height: 30px;
+                line-height: 30px;
+                .search_type{
+                    position: relative;
+                    width: 42px;
+                    padding: 0 10px;
+                    height: 30px;
+                    border-right: 1px solid $mainColor;
+                    cursor: pointer;
+                }
+                //search右边下拉框
+                .search_type_list{
+                    position: absolute;
+                    left: -1px;
+                    right: -1px;
+                    top: 30px;
+                    border: 1px solid $mainColor;
+                    background-color: #fff;
+                    display: none;
+                    .search_type_item{
+                        width: 42px;
+                        padding: 0 10px;
+                        height: 25px;
+                        line-height: 25px;
+                        cursor: pointer;
+                    }
+                    .hover_item{
+                        background-color:#C8C8C8;
+                    }
+                }
+                
+            }
+            //搜索栏部分
+            input{
+                border: none;
+                width: 310px;
+                padding: 5px 5px 5px 72px;
+                line-height: 20px;
+                float: left;
+                font-size: 14px;
+                font-family: arial;
+                color: #5e5e5e;
+                background-color: transparent;
+                &:focus{
+                    outline: none;
+                }
+            }
+            //搜索框按钮部分
+            button{
+                width: 90px;
+                height: 30px;
+                border: none;
+                cursor: pointer;
+                float: right;
+                display: inline;
+                background: #b20fd3;
+                font: 16px/30px 'microsoft yahei';
+                color: #fff;
+                letter-spacing: 2px;
+                text-indent: 0;
+            }
+            // 搜索框喇叭部分
+            #taste_button{
+                margin-right: 3px;
+                opacity: .55;
+                float: right;
+                padding: 5px 0;
+                cursor: pointer;
+                width: 15px;
+                height: 20px;
+                background: url("../images/index/1.head/search.png") no-repeat no-repeat center/13px 19px;
+            }
         }
 
         .hotkeyword{
@@ -476,13 +572,147 @@ a{
             a{
                 color: #a5a5a5;
             }
+            a.hoverhightlight{
+                color:$mainColor;
+            }
             a.hightlight{
                 color:$mainColor;
             }
         }
     }
+
+    //购物车开始
+    .mygome_side{
+        position: absolute;
+        right: 0;
+        top: 32px;
+        z-index: 92;
+        width: 240px;
+        a{
+            display: block;
+            padding: 5px 20px 0 45px;
+            line-height: 34px;
+            height: 34px;
+            width: 75px;
+            border: none;
+            margin: 1px;
+            color: #5e5e5e;
+            float: left;
+            position: relative;
+            z-index: 97;
+            font-size: 12px;
+            em{
+                position: absolute;
+                width: 27px;
+                height: 20px;
+                background: url("../images/index/ui1.png") -100px -701px;
+                top: 11px;
+                left: 10px;
+                .shopnum{
+                    position: absolute;
+                    height: 18px;
+                    line-height: 18px;
+                    padding: 0 3px;
+                    top: -18px;
+                    min-width: 14px;
+                    text-align: center;
+                    left: 15px;
+                    background-color: #a5a5a5;
+                    color: #fff;
+                    font-weight: 700;
+                    #commerceItemQuantityId{
+                        font-weight: 700;
+                    }
+                    i{
+                        position: absolute;
+                        width: 0;
+                        height: 0;
+                        border: 4px dashed transparent;
+                        border-color: transparent transparent transparent #a5a5a5;
+                        border-right: 0;
+                        border-left-style: solid;
+                        overflow: hidden;
+                        bottom: -4px;
+                        left: 5px;
+                    }
+                }
+            }
+            &>b{
+                z-index: 96;
+                position: absolute;
+                width: 0;
+                height: 0;
+                border: 4px dashed transparent;
+                border-color: #5e5e5e transparent transparent transparent;
+                border-bottom: 0;
+                border-top-style: solid;
+                top: 20px;
+                right: 10px;
+                overflow: hidden;
+                line-height: 34px;
+            }
+        }
+    }
 }
 //head结束
+
+// category开始
+.category_wrap{
+    border-bottom: 1px solid #b20fd3;
+    background: #f8f8f8;
+    .category{
+        width: 1200px;
+        height: 40px;
+        margin:0 auto;
+        .sidecategory{
+            float: left;
+            position: relative;
+            z-index: 995;
+
+            // 分类头部 全部商品分类
+            h2{
+                height: 40px;
+                position: relative;
+                z-index: 10;
+                width: 200px;
+                background: #f1f1f1;
+                float: left;
+                opacity: .9;
+                a{
+                    color: #585858;
+                    font-family: 'Microsoft YaHei';
+                    font-weight: 700;
+                    font-size: 15px;
+                    line-height: 40px;
+                    padding-left: 15px;
+                    float: left;
+                }
+            }
+            //分类主题
+            .lisnav{
+                top: 41px;
+                z-index: 200;
+                width: 200px;
+                height: 450px;
+                position: absolute;
+                left: 0;
+                .lisbg{
+                    opacity: .7;
+                    width: 200px;
+                    height: 450px;
+                    color: #333;
+                    background: #333;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 1000;
+                }
+            }
+
+        }
+    }
+}
+//category结束
 // 楼层
 .floor {
     width:$floorWidth;

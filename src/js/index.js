@@ -3,85 +3,123 @@
 $(function () {
     //左边登录动态效果
     //设置主要颜色
-    const $mainColor="#b20fd3";
-    $("#gome-user").hover(function(){
-         $("#gome-user b").css({
-            border:"1px solid #e6e6e6", 
-            borderBottom:"none",
-            borderTop:"none",
-            backgroundColor:"white",
-            padding:" 0 19px 1px 9px"
-         })
-         $("#gome-user b a").css({
-            color:$mainColor,
-         })
-         $("#gome-user b i").css({
-            backgroundPosition: "-55px -433px",
-         })
-
-         $("#gome-user .public_down").css({
-            "display":"block",
-        });
-         $(" #user-name").css({
-            border:"1px solid #e6e6e6",
+    const $mainColor = "#b20fd3";
+    $("#gome-user").hover(function () {
+        $("#gome-user b").css({
+            border: "1px solid #e6e6e6",
+            borderBottom: "none",
+            borderTop: "none",
+            backgroundColor: "white",
+            padding: " 0 19px 1px 9px"
         })
-    },function(){
-        $("#gome-user .public_down").css("display","none");
-        $("#gome-user b").css({ 
-            border:"none",
-            backgroundColor:"#f8f8f8",
+        $("#gome-user b a").css({
+            color: $mainColor,
+        })
+        $("#gome-user b i").css({
+            backgroundPosition: "-55px -433px",
+        })
+
+        $("#gome-user .public_down").css({
+            "display": "block",
+        });
+        $(" #user-name").css({
+            border: "1px solid #e6e6e6",
+        })
+    }, function () {
+        $("#gome-user .public_down").css("display", "none");
+        $("#gome-user b").css({
+            border: "none",
+            backgroundColor: "#f8f8f8",
             padding: "0 20px 0 10px"
         })
         $("#gome-user b a").css({
-            color:" #888",
-         })
-         $("#gome-user b i").css({
+            color: " #888",
+        })
+        $("#gome-user b i").css({
             backgroundPosition: "-62px -433px",
-         })
+        })
     })
     //右边动态效果
-    $("#gome-top-right>li").hover(function(evt){
+    $("#gome-top-right>li").hover(function (evt) {
         // 显示
-        let e=evt.target||evt.srcElement;
+        let e = evt.target || evt.srcElement;
         $(this).children("b").css({
-            border:"1px solid #e6e6e6", 
-            borderBottom:"none",
-            borderTop:"none",
-            backgroundColor:"white",
-            padding:" 0 19px 1px 9px"
+            border: "1px solid #e6e6e6",
+            borderBottom: "none",
+            borderTop: "none",
+            backgroundColor: "white",
+            padding: " 0 19px 1px 9px"
         })
         $(this).children(".public_down").css({
-            display:"block",
+            display: "block",
         })
-       $(this).find("i").css({
+        $(this).find("i").css({
             backgroundPosition: "-55px -433px",
-         })
+        })
         $(e).children("b a").css({
-            color:$mainColor,
-         })
-    },function(){
+            color: $mainColor,
+        })
+    }, function () {
         $(this).children("b").css({
-            border:"none",
-            backgroundColor:"#f8f8f8",
+            border: "none",
+            backgroundColor: "#f8f8f8",
             padding: "0 20px 0 10px"
         })
         $(this).find("i").css({
             backgroundPosition: "-62px -433px",
-         })
-        $(this).children("a").css({
-            color:"#888",
-         })
-         //字体颜色,隐藏链接和顶部字体颜色`
-         $("#gome-top-right>li>b>a").css({
-            color:"#888",
-         })
-         $(this).children(".public_down").css({
-            display:"none",
         })
-         //$(evt)拿到的是事件对象
+        $(this).children("a").css({
+            color: "#888",
+        })
+        //字体颜色,隐藏链接和顶部字体颜色`
+        $("#gome-top-right>li>b>a").css({
+            color: "#888",
+        })
+        $(this).children(".public_down").css({
+            display: "none",
+        })
+        //$(evt)拿到的是事件对象
     })
 
     // head动态效果
+
+    //head切换search_type
+    //head动态 1. 悬浮效果
+    $(".search_type_down").hover(function () {
+        $(".search_type_list").css({
+            "display": "block",
+        })
+    }, function () {
+        $(".search_type_list").css({
+            "display": "none",
+        })
+    })
+    //搜索框点击事件
+    $(".search_type_list").on("click", ".search_type_item", function (evt) {
+        e = evt.target || evt.srcElement;
+        let $txt = $(e).text();
+        $(".search_type_selected").text($txt);
+        $(".search_type_list").css({
+            "display": "none",
+        })
+    })
+    $(".search_type_item").on("mouseenter",function(){
+        $(this).addClass("hover_item").siblings().removeClass("hover_item")
+    })
+    $(".topsearch .hotkeyword a").on("mouseenter",function(){
+        $(this).addClass("hoverhightlight").siblings().removeClass("hoverhightlight")
+    })
+    $(".mygome_side").hover(function(){
+        $("#hdrcarttext").css({
+            color:$mainColor,
+            "textDecoration":"underline"
+        })
+    },function(){
+        $("#hdrcarttext").css({
+            color:"#5e5e5e",
+            "textDecoration":"none"
+        })
+    })
 })
 
 //
