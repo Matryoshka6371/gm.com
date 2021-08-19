@@ -216,7 +216,77 @@ $(function () {
     })
 
     })
-    //渲染数据结束
+    //左侧渲染数据结束
+
+    //右侧上下滚动开始
+    //克隆第一个图片li追加到最后面
+    function textScroll(){
+        $(".hd-clickscroll").animate({
+         top: -hd_clickIndex*38
+       })
+ }
+    $(".hd-clickscroll")
+    .append($(".hd-clickscroll")
+    .children("li").eq(0).clone(false));
+    //设置下标
+    let hd_clickIndex=0;
+    let $timer1=null
+    //定时器进行轮播
+    $timer1= setInterval(()=>{
+            hd_clickIndex++;
+            if( hd_clickIndex>1){
+                hd_clickIndex=0;
+                $(".hd-clickscroll").css({
+                    top:0
+                })
+            }
+        textScroll();
+       },500)
+
+    //    点击按钮进行切换
+    // 1.移入暂停,移出回复时间
+    $(".hdrsideRoll").hover(function(){
+        clearInterval($timer1)
+    },function(){
+        $timer1=setInterval(()=>{
+            hd_clickIndex++;
+            if( hd_clickIndex>1){
+                hd_clickIndex=0;
+                $(".hd-clickscroll").css({
+                    top:"0px"
+                })
+            }
+        textScroll();
+       },500)
+       
+    })
+    //2.点击事件
+    $(".hdrsRollbtn").on("click","a",function(evt){
+        let e=evt.target||evt.srcElement;
+        if(e.className=="j-hdrbtn-up"){
+            hd_clickIndex++;
+            if( hd_clickIndex>1){
+                hd_clickIndex=0;
+                $(".hd-clickscroll").css({
+                    top:0
+                })
+            }
+            textScroll();
+        }else if(e.className=="j-hdrbtn-down"){
+            hd_clickIndex--;
+            if( hd_clickIndex<0){
+                hd_clickIndex=1;
+                $(".hd-clickscroll").css({
+                    top:"-38px"
+                })
+            }
+            textScroll();
+        }
+        
+    })
+  
+
+
 
     
 

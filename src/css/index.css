@@ -1009,6 +1009,72 @@ a {
   color: #b20fd3;
 }
 
+.category_wrap .category .hdrsideRoll {
+  float: right;
+  position: relative;
+  width: 194px;
+  height: 38px;
+  overflow: hidden;
+}
+
+.category_wrap .category .hdrsideRoll .adnavside {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  width: 170px;
+  height: 38px;
+  overflow: hidden;
+}
+
+.category_wrap .category .hdrsideRoll .adnavside ul {
+  height: 76px;
+  position: relative;
+  top: 0px;
+}
+
+.category_wrap .category .hdrsideRoll .adnavside ul li {
+  width: 170px;
+  height: 38px;
+}
+
+.category_wrap .category .hdrsideRoll .adnavside ul li a img {
+  width: 170px;
+  aspect-ratio: auto 170 / 40;
+  height: 40px;
+}
+
+.category_wrap .category .hdrsideRoll .adnavside .hd-clickscroll {
+  width: 3000px;
+}
+
+.category_wrap .category .hdrsideRoll .hdrsRollbtn {
+  position: absolute;
+  top: 7px;
+  right: 0;
+  width: 13px;
+  height: 20px;
+}
+
+.category_wrap .category .hdrsideRoll .hdrsRollbtn a {
+  padding: 2px 1px;
+  display: block;
+  margin: 1px;
+}
+
+.category_wrap .category .hdrsideRoll .hdrsRollbtn .j-hdrbtn-up i {
+  background: url("../images/index/ui1.png") -20px -1348px;
+  width: 9px;
+  height: 5px;
+  display: block;
+}
+
+.category_wrap .category .hdrsideRoll .hdrsRollbtn .j-hdrbtn-down i {
+  background: url("../images/index/ui1.png") -20px -1353px;
+  width: 9px;
+  height: 5px;
+  display: block;
+}
+
 .floor {
   width: 1200px;
 }

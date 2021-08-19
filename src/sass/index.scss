@@ -948,7 +948,68 @@ a{
             }
         }
         // 右侧滚动
-        
+        .hdrsideRoll {
+            float: right;
+            position: relative;
+            width: 194px;
+            height: 38px;
+            overflow: hidden;
+            .adnavside {
+                position: absolute;
+                top: 0;
+                left: 5px;
+                width: 170px;
+                height: 38px;
+                overflow: hidden;
+                ul{
+                    height: 76px;
+                    position: relative;
+                    top: 0px;
+                    li{
+                        width: 170px;
+                        height: 38px;
+                        a{
+                            img{
+                                width: 170px;
+                                aspect-ratio: auto 170 / 40;
+                                height: 40px;
+                            }
+                        }
+                    }
+                }
+                .hd-clickscroll {
+                    width: 3000px;
+                }
+            }
+            .hdrsRollbtn {
+                position: absolute;
+                top: 7px;
+                right: 0;
+                width: 13px;
+                height: 20px;
+                a{
+                    padding: 2px 1px;
+                    display: block;
+                    margin: 1px;
+                }
+                .j-hdrbtn-up{
+                    i{
+                        background: url("../images/index/ui1.png") -20px -1348px;
+                        width: 9px;
+                        height: 5px;
+                        display: block;
+                    }
+                }
+                .j-hdrbtn-down{
+                    i{
+                        background: url("../images/index/ui1.png") -20px -1353px;
+                        width: 9px;
+                        height: 5px;
+                        display: block;
+                    }
+                }
+            }
+        }
     }
 }
 //category结束
