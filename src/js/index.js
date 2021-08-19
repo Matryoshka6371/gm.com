@@ -1,12 +1,12 @@
 // 2021-08-17 16:50
 // 使用jQuery实现顶部动态效果
 
-
-
+//数据加载在页面资源完成之前
 $(function () {
     //左边登录动态效果
     //设置主要颜色
     const $mainColor = "#b20fd3";
+   
     $("#gome-user").hover(function () {
         $("#gome-user b").css({
             border: "1px solid #e6e6e6",
@@ -127,8 +127,9 @@ $(function () {
     })
 
     //引入json数据格式
-    //数据渲染
+    //数据渲染,左侧分类渲染
     $.getJSON("../../data/index/category.json",function(data){
+         // 随机颜色函数
         console.log(data);
         let mixId=[];
         data.forEach((item,index)=>{
@@ -178,25 +179,49 @@ $(function () {
                 }
               }
               
-          
+     // 复制对应数量的二级菜单,粘贴到subnav下面去
+    console.log(Array.from($(".lisnav-ul").children("li")).length);
+    for(let i=0;i<Array.from($(".lisnav-ul").children("li")).length;i++){
+            $fullcategory=$(".fullcategory").clone(true);
+            $(".subnav").append( $fullcategory.get(0));
+    }
+    // ul移入移出显示效果
+    $(".lisnav-ul").on("mouseenter","li",function(evt){
+        // console.log($(this));//li
+        $(this).addClass("bgw").siblings().removeClass("bgw");
+        $("#subnav").css({
+            display:"block"
+        })
+        // console.log($(this).index());
+        // 返回下标
+        // console.log($(".subnav").children(".fullcategory"));
+        // console.log( Array.from($(".subnav").children(".fullcategory"))[$(this).index()]);
+        $(Array.from($(".subnav").children(".fullcategory"))[$(this).index()])
+        .siblings().css({
+            display:"none"
+        }).end().css({
+            display:"block",
+        })
+        // $(".subnav").children(".fullcategory")
+        // .index($(this).index()).css("display","block")
+        // .siblings().css("display","none")
+    })
+    $("#navBox").on("mouseleave",function(){
+        $(this).find(".lisnav-ul").children("li").removeClass("bgw");
+        $("#subnav").css({
+            display:"none"
+        })
+
+
+    })
 
     })
     //渲染数据结束
 
-    // ul移入移出显示效果
-    $(".lisnav-ul").on("mouseenter","li",function(){
-        // console.log($(this));//li
-        $(this).addClass("bgw").siblings().removeClass("bgw")
-        $("#subnav").css({
-            display:"block"
-        })
-    })
-    $("#navBox").mouseleave(function(){
-        $(this).children("li").removeClass("bgw")
-        $("#subnav").css({
-            display:"none"
-        })
-    })
+    
+
+
+   
 
 })
 
