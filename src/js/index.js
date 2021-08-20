@@ -383,16 +383,40 @@ $(function () {
     })
     //2021年8月20日13:18
 
+    // 领券中心
+
+    //猜你喜欢 开始
+    //1. ul中的li复制5个追加到最后面
+    for(var j=0;j<3;j++){
+        for(var i=1;i<=5;i++){
+            $("#j-imgload-recomm").children("ul").eq(j)
+            .append( $("#j-imgload-recomm").children("ul").eq(j).children("li").eq(0).clone(true));
+           }
+    }
   
+    //    设置ul的下标
+    let maybeulIndex=0;
+    $(".change_btn").children(".nex").on("click",function(){
+        maybeulIndex++;
+        if( maybeulIndex>$("#j-imgload-recomm").children("ul").length){
+            maybeulIndex=0;
+        }
+        $("#j-imgload-recomm").children("ul")
+        .eq(maybeulIndex).siblings().css("display","none")
+        .end().css("display","block")
+    })
+    $(".change_btn").children(".pre").on("click",function(){
+        maybeulIndex--;
+        if( maybeulIndex<0){
+            maybeulIndex= $("#j-imgload-recomm").children("ul").length;
+        }
+        $("#j-imgload-recomm").children("ul")
+        .eq(maybeulIndex).siblings().css("display","none")
+        .end().css("display","block")
+    })
 
+    //猜你喜欢完成
 
-
-    
-
-
-   
+    //楼层
 
 })
-
-
-//
