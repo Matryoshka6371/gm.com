@@ -128,7 +128,7 @@ $(function () {
 
     //引入json数据格式
     //数据渲染,左侧分类渲染
-    $.getJSON("../../data/index/mainbanner.json",function(data){
+    $.getJSON("../../data/index/category.json",function(data){
          // 随机颜色函数
         console.log(data);
         let mixId=[];
