@@ -1015,7 +1015,7 @@ a{
 //category结束
 
 
-//轮播图开始
+//轮播图部分开始
 .gm_main {
     position: relative;
     min-width: 1200px;
@@ -1139,10 +1139,209 @@ a{
             left: 50%;
             margin-left: 350px;
             width: 250px;
+            .gm_sever, .gm_sever_bg {
+                width: 250px;
+                height: 430px;
+                left: 0;
+                top: 10px;
+            }
+            .gm_sever_bg {
+                opacity: .9;
+                background: #fff;
+                position: absolute;
+            }
+            .gm_sever {
+                display: block;
+                position: relative;
+                overflow: hidden;
+
+                // 快讯开始
+                .gm_kuaixun {
+                    height: 180px;
+                    width: 220px;
+                    overflow: hidden;
+                    margin: 0 15px;
+                    border-bottom: 1px dashed #ccc;
+                }
+                .gome_news_content{
+                    span {
+                        display: block;
+                        width: 250px;
+                        height: 26px;
+                        font-size: 12px;
+                        line-height: 26px;
+                        float: left;
+                       .gome_news_sort {
+                            color: #888;
+                            float: left;
+                            display: block;
+                            width: 24px;
+                            overflow: hidden;
+                            height: 26px;
+                        }
+                        .gome_news_text {
+                            position: relative;
+                            left: -6px;
+                            display: inline-block;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            width: 196px;
+                        }
+                    }
+                    a{
+                        color: #5e5e5e;
+                    }
+                    a:hover{
+                        color:$mainColor;
+                    }
+                    
+                }
+                .gome_news {
+                    height: 36px;
+                    width: 220px;
+                    overflow: hidden;
+                    h2{
+                        font-size: 14px;
+                        float: left;
+                        color: #333;
+                        margin-top: 12px;
+                        font-weight: 400;
+                    }
+                    a{
+                        font-size: 12px;
+                        text-align: center;
+                        margin-top: 13px;
+                        color: #888;
+                        float: right;
+                        span{
+                            text-align: center;
+                            color: #888;
+                            display: inline-block;
+                            margin-left: 4px;
+                            width: 5px;
+                            height: 9px;
+                            font-size: 1px;
+                            background:  url("../images/index/ui.png") -126px -130px no-repeat;
+                            ;
+                        }
+                    }
+                }
+                //快讯结束
+
+                //图片开始
+                .icon_server_box {
+                    .icon_box {
+                        width: 220px;
+                        height: 146px;
+                        overflow: hidden;
+                        position: relative;
+                        left: 15px;
+                    }
+                    height: 146px;
+                    .icon_server {
+                        width: 252px;
+                        li{
+                            height: 70px;
+                            padding-top: 2px;
+                            float: left;
+                            width: 55px;
+                            margin-right: 29px;
+                            position: relative;
+                            overflow: hidden;
+                            text-align: center;
+                            .icon_server_a{
+                                display: block;
+                                height: 71px;
+                                width: 38px;
+                                position: absolute;
+                                left: 14px;
+                                font: 12px/1.5 arial,"\65b0\5b8b\4f53";
+                                i{
+                                    cursor: pointer;
+                                }
+                                .gm-icon{
+                                    color: #373737;
+                                    font-size: 32px;
+                                    margin-left: -13px;
+                                    font-family: 'iconfont' !important;
+                                }
+                                .icon_server_li_titile{
+                                    color: #5e5e5e;
+                                    margin-left: -5px;
+                                    width: 36px;
+                                    height: 20px;
+                                    overflow: hidden;
+                                    display: block;
+                                    margin-top: -3px;
+                                }
+                                .icon_server_li_triangle{
+                                    top: 67px;
+                                    border-left: 3px dashed transparent;
+                                    border-right: 3px dashed transparent;
+                                    border-top: 3px solid #c9c9c9;
+                                    font-size: 0;
+                                    height: 0;
+                                    left: 50%;
+                                    line-height: 0;
+                                    margin-left: -11px;
+                                    position: absolute;
+                                    width: 0;
+                                }
+                            } 
+                        }
+                    }
+                }
+                //图标结束
+            }
+            .gm_kuaixun4 .gm_kuaixun {
+                height: 146px;
+            }
+            .gm_kuaixun4 .icon_box, .gm_kuaixun4 .icon_server_box {
+                height: 146px;
+            }
+            .gm_sever .icon_server_box {
+                width: 250px;
+                position: relative;
+                z-index: 2;
+            }
+            .gm_kuaixun4 .round {
+                height: 60px;
+                margin-top: 7px;
+                position: relative;
+                z-index: 1;
+                .round_tittle {
+                    position: absolute;
+                    top: 14px;
+                    left: 15px;
+                    color: #fff;
+                    .tittle_up {
+                        font: 700 14px/14px Microsoft YaHei;
+                        height: 18px;
+                        overflow: hidden;
+                        span.txt {
+                            margin: 0 3px;
+                            max-width: 84px;
+                            height: 14px;
+                            overflow: hidden;
+                        }       
+                    }
+                    .tittle_down {
+                        width: 120px;
+                        font: 13px/16px Microsoft YaHei;
+                        height: 18px;
+                        overflow: hidden;
+                    }
+                }
+            }
         }
     }
 
 //轮播图结束
+
+//领券中心开始
+
+//领券中心结束
 // 楼层
 .floor {
     width:$floorWidth;

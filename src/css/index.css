@@ -1208,6 +1208,221 @@ a {
   width: 250px;
 }
 
+.wbox .gm_sever_wrap .gm_sever, .wbox .gm_sever_wrap .gm_sever_bg {
+  width: 250px;
+  height: 430px;
+  left: 0;
+  top: 10px;
+}
+
+.wbox .gm_sever_wrap .gm_sever_bg {
+  opacity: .9;
+  background: #fff;
+  position: absolute;
+}
+
+.wbox .gm_sever_wrap .gm_sever {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.wbox .gm_sever_wrap .gm_sever .gm_kuaixun {
+  height: 180px;
+  width: 220px;
+  overflow: hidden;
+  margin: 0 15px;
+  border-bottom: 1px dashed #ccc;
+}
+
+.wbox .gm_sever_wrap .gm_sever .gome_news_content span {
+  display: block;
+  width: 250px;
+  height: 26px;
+  font-size: 12px;
+  line-height: 26px;
+  float: left;
+}
+
+.wbox .gm_sever_wrap .gm_sever .gome_news_content span .gome_news_sort {
+  color: #888;
+  float: left;
+  display: block;
+  width: 24px;
+  overflow: hidden;
+  height: 26px;
+}
+
+.wbox .gm_sever_wrap .gm_sever .gome_news_content span .gome_news_text {
+  position: relative;
+  left: -6px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 196px;
+}
+
+.wbox .gm_sever_wrap .gm_sever .gome_news_content a {
+  color: #5e5e5e;
+}
+
+.wbox .gm_sever_wrap .gm_sever .gome_news_content a:hover {
+  color: #b20fd3;
+}
+
+.wbox .gm_sever_wrap .gm_sever .gome_news {
+  height: 36px;
+  width: 220px;
+  overflow: hidden;
+}
+
+.wbox .gm_sever_wrap .gm_sever .gome_news h2 {
+  font-size: 14px;
+  float: left;
+  color: #333;
+  margin-top: 12px;
+  font-weight: 400;
+}
+
+.wbox .gm_sever_wrap .gm_sever .gome_news a {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 13px;
+  color: #888;
+  float: right;
+}
+
+.wbox .gm_sever_wrap .gm_sever .gome_news a span {
+  text-align: center;
+  color: #888;
+  display: inline-block;
+  margin-left: 4px;
+  width: 5px;
+  height: 9px;
+  font-size: 1px;
+  background: url("../images/index/ui.png") -126px -130px no-repeat;
+}
+
+.wbox .gm_sever_wrap .gm_sever .icon_server_box {
+  height: 146px;
+}
+
+.wbox .gm_sever_wrap .gm_sever .icon_server_box .icon_box {
+  width: 220px;
+  height: 146px;
+  overflow: hidden;
+  position: relative;
+  left: 15px;
+}
+
+.wbox .gm_sever_wrap .gm_sever .icon_server_box .icon_server {
+  width: 252px;
+}
+
+.wbox .gm_sever_wrap .gm_sever .icon_server_box .icon_server li {
+  height: 70px;
+  padding-top: 2px;
+  float: left;
+  width: 55px;
+  margin-right: 29px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.wbox .gm_sever_wrap .gm_sever .icon_server_box .icon_server li .icon_server_a {
+  display: block;
+  height: 71px;
+  width: 38px;
+  position: absolute;
+  left: 14px;
+  font: 12px/1.5 arial,"\65b0\5b8b\4f53";
+}
+
+.wbox .gm_sever_wrap .gm_sever .icon_server_box .icon_server li .icon_server_a i {
+  cursor: pointer;
+}
+
+.wbox .gm_sever_wrap .gm_sever .icon_server_box .icon_server li .icon_server_a .gm-icon {
+  color: #373737;
+  font-size: 32px;
+  margin-left: -13px;
+  font-family: 'iconfont' !important;
+}
+
+.wbox .gm_sever_wrap .gm_sever .icon_server_box .icon_server li .icon_server_a .icon_server_li_titile {
+  color: #5e5e5e;
+  margin-left: -5px;
+  width: 36px;
+  height: 20px;
+  overflow: hidden;
+  display: block;
+  margin-top: -3px;
+}
+
+.wbox .gm_sever_wrap .gm_sever .icon_server_box .icon_server li .icon_server_a .icon_server_li_triangle {
+  top: 67px;
+  border-left: 3px dashed transparent;
+  border-right: 3px dashed transparent;
+  border-top: 3px solid #c9c9c9;
+  font-size: 0;
+  height: 0;
+  left: 50%;
+  line-height: 0;
+  margin-left: -11px;
+  position: absolute;
+  width: 0;
+}
+
+.wbox .gm_sever_wrap .gm_kuaixun4 .gm_kuaixun {
+  height: 146px;
+}
+
+.wbox .gm_sever_wrap .gm_kuaixun4 .icon_box, .wbox .gm_sever_wrap .gm_kuaixun4 .icon_server_box {
+  height: 146px;
+}
+
+.wbox .gm_sever_wrap .gm_sever .icon_server_box {
+  width: 250px;
+  position: relative;
+  z-index: 2;
+}
+
+.wbox .gm_sever_wrap .gm_kuaixun4 .round {
+  height: 60px;
+  margin-top: 7px;
+  position: relative;
+  z-index: 1;
+}
+
+.wbox .gm_sever_wrap .gm_kuaixun4 .round .round_tittle {
+  position: absolute;
+  top: 14px;
+  left: 15px;
+  color: #fff;
+}
+
+.wbox .gm_sever_wrap .gm_kuaixun4 .round .round_tittle .tittle_up {
+  font: 700 14px/14px Microsoft YaHei;
+  height: 18px;
+  overflow: hidden;
+}
+
+.wbox .gm_sever_wrap .gm_kuaixun4 .round .round_tittle .tittle_up span.txt {
+  margin: 0 3px;
+  max-width: 84px;
+  height: 14px;
+  overflow: hidden;
+}
+
+.wbox .gm_sever_wrap .gm_kuaixun4 .round .round_tittle .tittle_down {
+  width: 120px;
+  font: 13px/16px Microsoft YaHei;
+  height: 18px;
+  overflow: hidden;
+}
+
 .floor {
   width: 1200px;
 }

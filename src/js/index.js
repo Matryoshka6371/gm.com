@@ -332,11 +332,11 @@ $(function () {
             }
             // 方法二:播放行为
             Play(){
-                if(this.oImgIndex>this.$Uls.children().length){
+                if(this.oImgIndex>this.$Uls.children().length-1){
                     this.oImgIndex=0;
                 }
                 if(this.oImgIndex<0){
-                    this.oImgIndex=this.$Uls.children().length;
+                    this.oImgIndex=this.$Uls.children().length-1;
                 }
                     // 轮播图图片行为
                     this.$Uls.children().eq(this.oImgIndex)
@@ -372,7 +372,16 @@ $(function () {
         //创建类的实例
         new MainSwiper(".main_data");
     })
-
+    
+    //移入图表区域时,图片字体都变紫色
+    $("#icon_server").children("li").hover(function(){
+     $(this).find(".gm-icon").css({color:$mainColor}).end()
+     .find(".icon_server_li_titile").css({color:$mainColor})
+    },function(){
+        $(this).find(".gm-icon").css({color:"#373737"}).end()
+        .find(".icon_server_li_titile").css({color:" #5e5e5e"})
+    })
+    //2021年8月20日13:18
 
   
 
