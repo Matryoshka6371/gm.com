@@ -416,7 +416,22 @@ $(function () {
     })
 
     //猜你喜欢完成
+    
 
+    //侧边栏开始
+    //二维码弹出
+    $("#gome-aside-app").hover(function(){
+        $("#gome-aside-app-code").animate({"right":"335px"})
+    },function(){
+        $("#gome-aside-app-code").animate({"right":"34px"})
+    })
+    //移动到哪里,哪里变成深色
+    $("#gome-bar").on("mouseenter","li",function(){
+       console.log( $(this));
+       $(this).addClass("barhover")
+
+    })
+    //侧边栏结束
     //楼层
 
 })

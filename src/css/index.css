@@ -52,6 +52,10 @@ a {
   text-decoration: none;
 }
 
+html, body {
+  height: 100%;
+}
+
 .wbox {
   width: 1200px;
   margin: 0 auto;
@@ -1672,6 +1676,10 @@ a {
   font-family: Arial,"Microsoft YaHei";
 }
 
+#gome-bar .barhover {
+  opacity: 1.3;
+}
+
 #gome-bar .gome-aside {
   position: absolute;
   bottom: 35px;
@@ -1683,19 +1691,92 @@ a {
   background: #5c5c5c;
 }
 
+#gome-bar .gome-aside b, #gome-bar .gome-aside i {
+  background: url("../images/index/ui1.png") -47px -464px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+#gome-bar .gome-aside #gome-aside-app {
+  padding-top: 5px;
+  background: #5c5c5c;
+}
+
+#gome-bar .gome-aside li {
+  position: relative;
+  text-align: center;
+  height: 38px;
+  font-size: 12px;
+}
+
+#gome-bar .gome-aside b, #gome-bar .gome-aside i {
+  background: url("../images/index/ui1.png") -47px -464px;
+}
+
+#gome-bar .gome-aside b {
+  position: absolute;
+  top: 50%;
+  left: -1px;
+  margin-top: -6px;
+  width: 5px;
+  height: 9px;
+  display: inline-block;
+}
+
+#gome-bar .gome-aside b {
+  background-position: -40px -464px;
+  z-index: 9;
+}
+
+#gome-bar .gome-aside a {
+  display: inline-block;
+  width: 100%;
+  background: #5c5c5c;
+  padding: 9px 0;
+  height: 20px;
+  color: #999;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 2;
+  position: relative;
+}
+
+#gome-bar .gome-aside i {
+  background-position: -212px -473px;
+}
+
+#gome-bar .gome-aside #gome-aside-survey i {
+  background-position: -212px -493px;
+}
+
+#gome-bar .gome-aside #gome-aside-service i {
+  color: #c00;
+  background-position: -212px -513px;
+}
+
+#gome-bar .gome-aside #gome-aside-backtop i {
+  background-position: -212px -533px;
+}
+
 #gome-bar #gome-aside-app-code {
+  transform: translate(150%, 0px);
+  transition: all 0.2s ease-out 0s;
   position: absolute;
   right: 34px;
   bottom: 40px;
-  width: 140px;
+  width: 200px;
   border: 1px solid #e6e6e6;
   padding: 0;
   background: #fff;
   overflow: hidden;
-  transform: translate(150%, 0px);
-  transition: all 0.2s ease-out 0s;
   display: block;
   z-index: 90;
+}
+
+#gome-bar #gome-aside-app-code a img {
+  width: 200px;
+  height: 200px;
 }
 
 #gome-bar #gome-bar-border {
