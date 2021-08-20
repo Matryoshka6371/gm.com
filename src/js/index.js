@@ -241,13 +241,13 @@ $(function () {
                 })
             }
         textScroll();
-       },500)
+       },3000)
 
     //    点击按钮进行切换
     // 1.移入暂停,移出回复时间
     $(".hdrsideRoll").hover(function(){
         clearInterval($timer1)
-    },function(){
+    },()=>{
         $timer1=setInterval(()=>{
             hd_clickIndex++;
             if( hd_clickIndex>1){
@@ -257,7 +257,7 @@ $(function () {
                 })
             }
         textScroll();
-       },500)
+       },3000)
        
     })
     //2.点击事件
@@ -284,6 +284,96 @@ $(function () {
         }
         
     })
+    
+    // 2021年8月20日 8:30
+    //加载图片数据进行轮播图渲染,以及进行轮播行为
+    $.getJSON("../../data/index/mainbanner.json",function(data){
+        console.log(data);
+        let SwiperHtml=``;
+        let SwiperPointHtml=``;
+        data.forEach((item,index)=>{
+            SwiperHtml+=`
+                <li style="background:rgb${item.rgb};">
+                    <a href=${item.href} data-code=${item.id}>
+                        <img src=${item.src}  />
+                    </a>
+                </li>
+            `
+            SwiperPointHtml+=`
+                <li>
+                    <a></a>
+                </li>
+            `
+        })
+        // 进行渲染
+        $(".focus_box").html(SwiperHtml);
+        $(".nav").html(SwiperPointHtml);
+        $(".nav").children().eq(0).addClass("cur")
+        // 设计类
+        class MainSwiper{
+            constructor(el){
+                this.$el=$(el);
+                this.$Uls=this.$el.find("#focus_box");
+                this.$Ols=this.$el.find(".nav");
+                //滑动条
+                this.$Slider=this.$el.find(".slider-extra");
+                this.oImgIndex=0;
+                this.IntervalPlay();
+                this.mouseHandler();
+                this.clickHandler();
+            }
+            // 方法一,定时播放
+            IntervalPlay(){
+                this.SwiperTimer1=setInterval(()=>{
+                    this.oImgIndex++;
+                    this.Play();
+
+                },1500)
+            }
+            // 方法二:播放行为
+            Play(){
+                if(this.oImgIndex>this.$Uls.children().length){
+                    this.oImgIndex=0;
+                }
+                if(this.oImgIndex<0){
+                    this.oImgIndex=this.$Uls.children().length;
+                }
+                    // 轮播图图片行为
+                    this.$Uls.children().eq(this.oImgIndex)
+                    .css("display","block")
+                    .siblings().css("display","none");
+                    //轮播图小点行为
+                    this.$Ols.children().eq(this.oImgIndex)
+                    .siblings().removeClass("cur").end()
+                    .addClass("cur");
+            }
+            // 方法三,鼠标移入移除暂停
+            mouseHandler(){
+                this.$el.hover(()=>{
+                    clearInterval(this.SwiperTimer1);
+                },()=>{
+                    this.IntervalPlay();
+                })
+            }
+            //方法4点击事件
+            clickHandler(){
+                this.$Slider.on("click",".go_l",()=>{
+                    this.oImgIndex--;
+                    this.Play();
+                })
+                this.$Slider.on("click",".go_r",()=>{
+                    this.oImgIndex++;
+                    this.Play();
+                })
+            }
+            
+        }
+
+        //创建类的实例
+        new MainSwiper(".main_data");
+    })
+
+
   
 
 
