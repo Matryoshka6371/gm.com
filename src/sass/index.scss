@@ -1019,6 +1019,8 @@ a{
 .gm_main {
     position: relative;
     min-width: 1200px;
+
+    //ul  轮播图图片部分
     .focus_box{
         li{
             position: absolute;
@@ -1126,6 +1128,17 @@ a{
             .go_r{
                 background: url("../images/index/ui.png") -42px -112px no-repeat;
             } 
+        }
+    }
+    .wbox {
+        width: 1200px;
+        margin: 0 auto;
+        .gm_sever_wrap {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            margin-left: 350px;
+            width: 250px;
         }
     }
 

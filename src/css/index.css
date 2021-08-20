@@ -1195,6 +1195,19 @@ a {
   background: url("../images/index/ui.png") -42px -112px no-repeat;
 }
 
+.wbox {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.wbox .gm_sever_wrap {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: 350px;
+  width: 250px;
+}
+
 .floor {
   width: 1200px;
 }
