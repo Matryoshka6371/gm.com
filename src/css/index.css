@@ -1793,14 +1793,9 @@ html, body {
   top: 292px;
 }
 
-#gome-bar #gome-bar-border li {
-  cursor: pointer;
-  position: relative;
-}
-
 #gome-bar #gome-bar-border b {
   display: inline-block;
-  width: px;
+  width: 7px;
   height: 9px;
   background: url("../images/index/ui1.png") -47px -464px;
 }
@@ -1808,6 +1803,8 @@ html, body {
 #gome-bar #gome-bar-border li {
   background: url("../images/index/bar/uiline.png") no-repeat center bottom;
   font-size: 12px;
+  cursor: pointer;
+  position: relative;
 }
 
 #gome-bar #gome-bar-border #gome-bar-border-tab {
