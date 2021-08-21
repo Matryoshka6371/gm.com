@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/libs/jquery.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body class="w990">
+    <!-- head start -->
+    <div id="gome-head" class="wbox">
+        <div id="logo">
+            <a href=""></a>
+        </div>
+    </div>
+    <!-- head end -->
+    <!-- tips start -->
+    <div class="safeTipDiv">
+        <p class="safeTip">
+            <em></em>
+            依据《网络安全法》，为保障您的账户安全和正常使用，请尽快完成手机号验证！新版
+            <a href="">《真快乐平台隐私政策》</a>
+            已上线，将更有利于保护您的个人隐私。
+        </p>
+    </div>
+    <!-- tips end -->
+
+    <!-- main start -->
+    <div class="content-bg">
+        <div class="main clearfix">
+            <div class="login-box-wrap">
+                <div class="loginHead clearfix">
+                    <div class="loginTab tabLeft" id="tabLeft">
+                        <a href="javascript:void(0)">扫码登录</a>
+                    </div>
+                    <div class="loginTab tabRight" id="tabRight">
+                        <a href="javascript:void(0)">账户登录</a>
+                    </div>
+                </div>
+                <div class="loginBox">
+                    <div class="sm-login-box login-wrap" id="sm-login">
+                        <div class="default-state">
+                            <div class="qrcode-main clearfix" id="barcodeId">
+                                <div class="qrcode-Image">
+                                    <img src="./images/index/reg.png" alt="" id="kaptchaImage22">
+                                </div>
+                                <div class="qrcode-help"></div>
+                            </div>
+                        </div>
+                        <p class="qrcode-desc">
+                            打开手机
+						<a href="" class="blink">真快乐</a>
+
+                        </p>
+                        <p class="smCode">扫一扫登录</p>
+                        <a href="" class="fontBlink fr registerBtn">免费注册</a>
+                    </div>
+                    <!-- 账号登陆区域 start -->
+                    <div class="login-wrap">
+                        <form action="" id="frm">
+                            <div class="normalLogin">
+                                <p class="tips warningTip">
+                                    <em></em>
+                                    公共场所不建议自动登录，以防账号丢失
+                                </p>
+                                <!-- 登录账号区域 start -->
+                                <div class="login-item login-item-name" id="loginNameDiv">
+                                    <!--a 清空  -->
+                                    <a href="" class="clear-btn"></a>
+                                    <!-- 账号站位提示 -->
+                                    <span class="default" id="loginNameDefault" style="display: block;">
+                                        手机号码
+                                        <em>/</em>
+                                        用户名
+                                        <em>/</em>
+                                        邮箱
+                                        <em>/</em>
+                                        门店会员卡号
+                                        </span>
+                                        <!-- 输入框 -->
+                                    <input name="loginName" id="loginName" tabindex="1" type="text" class="txt txt-focus">
+                                </div>
+                                <!-- 登录账号区域结束 -->
+                                <!-- 登录密码区域 start -->
+                                <div class="login-item login-item-pwd" id="loginPasswordDiv">
+                                    <a href="javascript:;" class="clear-btn"></a>
+                                    <span class="default" id="loginPasswordDefault">密码</span>
+                                    <input type="password" class="txt txt-focus"  id="loginPassword" autocomplete="off">
+                                    <!-- 密码输入提示大写,默认隐藏 -->
+                                    <span id="capital_tip" class="capital-tip">大写锁定已打开</span>  
+                                </div>
+                                <!-- 登录密码区域 end -->
+                                 <!-- 验证码部分 滑动验证 以后找插件写吧 start-->  
+                                 <!-- 验证码部分 滑动验证 以后找插件写吧 end-->  
+
+                                 <!-- 自动登录 start -->
+                                 <div class="remember overflowhide clearfix">
+                                     <div class="fl">
+                                        <input type="checkbox" id="autoLoginFlag" name="autoLoginFlag" class="ckbx autoLoginFlag" value="radiobutton">
+                                        <label for="autoLoginFlag">自动登录</label>
+                                     </div>
+                                     <div class="fr" style="width: 120px;">
+                                         <a href="" class="forgetpwdmsg fl" title="忘记密码">忘记密码</a>
+                                         <span class="fl paddrl10 displayb colorccc">|</span>
+                                         <a href="" class="fontBlink fr" title="免费注册">免费注册</a>
+                                     </div>
+                                 </div>
+                                 <!-- 自动登录 end -->
+                                 <!-- 登录按钮 start -->
+                                 <div class="actions">
+                                    <input type="button" value="登 录" class="btnnuw">
+                                 </div>
+                                 <!-- 登录按钮 end -->
+                                 <!-- 手机号快速登录  start-->
+                                 <p style="padding: 30px 0 15px;">
+                                    <a href="javascript:;" class="fontBlink phoneLoginBtn">手机号快速登录(支持门店预留手机)</a>
+                                </p>
+
+                                  <!-- 手机号快速登录  end-->
+                            </div>
+                        </form>
+                    </div>
+                    <!-- 账号登录 end -->
+                </div>
+                <dl class="corp-login" id="corp-login">
+                    <dd class="play_icon clearfix">
+                        <a href="" class="borderLine">门店会员卡登录</a>
+                        <a href="" class="borderLine">QQ</a>
+                        <a href="" class="borderLine">微信</a>
+                        <a href="" class="borderLine">微博</a>
+                        <a href="" class="borderLine">美付宝</a>
+                        <a href="" class="borderLine loginhide">极信通</a>
+                        <a href="" class="borderLine loginhide">支付宝</a>
+                    </dd>
+                    <dd>
+                        <a class="more" id="arrowbtn"></a>
+                    </dd>
+                </dl>
+            </div>
+
+            <a href="" class="survey">
+                <i class="icon"></i>
+                我想对“登录”提意见
+            </a>
+        </div>
+    </div>
+    <!-- main end -->
+</body>
+</html>
+<script>
+    // 调研部分,移入移出事件
+    $(".survey").hover(function(){
+        $(this).addClass("surveyhover")
+    },function(){
+        $(this).removeClass("surveyhover")
+    })
+
+    
+    // 默认扫码登录为红色
+    $("#tabLeft").children("a").addClass("cur")
+    // 登录界面点击事件
+    $(".loginHead").on("click",".loginTab",function(evt){
+        //事件委托
+        let e=evt.window||evt.srcElement;
+        $(this).children("a").addClass("cur")
+        .parent().siblings().children("a").removeClass("cur")
+    })
+
+    $(".qrcode-Image").css({"left":75})
+    // 移入二维码时的动画效果
+   $(".qrcode-Image").hover(function(){
+    $(".qrcode-Image").stop().animate({"left":"0px"},500,function(){
+        $(".qrcode-help").css("display","block")
+    })
+   },function(){
+    $(".qrcode-Image").css({"left":75})
+    $(".qrcode-help").css({display:"none"})
+   })
+
+        // 登录方式选择时默认隐藏 极信通和支付宝,点击按钮时显示
+        $(".loginhide").hide();
+        // 点击按钮时,按钮里面图片位置改变
+        $("#arrowbtn").click(function(){
+            if($(this).hasClass("uparrowbtn")){
+                $(this).removeClass("uparrowbtn");
+                $(".loginhide").hide();
+            }
+            else{
+                $(this).addClass("uparrowbtn");
+                $(".loginhide").show();
+            }
+        })
+</script>

@@ -1,0 +1,493 @@
+html, body {
+  background: #FFF;
+  color: #A5A5A5;
+  font: 12px/1.5 Arial,simsun;
+  text-align: left;
+  height: 100%;
+}
+
+.wbox {
+  margin: 0 auto;
+}
+
+a {
+  color: #5e5e5e;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.corp-login dd a.more, .corp-login dd a.active, .warningTip em, .safeTip em {
+  background: url("../images/login/login-bg-common.png") no-repeat;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+#err-tip span.icon, .clear-btn, .login-item-verify a,
+.fail-bg, .right-bg, .tips em, .loginBoxClose, .captcha-title-right {
+  background-image: url("../images/login/spr-icon.png");
+}
+
+#gome-head {
+  width: 990px;
+  position: relative;
+  height: 120px;
+  vertical-align: middle;
+  z-index: 980;
+}
+
+#gome-head #logo {
+  margin: 18px 40px 0 0;
+  float: left;
+}
+
+#gome-head #logo a {
+  background: url("../images/login/head/loginlogo.png") no-repeat;
+  width: 300px;
+  height: 62px;
+  margin-top: 13px;
+  display: block;
+  text-indent: -99px;
+  overflow: hidden;
+}
+
+.safeTipDiv {
+  background-color: #fff4e3;
+  border-top: 1px solid #fee6bc;
+}
+
+.safeTipDiv .safeTip {
+  width: 828px;
+  height: 29px;
+  padding-left: 10px;
+  margin: 0 auto;
+  background-color: #fff4e3;
+  color: #ff7f23;
+  font: 400 12px/29px "Microsoft Yahei";
+  white-space: nowrap;
+}
+
+.safeTipDiv .safeTip em {
+  background-position: -28px 0;
+  display: block;
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin: 8px 5px 0 0;
+}
+
+.safeTipDiv .safeTip a {
+  color: #2875cc;
+}
+
+.content-bg {
+  width: 100%;
+  height: 480px;
+  background: #fff1e8;
+}
+
+.content-bg .main {
+  width: 1200px;
+  height: 480px;
+  margin: 0 auto;
+  background-position: top center;
+  background-image: url("../images/login/main/mainbg.jpg");
+  position: relative;
+  z-index: 990;
+}
+
+.content-bg .survey {
+  height: 16px;
+  color: #888;
+  position: absolute;
+  right: 108px;
+  top: -56px;
+  z-index: 990;
+}
+
+.content-bg .survey .icon {
+  display: inline-block;
+  margin-right: 8px;
+  padding-bottom: 2px;
+  width: 15px;
+  height: 16px;
+  background: url("../images/login/login-bg-common.png") 0 -257px no-repeat;
+  vertical-align: middle;
+}
+
+.content-bg .survey span {
+  text-decoration: line-through;
+}
+
+.content-bg .surveyhover {
+  text-decoration: underline;
+  color: #e3101e;
+}
+
+.content-bg .login-box-wrap {
+  width: 350px;
+  float: right;
+  margin-top: 24px;
+  margin-right: 105px;
+  position: relative;
+  background: #fff;
+  overflow: visible;
+}
+
+.content-bg .login-box-wrap .loginHead, .content-bg .login-box-wrap .loginHead .loginTab {
+  height: 54px;
+}
+
+.content-bg .login-box-wrap .loginHead {
+  position: relative;
+}
+
+.content-bg .login-box-wrap .loginHead .tabLeft {
+  left: 0;
+  width: 174px;
+}
+
+.content-bg .login-box-wrap .loginHead .tabLeft a {
+  border-right: 1px solid #f4f4f4;
+}
+
+.content-bg .login-box-wrap .loginHead .loginTab {
+  position: absolute;
+  border-bottom: 1px solid #f4f4f4;
+  font: 500 18px "Microsoft Yahei";
+  text-align: center;
+  color: #5e5e5e;
+}
+
+.content-bg .login-box-wrap .loginHead .loginTab a {
+  height: 18px;
+  position: absolute;
+  left: 0;
+  width: 99%;
+  text-decoration: none;
+  top: 16px;
+}
+
+.content-bg .login-box-wrap .loginHead .loginTab .cur {
+  color: #e3101e;
+}
+
+.content-bg .login-box-wrap .loginHead .tabRight {
+  right: 0;
+  width: 175px;
+}
+
+.content-bg .login-box-wrap .login-wrap {
+  width: 300px;
+  position: relative;
+  padding: 5px 10px 0;
+}
+
+.content-bg .login-box-wrap .loginBox {
+  min-height: 241px;
+  padding: 25px 11px 0 19px;
+}
+
+.content-bg .login-box-wrap .loginBox a {
+  color: #888;
+  position: relative;
+}
+
+.content-bg .login-box-wrap .loginBox .sm-login-box {
+  width: 320px;
+  color: #888;
+  padding-top: 0;
+  padding: 0 0 24px;
+  display: none;
+}
+
+.content-bg .login-box-wrap .loginBox .sm-login-box .default-state {
+  width: 320px;
+  height: 167px;
+  text-align: center;
+}
+
+.content-bg .login-box-wrap .loginBox .sm-login-box .default-state .qrcode-main {
+  position: relative;
+  width: 320px;
+  height: 165px;
+}
+
+.content-bg .login-box-wrap .loginBox .sm-login-box .default-state .qrcode-main .qrcode-Image {
+  float: left;
+  position: absolute;
+  border: 1px solid #e6e6e6;
+}
+
+.content-bg .login-box-wrap .loginBox .sm-login-box .default-state .qrcode-main .qrcode-Image img {
+  width: 160px;
+  height: 160px;
+}
+
+.content-bg .login-box-wrap .loginBox .sm-login-box .default-state .qrcode-main .qrcode-help {
+  width: 137px;
+  height: 173px;
+  margin-left: 10px;
+  display: none;
+  margin-top: -8px;
+  background: url("../images/login/main/mobile.png");
+  background-attachment: scroll;
+  float: right;
+}
+
+.content-bg .login-box-wrap .loginBox .sm-login-box .qrcode-desc {
+  padding: 17px 0 0;
+}
+
+.content-bg .login-box-wrap .loginBox .sm-login-box .qrcode-desc a {
+  color: #ff5757;
+}
+
+.content-bg .login-box-wrap .loginBox .sm-login-box .smCode {
+  margin-top: 5px;
+}
+
+.content-bg .login-box-wrap .loginBox .sm-login-box .registerBtn {
+  position: absolute;
+  bottom: 10px;
+  right: 14px;
+  width: 50px;
+  height: 18px;
+  color: #069;
+}
+
+.content-bg .login-box-wrap .loginBox .sm-login-box .qrcode-desc, .content-bg .login-box-wrap .loginBox .sm-login-box .smCode {
+  color: #5e5e5e;
+  font-size: 12px;
+  text-align: center;
+  line-height: 14px;
+}
+
+.content-bg .login-box-wrap .loginBox .login-wrap {
+  width: 300px;
+  position: relative;
+  padding: 5px 10px 0;
+}
+
+.content-bg .login-box-wrap .loginBox .login-wrap .tips {
+  width: 290px;
+  height: 22px;
+  line-height: 22px;
+  background: #fee;
+  color: #e3111e;
+  font-family: simsun;
+  position: absolute;
+  top: -21px;
+  left: 11px;
+  display: block;
+  z-index: 2;
+}
+
+.content-bg .login-box-wrap .loginBox .login-wrap .tips em {
+  width: 14px;
+  height: 14px;
+  overflow: hidden;
+  margin: 4px 5px 0 10px;
+  display: inline-block;
+  float: left;
+}
+
+.content-bg .login-box-wrap .loginBox .login-wrap .warningTip {
+  background: #ffeede;
+  color: #ff8001;
+  z-index: 1;
+}
+
+.content-bg .login-box-wrap .loginBox .login-wrap .warningTip em {
+  background: url("../images/login/login-bg-common.png") no-repeat 0 -54px;
+}
+
+.content-bg .login-box-wrap .loginBox .login-wrap .login-item-name {
+  z-index: 11;
+}
+
+.content-bg .login-box-wrap .loginBox .login-wrap .login-item, .content-bg .login-box-wrap .loginBox .login-wrap .reg-items {
+  position: relative;
+  height: 52px;
+}
+
+.content-bg .login-box-wrap .loginBox .login-wrap .login-item .default, .content-bg .login-box-wrap .loginBox .login-wrap #loginNameDefault {
+  position: absolute;
+  left: 12px;
+  top: 11px;
+  color: #A5A5A5;
+  font-size: 14px;
+  z-index: 1;
+  display: block;
+}
+
+.content-bg .login-box-wrap .loginBox .login-wrap .txt-focus {
+  border-color: #A5A5A5;
+}
+
+.content-bg .login-box-wrap .loginBox .login-wrap .txt {
+  position: relative;
+  padding: 8px 10px 7px;
+  width: 268px;
+  height: 25px;
+  background: url("../images/login/main/form/capital-tip-common.png") no-repeat -500px 0 transparent;
+  border: 1px solid #CCC;
+  font-family: Arial,simsun;
+  outline: 0 none;
+  color: #333;
+  font-size: 14px;
+  line-height: 21px;
+  z-index: 2;
+}
+
+.content-bg .login-box-wrap .loginBox .login-wrap .clear-btn, .content-bg .login-box-wrap .loginBox .login-wrap .login-item-pwd .clear-btn {
+  right: 18px;
+}
+
+.content-bg .login-box-wrap .loginBox .login-wrap .clear-btn, .content-bg .login-box-wrap .loginBox .login-wrap .loginBoxClose, .content-bg .login-box-wrap .loginBox .login-wrap .login-item-pwd .clear-btn {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  z-index: 3;
+  top: 15px;
+  overflow: hidden;
+  background-position: -20px -90px;
+}
+
+.content-bg .login-box-wrap .loginBox .login-wrap .login-item-pwd {
+  z-index: 10;
+}
+
+.content-bg .login-box-wrap .loginBox .login-wrap .login-item-pwd .capital-tip {
+  position: absolute;
+  left: 4px;
+  top: 31px;
+  width: 95px;
+  height: 20px;
+  padding-top: 7px;
+  overflow: hidden;
+  background: url("../images/login/main/form/capital-tip-common.png") no-repeat 0 0;
+  z-index: 3;
+  color: #666;
+  line-height: 20px;
+  text-align: center;
+  display: block;
+}
+
+.content-bg .login-box-wrap .loginBox .login-wrap .remember {
+  padding: 10px 0 12px;
+}
+
+.content-bg .login-box-wrap .loginBox .login-wrap .remember .fl {
+  float: left;
+}
+
+.content-bg .login-box-wrap .loginBox .login-wrap .remember .fr {
+  float: right;
+}
+
+.content-bg .login-box-wrap .loginBox .login-wrap .remember input {
+  float: left;
+  margin-right: 4px;
+  margin-top: 3px;
+}
+
+.content-bg .login-box-wrap .loginBox .login-wrap .remember label {
+  color: #5e5e5e;
+}
+
+.content-bg .login-box-wrap .loginBox .login-wrap .remember .colorccc {
+  color: #ccc;
+}
+
+.content-bg .login-box-wrap .loginBox .login-wrap .remember .displayb {
+  display: block;
+}
+
+.content-bg .login-box-wrap .loginBox .login-wrap .remember .paddrl10 {
+  padding: 0 10px;
+}
+
+.content-bg .login-box-wrap .loginBox .login-wrap .remember .fontBlink, .content-bg .login-box-wrap .loginBox .login-wrap .remember .fontBlink:hover {
+  color: #2875cc;
+}
+
+.content-bg .login-box-wrap .loginBox .login-wrap .btnnuw {
+  display: block;
+  width: 290px;
+  height: 42px;
+  background: #ff5757;
+  font: 500 18px/41px "Microsoft Yahei";
+  color: #fff;
+  text-align: center;
+  border: 0 none;
+  outline: 0;
+  word-spacing: 3px;
+  cursor: pointer;
+}
+
+.content-bg .login-box-wrap .loginBox .login-wrap .overflowhide {
+  overflow: hidden;
+}
+
+.content-bg .login-box-wrap .loginBox .login-wrap .fontBlink, .content-bg .login-box-wrap .loginBox .login-wrap .fontBlink:hover {
+  color: #2875cc;
+}
+
+.content-bg .login-box-wrap .loginBox .corp-login {
+  overflow: hidden;
+  clear: both;
+  background-color: #fcfcfc;
+  padding: 9px 20px;
+  color: #a5a5a5;
+  position: relative;
+  border: 1px solid #f0f0f0;
+}
+
+.content-bg .login-box-wrap .corp-login {
+  overflow: hidden;
+  clear: both;
+  background-color: #fcfcfc;
+  padding: 9px 20px;
+  color: #a5a5a5;
+  position: relative;
+  border: 1px solid #f0f0f0;
+}
+
+.content-bg .login-box-wrap .corp-login .play_icon {
+  width: 300px;
+}
+
+.content-bg .login-box-wrap .corp-login dd a {
+  float: left;
+  white-space: nowrap;
+  cursor: pointer;
+  color: #5e5e5e;
+  padding: 0 8px;
+  margin: 6px 0;
+}
+
+.content-bg .login-box-wrap .corp-login dd .more {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  padding: 0;
+  margin: 0;
+  top: 14px;
+  right: 20px;
+  background: url("../images/login/login-bg-common.png") no-repeat;
+  background-position: 0 0;
+}
+
+.content-bg .login-box-wrap .corp-login dd .uparrowbtn {
+  background-position: 0 -25px;
+}
+
+.content-bg .login-box-wrap .corp-login .borderLine {
+  border-right: 1px solid #e6e6e6;
+}

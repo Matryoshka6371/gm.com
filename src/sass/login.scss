@@ -1,0 +1,464 @@
+html, body {
+    background: #FFF;
+    color: #A5A5A5;
+    font: 12px/1.5 Arial,simsun;
+    text-align: left;
+    height: 100%;
+}
+// 版型宽度
+$loginWidth:990px;
+.wbox {
+    margin: 0 auto;
+}
+a {
+    color: #5e5e5e;
+    text-decoration: none;
+    cursor: pointer;
+}
+.corp-login dd a.more, .corp-login dd a.active, .warningTip em, .safeTip em {
+    background: url("../images/login/login-bg-common.png") no-repeat;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+#err-tip span.icon, .clear-btn, .login-item-verify a,
+ .fail-bg, .right-bg, .tips em, .loginBoxClose, .captcha-title-right {
+    background-image:url("../images/login/spr-icon.png")
+}
+
+// 头部开始
+#gome-head {
+    width:$loginWidth;
+    position: relative;
+    height: 120px;
+    vertical-align: middle;
+    z-index: 980;
+    #logo {
+        margin: 18px 40px 0 0;
+        float: left;
+        a{
+            background: url("../images/login/head/loginlogo.png") no-repeat;
+            width: 300px;
+            height: 62px;
+            margin-top: 13px;
+            display: block;
+            text-indent: -99px;
+            overflow: hidden;
+        }
+    }
+}
+
+// 头部结束
+
+// tips start
+.safeTipDiv {
+    background-color: #fff4e3;
+    border-top: 1px solid #fee6bc;
+    .safeTip {
+        width: 828px;
+        height: 29px;
+        padding-left: 10px;
+        margin: 0 auto;
+        background-color: #fff4e3;
+        color: #ff7f23;
+        font: 400 12px/29px "Microsoft Yahei";
+        white-space:nowrap;
+        em {
+            background-position: -28px 0;
+            display: block;
+            float: left;
+            width: 16px;
+            height: 16px;
+            margin: 8px 5px 0 0;
+        }
+        a {
+            color: #2875cc;
+        }
+    }
+}
+// tips end
+
+// main start
+.content-bg {
+    width: 100%;
+    height: 480px;
+    background: #fff1e8;
+    .main {
+        width: 1200px;
+        height: 480px;
+        margin: 0 auto;
+        background-position: top center;
+        background-image: url("../images/login/main/mainbg.jpg");
+        position: relative;
+        z-index: 990;
+    }
+    .survey {
+        height: 16px;
+        color: #888;
+        position: absolute;
+        right: 108px;
+        top: -56px;
+        z-index: 990;
+       .icon {
+            display: inline-block;
+            margin-right: 8px;
+            padding-bottom: 2px;
+            width: 15px;
+            height: 16px;
+            background: url("../images/login/login-bg-common.png") 0 -257px no-repeat;
+            vertical-align: middle;
+        }
+        span {
+            text-decoration: line-through;
+        }
+    }
+    .surveyhover{
+        text-decoration: underline;
+        color: #e3101e;
+    }
+    .login-box-wrap {
+        width: 350px;
+        float: right;
+        margin-top: 24px;
+        margin-right: 105px;
+        position: relative;
+        background: #fff;
+        overflow: visible;
+        .loginHead, .loginHead .loginTab {
+            height: 54px;
+        }
+        .loginHead {
+            position: relative;
+           .tabLeft {
+                left: 0;
+                width: 174px;
+                a {
+                    border-right: 1px solid #f4f4f4;
+                }
+            }
+            .loginTab {
+                position: absolute;
+                border-bottom: 1px solid #f4f4f4;
+                font: 500 18px "Microsoft Yahei";
+                text-align: center;
+                color: #5e5e5e;
+                a {
+                    height: 18px;
+                    position: absolute;
+                    left: 0;
+                    width: 99%;
+                    text-decoration: none;
+                    top: 16px;
+                }
+                .cur {
+                    color: #e3101e;
+                }
+               
+            }
+            .tabRight {
+                right: 0;
+                width: 175px;
+            }
+           
+
+        }
+        .login-wrap {
+            width: 300px;
+            position: relative;
+            padding: 5px 10px 0;
+        }
+        .loginBox {
+            min-height: 241px;
+            padding: 25px 11px 0 19px;
+            a {
+                color: #888;
+                position: relative;
+            }
+
+            //扫码登录区域中间部分
+            .sm-login-box {
+                width: 320px;
+                color: #888;
+                padding-top: 0;
+                padding: 0 0 24px;
+                display: none;
+                //扫码登录区域`
+                .default-state {
+                    width: 320px;
+                    height: 167px;
+                    text-align: center;
+                    .qrcode-main {
+                        position: relative;
+                        width: 320px;
+                        height: 165px;
+
+                        //正常显示的二维码
+                        .qrcode-Image {
+                            float: left;
+                            position: absolute;
+                            border: 1px solid #e6e6e6;
+                            img{
+                                width: 160px;
+                                height: 160px;
+                            }
+                        }
+                        // 移入二维码移动时显示的图片
+                        .qrcode-help{
+                            width: 137px;
+                            height: 173px;
+                            margin-left: 10px;
+                            display: none;
+                            margin-top: -8px;
+                            background: url("../images/login/main/mobile.png");
+                            background-attachment: scroll;
+                            float: right;
+                        }
+                    }
+                }
+                //扫码区域`下面的文字部分
+                .qrcode-desc {
+                    padding: 17px 0 0;
+                    a {
+                        color: rgb(255, 87, 87);
+                    }
+                }
+                .smCode {
+                    margin-top: 5px;
+                }
+                .registerBtn {
+                    position: absolute;
+                    bottom: 10px;
+                    right: 14px;
+                    width: 50px;
+                    height: 18px;
+                    color: #069;
+                }
+                .qrcode-desc,.smCode {
+                    color: rgb(94, 94, 94);
+                    font-size: 12px;
+                    text-align: center;
+                    line-height: 14px;
+                }
+            }
+            // 账号登陆区域部分
+            .login-wrap {
+                width: 300px;
+                position: relative;
+                padding: 5px 10px 0;
+
+                //提示部分,勾选自动登录时显示
+                .tips {
+                    width: 290px;
+                    height: 22px;
+                    line-height: 22px;
+                    background: #fee;
+                    color: #e3111e;
+                    font-family: simsun;
+                    position: absolute;
+                    top: -21px;
+                    left: 11px;
+                    display: block;
+                    z-index: 2;
+                    em {
+                        width: 14px;
+                        height: 14px;
+                        overflow: hidden;
+                        margin: 4px 5px 0 10px;
+                        display: inline-block;
+                        float: left;
+                    }
+                }
+                .warningTip {
+                    background: #ffeede;
+                    color: #ff8001;
+                    z-index: 1;
+                    em {
+                        background: url("../images/login/login-bg-common.png") 
+                        no-repeat  0 -54px;
+
+                    }
+
+                }
+                // 账号输入框部分
+                .login-item-name {
+                    z-index: 11;
+                }
+                .login-item, .reg-items {
+                    position: relative;
+                    height: 52px;
+                }
+                .login-item .default, #loginNameDefault {
+                    position: absolute;
+                    left: 12px;
+                    top: 11px;
+                    color: #A5A5A5;
+                    font-size: 14px;
+                    z-index: 1;
+                    display: block;
+                }
+                .txt-focus {
+                    border-color: #A5A5A5;
+                }
+                .txt {
+                    position: relative;
+                    padding: 8px 10px 7px;
+                    width: 268px;
+                    height: 25px;
+                    background: url("../images/login/main/form/capital-tip-common.png")
+                    no-repeat -500px 0 transparent;
+                    border: 1px solid #CCC;
+                    font-family: Arial,simsun;
+                    outline: 0 none;
+                    color: #333;
+                    font-size: 14px;
+                    line-height: 21px;
+                    z-index: 2;
+                }
+                // 输入账号密码时的清空
+                .clear-btn, .login-item-pwd .clear-btn {
+                    right: 18px;
+                }
+                .clear-btn, .loginBoxClose, .login-item-pwd .clear-btn {
+                    width: 12px;
+                    height: 12px;
+                    position: absolute;
+                    z-index: 3;
+                    top: 15px;
+                    overflow: hidden;
+                    background-position: -20px -90px;
+                }
+                // 密码输入框
+                .login-item-pwd {
+                    z-index: 10;
+                    //锁定大写键
+                    .capital-tip {
+                        position: absolute;
+                        left: 4px;
+                        top: 31px;
+                        width: 95px;
+                        height: 20px;
+                        padding-top: 7px;
+                        overflow: hidden;
+                        background: url("../images/login/main/form/capital-tip-common.png")
+                         no-repeat 0 0;
+                        z-index: 3;
+                        color: #666;
+                        line-height: 20px;
+                        text-align: center;
+                        display: block;
+                    }
+
+                }
+                // 自动登录`部分
+                .remember {
+                    padding: 10px 0 12px;
+                    .fl {
+                        float: left;
+                    }
+                    .fr {
+                        float: right;
+                    }
+                    // 复选框部分
+                   input {
+                        float: left;
+                        margin-right: 4px;
+                        margin-top: 3px;
+                    }
+                    label {
+                        color: #5e5e5e;
+                    }
+                    .colorccc {
+                        color: #ccc;
+                    }
+                    .displayb {
+                        display: block;
+                    }
+                    .paddrl10 {
+                        padding: 0 10px;
+                    }
+                    .fontBlink, .fontBlink:hover {
+                        color: #2875cc;
+                    }
+                }
+                // 登录按钮部分
+                .btnnuw {
+                    display: block;
+                    width: 290px;
+                    height: 42px;
+                    background: #ff5757;
+                    font: 500 18px/41px "Microsoft Yahei";
+                    color: #fff;
+                    text-align: center;
+                    border: 0 none;
+                    outline: 0;
+                    word-spacing: 3px;
+                    cursor: pointer;
+                }
+                .overflowhide {
+                    overflow: hidden;
+                }
+                // 手机号快速登录登录部分
+                .fontBlink, .fontBlink:hover {
+                    color: #2875cc;
+                }
+
+
+            }
+            //登录区域下面
+            .corp-login {
+                overflow: hidden;
+                clear: both;
+                background-color: #fcfcfc;
+                padding: 9px 20px;
+                color: #a5a5a5;
+                position: relative;
+                border: 1px solid #f0f0f0;
+            }
+        }
+        .corp-login {
+            overflow: hidden;
+            clear: both;
+            background-color: #fcfcfc;
+            padding: 9px 20px;
+            color: #a5a5a5;
+            position: relative;
+            border: 1px solid #f0f0f0;
+            .play_icon {
+                width: 300px;
+            }
+            dd{
+                a{
+                    float: left;
+                    white-space: nowrap;
+                    cursor: pointer;
+                    color: #5e5e5e;
+                    padding: 0 8px;
+                    margin: 6px 0;
+                }
+                .more {
+                    position: absolute;
+                    width: 19px;
+                    height: 19px;
+                    padding: 0;
+                    margin: 0;
+                    top: 14px;
+                    right: 20px;
+                    background: url("../images/login/login-bg-common.png") no-repeat;
+                    background-position: 0 0;
+                }
+                .uparrowbtn{
+                    background-position: 0 -25px;
+                }
+            }
+            .borderLine {
+                border-right: 1px solid #e6e6e6;
+            }
+        }
+    }
+
+}
+// main end
