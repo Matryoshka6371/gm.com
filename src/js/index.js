@@ -437,6 +437,20 @@ $(function () {
  
      })
     //侧边栏结束
-    //楼层
+
+    //楼层开始
+    $(".__gome_not-care .tab").children("li").eq(0).addClass("tabcur")
+
+    //给中间第一个添加样式
+    $("#floornav").children("li").eq(0).addClass("floorcur")
+    //楼层结束
+
+    // 暂时复制楼层 start
+    for(var i=1;i<=6;i++){
+        $("#floorwrap").append($("#floor").clone(true))
+    }
+  
+    // 暂时复制楼层 end
+
 
 })
