@@ -449,7 +449,6 @@ $(function () {
     for(var i=1;i<=6;i++){
         $("#floorwrap").append($("#floor").clone(true))
     }
-  
     // 暂时复制楼层 end
 
 
