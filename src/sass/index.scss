@@ -44,6 +44,26 @@ html,body{
     margin:0 auto;
 }
 
+.home .gm_title {
+    height: 60px;
+    width: 100%;
+    overflow: hidden;
+    h2 {
+        font-size: 18px;
+        color: #333;
+        margin-top: 28px;
+        font-weight: 400;
+        float: left;
+    }
+    span {
+        display: block;
+        float: left;
+        font-size: 20px;
+        color: #ccc;
+        padding: 27px 0 0 9px;
+        font-family: Arial;
+    }
+}
 //清楚高度塌陷
 .clearfix:after, .wbox:after {
     content: ".";
@@ -2202,6 +2222,257 @@ html,body{
 //楼层结束
 
 //热销榜开始
+.hotlist {
+    height: 400px;
+   .hot_m,.star {
+        height: 338px;
+        overflow: hidden;
+        float: left;
+    }
+    .index_fr {
+        float: right;
+    }
+    .hot_more {
+        padding-top: 33px;
+        color: #5e5e5e;
+        .index_fl {
+            float: left;
+        }
+        .hot_more b.arrow {
+            width: 10px;
+            height: 14px;
+            display: inline-block;
+            background:url("../images/index/ui.png") no-repeat -123px -126px;
+            margin-left: 3px;
+        }
+    }
+    .hot_l {
+        width: 830px;
+        float: left;
+        .hot_m {
+            border: 1px solid #eee;
+            width: 828px;
+            //右侧大图,
+            .star {
+                width: 281px;
+                a {
+                    display: block;
+                    width: 280px;
+                    height: 338px;
+                    border-right: 1px solid #eee;
+                    float: left;
+                    position: relative;
+                    text-align: center;
+                    span {
+                        display: block;
+                        width: 72px;
+                        height: 72px;
+                        position: absolute;
+                        left: 20px;
+                        top: 20px;
+                        z-index: 1;
+                        background: url("../images/index/ui.png") no-repeat -52px 0;
+                    }
+                    img {
+                        margin: 30px 0 29px;
+                    }
+                    p {
+                        margin-left: 20px;
+                        line-height: 24px;
+                        font-size: 16px;
+                        width: 240px;
+                        height: 24px;
+                        overflow: hidden;
+                    }
+                    .star_name {
+                        color: #404040;
+                    }
+                    .star_price {
+                        color: #ff0027;
+                        font-family: Arial,"Microsoft Yahei";
+                    }
+                }
+            }
+            // 热销榜主体部分
+            .hot_list {
+                width: 547px;
+                float: left;
+                &>ul{
+                    width: 548px;
+                    height: 338px;
+                    li{
+                        width: 274px;
+                        height: 170px;
+                        float: left;
+                        a{
+                            display: block;
+                            width: 274px;
+                            height: 168px;
+                            border-right: 1px dashed #eee;
+                            border-bottom: 1px dashed #eee;
+                            position: relative;
+                            overflow: hidden;
+                            img{
+                                display: block;
+                                width: 120px;
+                                height: 120px;
+                                float: left;
+                                margin: 25px 10px 0;
+                            }
+                            .hot_name {
+                                font-size: 13px;
+                                line-height: 20px;
+                                color: #5e5e5e;
+                                height: 40px;
+                                width: 120px;
+                                overflow: hidden;
+                                padding-top: 29px;
+                            }
+                            .hot_price {
+                                line-height: 14px;
+                                overflow: hidden;
+                                margin-top: 8px;
+                                font-size: 14px;
+                                color: #ff0027;
+                                height: 14px;
+                                width: 120px;
+                            }
+                            b {
+                                display: block;
+                                width: 70px;
+                                height: 77px;
+                                position: absolute;
+                                right: -5px;
+                                top: 39px;
+                                font-size: 125px;
+                                color: #f9f7f5;
+                                font-style: italic;
+                            }
+                            
+                        }
+                    
+                    }
+                }
+            }
+        }
+    }
 
+    //右边内容
+    .hot_r {
+        width: 361px;
+        height: 400px;
+        float: right;
+        overflow: hidden;
+        //标题部分
+        .hot_word {
+            float: right;
+            width: 180px;
+            text-align: right;
+            padding-top: 32px;
+            font: 12px/24px arial,'Microsoft YaHei';
+            a {
+                color: #5e5e5e;
+                .num1 {
+                    margin-right: 5px;
+                }
+                .num2 {
+                    margin-left: 5px;
+                }
+            }
+
+        }
+        .Housekeeper {
+            width: 359px;
+            height: 338px;
+            border: 1px solid #eee;
+            background: #fcfcfc;
+            .house_ser {
+                right: 0;
+                bottom: 5px;
+                width: 68px;
+                .lang {
+                    max-width: 68px;
+                    height: 18px;
+                    overflow: hidden;
+                    margin-top: 4px;
+                    
+                }
+                .point {
+                    padding: 0 4px;
+                    display: inline-block;
+                    font: 12px/18px arial,'Microsoft YaHei';
+                    color: #fff;
+                    background: #b20fd3;
+                }
+            }
+            .index_pabs {
+                position: absolute;
+            }
+            .lists {
+                border-bottom: 1px dashed #eee;
+                width: 100%;
+                height: 169px;
+                a{
+                    .out{
+                        display: block;
+                        overflow: hidden;
+                    }
+                }
+                .index_pr {
+                    width: 130px;
+                    height: 130px;
+                    background: #f6f6f6;
+                    border-radius: 68px;
+                    display: block;
+                    margin: 19px 30px 20px 20px;
+                    position: relative;
+                    float: left;
+                }
+                .goods{
+                    img{
+                        margin: 5px 0 0 5px;
+                    }
+                }
+                div.right {
+                    width: 160px;
+                    float: left;
+                    .tittle {
+                        width: 100%;
+                        height: 16px;
+                        font: 16px/16px 'Microsoft YaHei';
+                        overflow: hidden;
+                        margin-top: 24px;
+                        color: #404040;
+                    }
+                    .price {
+                        margin-right: 6px;
+                        color: #888;
+                        span {
+                            font: 16px/16px arial,'Microsoft YaHei';
+                            color: #ff0027;
+                        }
+                    }
+                    .price {
+                        margin-right: 6px;
+                    }
+                    .des {
+                        display: block;
+                        margin-top: 39px;
+                        font: 12px/18px arial,'Microsoft YaHei';
+                        color: #888;
+                        span {
+                            display: block;
+                            width: 160px;
+                            height: 18px;
+                            overflow: hidden;
+                        }
+                    }
+                }
+            }
+        }
+        
+
+    }
+}
 //热销榜结束
 
