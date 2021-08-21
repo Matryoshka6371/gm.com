@@ -452,4 +452,18 @@ $(function () {
     // 暂时复制楼层 end
 
 
+    //帮助 start
+    //复制dl
+    for(var i=0;i<4;i++){
+        $("#gome-help-box")
+        .append($("#gome-help-box")
+        .children("dl").eq(0).clone(true))
+    }
+    //帮助end
+
+    // 底部开始
+
+    //底部结束
+
+
 })

@@ -2635,3 +2635,99 @@ html, body {
   height: 18px;
   overflow: hidden;
 }
+
+#gome-help {
+  margin-top: 30px;
+  width: 1200px;
+  margin: 15px auto 0;
+  overflow: hidden;
+}
+
+#gome-help i {
+  display: inline-block;
+  width: 40px;
+  height: 42px;
+  background: url("../images/index/ui1.png");
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+#gome-help a {
+  line-height: 40px;
+  font: bold 18px/37px Arial,"Microsoft YaHei";
+  color: #404040;
+}
+
+#gome-help i.icon-pz {
+  background-position: 0 -1469px;
+}
+
+#gome-help ul {
+  background: #f5f5f5;
+  padding: 15px 0;
+  overflow: hidden;
+}
+
+#gome-help ul li {
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+
+#gome-help ul li a {
+  line-height: 40px;
+  font: bold 18px/37px Arial,"Microsoft YaHei";
+  color: #404040;
+}
+
+#gome-help ul li a .sec-title {
+  font-weight: 400;
+}
+
+#gome-help ul li .foot-titlt-dot {
+  margin: 0 16px;
+  color: #ccc;
+  display: inline-block;
+  width: 3px;
+  height: 10px;
+  background: url(/gmpro/1.0.0/public/1.0.0/css/i/ui.png);
+  vertical-align: middle;
+  background-position: -120px -1489px;
+}
+
+#gome-help .gome-help-box {
+  width: 110%;
+  margin-left: -5%;
+  overflow: hidden;
+}
+
+#gome-help .gome-help-box dl {
+  float: left;
+  width: 9%;
+  padding: 15px 0 0 125px;
+  white-space: nowrap;
+  display: inline;
+}
+
+#gome-help .gome-help-box dl dt {
+  font: 16px/25px Arial,"Microsoft YaHei";
+  color: #5e5e5e;
+}
+
+#gome-help .gome-help-box dl ul {
+  background: 0 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#gome-help .gome-help-box dl ul li {
+  float: none;
+  width: 100%;
+  text-align: left;
+}
+
+#gome-help .gome-help-box dl ul li a {
+  font: 12px/22px Arial,"Microsoft YaHei";
+  color: #a5a5a5;
+  padding: 0;
+}
