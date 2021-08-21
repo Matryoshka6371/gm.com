@@ -1676,10 +1676,6 @@ html, body {
   font-family: Arial,"Microsoft YaHei";
 }
 
-#gome-bar .barhover {
-  opacity: 1.3;
-}
-
 #gome-bar .gome-aside {
   position: absolute;
   bottom: 35px;
@@ -1787,7 +1783,142 @@ html, body {
   right: 0;
   background: #5c5c5c;
   z-index: 998;
-  display: none;
+  display: block;
+}
+
+#gome-bar #gome-bar-border ul {
+  position: absolute;
+  right: 0;
+  display: block;
+  top: 292px;
+}
+
+#gome-bar #gome-bar-border li {
+  cursor: pointer;
+  position: relative;
+}
+
+#gome-bar #gome-bar-border b {
+  display: inline-block;
+  width: px;
+  height: 9px;
+  background: url("../images/index/ui1.png") -47px -464px;
+}
+
+#gome-bar #gome-bar-border li {
+  background: url("../images/index/bar/uiline.png") no-repeat center bottom;
+  font-size: 12px;
+}
+
+#gome-bar #gome-bar-border #gome-bar-border-tab {
+  width: 35px;
+  top: 300px;
+}
+
+#gome-bar #gome-bar-border #gome-bar-border-tab .gome-bar-btn-tip {
+  display: block;
+  position: absolute;
+  background: #fff;
+  padding: 0;
+  right: 0;
+  top: 0;
+  width: 60px;
+  border: 1px solid #e6e6e6;
+  padding: 9px 10px;
+  color: #999;
+  cursor: pointer;
+  background: #fff;
+  overflow: hidden;
+  z-index: -1;
+  height: 18px;
+  line-height: 18px;
+  text-decoration: none;
+  text-align: center;
+  transform: translate(110%, 0);
+  -webkit-transform: translate(110%, 0);
+  transition: all .2s ease-out;
+  -webkit-transition: all .2s ease-out;
+}
+
+#gome-bar #gome-bar-border #gome-bar-border-tab .gome-bar-btn-member {
+  text-align: center;
+  line-height: 42px;
+}
+
+#gome-bar #gome-bar-border #gome-bar-border-tab .membericon {
+  display: inline-block;
+  width: 28px;
+  height: 18px;
+  margin-top: 9px;
+  background: url("../images/index/ui1.png") no-repeat -18px -1025px;
+}
+
+#gome-bar #gome-bar-border #gome-bar-border-tab li.gome-bar-btn-member {
+  height: 39px;
+  line-height: 39px;
+}
+
+#gome-bar #gome-bar-border #gome-bar-border-tab .gome-bar-btn-cart {
+  height: 90px !important;
+  padding-top: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+#gome-bar #gome-bar-border #gome-bar-border-tab .gome-bar-btn-cart .car_arrow {
+  position: absolute;
+  top: 48%;
+  left: 0;
+  width: 7px;
+  display: inline-block;
+  height: 9px;
+}
+
+#gome-bar #gome-bar-border #gome-bar-border-tab .gome-bar-btn-cart .caricon {
+  background: url("../images/index/ui1.png") no-repeat -24px -1046px !important;
+  position: relative;
+  height: 20px;
+  width: 31px;
+  display: block !important;
+  margin-bottom: 3px;
+}
+
+#gome-bar #gome-bar-border #gome-bar-border-tab .gome-bar-btn-cart .car_num {
+  top: 16px;
+  color: #fff;
+  width: 18px !important;
+  height: 16px !important;
+  line-height: 16px;
+  text-align: center;
+  position: absolute;
+  left: 14px;
+  background: #a5a5a5;
+}
+
+#gome-bar #gome-bar-border #gome-bar-border-tab .gome-bar-btn-cart s {
+  text-decoration: none;
+}
+
+#gome-bar #gome-bar-border #gome-bar-border-tab .gome-bar-btn-cart .point {
+  background-position: 0 -1087px;
+  width: 5px;
+  height: 6px;
+  position: absolute;
+  left: 6px;
+  top: 14px;
+  display: inline-block;
+  background: url("../images/index/ui1.png");
+  background-position: 0 -1087px;
+}
+
+#gome-bar #gome-bar-border #gome-bar-border-tab .gome-bar-btn-cart .text {
+  width: 12px;
+  display: inline-block;
+  color: #fff;
+}
+
+#gome-bar .barhover {
+  background: #373737 !important;
 }
 
 .floor {

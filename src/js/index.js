@@ -426,11 +426,16 @@ $(function () {
         $("#gome-aside-app-code").animate({"right":"34px"})
     })
     //移动到哪里,哪里变成深色
-    $("#gome-bar").on("mouseenter","li",function(){
-       console.log( $(this));
-       $(this).addClass("barhover")
+    $(".gome-aside").on("mouseenter","li",function(){
+       $(this).find("a").parent().siblings().find("a").removeClass("barClass")
+       .end().end().end().addClass("barhover");
 
     })
+    $(".gome-aside").on("mouseleave","li",function(){
+        $(this).find("a").parent().siblings().find("a").removeClass("barClass")
+        .end().end().end().removeClass("barhover");
+ 
+     })
     //侧边栏结束
     //楼层
 
