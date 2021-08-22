@@ -1,4 +1,5 @@
 @import "./reset.scss";
+@import "./index.scss";
 .clearfix:after {
     content: ".";
     display: block;
@@ -93,4 +94,313 @@
 // 弹出层按钮隐藏
 .layui-layer-setwin,.layui-layer-resize{
     display: none;
+}
+
+// 注册页面样式
+// head
+.wbox {
+    width: 1200px;
+    margin: 0 auto;
+}
+.w990 {
+    width: 990px;
+    margin: 0 auto;
+    // head 左侧logo
+    #gome-head {
+        position: relative;
+        height: 120px;
+        vertical-align: middle;
+        z-index: 980;
+        #logo {
+            margin: 18px 40px 0 0;
+            float: left;
+            a{
+                background: url("../images/reg/registerlogo.png") no-repeat;
+                width: 300px;
+                height: 62px;
+                margin-top: 16px;
+                display: block;
+
+            }
+        }
+    }
+    // head 右侧
+    .login-box {
+        position: relative;
+        font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB",HeitiSC,"WenQuanYi Micro Hei",sans-serif;
+        z-index: 1000;
+        font: 12px/1.5 arial,"\65b0\5b8b\4f53";
+        color: #333;
+        .login-title {
+            position: absolute;
+            top: -70px;
+            right: 20px;
+        }
+        a {
+            margin-left: 3px;
+            font-size: 12px;
+            color: #2875cc;
+        }
+    }
+   
+}
+
+// main
+.regmain-wrap{
+    border-top: 1px solid #dd00a7;
+    #container {
+        width: 376px;
+        .step-info1 {
+            left: -6%;
+        }
+        .step-info2 {
+            left: 39%;
+        }
+       .step-info3 {
+            left: 89%;
+        }
+    }
+    .step-progress {
+        position: relative;
+        margin: 0 auto;
+        font-family: "Helvetica Neue",Helvetica,Arial,
+        "Microsoft Yahei","Hiragino Sans GB",HeitiSC,
+        "WenQuanYi Micro Hei",sans-serif;
+        // 步骤提示进行部分
+        .step-slider {
+            background: #fff;
+            margin: 95px 0 40px;
+            height: 50px;
+            //  两条灰线
+            ul {
+                float: left;
+                height: 3px;
+                width: 100%;
+                li {
+                    width: 133px;
+                    float: left;
+                    height: 3px;
+                    background: #e0e0e0;
+                }
+                .step-li1 {
+                    margin-left: 35px;
+                    margin-right: 40px;
+                }
+            }
+            .step-icon-pos {
+                position: absolute;
+            }
+           
+            .step-icon {
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                line-height: 24px;
+                border: 3px solid #e0e0e0;
+                border-radius: 100%;
+                font-weight: 700;
+                color: #e0e0e0;
+                text-align: center;
+                background: #fff;
+            }
+            .step-info {
+                position: absolute;
+                margin-top: 25px;
+                width: 200px;
+                color: #999;
+            }
+            .step-info {
+                color: #ff4c4c;
+            }
+            .step-icon2 {
+                left: 50%;
+                top: -14px;
+                margin-left: -15px;
+            }
+            .step-icon3 {
+                left: 100%;
+                top: -14px;
+                margin-left: -30px;
+            }
+            //步骤一样式
+            .step-active {
+                .step-icon1 {
+                    left: 0;
+                    top: -14px;
+                }//只有当前所在步骤为红色
+                //默认第一步为红色
+                .step-icon {
+                    border: 3px solid #ff4c4c;
+                    color: #ff4c4c;
+                } 
+            }
+
+        }
+        // 注册内容部分
+        .step-content {
+            width: 400px;
+            margin-left: 25px;
+            // 常用手机号
+            .form-group {
+                position: relative;
+                margin-bottom: 30px;
+                clear: both;
+                .dingxiang-close {
+                    top: 13px!important;
+                    display: block!important;
+                }
+                // 输入时手机号不合法边红色,添加该样式
+               .err input {
+                    border: 1px solid #ee3b3b;
+                }
+                input.form-control {
+                    outline: none;
+                    width: 300px;
+                    padding: 12px 10px;
+                    border: 1px solid #ccc;
+                    color: #999;
+                    box-sizing: border-box;
+                    font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB",HeitiSC,"WenQuanYi Micro Hei",sans-serif;
+                }
+                
+                i.close {
+                    display: inline-block;
+                    width: 11px;
+                    height: 11px;
+                    background-image:url("../images/reg/newRegister.png");
+                    background-position: -32px 0;
+                    cursor: pointer;
+                }
+                .inputSuc, i.close, i.errClose, i.errOpen {
+                    position: absolute;
+                    left: 274px;
+                }
+                .inputSuc {
+                    width: 16px;
+                    height: 16px;
+                    background-image: url("../images/reg/newRegister.png");
+                    background-position: -214px 0;
+                }
+                input.form-control:focus, input.form-control:hover,input.focus {
+                    border: 1px solid #a5a5a5;
+                    color: #333;
+                }
+                input.form-control {
+                    width: 300px;
+                    padding: 12px 10px;
+                    box-sizing: border-box;
+                    font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB",HeitiSC,"WenQuanYi Micro Hei",sans-serif;
+                }
+               i.close {
+                    top: 18px;
+                    display: none;
+                }
+
+                // 输入手机号合法后显示
+                .inputSuc {
+                    top: 15px;
+                    display: none;
+                }
+
+                // 清空标志,一输入就显示
+                .input-call-info {
+                    position: absolute;
+                    color: #555;
+                    font-size: 13px;
+                }
+
+                // 错误提示,如手机号码格式有误，请重新输入
+                .C_err_tips {
+                    position: absolute;
+                    color: #ff4c4c;
+                    font-size: 13px;
+                }
+            }
+            // 点击按钮进行验证
+            #js-dingxiang {
+                clear: none;
+                
+                a.button {
+                    display: inline-block;
+                    font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB",HeitiSC,"WenQuanYi Micro Hei",sans-serif;
+                    text-align: center;
+                    box-sizing: border-box;
+                }
+                a {
+                    font-size: 13px;
+                }
+                .wbtn1 {
+                    width: 300px!important;
+                }
+                .btn-gray {
+                    padding: 12px 10px;
+                    color: #555;
+                    background: #fff;
+                    border: 1px solid #ddd;
+                }
+                .dingxiang-box {
+                    position: absolute;
+                    top: -265px;
+                    z-index: 1;
+                    width: 270px;
+                    padding: 15px 15px 20px;
+                    box-shadow: 0 0 5px rgba(0,0,0,.25);
+                    border-radius: 4px;
+                    background: #fff;
+                    .dingxiang-title {
+                        position: relative;
+                        top: -7px;
+                        font: 12px/1.5 arial,"\65b0\5b8b\4f53";
+                    }
+                }
+            }
+            // 登录按钮
+            .form-group-submit {
+                margin: 50px 0 20px;
+                .btn-primary {
+                    font-size: 18px!important;
+                }
+                a.button {
+                    display: inline-block;
+                    font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB",HeitiSC,"WenQuanYi Micro Hei",sans-serif;
+                    text-align: center;
+                    -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+                }
+                .wbtn1 {
+                    width: 300px!important;
+                }
+                .btn-primary {
+                    padding: 9px 10px;
+                    color: #fff;
+                    background: #ff4c4c;
+                    border: 1px solid #ee3b3b;
+                }
+            }
+            // 企业用户
+            .step-link {
+                margin-bottom: 70px;
+                clear: both;
+                overflow: hidden;
+                i {
+                    float: left;
+                    margin-top: 2px;
+                    margin-right: 5px;
+                }
+                .company {
+                    display: inline-block;
+                    width: 16px;
+                    height: 16px;
+                    background-image: url("../images/reg/newRegister.png");
+                    background-position: -84px 0;
+                    cursor: pointer;
+                }
+                a {
+                    font-size: 14px;
+                    color: #2875cc;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
 }
