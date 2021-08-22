@@ -30,6 +30,12 @@ body, button, input, select, textarea {
 .pabs {
     position: absolute;
 }
+.pt8 {
+    padding-top: 8px;
+}
+.w120 {
+    width: 120px;
+}
 .box-sd1 {
     box-shadow: 0 0 23px 1px #ccc;
 }
@@ -763,3 +769,158 @@ a.black {
 }
 
 // 商品主体 end
+
+
+// 商品结算部分 start
+.cart-bottom-wrap {
+    margin-top: 20px;
+    .cart-bottom-info {
+        background: #f3f3f3;
+        height: 60px;
+        // 公共样式
+        .cart-col-1, 
+        .cart-col-12, 
+        .cart-col-2, 
+        .cart-col-3, 
+        .cart-col-4, 
+        .cart-col-5, 
+        .cart-col-6, 
+        .cart-col-7, 
+        .cart-col-8 {
+            float: left;
+        }
+        .cart-col-1, .cart-col-5 {
+            text-align: center;
+        }
+        .cart-col-1, 
+        .cart-col-2, 
+        .cart-col-3 {
+            padding-top: 19px;
+            line-height: 22px;
+        }
+        .pl84 {
+            padding-left: 84px;
+        }
+
+        .container4 {
+            width: 990px;
+            margin: 0 auto;
+            position: relative;
+            // 1.复选框
+            .cart-col-1 {
+                width: 40px;
+                .c-i {
+                    margin-top: 5px;
+                    margin-left: 5px;
+                }
+                .c-i.checkbox_chose {
+                    width: 14px;
+                    height: 14px;
+                    background-position: -422px -82px;
+                }
+            }
+            // 2.全选
+            .cart-col-2 {
+                width: 91px;
+                a.black {
+                    color: #333;
+                }
+            }
+            // 3.
+            .cart-col-3 {
+                width: 110px;
+            }
+            .mlf14 {
+                margin-left: -14px;
+            }
+            // 4. 计数
+            .cart-col-4 {
+                width: 532px;
+                padding-right: 10px;
+                text-align: right;
+                font-size: 12px;
+                font-family: Arial,"æ–°å®‹ä½“";
+                line-height: 22px;
+
+                // 已选xx件商品包裹起来
+                .cart-bottom-selectgood {
+                    position: relative;
+                    display: inline-block;
+                    cursor: pointer;
+                    margin-right: 5px;
+                    vertical-align: top;
+                }
+                .cart-price-red {
+                    color: #e3101e;
+                }
+                .selected-price {
+                    font-weight: 900;
+                    font-size: 14px;
+                }
+                .c-i.arrow-top {
+                    width: 7px;
+                    height: 4px;
+                    background-position: -150px -92px;
+                }
+                em {
+                    margin-bottom: 3px;
+                }
+                // 总计部分 start
+                .bottom-total-pirce {
+                    display: inline-block;
+                    overflow: hidden;
+                    vertical-align: middle;
+                    // 公共样式
+                    dd, dt {
+                        float: left;
+                    }
+                    dt {
+                        text-align: right;
+                       
+                    }
+                    .ffyh {
+                        font-family: "Microsoft Yahei"!important;
+                    }
+                }
+                // 总几部分end  
+            }
+            // 5结算
+            // 公共样式
+            .cart-col-5 a {
+                transition: background .3s;
+            }
+            .cart-col-5 {
+                width: 136px;
+                a,a:hover {
+                    background: #e3101e;
+                    display: block;
+                    height: 60px;
+                    line-height: 60px;
+                    text-align: center;
+                    color: #fff;
+                    font-size: 16px;
+                    text-decoration: none;
+                }
+                .btn-normal {
+                    font-family: microsoft YaHei;
+                    font-size: 16px;
+                    font-weight: 700;
+                    em {
+                        margin-left: 6px;
+                    }
+                    .c-i.arrowRight-white {
+                        width: 12px;
+                        height: 13px;
+                        background-position: -232px -84px;
+                    }
+                }
+                .btn-loading {
+                    display: none;
+                }
+            }
+
+
+        }
+    }
+}
+// 商品结算部分 end
