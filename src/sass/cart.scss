@@ -1,0 +1,167 @@
+@import "./reset.scss";
+@import "./index.scss";
+// 引入图标字体
+@font-face {
+    font-family: "iconfont";
+    src: url("../font/iconfont.woff")format("woff");
+}
+#gome-head.w990, body.w990 #gome-head {
+    width: 990px;
+}
+.wbox {
+    margin: 0 auto;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.pr {
+    position: relative;
+}
+.pabs {
+    position: absolute;
+}
+.box-sd1 {
+    box-shadow: 0 0 23px 1px #ccc;
+}
+// 头部
+#gome-head {
+    position: relative;
+    height: 120px;
+    vertical-align: middle;
+    z-index: 980;
+    // logo部分
+    #logo {
+        float: left;
+        margin: 32px 10px 0 0;
+        a {
+            display: block;
+            width: 125px;
+            height: 56px;
+            background: url("../images/cart/logo.png") 0 0 no-repeat;
+            text-indent: -99px;
+            overflow: hidden;
+        }
+    }
+    // 文字
+    #head-title {
+        margin-left: 0;
+    }
+    #head-title, #head-title a {
+        color: red;
+        text-decoration: none;
+    }
+    #head-guide, #head-title {
+        font: 400 26px/120px 'microsoft yahei';
+        float: left;
+        display: inline;
+        padding: 0 40px 0 0;
+    }
+    .head-title-cart {
+        background: url("../images/cart/gwc.png") no-repeat 0 32px;
+        width: 135px;
+        text-indent: -999px;
+    }
+}
+// main
+// 1.购物车里有物品才会显示
+.container {
+    width: 990px;
+    margin: 0 auto;
+    height:53px;
+    .cart-login-tip {
+        color: #333;
+        padding: 10px 0;
+        padding-bottom: 15px;
+        font-size: 12px;
+    }
+    .cart-login-btn {
+        background: #e3101e;
+        color: #fff;
+        display: inline-block;
+        padding: 4px 8px;
+        border-radius: 3px;
+        line-height: 20px;
+    }
+    // 右侧
+    .cart-area {
+        width: 448px;
+        text-align: right;
+        display: block;
+        color: #a5a5a5;
+        padding: 10px 0;
+        // 右侧靠中间部分图标
+        .shipfee-dec {
+            float: left;
+            .shipfee-pop-label {
+                color: #5e5e5e;
+                text-align: right;
+                margin-top: 2px;
+                cursor: pointer;
+                .c-i.attention, .c-i.mdzt, .c-i.seven, .c-i.seven_no, .icon-zhuang {
+                    border-radius: 5px;
+                    vertical-align: sub;
+                }
+               .c-i {
+                    margin-right: 5px;
+                    vertical-align: sub;
+                }
+                .c-i.attention {
+                    width: 14px;
+                    height: 14px;
+                    background-position: -307px -83px;
+                }
+                .c-i {
+                    display: inline-block;
+                    overflow: hidden;
+                    background-image: url("../images/cart/sprite.png")!important;
+                }
+            }
+            // 隐藏的弹窗部分
+            .shipfee-tip-pop {
+                display: none;
+                right: -9px;
+                top: 0;
+                z-index: 100;
+                width: 460px;
+                padding: 10px 20px;
+                border: 1px solid #ccc;
+                background: #fff;
+                text-align: left;
+                .freight-box {
+                    margin-top: 20px;
+                }
+                .shipfee-pop-othertip {
+                    color: #999;
+                    line-height: 1.8em;
+                }
+                .shipfee-rule-more {
+                    text-align: right;
+                    margin-top: 10px;
+                    a {
+                        color: #666;
+                        i {
+                            font-size: 14px;
+                            font-family: "宋体";
+                        }
+                    }
+                }
+            }
+
+        }
+        .shipfee-dec:hover  .shipfee-tip-pop{
+            display: block;
+        }
+
+    }
+}
+
+
+
+
+
+
+
+// footer
