@@ -642,8 +642,116 @@ a.black {
         //5. 商品单价 end
 
         // 6. 商品数量编    辑 start
-        
+        .cart-col-5 {
+            width: 80px;
+            .cart-count {
+                width: 50px;
+            }
+            .gui-count {
+                display: inline-block;
+                padding: 0 15px;
+                position: relative;
+                overflow: hidden;
+                // 公共样式
+                a {
+                    background: #fff;
+                }
+                .gui-count-btn {
+                    color: #666;
+                    line-height: 20px;
+                    font-family: "Microsoft Yahei";
+                    *top: 0;
+                }
+                .gui-count-btn {
+                    border: 1px solid #ccc;
+                    text-decoration: none;
+                    width: 20px;
+                    text-align: center;
+                    display: block;
+                    width: 15px;
+                    color: #ccc;
+                    position: absolute;
+                    top: 0;
+                    *top: 1px;
+                    height: 20px;
+                    font-weight: bold;
+                }
+                // - start
+                .gui-count-disabled {
+                    color: #ddd;
+                    cursor: default;
+                }
+                .gui-count-sub {
+                    left: 0;
+                }
+                // - end
+
+                // + start
+                .gui-count-add {
+                    right: 0;
+                    color: #666;
+                }
+                // +end
+                 // 输入框 start
+                 .gui-count-input {
+                    height: 20px;
+                    margin: 0;
+                    padding: 0;
+                    overflow: hidden;
+                    border: 1px solid #ccc;
+                    border-right: none;
+                    border-left: none;
+                    width: 100%;
+                    display: block;
+                    text-align: center;
+                    background: #fff;
+                    input {
+                        border: none;
+                        outline: none;
+                        width: 100%;
+                        height: 20px;
+                        margin: 0;
+                        padding: 0;
+                        overflow: hidden;
+                        text-align: center;
+                    }
+                }
+                //输入框end
+            }
+        }
         // 6. 商品数量编辑 end
+
+        // 7.小计 start
+        .cart-col-6 {
+            width: 154px;
+            font-weight: 700;
+            .cart-good-amount {
+                text-align: right;
+                padding-right: 70px;
+                white-space: nowrap;
+            }
+            .cart-good-amount {
+                position: relative;
+                font-size: 13px;
+            }
+        }
+        // 7.小计 end
+
+        // 8.操作 start
+        .cart-col-7 {
+            width: 79px;
+            .cart-good-fun {
+                padding-top: 1px;
+            }
+            a {
+                color: #666;
+            }
+            .cart-good-fun {
+                margin-bottom: 2px;
+            }
+        }
+        // 8.操作end    
+
 
 
 
