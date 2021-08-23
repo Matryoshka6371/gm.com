@@ -1056,5 +1056,30 @@ input {
 
 
 // 评价,以及详情部分
+.prdDesc{
+    width: 1200px;
+    margin: 0 auto;
+    .pdtl-tab{
+       .prdtitbox {
+        height: 36px;
+        background: #f6f6f6;
+        border: 1px solid #eee;
+        display: flex;
+        li {
+            height: 31px;
+            font: 600 14px/36px 'Microsoft YaHei';
+            padding: 0 20px;
+            float: left;
+            }
+        }
+        .cur {
+            height: 35px;
+            border-top: 3px solid #e3101e;
+            background: #fff;
+            margin: -1px 0 0;
+        }
+
+    }
+}
 
 

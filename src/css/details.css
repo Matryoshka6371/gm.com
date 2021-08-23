@@ -4084,3 +4084,29 @@ input {
   border: 1px solid #c00;
   background-color: #fff;
 }
+
+.prdDesc {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.prdDesc .pdtl-tab .prdtitbox {
+  height: 36px;
+  background: #f6f6f6;
+  border: 1px solid #eee;
+  display: flex;
+}
+
+.prdDesc .pdtl-tab .prdtitbox li {
+  height: 31px;
+  font: 600 14px/36px 'Microsoft YaHei';
+  padding: 0 20px;
+  float: left;
+}
+
+.prdDesc .pdtl-tab .cur {
+  height: 35px;
+  border-top: 3px solid #e3101e;
+  background: #fff;
+  margin: -1px 0 0;
+}
