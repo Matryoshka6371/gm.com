@@ -1,0 +1,35 @@
+@import "./reset.scss";
+@import "./index.scss";
+// 引入图标字体
+@font-face {
+    font-family: "iconfont";
+    src: url("../font/iconfont.woff")format("woff");
+}
+// top
+// 添加一个li的样式
+#gome-entry-link{
+    font-family: Arial,"Microsoft YaHei";
+    margin: 0 10px;
+    height: 30px;
+    position: relative;
+    padding-left:10px;
+}
+.h_top_body li.gome-spacer {
+    width: 1px;
+    height: 11px;
+    margin: 10px 0 0;
+    padding: 0;
+    background: #e6e6e6;
+    overflow: hidden;
+}
+#home_icon{
+    background: url("../images/index/ui1.png") -17px -1362px;
+    margin-top: -4px;
+    width: 13px;
+    height: 12px;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    left: -5px;
+}
+

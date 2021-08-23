@@ -1,7 +1,11 @@
 
 //引入重置样式表
 @import "./reset.scss";
-
+// 引入图标字体
+@font-face {
+    font-family: "iconfont";
+    src: url("../font/iconfont.woff")format("woff");
+}
  //设置主颜色
 $mainColor:#b20fd3; 
 // 设置版型宽度为1200px

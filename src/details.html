@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/libs/jquery.js"></script>
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/details.css">
+</head>
+<body>
+    <!-- top start -->
+    <div class="h_top_wrap">
+        <div class="h_top_body">
+            <ul>
+                <li id="gome-entry-link">
+                    <a href="./index.html" target="_blank">
+                        <i class="icon-gome-logo" id="home_icon"></i>
+                        真快乐首页
+                    </a>
+                </li>
+                <li class="gome-spacer"></li>
+                <li id="gome-user">
+                    <b>
+                        <a href='' target="_blank">真快乐会员</a>
+                        <i class="icon-gome-logo"></i>
+                    </b>
+                    <div class="public_down">
+                        <div id="user-name">
+                            <i></i>
+                            <div>
+                                <p class="user-name-login">欢迎来到真快乐，
+                                    <a data-code="public01006" href="">请登录！</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                    </p>
+                </li>
+                <li id="loginDiv-link">
+                    <a href="">登录</a>
+                    <a href="">
+                        注册有礼
+                        <i></i>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- top_right start -->
+            <ul id="gome-top-right">
+                <li>
+                    <a href="">我的订单</a>
+                </li>
+
+                <!-- 2个人中心 -->
+                <li>
+                    <b>
+                        <a href="">个人中心</a>
+                        <i></i>
+                    </b>
+                    <div class="public_down"><strong>个人中心，<a rel="nofollow" data-code="public01012"
+                                href="https://login.gome.com.cn/login">请登录！</a></strong>
+                        <ul id="mygome-order">
+                            <li><a data-code="public01013" href="" target="_blank">待处理订单</a><ins id="waitPay"></ins>
+                            </li>
+                            <li><a data-code="public01014" href="" target="_blank">我的收藏</a></li>
+                            <li><a data-code="public01016" href="" target="_blank">个人资料</a></li>
+                        </ul>
+                        <ul id="mygome-coupon">
+                            <li><a data-code="public01061" href="" target="_blank">我的真快乐券</a><ins
+                                    id="twMyCoupon">-</ins></li>
+                        </ul>
+                        <p id="step_track">足迹</p>
+                        <ul id="mygome-track">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- 3企业采购 -->
+                <li id="gome-enterprise">
+                    <b>
+                        <a href="">企业采购</a>
+                        <i></i>
+                    </b>
+                    <div class="public_down">
+                        <ul>
+                            <li><a href="">解决方案</a></li>
+                            <li><a href="">解决方案</a></li>
+                            <li><a href="">解决方案</a></li>
+                            <li><a href="">解决方案</a></li>
+                            <li><a href="">解决方案</a></li>
+                            <li><a href="">解决方案</a></li>
+                            <li><a href="">解决方案</a></li>
+                        </ul>
+                        <a class="gome-qrcode" href=""></a>
+                    </div>
+                </li>
+
+                <!--4 服务 -->
+                <li id="gome-service">
+                    <b>
+                        <em class="gm-icon">f</em>
+                        <a href=""> 服务中心</a>
+                        <i></i>
+                    </b>
+
+                    <div class="public_down">
+                        <p><a href="">用户服务</a></p>
+                        <ul>
+                            <li><a href="">售后服务</a></li>
+                            <li><a href="">售后服务</a></li>
+                            <li><a href="">售后服务</a></li>
+                            <li><a href="">售后服务</a></li>
+                            <li><a href="">售后服务</a></li>
+                        </ul>
+                        <p><a href="">商家服务</a></p>
+                        <ul>
+                            <li><a href="">售后服务</a></li>
+                            <li><a href="">售后服务</a></li>
+                            <li><a href="">售后服务</a></li>
+                            <li><a href="">售后服务</a></li>
+                            <li><a href="">售后服务</a></li>
+                        </ul>
+                        <a href="">
+                            <em class="gm-icon">f</em>
+                            在线客服
+                        </a>
+                    </div>
+                </li>
+
+                <!--5 网站导航 -->
+                <li id="gome-sitemap">
+                    <b>
+                        <a href=""> 网站导航</a>
+                        <i></i>
+                    </b>
+                    <div class="public_down">
+                        <div class="itemflex">
+                            <dl class="none">
+                                <dt>主题促销</dt>
+                                <dd>
+                                    <ul>
+                                        <li><a href="">抢购</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="">抢购</a></li>
+                                        <li><a href="">抢购</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="">抢购</a></li>
+                                        <li><a href="">抢购</a></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+
+                            <dl>
+                                <dt>特色分类</dt>
+                                <dd>
+                                    <ul>
+                                        <li><a href="">电视影音</a></li>
+                                        <li><a href="">电视影音</a></li>
+                                        <li><a href="">电视影音</a></li>
+                                        <li><a href="">电视影音</a></li>
+                                        <li><a href="">电视影音</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="">手机</a></li>
+                                        <li><a href="">手机</a></li>
+                                        <li><a href="">手机</a></li>
+                                        <li><a href="">手机</a></li>
+                                        <li><a href="">手机</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="">住宅家具</a></li>
+                                        <li><a href="">住宅家具</a></li>
+                                        <li><a href="">住宅家具</a></li>
+                                        <li><a href="">住宅家具</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="">服饰鞋帽</a></li>
+                                        <li><a href="">服饰鞋帽</a></li>
+                                        <li><a href="">服饰鞋帽</a></li>
+                                        <li><a href="">服饰鞋帽</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="">食品酒水</a></li>
+                                        <li><a href="">食品酒水</a></li>
+                                        <li><a href="">食品酒水</a></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+
+                            <dl>
+                                <dt>便捷服务</dt>
+                                <dd>
+                                    <ul>
+                                        <li><a href="">话费充值</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="">上门服务</a></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+
+                            <dl>
+                                <dt>更多热点</dt>
+                                <dd>
+                                    <ul>
+                                        <li><a href="">加盟国美</a></li>
+                                        <li><a href="">加盟国美</a></li>
+                                        <li><a href="">加盟国美</a></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+
+                            <dl>
+                                <dt>国美旗下</dt>
+                                <dd>
+                                    <ul>
+                                        <li><a href="">国美管家</a></li>
+                                        <li><a href="">国美管家</a></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+
+                    </div>
+                </li>
+
+                <!-- 6 真快乐APP -->
+                <li id="gome-qrcode">
+                    <b>
+                        <em class="gm-icon">á</em>
+                        <a href=""> 真快乐APP</a>
+                        <i></i>
+                    </b>
+
+                    <div class="public_down">
+                        <a href="" target="_blank"></a>
+                    </div>
+                </li>
+
+                <!-- 第七个li -->
+                <li class="tw-gome-tts_ws">
+                    <div class="gome-voice-read gome-voice-read-endPlay"></div>
+                </li>
+            </ul>
+            <!-- top_right end -->
+        </div>
+    </div>
+    <!-- top end -->
+
+    <!-- head start -->
+    <div class="gome-head">
+
+        <!-- logo start -->
+        <div id="logo">
+            <a href="" target="_blank"></a>
+        </div>
+        <!-- logo end -->
+
+        <!-- topsearch start -->
+        <div class="topsearch">
+            <!-- searchbox start -->
+            <div class="searchbox">
+                <form action="" id="searchForm" method="get">
+                    <div class="search_type_down">
+                        <div class="search_type">
+                            <span class="search_type_selected">商品</span>
+                            <i class="arrow_down"></i>
+                        </div>
+
+                        <ul class="search_type_list">
+                            <li class="search_type_item">商品</li>
+                            <li class="search_type_item">店铺</li>
+                        </ul>
+                    </div>
+                    <label id="keyLabel"></label>
+                    <input type="text" id="searchInput">
+                    <button type="button" class="search_btn">搜索</button>
+                </form>
+                <div>
+                    <div id="taste_button" class="voice-search"></div>
+                </div>
+            </div>
+            <!-- searchbox end -->
+
+            <div class="hotkeyword">
+                <a href="" class="hightlight">Apple产品</a>
+                <a href="">冰箱自营</a>
+                <a href="">冰箱自营</a>
+                <a href="">冰箱自营</a>
+                <a href="">冰箱自营</a>
+                <a href="">冰箱自营</a>
+                <a href="">冰箱自营</a>
+                <a href="" class="hightlight">火锅食材开店</a>
+            </div>
+        </div>
+        <!-- topsearch end -->
+
+        <!-- 购物车部分 -->
+        <!-- mincart start -->
+        <div class="mygome_side">
+            <div>
+                <a href="">
+                    <em class="i-cart">
+                        <span class="shopnum"><span id="commerceItemQuantityId">0</span><i></i></span>
+                    </em>
+                    <span id="hdrcarttext">我的购物车</span>
+                    <b></b>
+                </a>
+            </div>
+        </div>
+        <!-- mincart end -->
+
+
+
+
+    </div>
+    <!-- head end -->
+
+
+    <!-- 帮助 start -->
+    <div class="gome-help" id="gome-help">
+    <div class="gome-help-box" id="gome-help-box" >
+        <dl>
+            <dt>物流配送</dt>
+            <dd>
+                <ul>
+                    <li>
+                        <a href="">配送查询</a>
+                    </li>
+                    <li>
+                        <a href="">配送查询</a>
+                    </li>
+                    <li>
+                        <a href="">配送查询</a>
+                    </li>
+                    <li>
+                        <a href="">配送查询</a>
+                    </li>
+                    <li>
+                        <a href="">配送查询</a>
+                    </li>
+                </ul>
+            </dd>
+        </dl>
+    </div>
+    </div>
+    <!-- 帮助 end -->
+    <!-- 底部 start -->
+    <div id="gome-foot">
+    <div id="gome-foot-box">
+        <ul style="height: 22px;">
+            <li>
+                <a href="">国美控股集团</a>
+            </li>
+            <li>
+                <a href="">国美控股集团</a>
+            </li>
+            <li>
+                <a href="">国美控股集团</a>
+            </li>
+            <li>
+                <a href="">国美控股集团</a>
+            </li>
+            <li>
+                <a href="">国美控股集团</a>
+            </li>
+            <li>|</li>
+            <li>
+                <a href="">品牌大全</a>
+            </li>
+            <li>
+                <a href="">品牌大全</a>
+            </li>
+            <li>
+                <a href="">品牌大全</a>
+            </li>
+            <li>
+                <a href="">品牌大全</a>
+            </li>
+            <li>
+                <a href="">品牌大全</a>
+            </li>
+            <li>
+                <a href="">品牌大全</a>
+            </li>
+            <li>|</li>
+            <li>
+                <a href="">商家入住</a>
+            </li>
+            <li>
+                <a href="">国美分销</a>
+            </li>
+        </ul>
+        <p>
+            本公司游戏产品适合18岁以上成年人使用  违法和不良信息举报电话：021-39900132  
+            <a href="" class="interDrug">互联网药品信息服务资格证编号（沪）-经营性-2019-0006</a>
+        </p>
+        <p>
+            网络食品销售第三方平台提供者备案：沪网食备A0015号  
+            <a href="" class="interDrug">
+                网络文化经营许可证沪网文[2021] 0385-031 号
+            </a>
+            &nbsp;&nbsp;
+            <a href="" class="interDrug">
+                增值电信业务经营许可证
+            </a>
+        </p>
+        <p>
+            客服电话:4008113333  
+            <a href="" class="interDrug">
+                沪ICP备11009419号/京ICP备 19011786号
+            </a>
+            <a href="" class="interDrug">
+                京B2-20191290
+            </a>
+            <a href="" class="interDrug">
+                经营执照
+            </a>
+            <a href="" class="interDrug">
+                营业执照
+            </a>
+            <a href="" class="interDrug">
+                出版物经营许可证
+            </a>
+        </p>
+        <p>
+            ©2000-2021  国美在线电子商务有限公司版权所有  
+            <a href="" class="interDrug tw-w-ico-wrap">
+                <i class="tw-w-mark-icon"></i>
+                京公网安备 11010502038379号
+            </a>
+        </p>
+        <div class="gome-foot-credit">
+            <a href="" class="credit-baxx">
+                <i></i>
+                <b>经营性网站备案信息</b>
+            </a>
+            <a href="" class="credit-cxwz">
+                <i></i>
+                <b>诚信网站</b>
+            </a>
+            <a href="" class="credit-hdjc">
+                <i></i>
+                <b>朝阳网络警察</b>
+            </a>
+            <a href="" class="credit-wgdj">
+                <i></i>
+                <b>网购大家评</b>
+            </a>
+            <a href="" class="credit-report">
+                <i></i>
+                <b>上海市互联网违法和不良信息举报中心</b>
+            </a>
+            <a href="" class="credit-hazar">
+                <i></i>
+                <b>网上有害信息举报专区</b>
+            </a>
+        </div>
+    </div>
+    </div>
+    <!-- 底部 end -->
+
+     <!-- 侧边栏 start -->
+     <div id="gome-bar">
+        <div class="gome-aside">
+            <ul>
+               <li id="gome-aside-app">
+                   <b></b>
+                   <a href="">
+                       <i></i>
+                   </a>
+                   <div style="transform: translate(0px, 0px); 
+                   transition: all 0.2s ease-out 0s;"></div>
+               </li>
+               <li id="gome-aside-survey">
+                <b></b>
+                <a href="">
+                    <i></i>
+                </a>
+                <div style="transform: translate(0px, 0px); 
+                transition: all 0.2s ease-out 0s;"></div>
+                </li>
+                <li id="gome-aside-service">
+                <b></b>
+                <a href="">
+                    <i></i>
+                </a>
+                <div style="transform: translate(0px, 0px); 
+                transition: all 0.2s ease-out 0s;"></div>
+                </li>
+                <li id="gome-aside-backtop">
+                <b></b>
+                <a href="javascript:void(0)">
+                    <i></i>
+                </a>
+                <div style="transform: translate(0px, 0px); 
+                transition: all 0.2s ease-out 0s;"></div>
+                </li>
+            </ul>
+        </div>
+        <div id="gome-aside-app-code">
+            <a href="http://127.0.0.1:5500/src/reg.html">
+                <img src="./images/index/reg.png" alt="">
+            </a>
+        </div>
+        <div id="gome-bar-border">
+            <ul id="gome-bar-border-tab">
+                <li class="gome-bar-btn-member">
+                    <b></b>
+                    <i class="membericon"></i>
+                    <a href="javascript:void(0)" class="gome-bar-btn-tip">真快乐会员</a>
+                </li>
+                <li class="gome-bar-btn-cart">
+                    <b class="car_arrow"></b>
+                    <i class="caricon"></i>
+                    <b class="car_num car_num_0">
+                        <s>0</s>
+                        <span class="point"></span>
+                    </b>
+                    <span class="text">购物车</span>
+                </li>
+                <li class="gome-bar-btn-favorites">
+                    <b></b>
+                    <i class="favorites-icon"></i>
+                    <a href="javascript:void(0)" class="gome-bar-btn-tip">真快乐会员</a>
+                </li>
+            </ul>
+        </div>
+        <div class="gome-bar-box"></div>
+    <!-- 侧边栏 end -->
+</body>
+</html>
