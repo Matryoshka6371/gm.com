@@ -3289,7 +3289,7 @@ body, button, input, select, textarea {
 .gome-container .prd-firstscreen-left .magnifier .pic-big .jqzoom .jqZoomPup {
   width: 200px;
   height: 200px;
-  visibility: vhidden;
+  visibility: hidden;
   position: absolute;
   cursor: url("../images/details/arr_mouse.cur"), auto;
   background-position: 50% top;
@@ -3406,4 +3406,40 @@ body, button, input, select, textarea {
   display: block;
   background: url("../images/details/lsf/bg-sprite.png") no-repeat;
   background-position: 0 -865px;
+}
+
+.gome-container .prd-firstscreen-left .magnifier .pic-list .pic-small {
+  position: absolute;
+  width: 310px;
+  left: 25px;
+  top: 0;
+  overflow: hidden;
+  height: 54px;
+}
+
+.gome-container .prd-firstscreen-left .magnifier .pic-list .pic-small ul {
+  width: 99999px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.gome-container .prd-firstscreen-left .magnifier .pic-list .pic-small ul li {
+  float: left;
+  display: inline;
+  margin-right: 10px;
+  width: 54px;
+  height: 54px;
+  text-align: center;
+  list-style: none;
+}
+
+.gome-container .prd-firstscreen-left .magnifier .pic-list .pic-small ul li img {
+  display: block;
+  padding: 1px;
+}
+
+.gome-container .prd-firstscreen-left .magnifier .pic-list .pic-small ul li img.cur, .gome-container .prd-firstscreen-left .magnifier .pic-list .pic-small ul li img:hover {
+  border: solid 1px #e3101e;
+  padding: 0;
 }

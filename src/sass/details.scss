@@ -305,8 +305,8 @@ body, button, input, select, textarea {
                     .jqZoomPup{
                         width: 200px;
                         height: 200px;
-                        // 默认隐藏,避免回流,使用visibility
-                        visibility: vhidden;
+                        // 默认隐藏,
+                        visibility: hidden;
                         position: absolute;
                         cursor: url("../images/details/arr_mouse.cur"),auto;
                         background-position: 50% top;
@@ -427,6 +427,38 @@ body, button, input, select, textarea {
                         }
                     }
                    
+                }
+                // ul中图片列表
+               .pic-small {
+                    position: absolute;
+                    width: 310px;
+                    left: 25px;
+                    top: 0;
+                    overflow: hidden;
+                    height: 54px;
+                    ul{
+                        width: 99999px;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        li{
+                            float: left;
+                            display: inline;
+                            margin-right: 10px;
+                            width: 54px;
+                            height: 54px;
+                            text-align: center;
+                            list-style: none;
+                            img {
+                                display: block;
+                                padding: 1px;
+                            }
+                            img.cur,img:hover {
+                                border: solid 1px #e3101e;
+                                padding: 0;
+                            }
+                        }
+                    }
                 }
             }
 
