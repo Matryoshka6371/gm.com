@@ -3933,3 +3933,154 @@ input {
 .gome-container .prd-firstscreen-center .prd-buttons #mobtn:hover div {
   display: block;
 }
+
+.gome-container .prd-firstscreen-right {
+  width: 160px;
+  height: 583px;
+  float: right;
+}
+
+.gome-container .prd-firstscreen-right .bigdata-reskim h2:after,
+.gome-container .prd-firstscreen-right .bigdata-reskim h2:before {
+  content: '';
+  position: absolute;
+  width: 48px;
+  height: 1px;
+  background-color: #ccc;
+  top: 6px;
+}
+
+.gome-container .prd-firstscreen-right .bigdata-reskim h2:after {
+  right: 0;
+}
+
+.gome-container .prd-firstscreen-right .bigdata-reskim h2:before {
+  left: 0;
+}
+
+.gome-container .prd-firstscreen-right .bigdata-reskim h2 {
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+  margin: 16px 0 12px;
+}
+
+.gome-container .prd-firstscreen-right .bigdata-reskim .reskim-carousel {
+  position: relative;
+}
+
+.gome-container .prd-firstscreen-right .bigdata-reskim .reskim-carousel .carousel {
+  width: 160px;
+  height: 520px;
+  position: relative;
+  overflow: hidden;
+}
+
+.gome-container .prd-firstscreen-right .bigdata-reskim .reskim-carousel .carousel ul {
+  height: 520px;
+  position: absolute;
+}
+
+.gome-container .prd-firstscreen-right .bigdata-reskim .reskim-carousel .carousel ul li {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  overflow: hidden;
+}
+
+.gome-container .prd-firstscreen-right .bigdata-reskim .reskim-carousel .carousel ul li img {
+  width: 160px;
+  height: 160px;
+}
+
+.gome-container .prd-firstscreen-right .bigdata-reskim .reskim-carousel .carousel ul li p {
+  position: absolute;
+  line-height: 20px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 10px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.gome-container .prd-firstscreen-right .bigdata-reskim .reskim-carousel .carousel ul li p span {
+  color: #5e5e5e;
+  position: relative;
+  z-index: 1;
+}
+
+.gome-container .prd-firstscreen-right .bigdata-reskim .reskim-carousel .carousel ul li:nth-child(1) {
+  left: 0px;
+  top: 0px;
+}
+
+.gome-container .prd-firstscreen-right .bigdata-reskim .reskim-carousel .carousel ul li:nth-child(2) {
+  left: 181px;
+  top: 0px;
+}
+
+.gome-container .prd-firstscreen-right .bigdata-reskim .reskim-carousel .carousel ul li:nth-child(3) {
+  left: 362px;
+  top: 0px;
+}
+
+.gome-container .prd-firstscreen-right .bigdata-reskim .reskim-carousel .carousel ul li:nth-child(4) {
+  left: 0px;
+  top: 181px;
+}
+
+.gome-container .prd-firstscreen-right .bigdata-reskim .reskim-carousel .carousel ul li:nth-child(5) {
+  left: 181px;
+  top: 181px;
+}
+
+.gome-container .prd-firstscreen-right .bigdata-reskim .reskim-carousel .carousel ul li:nth-child(6) {
+  left: 362px;
+  top: 181px;
+}
+
+.gome-container .prd-firstscreen-right .bigdata-reskim .reskim-carousel .carousel ul li:nth-child(7) {
+  left: 0px;
+  top: 362px;
+}
+
+.gome-container .prd-firstscreen-right .bigdata-reskim .reskim-carousel .carousel ul li:nth-child(8) {
+  left: 181px;
+  top: 362px;
+}
+
+.gome-container .prd-firstscreen-right .bigdata-reskim .reskim-carousel .carousel ul li:nth-child(9) {
+  left: 362px;
+  top: 362px;
+}
+
+.gome-container .prd-firstscreen-right .bigdata-reskim .pager {
+  margin: 10px 0;
+}
+
+.gome-container .prd-firstscreen-right .bigdata-reskim .pager ol {
+  text-align: center;
+}
+
+.gome-container .prd-firstscreen-right .bigdata-reskim .pager ol li {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 7px;
+}
+
+.gome-container .prd-firstscreen-right .bigdata-reskim .pager ol li a {
+  display: block;
+  width: 12px;
+  height: 11px;
+  border: 1px solid #ccc;
+  font-size: 0;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+.gome-container .prd-firstscreen-right .bigdata-reskim .pager ol li.active a {
+  width: 12px;
+  height: 11px;
+  border: 1px solid #c00;
+  background-color: #fff;
+}

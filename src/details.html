@@ -400,7 +400,7 @@
     <!-- 店铺评分 end -->
 
     <!-- 放大镜部分 start -->
-    <div class="gome-container" id="gm-main-info">
+    <div class="gome-container clearfix" id="gm-main-info">
         <div class="prd-firstscreen-left">
             <!-- magnifier   start-->
             <div class="magnifier ">
@@ -572,14 +572,57 @@
             </div>
         </div>
         <!-- center end -->
-        <div class="prd-firstscreen-right"></div>
+        <!-- 看了又看  start-->
+        <div class="prd-firstscreen-right">
+            <div class="bigdata-reskim">
+                <h2>看了又看</h2>
+                <div class="reskim-carousel" id="reskim-carousel">
+                    <div class="carousel" id="carousel">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img src="./images/details/lookyoulook/01.webp" alt="">
+                                </a>
+                                <p>
+                                    <span>¥11</span>
+                                </p>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./images/details/lookyoulook/02.webp" alt="">
+                                </a>
+                                <p>
+                                    <span>¥11</span>
+                                </p>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./images/details/lookyoulook/03.webp" alt="">
+                                </a>
+                                <p>
+                                    <span>¥2</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 底部圆点 -->
+                    <div class="pager" id="pager">
+                        <ol>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- 看了又看 end -->
     </div>
     <!-- 放大镜部分 end -->
 
+   
+
 
     <!-- 帮助 start -->
-    <div class="gome-help" id="gome-help">
-    <div class="gome-help-box" id="gome-help-box" >
+    <div class="gome-help" id="gome-help" >
+    <div class="gome-help-box" id="gome-help-box">
         <dl>
             <dt>物流配送</dt>
             <dd>
@@ -790,3 +833,36 @@
     <!-- 侧边栏 end -->
 </body>
 </html>
+
+<script>
+    $(function(){
+        // 看了又看那里复制粘贴三个
+        /* 设置数组 */
+        for(var i=0;i<=2;i++){
+            for(var j=0;j<=1;j++){
+                $("#carousel ul").append($("#carousel ul").children("li").eq(i).clone(true));
+            }
+        }
+        // 判断有几个li除以3,进行分页
+        let olChildHtml=``;
+        for(var i=0;i<parseInt((Array.from($("#carousel ul").children("li")).length)/3);i++){
+            olChildHtml=`
+                <li>
+                    <a></a>
+                </li>
+            `
+                $("#pager ol").append(olChildHtml);
+        }
+        // 给ol的第一个li添加样式
+        $("#pager ol").children("li").eq(0).addClass("active");
+        $("#pager ol").on("mouseenter","li",function(evt){
+            $(this).addClass("active").siblings().removeClass("active");
+            $liIndex=$(this).index();
+            $("#carousel ul").css({
+                left:$liIndex*-181
+            })
+        })
+        
+
+    })
+</script>

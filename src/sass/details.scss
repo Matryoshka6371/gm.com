@@ -931,6 +931,126 @@ input {
       
     }
 
-}
+    // 看了又看 start
 
+    .prd-firstscreen-right {
+        width: 160px;
+        height: 583px;
+        float: right;
+        // 标题
+        .bigdata-reskim{
+            h2:after, 
+            h2:before {
+            content: '';
+            position: absolute;
+            width: 48px;
+            height: 1px;
+            background-color: #ccc;
+            top: 6px;
+            }
+            h2:after {
+                right: 0;
+            }
+            h2:before {
+                left:0;
+            }
+            h2{
+                font-size: 14px;
+                text-align: center;
+                position: relative;
+                margin: 16px 0 12px;
+            }
+            // 图片部分
+           .reskim-carousel {
+                position: relative;
+                .carousel{
+                    width: 160px;
+                    height: 520px;
+                    position: relative;
+                    overflow: hidden;
+                    ul{
+                        height: 520px;
+                        position: absolute;
+                        li{
+                            // 设置变
+                            position: absolute;
+                            width: 160px;
+                            height: 160px;
+                            overflow: hidden;
+                            img {
+                                width: 160px;
+                                height: 160px;
+                            }
+                            p {
+                                position: absolute;
+                                line-height: 20px;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+                                padding: 0 10px;
+                                background: rgba(255,255,255,.5);
+                                span {
+                                    color: #5e5e5e;
+                                    position: relative;
+                                    z-index: 1;
+                                }
+                            }
+                        }
+                         // 设置循环
+                        // 12个li
+                        // 设置数组
+                        $lileft:0px,181px,362px,0px,181px,362px,0px,181px,362px;
+                        $litop:0px,0px,0px,181px,181px,181px,362px,362px,362px;
+                        $livar:181;
+                        // 通过循环给每一个按钮值进行赋值
+                        @for $i from 1 through 9{
+                            $item1: nth($lileft,$i); 
+                            $item2: nth($litop,$i); 
+                            //获取数组$i对应的下标值
+                            li:nth-child(#{$i}){
+                                left:$item1;
+                                top:$item2;
+                            }
+                        }
+                    }
+                }
+            }
+            // 底部圆点
+            .pager {
+                margin: 10px 0;
+                ol {
+                    text-align: center;
+                    li {
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin: 0 7px;
+                        a {
+                            display: block;
+                            width: 12px;
+                            height: 11px;
+                            border: 1px solid #ccc;
+                            font-size: 0;
+                            border-radius: 50%;
+                            background-color: #ccc;
+                        }
+                    }
+                    li.active a{
+                        width: 12px;
+                        height: 11px;
+                        border: 1px solid #c00;
+                        background-color: #fff;
+                    }
+                   
+                }
+            }
+            
+
+        }
+    }
+
+
+    // 看了又看end
+
+}
 // 放大镜部分end
+
