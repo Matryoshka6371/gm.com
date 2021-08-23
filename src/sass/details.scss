@@ -379,8 +379,58 @@ body, button, input, select, textarea {
                 position: relative;
                 height: 54px;
                 margin: 20px 0 16px;
+                //左右键头
+                .pic-btn {
+                    // 公共样式
+                    a {
+                        display: block;
+                        height: 54px;
+                        width: 15px;
+                        text-align: center;
+                        position: absolute;
+                        b, em {
+                            height: 34px;
+                            display: block;
+                            cursor: pointer;
+                        }
+                      
+                      
+                    }
+                    a.pic-btn-l {
+                        left: 0;
+                        top: 0;
+                        b{
+                            padding: 16px 0 0;
+                            width: 13px;
+                            s {
+                                width: 11px;
+                                height: 21px;
+                                display: block;
+                                background:url("../images/details/lsf/bg-sprite.png") no-repeat;
+                                background-position: 0 -834px;
+                            }
+                        }
+                    }
+                    a.pic-btn-r {
+                        left: 344px;
+                        top: 0;
+                        em {
+                            padding: 16px 0 0 4px;
+                            width: 13px;
+                            i {
+                                width: 11px;
+                                height: 21px;
+                                display: block;
+                                background:url("../images/details/lsf/bg-sprite.png") no-repeat;
+                                background-position: 0 -865px;
+                            }
+                        }
+                    }
+                   
+                }
             }
-            // 小图列表
+
+            // 小图列表 end
         }
     }
 

@@ -3357,3 +3357,53 @@ body, button, input, select, textarea {
   height: 54px;
   margin: 20px 0 16px;
 }
+
+.gome-container .prd-firstscreen-left .magnifier .pic-list .pic-btn a {
+  display: block;
+  height: 54px;
+  width: 15px;
+  text-align: center;
+  position: absolute;
+}
+
+.gome-container .prd-firstscreen-left .magnifier .pic-list .pic-btn a b, .gome-container .prd-firstscreen-left .magnifier .pic-list .pic-btn a em {
+  height: 34px;
+  display: block;
+  cursor: pointer;
+}
+
+.gome-container .prd-firstscreen-left .magnifier .pic-list .pic-btn a.pic-btn-l {
+  left: 0;
+  top: 0;
+}
+
+.gome-container .prd-firstscreen-left .magnifier .pic-list .pic-btn a.pic-btn-l b {
+  padding: 16px 0 0;
+  width: 13px;
+}
+
+.gome-container .prd-firstscreen-left .magnifier .pic-list .pic-btn a.pic-btn-l b s {
+  width: 11px;
+  height: 21px;
+  display: block;
+  background: url("../images/details/lsf/bg-sprite.png") no-repeat;
+  background-position: 0 -834px;
+}
+
+.gome-container .prd-firstscreen-left .magnifier .pic-list .pic-btn a.pic-btn-r {
+  left: 344px;
+  top: 0;
+}
+
+.gome-container .prd-firstscreen-left .magnifier .pic-list .pic-btn a.pic-btn-r em {
+  padding: 16px 0 0 4px;
+  width: 13px;
+}
+
+.gome-container .prd-firstscreen-left .magnifier .pic-list .pic-btn a.pic-btn-r em i {
+  width: 11px;
+  height: 21px;
+  display: block;
+  background: url("../images/details/lsf/bg-sprite.png") no-repeat;
+  background-position: 0 -865px;
+}
