@@ -3232,3 +3232,128 @@ body, button, input, select, textarea {
   color: #e3101e;
   opacity: .9;
 }
+
+.gome-container {
+  width: 1200px;
+  margin: 0 auto;
+  color: #5e5e5e;
+  font: 12px/12px arial,Microsoft YaHei;
+}
+
+.gome-container .prd-firstscreen-left,
+.gome-container .prd-firstscreen-right {
+  margin-bottom: 10px;
+}
+
+.gome-container .prd-firstscreen-center,
+.gome-container .prd-firstscreen-left {
+  float: left;
+}
+
+.gome-container .prd-firstscreen-left .magnifier {
+  width: 360px;
+  position: relative;
+}
+
+.gome-container .prd-firstscreen-left .magnifier .pic-big {
+  display: block;
+  width: 358px;
+  height: 358px;
+  border: 1px solid #D9D9D9;
+  z-index: 30;
+  overflow: hidden;
+}
+
+.gome-container .prd-firstscreen-left .magnifier .pic-big .jqzoom {
+  position: relative;
+  padding: 0;
+  height: 358px;
+  width: 358px;
+  overflow: hidden;
+}
+
+.gome-container .prd-firstscreen-left .magnifier .pic-big .jqzoom .pic-l-b {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 20;
+  width: 24px;
+  height: 21px;
+  overflow: hidden;
+  text-align: center;
+  background-image: url("../images/details/lsf/bg-sprite.png");
+  background-position: 0 -800px;
+  padding-top: 3px;
+}
+
+.gome-container .prd-firstscreen-left .magnifier .pic-big .jqzoom .jqZoomPup {
+  width: 200px;
+  height: 200px;
+  visibility: vhidden;
+  position: absolute;
+  cursor: url("../images/details/arr_mouse.cur"), auto;
+  background-position: 50% top;
+  z-index: 10;
+  left: 0;
+  top: 0;
+}
+
+.gome-container .prd-firstscreen-left .magnifier .pic-big .jqzoom .jqCross {
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  overflow: hidden;
+  left: 88px;
+  top: 88px;
+  z-index: 20;
+  opacity: 1;
+}
+
+.gome-container .prd-firstscreen-left .magnifier .pic-big .jqzoom .jqCross b,
+.gome-container .prd-firstscreen-left .magnifier .pic-big .jqzoom .jqCross s {
+  position: absolute;
+  background: #fff;
+  overflow: hidden;
+}
+
+.gome-container .prd-firstscreen-left .magnifier .pic-big .jqzoom .jqCross b {
+  width: 2px;
+  height: 24px;
+  top: 0;
+  left: 11px;
+}
+
+.gome-container .prd-firstscreen-left .magnifier .pic-big .jqzoom .jqCross s {
+  width: 24px;
+  height: 2px;
+  top: 11px;
+  left: 0;
+}
+
+.gome-container .prd-firstscreen-left .magnifier .pic-big .jqzoom .jqBlock {
+  opacity: .5;
+  width: 200px;
+  height: 200px;
+  background: #6495ED;
+}
+
+.gome-container .prd-firstscreen-left .magnifier .pic-big .zoomdiv {
+  display: none;
+  top: 0px;
+  left: 360px;
+  width: 420px;
+  height: 420px;
+  text-align: center;
+  overflow: hidden;
+  z-index: 125;
+  border: 1px solid #e4e4e4;
+  position: absolute;
+}
+
+.gome-container .prd-firstscreen-left .magnifier .pic-list {
+  position: relative;
+  height: 54px;
+  margin: 20px 0 16px;
+}
