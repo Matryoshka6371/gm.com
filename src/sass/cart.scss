@@ -924,3 +924,199 @@ a.black {
     }
 }
 // 商品结算部分 end
+
+// 删除商品提示 start
+.container5 {
+    width: 990px;
+    margin: 0 auto;
+}
+.cart-deleted {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    display: block;
+    .cart-deleted-header {
+        border: 1px solid #ddd;
+        border-bottom: 0;
+        padding: 10px;
+    }
+    .cart-deleted-content {
+        border: 1px solid #ddd;
+        padding: 10px;
+        .fr {
+            padding: 0 20px;
+        }
+    }
+    .cart-deleted-item {
+        line-height: 24px;
+        a {
+            color: #333;
+        }
+    }
+    .deleted-col-1 {
+        width: 540px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
+// 删除商品提示 end
+
+
+// 为你推荐 start
+.container6 {
+    width: 990px;
+    margin: 0 auto;
+}
+.cart-bottom-tab {
+    margin-top: 20px;
+    // 头部 start
+    .cart-tab-header {
+        position: relative;
+        z-index: 1;
+    }
+    // 标题公共样式
+    .cart-tab-header a {
+        display: block;
+        float: left;
+        padding: 0 33px;
+        line-height: 30px;
+        color: #333;
+        margin: 1px 1px 0;
+        font: 12px/1.5 arial,"\65b0\5b8b\4f53"
+    }
+    // 当前显示在哪个页面则播放那个
+    a.active {
+        background: #fff;
+        border: 1px solid #e6e6e6;
+        border-bottom: none;
+        margin: 0;
+        color: #e3101e;
+        font-weight: 700;
+    }
+    // 头部 end
+   
+    .tab-content-wrap {
+        position: relative;
+        top: -1px;
+        border: 1px solid #e6e6e6;
+        height: 251px;
+        overflow: hidden;
+        .cart-tab-content {
+            padding: 20px;
+            .scroll-container {
+                position: relative;
+                padding: 0 22px;
+                height: 202px;
+                .scroll-view {
+                    margin-top: 5px;
+                    height: 202px;
+                    overflow: hidden;
+                    position: relative;
+                    // li
+                    .cart-scroll-item {
+                        width: 150px;
+                        _height: 190px;
+                        text-align: left;
+                        margin: 0 15px;
+                        _margin: 0 14px;
+                        // a
+                        .cart-scroll-image {
+                            width: 100px;
+                            height: 100px;
+                            line-height: 100px;
+                            display: block;
+                            margin: 0 auto;
+                            position: relative;
+                            overflow: hidden;
+                            img {
+                                width: 100px;
+                                height: 100px;
+                            }
+                            // 提示是否加入成功
+                            .cart-scroll-tip {
+                                // 默认隐藏,如果加入成功成功则显示
+                                display: none;
+                                height: 30px;
+                                line-height: 30px;
+                                background: #000;
+                                color: #fff;
+                                background-color: rgba(0,0,0,.5);
+                                position: absolute;
+                                left: 50%;
+                                top: 50%;
+                                margin-left: -50px;
+                                margin-top: -15px;
+                                
+                                width: 100px;
+                                text-align: center;
+                            }
+                        }
+                        // 文字介绍
+                        .cart-scroll-title {
+                            height: 38px;
+                            overflow: hidden;
+                            margin-top: 14px;
+                        }
+                        // 价格
+                        .cart-scroll-price {
+                            color: #d70010;
+                            font-weight: 700;
+                            margin-bottom: 6px;
+                            margin-left: 46px;
+                            height: 18px;
+                        }
+                        .ffyh {
+                            font-family: "Microsoft Yahei"!important;
+                        }
+                        // 加入购物车按钮
+                        // 公共样式
+                        .cart-scroll-btn, .cart-scroll-btn:hover {
+                            height: 24px;
+                            line-height: 24px;
+                            display: inline-block;
+                            color: #333;
+                            border: 1px solid #e6e6e6;
+                            text-decoration: none;
+                            padding: 0 13px;
+                            margin-left: 25px;
+                        }
+                        .cart-scroll-btn {
+                            border: 1px solid #ddd;
+                            color: #333;
+                            background: #fff;
+                        }
+                    }
+                }
+            }
+            // 左右键头
+            .scroll-left-btn, .scroll-right-btn {
+                position: absolute;
+                top: 50%;
+                margin-top: -10px;
+                cursor: pointer;
+            }
+            .scroll-left-btn {
+                left: 0;
+            }
+            .c-i.arrow-left {
+                width: 13px;
+                height: 18px;
+                background-position: -372px -64px;
+            }
+            .scroll-right-btn {
+                right: 0;
+            }
+            .c-i.arrow-right {
+                width: 13px;
+                height: 18px;
+                background-position: -398px -64px;
+            }
+        }
+    }
+     // 为您推荐 start
+    // 为您推荐 end
+    
+}
+
+// 为你推荐 end
