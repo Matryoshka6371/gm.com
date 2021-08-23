@@ -858,9 +858,9 @@
         $("#pager ol").on("mouseenter","li",function(evt){
             $(this).addClass("active").siblings().removeClass("active");
             $liIndex=$(this).index();
-            $("#carousel ul").css({
+            $("#carousel ul").animate({
                 left:$liIndex*-181
-            })
+            },500)
         })
         
 
