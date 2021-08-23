@@ -5,6 +5,18 @@
     font-family: "iconfont";
     src: url("../font/iconfont.woff")format("woff");
 }
+
+
+// 公共样式
+body, button, input, select, textarea {
+    font: 12px/1.5 arial,"\65b0\5b8b\4f53";
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
 // top
 // 添加一个li的样式
 #gome-entry-link{
@@ -33,3 +45,211 @@
     left: -5px;
 }
 
+
+
+// head 
+// 改版搜索栏边框
+#topSearchHover{
+    height: 30px;
+    border: 2px solid rgb(227, 16, 30);
+}
+// 
+// 添加一个搜本地按钮的样式
+#searchOurShop{
+    position: absolute;
+    top: -2px;
+    right: -91px;
+    width: 88px;
+    cursor: pointer;
+    font: 600 16px/30px Mircosoft YaHei;
+    height: 34px;
+    border: 2px solid #5a5a5a;
+    background-color: #5a5a5a;
+    color: #fff;
+}
+
+// 店铺招牌marginauto
+.marginauto{
+    background-color: #fff5fb;
+    .wrap990{
+        height: 100px;
+        width: 990px;
+        margin: 0 auto;
+        img{
+            padding-top: 10px;
+            float: left;
+            cursor: pointer;
+        }
+    }
+}
+
+// 导航栏
+.nav_wrapper{
+    background-color: #a0338d;
+    .nav990{
+        width: 990px;
+        height: 30px;
+        margin: 0 auto;
+        ul{
+            .nav-item {
+                text-align: center;
+                float: left;
+                a{
+                    display: block;
+                    padding: 0 27px;
+                    height: 30px;
+                    font: 400 14px "Microsoft YaHei";
+                    line-height: 30px;
+                    color: #FFF;
+                }
+            }
+        }
+    }
+
+}
+
+
+// 店铺评分
+// 店铺评分最外层
+.breadcrumbs-wrapper {
+    background-color: #f6f6f6;
+    margin-bottom: 16px;
+    position: relative;
+    z-index: 501;
+    .breadcrumbs-container{
+        width: 1200px;
+        height: 42px;
+        margin: 0 auto;
+        font-family: arial,'Microsoft YaHei';
+        // 左侧
+        .left{
+             ul {
+                padding: 8px 6px;
+                display: inline-block;
+                li {
+                    display: inline-block;
+                    vertical-align: middle;
+                    position: relative;
+                    z-index: 31;
+                    // 链接文字
+                    a {
+                        color: #5e5e5e;
+                        display: inline-block;
+                        vertical-align: middle;
+                        padding: 4px 6px 4px 8px;
+                    }
+                    // 文字后面的箭头
+                    .icon-crumbs-right {
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 7px;
+                        height: 11px;
+                        margin: 0 2px;
+                        background: url("../images/details/lsf/bg-sprite.png") no-repeat;
+                        background-position: 0 0;
+                    }
+                }
+                li.active a {
+                    display: block;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    max-width: 100px;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+
+        // 右侧
+        .right{
+            .ly-stores {
+                padding: 12px 0;
+                height: 18px;
+                position: relative;
+                // 收藏店铺字样
+                .btn-collect{
+                    // 公共样式
+                  .icon-arrow, .icon-collect, span {
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                   .icon-collect {
+                        width: 16px;
+                        height: 15px;
+                        margin-right: 5px;
+                        background: url("../images/details/lsf/bg-sprite.png") no-repeat;
+                        background-position: 0 -100px;
+                    }
+                   .icon-arrow {
+                        width: 10px;
+                        height: 6px;
+                        margin: 0 5px;
+                        transition: all .2s ease 0s;
+                        background: url("../images/details/lsf/bg-sprite.png") no-repeat;
+                        background-position: 0 -21px;
+                    }
+                }
+                // 在线客服
+                // 公共样式
+                .btn-collect span,
+                .btn-service,
+                .identify,
+                .name {
+                    font-size: 13px;
+                }
+                .btn-collect, 
+                .btn-service, 
+                .identify, 
+                .name, 
+                .services-score {
+                    float: right;
+                    color: #5e5e5e;
+                }
+                .btn-service {
+                    line-height: 22px;
+                    margin-left: 20px;
+                    overflow: hidden;
+                    i {
+                        float: left;
+                        width: 21px;
+                        height: 20px;
+                        background: url("../images/details/lsf/bg-sprite.png") no-repeat;
+                        background-position: 0 -197px;
+                        margin-right: 5px;
+                    }
+                }
+                // 评分
+                .services-score {
+                    font-size: 12px;
+                    overflow: hidden;
+                    .star-gray {
+                        width: 73px;
+                        height: 11px;
+                        opacity: .9;
+                        float: left;
+                        margin: 4px 5px;
+                        background: url("../images/details/lsf/bg-sprite.png") no-repeat;
+                        background-position: 0 -125px;
+                        .star-red {
+                            display: block;
+                            background: url("../images/details/lsf/bg-sprite.png") no-repeat;
+                            background-position: 0 -146px;
+                            height: 11px;
+                            opacity: .9;
+                        }
+                    }
+                   .score {
+                        font-style: normal;
+                        color: #e3101e;
+                        opacity: .9;
+                    }
+                   
+                    
+                }
+                // 
+            }
+        }
+    }
+}
+
+
+// 放大镜部分

@@ -268,7 +268,7 @@
         <!-- topsearch start -->
         <div class="topsearch">
             <!-- searchbox start -->
-            <div class="searchbox">
+            <div class="searchbox" id="topSearchHover">
                 <form action="" id="searchForm" method="get">
                     <div class="search_type_down">
                         <div class="search_type">
@@ -283,23 +283,22 @@
                     </div>
                     <label id="keyLabel"></label>
                     <input type="text" id="searchInput">
-                    <button type="button" class="search_btn">搜索</button>
+                    <button type="button" class="search_btn">搜本站</button>
                 </form>
                 <div>
                     <div id="taste_button" class="voice-search"></div>
                 </div>
+                <button id="searchOurShop">搜本店</button>
             </div>
             <!-- searchbox end -->
 
             <div class="hotkeyword">
-                <a href="" class="hightlight">Apple产品</a>
-                <a href="">冰箱自营</a>
-                <a href="">冰箱自营</a>
-                <a href="">冰箱自营</a>
-                <a href="">冰箱自营</a>
-                <a href="">冰箱自营</a>
-                <a href="">冰箱自营</a>
-                <a href="" class="hightlight">火锅食材开店</a>
+                <a href="" class="hightlight">雀巢</a>
+                <a href="">旺旺</a>
+                <a href="">旺旺</a>
+                <a href="">旺旺</a>
+                <a href="">旺旺</a>
+                <a href="">旺旺</a>
             </div>
         </div>
         <!-- topsearch end -->
@@ -308,7 +307,7 @@
         <!-- mincart start -->
         <div class="mygome_side">
             <div>
-                <a href="">
+                <a href="./cart.html" style="float: right;">
                     <em class="i-cart">
                         <span class="shopnum"><span id="commerceItemQuantityId">0</span><i></i></span>
                     </em>
@@ -324,6 +323,86 @@
 
     </div>
     <!-- head end -->
+
+    <!-- 店铺图片 start -->
+    <div class="marginauto">
+        <div class="wrap990">
+            <img src="./images/details/lsf/head下面的店铺图片/shopnameimg.webp" alt="">
+        </div>
+    </div>
+    <!-- 店铺图片 end -->
+    <!-- 导航 start -->
+    <div class="nav_wrapper">
+        <div class="nav990">
+            <ul class="clearfix">
+                <li class="nav-item">
+                    <a href="./index.html">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./index.html">所有商品</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 导航 end -->
+
+    <!-- 店铺评分 start -->
+    <!-- 面包屑导航 -->
+    <div class="breadcrumbs-wrapper">
+        <div class="breadcrumbs-container">
+            <div class="left">
+                <ul>
+                    <li class="linkBold">
+                        <a href="">食品酒水</a>
+                            <i class="icon-crumbs-right"></i>
+                    </li>
+                    <li>
+                        <a href="">休闲食品</a>
+                            <i class="icon-crumbs-right"></i>
+                    </li>
+                    <li>
+                        <a href="">其他零食</a>
+                            <i class="icon-crumbs-right"></i>
+                    </li>
+                    <li>
+                        <a href="">嗨吃家</a>
+                            <i class="icon-crumbs-right"></i>
+                    </li>
+                    <li class="active">
+                        <a href="">嗨吃家网红酸辣粉130g*6桶红薯粉大桶装</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 右侧店铺评分 -->
+            <div class="right">
+                <div class="ly-stores shops-name">
+                    <!-- 收藏店铺 -->
+                    <a href="javascript:void(0)" class="btn-collect " id="collect_shop">
+                        <i class="icon-collect"></i>
+                        <span>收藏店铺</span>
+                        <i class="icon-arrow"></i>
+                    </a>
+                    <!-- 在线客服 -->
+                    <a href="javascript:void(0)" class="btn-service hide customerServiceAshes">
+                        <i></i>在线客服
+                    </a>
+                    <!-- 评分 -->
+                    <span class="services-score">
+                        <b class="star-gray"><i class="star-red" style="width:94%"></i></b>
+                        <em class="score">4.7</em>分
+                    </span>
+                    <!-- 店铺名 -->
+                    <a href="" style="color: #5e5e5e;">茵睿艾食品专营店</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 店铺评分 end -->
+
+    <!-- 放大镜部分 start -->
+    <div class="gome-container" id="gm-main-info"></div>
+
+    <!-- 放大镜部分 end -->
 
 
     <!-- 帮助 start -->
