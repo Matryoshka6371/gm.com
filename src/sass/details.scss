@@ -17,6 +17,31 @@ body, button, input, select, textarea {
 .right{
     float: right;
 }
+.line33 {
+    line-height: 34px;
+}
+.p20 {
+    padding-bottom: 18px;
+}
+.m20 {
+    margin-top: 20px;
+}
+.line20 {
+    line-height: 20px;
+}
+.m8 {
+    margin-top: 13px;
+}
+label {
+    cursor: default;
+}
+a {
+    color: #5e5e5e;
+    text-decoration: none;
+    cursor: pointer;
+    outline: 0;
+    font-weight: 400;
+}
 // top
 // 添加一个li的样式
 #gome-entry-link{
@@ -464,6 +489,303 @@ body, button, input, select, textarea {
 
             // 小图列表 end
         }
+
+        // toolbar
+        .toolbar {
+            position: relative;
+            width: 360px;
+            span {
+                line-height: 18px;
+                float: left;
+            }
+            a {
+                color: #5e5e5e;
+                margin-left: 12px;
+                line-height: 18px;
+                float: right;
+                display: block;
+                position: relative;
+                text-decoration: none;
+                i {
+                    display: block;
+                    float: left;
+                    margin-right: 5px;
+                }
+            }
+            a.collect i {
+                width: 16px;
+                height: 15px;
+                background:url("../images/details/lsf/bg-sprite.png") no-repeat;
+                background-position: 0 -100px;
+            }
+           a.showWish i {
+                width: 14px;
+                height: 12px;
+                margin-top: 2px;
+                background:url("../images/details/lsf/bg-sprite.png") no-repeat;
+                background-position: 0 -2325px;
+            }
+        }
+    }
+
+    // center
+    // 公共样式
+    .prd-firstscreen-center, 
+    .prd-firstscreen-left {
+        float: left;
+    }
+    .prd-firstscreen-center {
+        width: 620px;
+        margin: 0 0 0 30px;
+
+        // 标题
+        .hgroup {
+            position: relative;
+            padding-bottom: 16px;
+            h1 {
+                width: 480px;
+                font-size: 16px;
+                line-height: 26px;
+                color: #5e5e5e;
+                font-weight: 600;
+                word-wrap: break-word;
+                word-break: break-all;
+                padding-top: 5px;
+            }
+            h4 {
+                width: 480px;
+                font-size: 12px;
+                line-height: 20px;
+                color: #e3101e;
+                overflow: hidden;
+                word-wrap: break-word;
+                word-break: break-all;
+                padding-top: 1px;
+                a {
+                    color: #069;
+                    overflow: hidden;
+                }
+            }
+            // 对比
+           .contrasts-wrapper {
+                position: absolute;
+                right: 0;
+                top: 0;
+                border: 1px solid #ccc;
+                padding: 5px 10px;
+                cursor: pointer;
+               .btn-contrasts {
+                    color: #5e5e5e;
+                    display: block;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+            }
+            // 
+        }
+        // 零售价
+        .prd-price-1 {
+            width: 600px;
+            padding: 20px 10px 0;
+            background: #f6f6f6;
+            position: relative;
+            // 公共样式
+            .prd-price-lineright .reduce, 
+            .unitprice .reduce {
+                color: #069;
+            }
+            .prd-price-left {
+                color: #888;
+                float: left;
+            }
+            
+            .prd-price-right {
+                float: left;
+                margin-left: 10px;
+            }
+                // 单价以及降价通知 中间部分
+            .unitprice{
+                // 公共样式
+                .Crossedprice, 
+                .price, 
+                .reduce, 
+                span {
+                    float: left;
+                }
+             
+                  //价格的数字样式 
+                .price {
+                    display: block;
+                    font-family: Arial;
+                    font-size: 24px;
+                    color: #e3101e;
+                    font-weight: 700;
+                    margin-right: 10px;
+                    em {
+                        display: block;
+                        float: left;
+                        font-size: 16px;
+                        margin-right: 2px;
+                        font-style: normal;
+                    }
+                }
+                // 降价通知
+                .reduce {
+                    line-height: 34px;
+                }
+            }
+            // 右边好评
+            .prd-price-flr {
+                height: 33px;
+                line-height: 12px;
+                float: right;
+                // 公共样式
+                .prd-price-line, 
+                .prd-price-lineright {
+                    float: left;
+                }
+                .prd-price-line {
+                    font-size: 32px;
+                    line-height: 32px;
+                    color: rgb(204, 204, 204);
+                    margin-right: 3px;
+                    font-family: 宋体;
+                }
+                .pincnt {
+                    margin-top: 9px;
+                }
+                
+
+            }
+           
+        }
+
+        // 配送服务部分
+        .prd-properties {
+            // 公共样式
+            .prd-buttons,  
+            .prd-properties-other {
+                clear: both;
+            }
+            .prd-properties-other .prd-properties-left, 
+            .prd-properties-other .prdLeft {
+                color: #888;
+            }
+             .prd-properties-other .prd-properties-left, 
+             .prd-properties-other .prd-properties-right {
+                float: left;
+            }
+            .prd-properties-other .prd-properties-right span, 
+            .prd-properties-other .prdRight span {
+                float: left;
+            }
+            .baina, 
+            .guanjia, 
+            .intelligence, 
+            .yijiuhuanxin {
+                position: relative;
+            }
+            .baina em, 
+            .guanjia em, 
+            .intelligence em, 
+            .yijiuhuanxin em {
+                background: url("../images/details/lsf/bg-sprite.png") no-repeat;
+                background-position: 0 -2530px;
+                width: 8px;
+                height: 20px;
+                position: absolute;
+                left: -8px;
+                top: -1px;
+            }
+            .baina b, 
+            .guanjia b, 
+            .intelligence b, 
+            .yijiuhuanxin b {
+                background: url("../images/details/lsf/bg-sprite.png") no-repeat;
+                background-position: 0 -2560px;
+                padding: 8px;
+                position: absolute;
+                top: 1px;
+                left: -6px;
+            }
+            .prd-properties-other .prd-properties-right {
+                margin-left: 10px;
+            }
+            
+            padding-left: 10px;
+            clear: both;
+            // 管家
+            .tese{
+                div.prd-properties-right {
+                    margin-left: 18px;
+                }
+                span {
+                    padding: 3px 10px 3px 17px;
+                    border: 1px solid #61819f;
+                    border-left: 0 solid #61819f;
+                    margin-right: 16px;
+                }
+                .guanjia b {
+                    background-position: 0 -2638px;
+                    left: -5px;
+                }
+                
+                
+            }
+            // 送至
+            .songzhi {
+                line-height: 18px;
+            }
+            
+            .prd-properties-right{
+                position: relative;
+                .hasstock, 
+                .zhichi {
+                    margin-left: 20px;
+                    float: left;
+                }
+                .zhichi a {
+                    margin: 0 10px;
+                    display: inline-block;
+                    color: #61819f;
+                    position: relative;
+                }
+                .prd-properties-city {
+                    .region:after {
+                        content: '';
+                        position: absolute;
+                        width: 10px;
+                        height: 6px;
+                        right: -14px;
+                        top: 50%;
+                        margin-top: -3px;
+                        background: url("../images/details/lsf/bg-sprite.png") no-repeat;
+                        background-position: 0 -632px;
+                        transition: all .2s ease-in .1s;
+                    }
+                    position: relative;
+                    float: left;
+                    .address-wrapper {
+                        float: left;
+                        position: relative;
+                        padding: 0 21px 0 6px;
+                        z-index: 10;
+                    }
+                    .region {
+                        float: left;
+                        position: relative;
+                        text-decoration: none;
+                    }
+                }
+                .prd-properties-citys {
+                    height: 18px;
+                    margin-left: -6px;
+                }
+
+            }
+
+        }
+      
     }
 
 }
