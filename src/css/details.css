@@ -3029,6 +3029,10 @@ body, button, input, select, textarea {
   margin-top: 13px;
 }
 
+.m16 {
+  margin-top: 16px;
+}
+
 label {
   cursor: default;
 }
@@ -3039,6 +3043,27 @@ a {
   cursor: pointer;
   outline: 0;
   font-weight: 400;
+}
+
+a, img {
+  border: none;
+}
+
+input {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+input {
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  appearance: auto;
+  cursor: text;
 }
 
 #gome-entry-link {
@@ -3659,6 +3684,13 @@ a {
   clear: both;
 }
 
+.gome-container .prd-firstscreen-center .prd-properties .prd-properties-other:after {
+  content: '';
+  display: table;
+  width: 100%;
+  clear: both;
+}
+
 .gome-container .prd-firstscreen-center .prd-properties .prd-properties-other .prd-properties-left,
 .gome-container .prd-firstscreen-center .prd-properties .prd-properties-other .prdLeft {
   color: #888;
@@ -3781,4 +3813,123 @@ a {
 .gome-container .prd-firstscreen-center .prd-properties .prd-properties-right .prd-properties-citys {
   height: 18px;
   margin-left: -6px;
+}
+
+.gome-container .prd-firstscreen-center .prd-properties .fuwu .prd-properties-right span a {
+  color: #5e5e5e;
+  margin: 0 5px;
+  font-weight: 700;
+}
+
+.gome-container .prd-firstscreen-center .prd-buttons,
+.gome-container .prd-firstscreen-center .prd-properties .prd-properties-other {
+  clear: both;
+}
+
+.gome-container .prd-firstscreen-center .prd-buttons {
+  min-height: 42px;
+  margin-bottom: 10px;
+  margin-top: 34px;
+  padding-left: 10px;
+  position: relative;
+}
+
+.gome-container .prd-firstscreen-center .prd-buttons .count-wrapper {
+  position: relative;
+  float: left;
+  width: 46px;
+  height: 38px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.gome-container .prd-firstscreen-center .prd-buttons .count-wrapper .quantity {
+  width: 32px;
+  border: none;
+  display: block;
+  line-height: 38px;
+  text-align: center;
+  float: left;
+  height: 38px;
+  color: #5e5e5e;
+}
+
+.gome-container .prd-firstscreen-center .prd-buttons .count-wrapper a {
+  display: block;
+  float: left;
+  width: 13px;
+  height: 18px;
+  border-left: 1px solid #ccc;
+  line-height: 18px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  font: 12px/150% tahoma,arial,Microsoft YaHei,Hiragino Sans GB,"\u5b8b\u4f53",sans-serif;
+  color: #5e5e5e;
+  background: #f8f8f8;
+}
+
+.gome-container .prd-firstscreen-center .prd-buttons .count-wrapper .disab {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.gome-container .prd-firstscreen-center .prd-buttons .btn-product.btn-addcart,
+.gome-container .prd-firstscreen-center .prd-buttons .btn-product.btn-purchase {
+  height: 24px;
+  background-color: #e3101e;
+}
+
+.gome-container .prd-firstscreen-center .prd-buttons .btn-product {
+  float: left;
+  text-decoration: none;
+  padding: 8px 12px;
+  margin-right: 8px;
+  font: 18px/22px 'Microsoft Yahei';
+  color: #fff;
+}
+
+.gome-container .prd-firstscreen-center .prd-buttons .btn-product.btn-addcart {
+  padding: 8px 25px;
+}
+
+.gome-container .prd-firstscreen-center .prd-buttons .btn-product {
+  float: left;
+  text-decoration: none;
+  padding: 8px 12px;
+  margin-right: 8px;
+  font: 18px/22px 'Microsoft Yahei';
+  color: #fff;
+}
+
+.gome-container .prd-firstscreen-center .prd-buttons .btn-product.mobtn {
+  padding: 8px 0;
+  width: 98px;
+  color: #5e5e5e;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  position: relative;
+}
+
+.gome-container .prd-firstscreen-center .prd-buttons .btn-product.mobtn div {
+  display: none;
+}
+
+.gome-container .prd-firstscreen-center .prd-buttons .btn-product.mobtn div img {
+  margin-left: 4px;
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  margin-top: 10px;
+}
+
+.gome-container .prd-firstscreen-center .prd-buttons .btn-product .mobtnma {
+  padding: 5px 14px;
+  margin-right: 8px;
+  margin-left: 6px;
+  background: url("../images/details/lsf/bg-sprite.png") no-repeat;
+  background-position: 0 -2815px;
+}
+
+.gome-container .prd-firstscreen-center .prd-buttons #mobtn:hover div {
+  display: block;
 }
