@@ -1628,7 +1628,7 @@ li {
   display: block;
   width: 66px;
   background: #fff;
-  display: block;
+  display: none;
 }
 
 .elevator .fl_nav, .elevator li {
@@ -1682,10 +1682,12 @@ li {
 
 .elevator li.current a {
   width: auto;
-  margin-left: -9px;
 }
 
-.elevator li.current a, .elevator li.current a span, .elevator li.hover a, .elevator li.hover a span {
+.elevator li.current a,
+.elevator li.current a span,
+.elevator li.hover a,
+.elevator li.hover a span {
   color: #b20fd3;
 }
 

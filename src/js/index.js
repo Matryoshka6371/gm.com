@@ -270,8 +270,6 @@ $(function () {
     //     $("#floorwrap").append($("#floor").clone(true))
     // }
     // 暂时复制楼层 end
-
-
     //帮助 start
     //复制dl
     for(var i=0;i<4;i++){
@@ -284,6 +282,9 @@ $(function () {
     // 底部开始
 
     //底部结束
-
-
+    $("#gome-aside-backtop").on("click",function(){
+        $("html,body").stop().animate({
+            scrollTop: "0px"
+        })
+    })
 })

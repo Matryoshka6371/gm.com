@@ -1,5 +1,13 @@
 $(function () {
     // ajax请求 start
+    $(window).on("scroll", function () {
+        let scrollTop = $(document).scrollTop();
+        if (scrollTop > 450&&scrollTop<4700) {
+            $(".elevator").css("display", "block")
+        } else {
+            $(".elevator").css("display", "none");
+        }
+    })
     $.ajax({
         url: './api/index',
         //成功的回调
@@ -383,32 +391,32 @@ $(function () {
         // 2.设置定时器,自动轮播小图
         // 设置下标
         // 设置类
-        class SmallBanner{
-            constructor(el){
-                this.$el=$(el);
-                this.$Uls=this.$el.children("#slider");
-                this.$Ols=this.$el.children(".floornav");
-                this.$Slider=this.$el.children(".slider_page");
-                this.$Brands=this.$el.children(".brand_slider");
-                this.oImgIndex=0;
+        class SmallBanner {
+            constructor(el) {
+                this.$el = $(el);
+                this.$Uls = this.$el.children("#slider");
+                this.$Ols = this.$el.children(".floornav");
+                this.$Slider = this.$el.children(".slider_page");
+                this.$Brands = this.$el.children(".brand_slider");
+                this.oImgIndex = 0;
                 this.IntervalPlay();
                 this.mouseHandler();
                 this.clickHandler();
-            
+
             }
             // 方法一 ul中的图片和Ol样式自动轮播
-            IntervalPlay(){
-                this.SmallTimer=setInterval(()=>{
+            IntervalPlay() {
+                this.SmallTimer = setInterval(() => {
                     this.oImgIndex++;
                     this.Play();
-                },300)
+                }, 300)
             }
             // 方法二 ,播放行为
-            Play(){
-                if (this.oImgIndex >=this.$Uls.length) {
+            Play() {
+                if (this.oImgIndex >= this.$Uls.length) {
                     this.oImgIndex = 0;
                 }
-                if (this.oImgIndex <=0) {
+                if (this.oImgIndex <= 0) {
                     this.oImgIndex = this.$Uls.length;
                 }
                 // 轮播图图片行为
@@ -416,28 +424,28 @@ $(function () {
                 this.$Uls.children("li").eq(this.oImgIndex)
                     .css("display", "block")
                     .siblings("li").css("display", "none");
-                    //轮播图小点行为
+                //轮播图小点行为
                 this.$Ols.children("li").eq(this.oImgIndex)
-                .siblings("li").removeClass("cur").end()
-                .addClass("cur");
+                    .siblings("li").removeClass("cur").end()
+                    .addClass("cur");
             }
             // 方法三,鼠标移入暂停
-            mouseHandler(){
-                this.$el.hover(()=>{
+            mouseHandler() {
+                this.$el.hover(() => {
                     clearInterval(this.SmallTimer);
-                },()=>{
+                }, () => {
                     this.IntervalPlay();
                 })
             }
             // 方法四,点击事件
-            clickHandler(){
-                   console.log(this.$Slider);
-                   let _self=this
-                   this.$Slider.on("click",".slider_up",function(evt){
-                       _self.oImgIndex--;
-                       _self.Play();
-                   })
-                   this.$Slider.on("click","#slider_down",function(evt){
+            clickHandler() {
+                console.log(this.$Slider);
+                let _self = this
+                this.$Slider.on("click", ".slider_up", function (evt) {
+                    _self.oImgIndex--;
+                    _self.Play();
+                })
+                this.$Slider.on("click", "#slider_down", function (evt) {
                     _self.oImgIndex++;
                     _self.Play();
                 })
@@ -594,75 +602,80 @@ $(function () {
             if ($index >= $(this).parent().children(".main").length) {
                 $index = 0;
             }
-        $(this).parent().parent().parent()
+            $(this).parent().parent().parent()
                 .children().eq(0).children().eq(1)
                 .children("li").eq($index)
                 .siblings().removeClass("tabcur").end().addClass("tabcur");
-        $(this).parent().children(".main").eq($index).css("display", "block")
-            .siblings(".main").css("display", "none");
+            $(this).parent().children(".main").eq($index).css("display", "block")
+                .siblings(".main").css("display", "none");
         })
 
         // tab栏点击事件
-        $(".mt").on("click",".tab a",function(evt){
+        $(".mt").on("click", ".tab a", function (evt) {
             // 获取这个值
             let $index = $(this).parent().index();
             console.log($index);
             $(this).parent().siblings().removeClass("tabcur").end().addClass("tabcur");
 
             $(this).parent().parent().parent().parent().children().eq(1).children().eq(1)
-            .children(".main").eq($index).siblings(".main").css("display","none").end().css("display","block")
+                .children(".main").eq($index).siblings(".main").css("display", "none").end().css("display", "block")
 
         })
 
         // 默认隐藏箭头,点击显示
-        $(".slider_page,.page_slider").css({"display":"none"});
+        $(".slider_page,.page_slider").css({ "display": "none" });
         // 移入时显示
-        $(".main_warp").hover(function(){
-            $(".slider_page,.page_slider").css({"display":"block"})
-        },function(){
-            $(".slider_page,.page_slider").css({"display":"none"})
+        $(".main_warp").hover(function () {
+            $(".slider_page,.page_slider").css({ "display": "block" })
+        }, function () {
+            $(".slider_page,.page_slider").css({ "display": "none" })
         })
         // 移入时,透明度加深
         // $(".page_slider").on("mouseenter",function(){
-
         // })
-        // 第四个和第六个的样式单独设置一下
-        $("#floorwrap").children().eq(3).find(".main_warp")
-       .childre(".main").eq(0).css("width","1080px").end()
-        .find(".mc_c").css({
-            width:"479px"
-        }).end().find(".channel").css({
-            "backgroundColor":"#2cc7b0",
-        }).find("ul").css({
-            width: 72,
-            marginLeft: 24,
-        }).children("li").css({
-            width:72,
-        }).children("a").css({
-            display: "inline-block",
-            fontSize: 14,
-        })        
-        $("#floorwrap").children().eq(5).find(".main_warp")
-        .css({
-            width:"1080px"
-        }).end().children(".main").eq(0).css("width","1080px").end()
-        .find(".mc_c").css({
-            width:"479px"
-        }).end().find(".channel").css({
-            "backgroundColor":"#9cc736",
-        }).find("ul").css({
-            width: 72,
-            marginLeft: 24,
-        }).children("li").css({
-            width:72,
-        }).children("a").css({
-            display: "inline-block",
-            fontSize: 14,
+        // 盖楼层   start 楼层在 margin-top为600px的时候出现
+        
+        // const floorHeight=[1100,1638,]
+        var oItemScrollTop = [...$(".floor")]
+            .map(item => $(item).offset().top);
+        console.log(oItemScrollTop);
+        console.log([...$(".floor")]);
+        // 绑定点击事件
+        $("#elevator li.handler").on("click",function(){
+            // 得到下标
+            let $eleIndex=$(this).index();
+            $(this).addClass("current").siblings()
+            .removeClass("current");
+            $("html,body").stop().animate({
+                scrollTop:parseInt(oItemScrollTop[$eleIndex])
+            })
+            console.log("aaa");
         })
+        $("#elevator li.flTop").on("click",function(){
+            let $eleIndex=$("#elevator li.current").index();
+            $("html,body").stop().animate({
+                scrollTop:parseInt(oItemScrollTop[$eleIndex-1])
+            })
 
+        })
+        $("#elevator li.fl_bottom").on("click",function(){
+            let $eleIndex=$("#elevator li.current").index();
+            $("html,body").stop().animate({
+                scrollTop:parseInt(oItemScrollTop[$eleIndex+1])
+            })
 
-        // 其余tab的图片
-        // 身体 end
-        // ajax请求 
+        })
+        // 滚动条事件
+        let topList=[...$(".floor")]
+        .map(item => $(item).offset().top+$(item).height());
+        $(window).on("scroll",_.debounce(function(){
+            let scrollTop=$(document).scrollTop();
+            var index=topList.findIndex(
+                item=>Math.ceil(scrollTop)<parseFloat(item)
+            )
+            $("#elevator li.handler").eq(index).addClass("current")
+            .siblings().removeClass("current");
+        },100))
+        //  盖楼层 end
     })
 })
