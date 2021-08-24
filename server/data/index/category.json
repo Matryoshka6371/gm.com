@@ -1,0 +1,47 @@
+[
+    {"id":"1000037040-0","des":"手机","href":"javascript:void(0)"},
+    {"id":"1000037040-1","des":"充值","href":"javascript:void(0)"},
+
+    {"id":"1000037283-0","des":"相机","href":"javascript:void(0)"},
+    {"id":"1000037283-1","des":"智能数码","href":"javascript:void(0)"},
+
+    {"id":"1000037067-0","des":"电脑","href":"javascript:void(0)"},
+    {"id":"1000037067-1","des":"办公配件","href":"javascript:void(0)"},
+
+    {"id":"1000036959-0","des":"电视 影音","href":"javascript:void(0)"},
+    {"id":"1000036959-1","des":"智能","href":"javascript:void(0)"},
+
+    {"id":"1000036986-0","des":"空调","href":"javascript:void(0)"},
+    {"id":"1000036986-1","des":"冰箱","href":"javascript:void(0)"},
+    {"id":"1000036986-2","des":"洗衣机","href":"javascript:void(0)"},
+
+    {"id":"1000037013-0","des":"厨房卫浴","href":"javascript:void(0)"},
+    {"id":"1000037013-1","des":"生活电器","href":"javascript:void(0)"},
+    {"id":"1000037013-2","des":"环境","href":"javascript:void(0)"},
+
+    {"id":"1000037094-0","des":"家具","href":"javascript:void(0)"},
+    {"id":"1000037094-1","des":"建材","href":"javascript:void(0)"},
+    {"id":"1000037094-2","des":"欧洲厨房","href":"javascript:void(0)"},
+
+    {"id":"1000037121-0","des":"家居家纺","href":"javascript:void(0)"},
+    {"id":"1000037121-1","des":"家居家装","href":"javascript:void(0)"},
+
+    {"id":"1000037148-0","des":"食品酒水","href":"javascript:void(0)"},
+    {"id":"1000037148-1","des":"母婴玩具","href":"javascript:void(0)"},
+
+    {"id":"1000037175-0","des":"美妆个护","href":"javascript:void(0)"},
+
+    {"id":"1000037202-0","des":"服饰鞋帽","href":"javascript:void(0)"},
+    {"id":"1000037202-1","des":"箱包奢品","href":"javascript:void(0)"},
+
+    {"id":"1000037229-0","des":"运动户外","href":"javascript:void(0)"},
+    {"id":"1000037229-1","des":"钟表首饰","href":"javascript:void(0)"},
+
+    {"id":"1000037256-0","des":"汽车整车","href":"javascript:void(0)"},
+    {"id":"1000037256-1","des":"汽车用品","href":"javascript:void(0)"},
+
+    {"id":"1000037310-0","des":"国美金融","href":"javascript:void(0)"},
+
+    {"id":"1000037337-0","des":"国美管家","href":"javascript:void(0)"},
+    {"id":"1000037337-1","des":"美锅优食","href":"javascript:void(0)"}
+]
