@@ -232,7 +232,7 @@ $(function () {
                                         <a href="javascript:void(0)"></a>
                                         <span class="floorprev"></span>
                                     </p>
-                                    <p class="slider_down">
+                                    <p class="slider_down" id="slider_down">
                                         <a href="javascript:void(0)"></a>
                                         <span class="floornext"></span>
                                     </p>
@@ -380,7 +380,71 @@ $(function () {
             $("#floorwrap").children().eq(i).
                 find("#floornav").children("li").eq(0).addClass("cur")
         }
-
+        // 2.设置定时器,自动轮播小图
+        // 设置下标
+        // 设置类
+        class SmallBanner{
+            constructor(el){
+                this.$el=$(el);
+                this.$Uls=this.$el.children("#slider");
+                this.$Ols=this.$el.children(".floornav");
+                this.$Slider=this.$el.children(".slider_page");
+                this.$Brands=this.$el.children(".brand_slider");
+                this.oImgIndex=0;
+                this.IntervalPlay();
+                this.mouseHandler();
+                this.clickHandler();
+            
+            }
+            // 方法一 ul中的图片和Ol样式自动轮播
+            IntervalPlay(){
+                this.SmallTimer=setInterval(()=>{
+                    this.oImgIndex++;
+                    this.Play();
+                },300)
+            }
+            // 方法二 ,播放行为
+            Play(){
+                if (this.oImgIndex >=this.$Uls.length) {
+                    this.oImgIndex = 0;
+                }
+                if (this.oImgIndex <=0) {
+                    this.oImgIndex = this.$Uls.length;
+                }
+                // 轮播图图片行为
+                // 轮播图图片行为
+                this.$Uls.children("li").eq(this.oImgIndex)
+                    .css("display", "block")
+                    .siblings("li").css("display", "none");
+                    //轮播图小点行为
+                this.$Ols.children("li").eq(this.oImgIndex)
+                .siblings("li").removeClass("cur").end()
+                .addClass("cur");
+            }
+            // 方法三,鼠标移入暂停
+            mouseHandler(){
+                this.$el.hover(()=>{
+                    clearInterval(this.SmallTimer);
+                },()=>{
+                    this.IntervalPlay();
+                })
+            }
+            // 方法四,点击事件
+            clickHandler(){
+                   console.log(this.$Slider);
+                   let _self=this
+                   this.$Slider.on("click",".slider_up",function(evt){
+                       _self.oImgIndex--;
+                       _self.Play();
+                   })
+                   this.$Slider.on("click","#slider_down",function(evt){
+                    _self.oImgIndex++;
+                    _self.Play();
+                })
+            }
+        }
+        // 创建实例
+        new SmallBanner(".mc_c");
 
         // 2.遍历获取每个商标
         let brandImg = [];
