@@ -194,16 +194,19 @@
             "href": "javascript:void(0)"
         }
     ],
+    
     [
         {
             "floor": "1",
+           "head":{
             "headTitle": "手机通讯",
             "headTab": [
                 "活动精选",
                 "新品速增",
                 "热销推荐",
                 "畅享低价"
-            ],
+            ]
+           },
             "bodyLeft": {
                 "leftImg": "./images/index/F1/left.webp",
                 "background": "#719ef7",
@@ -418,13 +421,15 @@
         },
         {
             "floor": "2",
-            "headTitle": "电脑数码",
-            "headTab": [
-                "精选热卖",
-                "新品抢先",
-                "笔记本",
-                "摄影摄像"
-            ],
+            "head":{
+                "headTitle": "电脑数码",
+                "headTab": [
+                    "精选热卖",
+                    "新品抢先",
+                    "笔记本",
+                    "摄影摄像"
+                ]
+            },
             "bodyLeft": {
                 "leftImg": "./images/index/F2/left.webp",
                 "background": "#50bfec",
@@ -802,16 +807,18 @@
         },
         {
             "floor": "3",
-            "headTitle": "家用电器",
-            "headTab": [
-                "精选热卖",
-                "电视",
-                "洗衣机",
-                "冰箱",
-                "空调",
-                "大屏电视",
-                "温馨卧室"
-            ],
+            "head":{
+                "headTitle": "家用电器",
+                "headTab": [
+                    "精选热卖",
+                    "电视",
+                    "洗衣机",
+                    "冰箱",
+                    "空调",
+                    "大屏电视",
+                    "温馨卧室"
+                ]
+            },
             "bodyLeft": {
                 "leftImg": "./images/index/F3/left.webp",
                 "background": "#7f86ec",
@@ -1196,17 +1203,19 @@
         },
         {
             "floor": "4",
-            "headTitle": "厨房卫浴",
-            "headTab": [
-                "精选热卖",
-                "厨房小电",
-                "生活电器",
-                "电风扇",
-                "卫浴电器",
-                "厨房电器",
-                "净水/饮水",
-                "淘实惠"
-            ],
+            "head":{
+                "headTitle": "厨房卫浴",
+                "headTab": [
+                    "精选热卖",
+                    "厨房小电",
+                    "生活电器",
+                    "电风扇",
+                    "卫浴电器",
+                    "厨房电器",
+                    "净水/饮水",
+                    "淘实惠"
+                ]
+            },
             "bodyLeft": {
                 "leftImg": "./images/index/F4/left.jpg",
                 "background": "#41ccb8",
@@ -1649,17 +1658,19 @@
         },
         {
             "floor": "5",
-            "headTitle": "国美超市",
-            "headTab": [
-                "精选热卖",
-                "母婴玩具",
-                "美妆个护",
-                "食品饮料",
-                "茗茶名酒",
-                "清洁用品",
-                "生鲜",
-                "家居百货"
-            ],
+            "head":{
+                "headTitle": "国美超市",
+                "headTab": [
+                    "精选热卖",
+                    "母婴玩具",
+                    "美妆个护",
+                    "食品饮料",
+                    "茗茶名酒",
+                    "清洁用品",
+                    "生鲜",
+                    "家居百货"
+                ]
+            },
             "bodyLeft": {
                 "leftImg": "./images/index/F5/left.jpg",
                 "background": "#e85cc5",
@@ -2090,13 +2101,15 @@
         },
         {
             "floor": "6",
-            "headTitle": "家居家装",
-            "headTab": [
-                "精选热卖",
-                "家装建材",
-                "精品家具",
-                "材料装修"
-            ],
+            "head":{
+                "headTitle": "家居家装",
+                "headTab": [
+                    "精选热卖",
+                    "家装建材",
+                    "精品家具",
+                    "材料装修"
+                ]
+            },
             "bodyLeft": {
                 "leftImg": "./images/index/F6/left.png",
                 "background": "#abce5b",
@@ -2306,13 +2319,15 @@
         },
         {
             "floor": "7",
-            "headTitle": "汽车用品",
-            "headTab": [
-                "精选热卖",
-                "汽车玻璃水",
-                "内饰挂件",
-                "充电桩"
-            ],
+            "head":{
+                "headTitle": "汽车用品",
+                "headTab": [
+                    "精选热卖",
+                    "汽车玻璃水",
+                    "内饰挂件",
+                    "充电桩"
+                ]
+            },
             "bodyLeft": {
                 "leftImg": "./images/index/F7/left.webp",
                 "background": "#abce5b",
