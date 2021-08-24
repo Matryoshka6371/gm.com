@@ -7,6 +7,12 @@ $(function () {
         } else {
             $(".elevator").css("display", "none");
         }
+
+        if (scrollTop > 470) {
+            $(".stick-nav").css("display", "block")
+        } else {
+            $(".stick-nav").css("display", "none");
+        }
     })
     $.ajax({
         url: './api/index',
@@ -677,5 +683,13 @@ $(function () {
             .siblings().removeClass("current");
         },100))
         //  盖楼层 end
+
+
+        // 下拉框
+        // 把分类和搜索框克隆进去
+       $(".stick-nav>div").append($(".searchbox").clone(true));
+       $(".stick-nav>div").append($(".sidecategory").clone(true));
+
+
     })
 })
