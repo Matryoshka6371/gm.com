@@ -515,6 +515,11 @@ $(function () {
         // 设置ul下标
         // let tabMainIndex = 0;
         $(".page_slider").click(function (evt) {
+            // let tabMainIndex = $(this).parent().children("[style='display:block']").index();
+            // tabMainIndex++;
+            // if (tabMainIndex >= $(this).parent().children(".main").length) {
+            //     tabMainIndex = 0;
+            // }
             // tab跟随切换
 
             // 获取这个值
@@ -530,11 +535,6 @@ $(function () {
                 .children("li").eq($index)
                 .siblings().removeClass("tabcur").end().addClass("tabcur");
 
-        let tabMainIndex = $(this).parent().children("[style='display:block']").index();
-        tabMainIndex++;
-        if (tabMainIndex >= $(this).parent().children(".main").length) {
-            tabMainIndex = 0;
-        }
         $(this).parent().children(".main").eq($index).css("display", "block")
             .siblings(".main").css("display", "none");
         })
