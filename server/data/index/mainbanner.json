@@ -1,71 +1,2533 @@
 [
     [
-        {"id":"1000060757-1","href":"javascript:void(0)", "src":"./images/index/2.banner/Swiper01.webp","rgb":"(249, 198, 213)"},
-        {"id":"1000066394-1","href":"javascript:void(0)", "src":"./images/index/2.banner/Swiper02.webp","rgb":"(231, 177, 255)"},
-        {"id":"1000060759-1","href":"javascript:void(0)", "src":"./images/index/2.banner/Swiper03.webp","rgb":"(159, 222, 255)"},
-        {"id":"1000060761-1","href":"javascript:void(0)", "src":"./images/index/2.banner/Swiper04.webp","rgb":"(255, 172, 168)"},
-        {"id":"1000060763-1","href":"javascript:void(0)", "src":"./images/index/2.banner/Swiper05.webp","rgb":"(159, 222, 255)"},
-        {"id":"1000060765-1","href":"javascript:void(0)", "src":"./images/index/2.banner/Swiper06.webp","rgb":"(158, 223, 255)"}
-    ],
-    [
-        {"id":"1000037040-0","des":"手机","href":"javascript:void(0)"},
-        {"id":"1000037040-1","des":"充值","href":"javascript:void(0)"},
-    
-        {"id":"1000037283-0","des":"相机","href":"javascript:void(0)"},
-        {"id":"1000037283-1","des":"智能数码","href":"javascript:void(0)"},
-    
-        {"id":"1000037067-0","des":"电脑","href":"javascript:void(0)"},
-        {"id":"1000037067-1","des":"办公配件","href":"javascript:void(0)"},
-    
-        {"id":"1000036959-0","des":"电视 影音","href":"javascript:void(0)"},
-        {"id":"1000036959-1","des":"智能","href":"javascript:void(0)"},
-    
-        {"id":"1000036986-0","des":"空调","href":"javascript:void(0)"},
-        {"id":"1000036986-1","des":"冰箱","href":"javascript:void(0)"},
-        {"id":"1000036986-2","des":"洗衣机","href":"javascript:void(0)"},
-    
-        {"id":"1000037013-0","des":"厨房卫浴","href":"javascript:void(0)"},
-        {"id":"1000037013-1","des":"生活电器","href":"javascript:void(0)"},
-        {"id":"1000037013-2","des":"环境","href":"javascript:void(0)"},
-    
-        {"id":"1000037094-0","des":"家具","href":"javascript:void(0)"},
-        {"id":"1000037094-1","des":"建材","href":"javascript:void(0)"},
-        {"id":"1000037094-2","des":"欧洲厨房","href":"javascript:void(0)"},
-    
-        {"id":"1000037121-0","des":"家居家纺","href":"javascript:void(0)"},
-        {"id":"1000037121-1","des":"家居家装","href":"javascript:void(0)"},
-    
-        {"id":"1000037148-0","des":"食品酒水","href":"javascript:void(0)"},
-        {"id":"1000037148-1","des":"母婴玩具","href":"javascript:void(0)"},
-    
-        {"id":"1000037175-0","des":"美妆个护","href":"javascript:void(0)"},
-    
-        {"id":"1000037202-0","des":"服饰鞋帽","href":"javascript:void(0)"},
-        {"id":"1000037202-1","des":"箱包奢品","href":"javascript:void(0)"},
-    
-        {"id":"1000037229-0","des":"运动户外","href":"javascript:void(0)"},
-        {"id":"1000037229-1","des":"钟表首饰","href":"javascript:void(0)"},
-    
-        {"id":"1000037256-0","des":"汽车整车","href":"javascript:void(0)"},
-        {"id":"1000037256-1","des":"汽车用品","href":"javascript:void(0)"},
-    
-        {"id":"1000037310-0","des":"国美金融","href":"javascript:void(0)"},
-    
-        {"id":"1000037337-0","des":"国美管家","href":"javascript:void(0)"},
-        {"id":"1000037337-1","des":"美锅优食","href":"javascript:void(0)"}
-    ],
-    [
-        {"floor":"1","headtitle":"手机通讯",
-            "headtab":["活动精选","新品速增","热销推荐","畅享低价"],
-            "bodyleft":{
-                "leftImg":"./images/index/F1/"
-            }
+        {
+            "id": "1000060757-1",
+            "href": "javascript:void(0)",
+            "src": "./images/index/2.banner/Swiper01.webp",
+            "rgb": "(249, 198, 213)"
         },
-        {"floor":"2"},
-        {"floor":"3"},
-        {"floor":"4"},
-        {"floor":"5"},
-        {"floor":"6"},
-        {"floor":"7"}
+        {
+            "id": "1000066394-1",
+            "href": "javascript:void(0)",
+            "src": "./images/index/2.banner/Swiper02.webp",
+            "rgb": "(231, 177, 255)"
+        },
+        {
+            "id": "1000060759-1",
+            "href": "javascript:void(0)",
+            "src": "./images/index/2.banner/Swiper03.webp",
+            "rgb": "(159, 222, 255)"
+        },
+        {
+            "id": "1000060761-1",
+            "href": "javascript:void(0)",
+            "src": "./images/index/2.banner/Swiper04.webp",
+            "rgb": "(255, 172, 168)"
+        },
+        {
+            "id": "1000060763-1",
+            "href": "javascript:void(0)",
+            "src": "./images/index/2.banner/Swiper05.webp",
+            "rgb": "(159, 222, 255)"
+        },
+        {
+            "id": "1000060765-1",
+            "href": "javascript:void(0)",
+            "src": "./images/index/2.banner/Swiper06.webp",
+            "rgb": "(158, 223, 255)"
+        }
+    ],
+    [
+        {
+            "id": "1000037040-0",
+            "des": "手机",
+            "href": "javascript:void(0)"
+        },
+        {
+            "id": "1000037040-1",
+            "des": "充值",
+            "href": "javascript:void(0)"
+        },
+        {
+            "id": "1000037283-0",
+            "des": "相机",
+            "href": "javascript:void(0)"
+        },
+        {
+            "id": "1000037283-1",
+            "des": "智能数码",
+            "href": "javascript:void(0)"
+        },
+        {
+            "id": "1000037067-0",
+            "des": "电脑",
+            "href": "javascript:void(0)"
+        },
+        {
+            "id": "1000037067-1",
+            "des": "办公配件",
+            "href": "javascript:void(0)"
+        },
+        {
+            "id": "1000036959-0",
+            "des": "电视 影音",
+            "href": "javascript:void(0)"
+        },
+        {
+            "id": "1000036959-1",
+            "des": "智能",
+            "href": "javascript:void(0)"
+        },
+        {
+            "id": "1000036986-0",
+            "des": "空调",
+            "href": "javascript:void(0)"
+        },
+        {
+            "id": "1000036986-1",
+            "des": "冰箱",
+            "href": "javascript:void(0)"
+        },
+        {
+            "id": "1000036986-2",
+            "des": "洗衣机",
+            "href": "javascript:void(0)"
+        },
+        {
+            "id": "1000037013-0",
+            "des": "厨房卫浴",
+            "href": "javascript:void(0)"
+        },
+        {
+            "id": "1000037013-1",
+            "des": "生活电器",
+            "href": "javascript:void(0)"
+        },
+        {
+            "id": "1000037013-2",
+            "des": "环境",
+            "href": "javascript:void(0)"
+        },
+        {
+            "id": "1000037094-0",
+            "des": "家具",
+            "href": "javascript:void(0)"
+        },
+        {
+            "id": "1000037094-1",
+            "des": "建材",
+            "href": "javascript:void(0)"
+        },
+        {
+            "id": "1000037094-2",
+            "des": "欧洲厨房",
+            "href": "javascript:void(0)"
+        },
+        {
+            "id": "1000037121-0",
+            "des": "家居家纺",
+            "href": "javascript:void(0)"
+        },
+        {
+            "id": "1000037121-1",
+            "des": "家居家装",
+            "href": "javascript:void(0)"
+        },
+        {
+            "id": "1000037148-0",
+            "des": "食品酒水",
+            "href": "javascript:void(0)"
+        },
+        {
+            "id": "1000037148-1",
+            "des": "母婴玩具",
+            "href": "javascript:void(0)"
+        },
+        {
+            "id": "1000037175-0",
+            "des": "美妆个护",
+            "href": "javascript:void(0)"
+        },
+        {
+            "id": "1000037202-0",
+            "des": "服饰鞋帽",
+            "href": "javascript:void(0)"
+        },
+        {
+            "id": "1000037202-1",
+            "des": "箱包奢品",
+            "href": "javascript:void(0)"
+        },
+        {
+            "id": "1000037229-0",
+            "des": "运动户外",
+            "href": "javascript:void(0)"
+        },
+        {
+            "id": "1000037229-1",
+            "des": "钟表首饰",
+            "href": "javascript:void(0)"
+        },
+        {
+            "id": "1000037256-0",
+            "des": "汽车整车",
+            "href": "javascript:void(0)"
+        },
+        {
+            "id": "1000037256-1",
+            "des": "汽车用品",
+            "href": "javascript:void(0)"
+        },
+        {
+            "id": "1000037310-0",
+            "des": "国美金融",
+            "href": "javascript:void(0)"
+        },
+        {
+            "id": "1000037337-0",
+            "des": "国美管家",
+            "href": "javascript:void(0)"
+        },
+        {
+            "id": "1000037337-1",
+            "des": "美锅优食",
+            "href": "javascript:void(0)"
+        }
+    ],
+    [
+        {
+            "floor": "1",
+            "headTitle": "手机通讯",
+            "headTab": [
+                "活动精选",
+                "新品速增",
+                "热销推荐",
+                "畅享低价"
+            ],
+            "bodyLeft": {
+                "leftImg": "./images/index/F1/left.webp",
+                "background": "#719ef7",
+                "channel_inner": [
+                    "手机",
+                    "充值",
+                    "电器城"
+                ],
+                "keywords": {
+                    "w55": [
+                        "荣耀",
+                        "iQOO",
+                        "华为",
+                        "热销推荐",
+                        "潮3c"
+                    ],
+                    "w43": [
+                        "配件",
+                        "全面屏",
+                        "保护套",
+                        "小米",
+                        "iPhone"
+                    ],
+                    "w62": [
+                        "淘实惠",
+                        "vivo",
+                        "中兴",
+                        "以旧换新",
+                        "OPPO"
+                    ]
+                }
+            },
+            "bodySwiper": {
+                "SwiperImg": [
+                    "./images/index/F1/Swiper/Swiper01.webp"
+                ],
+                "brandImg": [
+                    "./images/index/F1/brand/brand01.jpg",
+                    "./images/index/F1/brand/brand02.jpg",
+                    "./images/index/F1/brand/brand03.jpg",
+                    "./images/index/F1/brand/brand04.jpg",
+                    "./images/index/F1/brand/brand05.jpg",
+                    "./images/index/F1/brand/brand06.jpg"
+                ]
+            },
+            "bodyRight": [
+                "./images/index/F1/tab1/tab01.webp",
+                "./images/index/F1/tab1/tab02.webp",
+                "./images/index/F1/tab1/tab03.webp",
+                "./images/index/F1/tab1/tab04.webp",
+                "./images/index/F1/tab1/tab05.webp",
+                "./images/index/F1/tab1/tab06.webp"
+            ],
+            "tabOther": [
+                [
+                    {
+                        "src": "./images/index/F1/tab2/tab01.webp",
+                        "p_name": "iPhone 12 Pro Max 256G",
+                        "p_price": "9499.00"
+                    },
+                    {
+                        "src": "./images/index/F1/tab2/tab02.webp",
+                        "p_name": "iPhone 12 Pro Max 256G",
+                        "p_price": "9499.00"
+                    },
+                    {
+                        "src": "./images/index/F1/tab2/tab03.webp",
+                        "p_name": "iPhone 12 Pro Max 256G",
+                        "p_price": "9499.00"
+                    },
+                    {
+                        "src": "./images/index/F1/tab2/tab04.webp",
+                        "p_name": "iPhone 12 Pro Max 256G",
+                        "p_price": "9499.00"
+                    },
+                    {
+                        "src": "./images/index/F1/tab2/tab05.webp",
+                        "p_name": "iPhone 12 Pro Max 256G",
+                        "p_price": "9499.00"
+                    },
+                    {
+                        "src": "./images/index/F1/tab2/tab06.webp",
+                        "p_name": "iPhone 12 Pro Max 256G",
+                        "p_price": "9499.00"
+                    },
+                    {
+                        "src": "./images/index/F1/tab2/tab07.webp",
+                        "p_name": "iPhone 12 Pro Max 256G",
+                        "p_price": "9499.00"
+                    },
+                    {
+                        "src": "./images/index/F1/tab2/tab08.webp",
+                        "p_name": "iPhone 12 Pro Max 256G",
+                        "p_price": "9499.00"
+                    },
+                    {
+                        "src": "./images/index/F1/tab2/tab09.webp",
+                        "p_name": "iPhone 12 Pro Max 256G",
+                        "p_price": "9499.00"
+                    },
+                    {
+                        "src": "./images/index/F1/tab2/tab10.webp",
+                        "p_name": "iPhone 12 Pro Max 256G",
+                        "p_price": "9499.00"
+                    }
+                ],
+                [
+                    {
+                        "src": "./images/index/F1/tab3/tab01.webp",
+                        "p_name": "iPhone 12 128G",
+                        "p_price": "5799.00"
+                    },
+                    {
+                        "src": "./images/index/F1/tab3/tab02.webp",
+                        "p_name": "iPhone 12 128G",
+                        "p_price": "5799.00"
+                    },
+                    {
+                        "src": "./images/index/F1/tab3/tab03.webp",
+                        "p_name": "iPhone 12 128G",
+                        "p_price": "5799.00"
+                    },
+                    {
+                        "src": "./images/index/F1/tab3/tab04.webp",
+                        "p_name": "iPhone 12 128G",
+                        "p_price": "5799.00"
+                    },
+                    {
+                        "src": "./images/index/F1/tab3/tab05.webp",
+                        "p_name": "iPhone 12 128G",
+                        "p_price": "5799.00"
+                    },
+                    {
+                        "src": "./images/index/F1/tab3/tab06.webp",
+                        "p_name": "iPhone 12 128G",
+                        "p_price": "5799.00"
+                    },
+                    {
+                        "src": "./images/index/F1/tab3/tab07.webp",
+                        "p_name": "iPhone 12 128G",
+                        "p_price": "5799.00"
+                    },
+                    {
+                        "src": "./images/index/F1/tab3/tab08.webp",
+                        "p_name": "iPhone 12 128G",
+                        "p_price": "5799.00"
+                    },
+                    {
+                        "src": "./images/index/F1/tab3/tab09.webp",
+                        "p_name": "iPhone 12 128G",
+                        "p_price": "5799.00"
+                    },
+                    {
+                        "src": "./images/index/F1/tab3/tab10.webp",
+                        "p_name": "iPhone 12 128G",
+                        "p_price": "5799.00"
+                    }
+                ],
+                [
+                    {
+                        "src": "./images/index/F1/tab4/tab01.webp",
+                        "p_name": "Redmi Note10 4GB 128GB",
+                        "p_price": "1099.00"
+                    },
+                    {
+                        "src": "./images/index/F1/tab4/tab02.webp",
+                        "p_name": "Redmi Note10 4GB 128GB",
+                        "p_price": "1099.00"
+                    },
+                    {
+                        "src": "./images/index/F1/tab4/tab03.webp",
+                        "p_name": "Redmi Note10 4GB 128GB",
+                        "p_price": "1099.00"
+                    },
+                    {
+                        "src": "./images/index/F1/tab4/tab04.webp",
+                        "p_name": "Redmi Note10 4GB 128GB",
+                        "p_price": "1099.00"
+                    },
+                    {
+                        "src": "./images/index/F1/tab4/tab05.webp",
+                        "p_name": "Redmi Note10 4GB 128GB",
+                        "p_price": "1099.00"
+                    },
+                    {
+                        "src": "./images/index/F1/tab4/tab06.webp",
+                        "p_name": "Redmi Note10 4GB 128GB",
+                        "p_price": "1099.00"
+                    },
+                    {
+                        "src": "./images/index/F1/tab4/tab07.webp",
+                        "p_name": "Redmi Note10 4GB 128GB",
+                        "p_price": "1099.00"
+                    },
+                    {
+                        "src": "./images/index/F1/tab4/tab08.webp",
+                        "p_name": "Redmi Note10 4GB 128GB",
+                        "p_price": "1099.00"
+                    },
+                    {
+                        "src": "./images/index/F1/tab4/tab09.webp",
+                        "p_name": "Redmi Note10 4GB 128GB",
+                        "p_price": "1099.00"
+                    },
+                    {
+                        "src": "./images/index/F1/tab4/tab10.webp",
+                        "p_name": "Redmi Note10 4GB 128GB",
+                        "p_price": "1099.00"
+                    }
+                ]
+            ]
+        },
+        {
+            "floor": "2",
+            "headTitle": "电脑数码",
+            "headTab": [
+                "精选热卖",
+                "新品抢先",
+                "笔记本",
+                "摄影摄像"
+            ],
+            "bodyLeft": {
+                "leftImg": "./images/index/F2/left.webp",
+                "background": "#50bfec",
+                "channel_inner": [
+                    "手机",
+                    "充值",
+                    "电器城"
+                ],
+                "keywords": {
+                    "w55": [
+                        "荣耀",
+                        "iQOO",
+                        "华为",
+                        "热销推荐",
+                        "潮3c"
+                    ],
+                    "w43": [
+                        "配件",
+                        "全面屏",
+                        "保护套",
+                        "小米",
+                        "iPhone"
+                    ],
+                    "w62": [
+                        "淘实惠",
+                        "vivo",
+                        "中兴",
+                        "以旧换新",
+                        "OPPO"
+                    ]
+                }
+            },
+            "bodySwiper": {
+                "SwiperImg": [
+                    "./images/index/F2/Swiper/Swiper01.webp",
+                    "./images/index/F2/Swiper/Swiper02.webp"
+                ],
+                "brandImg": [
+                    "./images/index/F2/brand/brand01.jpg",
+                    "./images/index/F2/brand/brand02.jpg",
+                    "./images/index/F2/brand/brand03.jpg",
+                    "./images/index/F2/brand/brand04.jpg",
+                    "./images/index/F2/brand/brand05.jpg",
+                    "./images/index/F2/brand/brand06.jpg",
+                    "./images/index/F2/brand/brand07.jpg",
+                    "./images/index/F2/brand/brand08.jpg",
+                    "./images/index/F2/brand/brand09.jpg",
+                    "./images/index/F2/brand/brand10.jpg",
+                    "./images/index/F2/brand/brand11.jpg",
+                    "./images/index/F2/brand/brand12.jpg"
+                ]
+            },
+            "bodyRight": [
+                "./images/index/F2/tab1/tab01.webp",
+                "./images/index/F2/tab1/tab02.webp",
+                "./images/index/F2/tab1/tab03.webp",
+                "./images/index/F2/tab1/tab04.webp",
+                "./images/index/F2/tab1/tab05.webp",
+                "./images/index/F2/tab1/tab06.webp"
+            ],
+            "tabOther": [
+                [
+                    {
+                        "src": "./images/index/F2/tab2/tab01.webp",
+                        "p_name": "华硕(ASUS) 飞行堡垒9 11代酷睿i7 15.6英寸电竞游戏本笔记本电脑(i7-11800H 16G 512G RTX3050Ti 4G 144Hz)",
+                        "p_price": "7599.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab2/tab02.webp",
+                        "p_name": "华硕(ASUS) 飞行堡垒9 11代酷睿i7 15.6英寸电竞游戏本笔记本电脑(i7-11800H 16G 512G RTX3050Ti 4G 144Hz)",
+                        "p_price": "7599.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab2/tab03.webp",
+                        "p_name": "华硕(ASUS) 飞行堡垒9 11代酷睿i7 15.6英寸电竞游戏本笔记本电脑(i7-11800H 16G 512G RTX3050Ti 4G 144Hz)",
+                        "p_price": "7599.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab2/tab04.webp",
+                        "p_name": "华硕(ASUS) 飞行堡垒9 11代酷睿i7 15.6英寸电竞游戏本笔记本电脑(i7-11800H 16G 512G RTX3050Ti 4G 144Hz)",
+                        "p_price": "7599.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab2/tab05.webp",
+                        "p_name": "华硕(ASUS) 飞行堡垒9 11代酷睿i7 15.6英寸电竞游戏本笔记本电脑(i7-11800H 16G 512G RTX3050Ti 4G 144Hz)",
+                        "p_price": "7599.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab2/tab06.webp",
+                        "p_name": "华硕(ASUS) 飞行堡垒9 11代酷睿i7 15.6英寸电竞游戏本笔记本电脑(i7-11800H 16G 512G RTX3050Ti 4G 144Hz)",
+                        "p_price": "7599.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab2/tab07.webp",
+                        "p_name": "华硕(ASUS) 飞行堡垒9 11代酷睿i7 15.6英寸电竞游戏本笔记本电脑(i7-11800H 16G 512G RTX3050Ti 4G 144Hz)",
+                        "p_price": "7599.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab2/tab08.webp",
+                        "p_name": "华硕(ASUS) 飞行堡垒9 11代酷睿i7 15.6英寸电竞游戏本笔记本电脑(i7-11800H 16G 512G RTX3050Ti 4G 144Hz)",
+                        "p_price": "7599.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab2/tab09.webp",
+                        "p_name": "华硕(ASUS) 飞行堡垒9 11代酷睿i7 15.6英寸电竞游戏本笔记本电脑(i7-11800H 16G 512G RTX3050Ti 4G 144Hz)",
+                        "p_price": "7599.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab2/tab10.webp",
+                        "p_name": "华硕(ASUS) 飞行堡垒9 11代酷睿i7 15.6英寸电竞游戏本笔记本电脑(i7-11800H 16G 512G RTX3050Ti 4G 144Hz)",
+                        "p_price": "7599.00"
+                    }
+                ],
+                [
+                    {
+                        "src": "./images/index/F2/tab3/tab01.webp",
+                        "p_name": "联想(Lenovo)小新Air15 2021锐龙版全面屏轻薄笔记本电脑(8核R7-4800U 16G 512G 100%sRGB 高色域)深空灰",
+                        "p_price": "4999.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab3/tab02.webp",
+                        "p_name": "联想(Lenovo)小新Air15 2021锐龙版全面屏轻薄笔记本电脑(8核R7-4800U 16G 512G 100%sRGB 高色域)深空灰",
+                        "p_price": "4999.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab3/tab03.webp",
+                        "p_name": "联想(Lenovo)小新Air15 2021锐龙版全面屏轻薄笔记本电脑(8核R7-4800U 16G 512G 100%sRGB 高色域)深空灰",
+                        "p_price": "4999.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab3/tab04.webp",
+                        "p_name": "联想(Lenovo)小新Air15 2021锐龙版全面屏轻薄笔记本电脑(8核R7-4800U 16G 512G 100%sRGB 高色域)深空灰",
+                        "p_price": "4999.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab3/tab05.webp",
+                        "p_name": "联想(Lenovo)小新Air15 2021锐龙版全面屏轻薄笔记本电脑(8核R7-4800U 16G 512G 100%sRGB 高色域)深空灰",
+                        "p_price": "4999.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab3/tab06.webp",
+                        "p_name": "联想(Lenovo)小新Air15 2021锐龙版全面屏轻薄笔记本电脑(8核R7-4800U 16G 512G 100%sRGB 高色域)深空灰",
+                        "p_price": "4999.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab3/tab07.webp",
+                        "p_name": "联想(Lenovo)小新Air15 2021锐龙版全面屏轻薄笔记本电脑(8核R7-4800U 16G 512G 100%sRGB 高色域)深空灰",
+                        "p_price": "4999.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab3/tab08.webp",
+                        "p_name": "联想(Lenovo)小新Air15 2021锐龙版全面屏轻薄笔记本电脑(8核R7-4800U 16G 512G 100%sRGB 高色域)深空灰",
+                        "p_price": "4999.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab3/tab09.webp",
+                        "p_name": "联想(Lenovo)小新Air15 2021锐龙版全面屏轻薄笔记本电脑(8核R7-4800U 16G 512G 100%sRGB 高色域)深空灰",
+                        "p_price": "4999.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab3/tab10.webp",
+                        "p_name": "联想(Lenovo)小新Air15 2021锐龙版全面屏轻薄笔记本电脑(8核R7-4800U 16G 512G 100%sRGB 高色域)深空灰",
+                        "p_price": "4999.00"
+                    }
+                ],
+                [
+                    {
+                        "src": "./images/index/F2/tab4/tab01.webp",
+                        "p_name": "佳能单反相机EOS 90D(EF-S 18-135 IS USM)",
+                        "p_price": "9699.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab4/tab02.webp",
+                        "p_name": "佳能单反相机EOS 90D(EF-S 18-135 IS USM)",
+                        "p_price": "9699.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab4/tab03.webp",
+                        "p_name": "佳能单反相机EOS 90D(EF-S 18-135 IS USM)",
+                        "p_price": "9699.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab4/tab04.webp",
+                        "p_name": "佳能单反相机EOS 90D(EF-S 18-135 IS USM)",
+                        "p_price": "9699.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab4/tab05.webp",
+                        "p_name": "佳能单反相机EOS 90D(EF-S 18-135 IS USM)",
+                        "p_price": "9699.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab4/tab06.webp",
+                        "p_name": "佳能单反相机EOS 90D(EF-S 18-135 IS USM)",
+                        "p_price": "9699.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab4/tab07.webp",
+                        "p_name": "佳能单反相机EOS 90D(EF-S 18-135 IS USM)",
+                        "p_price": "9699.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab4/tab08.webp",
+                        "p_name": "佳能单反相机EOS 90D(EF-S 18-135 IS USM)",
+                        "p_price": "9699.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab4/tab09.webp",
+                        "p_name": "佳能单反相机EOS 90D(EF-S 18-135 IS USM)",
+                        "p_price": "9699.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab4/tab10.webp",
+                        "p_name": "佳能单反相机EOS 90D(EF-S 18-135 IS USM)",
+                        "p_price": "9699.00"
+                    }
+                ],
+                [
+                    {
+                        "src": "./images/index/F2/tab5/tab01.webp",
+                        "p_name": "米家声波电动牙刷T100",
+                        "p_price": "35.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab5/tab02.webp",
+                        "p_name": "米家声波电动牙刷T100",
+                        "p_price": "35.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab5/tab03.webp",
+                        "p_name": "米家声波电动牙刷T100",
+                        "p_price": "35.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab5/tab04.webp",
+                        "p_name": "米家声波电动牙刷T100",
+                        "p_price": "35.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab5/tab05.webp",
+                        "p_name": "米家声波电动牙刷T100",
+                        "p_price": "35.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab5/tab06.webp",
+                        "p_name": "米家声波电动牙刷T100",
+                        "p_price": "35.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab5/tab07.webp",
+                        "p_name": "米家声波电动牙刷T100",
+                        "p_price": "35.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab5/tab08.webp",
+                        "p_name": "米家声波电动牙刷T100",
+                        "p_price": "35.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab5/tab09.webp",
+                        "p_name": "米家声波电动牙刷T100",
+                        "p_price": "35.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab5/tab10.webp",
+                        "p_name": "米家声波电动牙刷T100",
+                        "p_price": "35.00"
+                    }
+                ],
+                [
+                    {
+                        "src": "./images/index/F2/tab6/tab01.webp",
+                        "p_name": "罗技游戏鼠标G502",
+                        "p_price": "349.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab6/tab02.webp",
+                        "p_name": "罗技游戏鼠标G502",
+                        "p_price": "349.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab6/tab03.webp",
+                        "p_name": "罗技游戏鼠标G502",
+                        "p_price": "349.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab6/tab04.webp",
+                        "p_name": "罗技游戏鼠标G502",
+                        "p_price": "349.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab6/tab05.webp",
+                        "p_name": "罗技游戏鼠标G502",
+                        "p_price": "349.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab6/tab06.webp",
+                        "p_name": "罗技游戏鼠标G502",
+                        "p_price": "349.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab6/tab07.webp",
+                        "p_name": "罗技游戏鼠标G502",
+                        "p_price": "349.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab6/tab08.webp",
+                        "p_name": "罗技游戏鼠标G502",
+                        "p_price": "349.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab6/tab09.webp",
+                        "p_name": "罗技游戏鼠标G502",
+                        "p_price": "349.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab6/tab10.webp",
+                        "p_name": "罗技游戏鼠标G502",
+                        "p_price": "349.00"
+                    }
+                ],
+                [
+                    {
+                        "src": "./images/index/F2/tab7/tab01.webp",
+                        "p_name": "Apple iPad mini 5 2019年新款平板电脑 7.9英寸（64G WLAN版/A12芯片/MUQW2CH/A）深空灰色",
+                        "p_price": "2599.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab7/tab02.webp",
+                        "p_name": "Apple iPad mini 5 2019年新款平板电脑 7.9英寸（64G WLAN版/A12芯片/MUQW2CH/A）深空灰色",
+                        "p_price": "2599.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab7/tab03.webp",
+                        "p_name": "Apple iPad mini 5 2019年新款平板电脑 7.9英寸（64G WLAN版/A12芯片/MUQW2CH/A）深空灰色",
+                        "p_price": "2599.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab7/tab04.webp",
+                        "p_name": "Apple iPad mini 5 2019年新款平板电脑 7.9英寸（64G WLAN版/A12芯片/MUQW2CH/A）深空灰色",
+                        "p_price": "2599.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab7/tab05.webp",
+                        "p_name": "Apple iPad mini 5 2019年新款平板电脑 7.9英寸（64G WLAN版/A12芯片/MUQW2CH/A）深空灰色",
+                        "p_price": "2599.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab7/tab06.webp",
+                        "p_name": "Apple iPad mini 5 2019年新款平板电脑 7.9英寸（64G WLAN版/A12芯片/MUQW2CH/A）深空灰色",
+                        "p_price": "2599.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab7/tab07.webp",
+                        "p_name": "Apple iPad mini 5 2019年新款平板电脑 7.9英寸（64G WLAN版/A12芯片/MUQW2CH/A）深空灰色",
+                        "p_price": "2599.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab7/tab08.webp",
+                        "p_name": "Apple iPad mini 5 2019年新款平板电脑 7.9英寸（64G WLAN版/A12芯片/MUQW2CH/A）深空灰色",
+                        "p_price": "2599.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab7/tab09.webp",
+                        "p_name": "Apple iPad mini 5 2019年新款平板电脑 7.9英寸（64G WLAN版/A12芯片/MUQW2CH/A）深空灰色",
+                        "p_price": "2599.00"
+                    },
+                    {
+                        "src": "./images/index/F2/tab7/tab10.webp",
+                        "p_name": "Apple iPad mini 5 2019年新款平板电脑 7.9英寸（64G WLAN版/A12芯片/MUQW2CH/A）深空灰色",
+                        "p_price": "2599.00"
+                    }
+                ]
+            ]
+        },
+        {
+            "floor": "3",
+            "headTitle": "家用电器",
+            "headTab": [
+                "精选热卖",
+                "电视",
+                "洗衣机",
+                "冰箱",
+                "空调",
+                "大屏电视",
+                "温馨卧室"
+            ],
+            "bodyLeft": {
+                "leftImg": "./images/index/F3/left.webp",
+                "background": "#7f86ec",
+                "channel_inner": [
+                    "手机",
+                    "充值",
+                    "电器城"
+                ],
+                "keywords": {
+                    "w55": [
+                        "荣耀",
+                        "iQOO",
+                        "华为",
+                        "热销推荐",
+                        "潮3c"
+                    ],
+                    "w43": [
+                        "配件",
+                        "全面屏",
+                        "保护套",
+                        "小米",
+                        "iPhone"
+                    ],
+                    "w62": [
+                        "淘实惠",
+                        "vivo",
+                        "中兴",
+                        "以旧换新",
+                        "OPPO"
+                    ]
+                }
+            },
+            "bodySwiper": {
+                "SwiperImg": [
+                    "./images/index/F3/Swiper/Swiper01.webp",
+                    "./images/index/F3/Swiper/Swiper02.webp",
+                    "./images/index/F3/Swiper/Swiper03.webp"
+                ],
+                "brandImg": [
+                    "./images/index/F3/brand/brand01.jpg",
+                    "./images/index/F3/brand/brand02.jpg",
+                    "./images/index/F3/brand/brand03.jpg",
+                    "./images/index/F3/brand/brand04.jpg",
+                    "./images/index/F3/brand/brand05.jpg",
+                    "./images/index/F3/brand/brand06.jpg",
+                    "./images/index/F3/brand/brand07.jpg",
+                    "./images/index/F3/brand/brand08.jpg",
+                    "./images/index/F3/brand/brand09.jpg",
+                    "./images/index/F3/brand/brand10.jpg",
+                    "./images/index/F3/brand/brand11.jpg",
+                    "./images/index/F3/brand/brand12.jpg",
+                    "./images/index/F3/brand/brand13.jpg",
+                    "./images/index/F3/brand/brand14.jpg",
+                    "./images/index/F3/brand/brand15.jpg",
+                    "./images/index/F3/brand/brand16.jpg",
+                    "./images/index/F3/brand/brand17.jpg",
+                    "./images/index/F3/brand/brand18.jpg"
+                ]
+            },
+            "bodyRight": [
+                "./images/index/F3/tab1/tab01.webp",
+                "./images/index/F3/tab1/tab02.webp",
+                "./images/index/F3/tab1/tab03.webp",
+                "./images/index/F3/tab1/tab04.webp",
+                "./images/index/F3/tab1/tab05.webp",
+                "./images/index/F3/tab1/tab06.webp"
+            ],
+            "tabOther": [
+                [
+                    {
+                        "src": "./images/index/F3/tab2/tab01.webp",
+                        "p_name": "长虹55英寸人工智能电视",
+                        "p_price": "2399.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab2/tab02.webp",
+                        "p_name": "长虹55英寸人工智能电视",
+                        "p_price": "2399.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab2/tab03.webp",
+                        "p_name": "长虹55英寸人工智能电视",
+                        "p_price": "2399.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab2/tab04.webp",
+                        "p_name": "长虹55英寸人工智能电视",
+                        "p_price": "2399.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab2/tab05.webp",
+                        "p_name": "长虹55英寸人工智能电视",
+                        "p_price": "2399.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab2/tab06.webp",
+                        "p_name": "长虹55英寸人工智能电视",
+                        "p_price": "2399.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab2/tab07.webp",
+                        "p_name": "长虹55英寸人工智能电视",
+                        "p_price": "2399.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab2/tab08.webp",
+                        "p_name": "长虹55英寸人工智能电视",
+                        "p_price": "2399.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab2/tab09.webp",
+                        "p_name": "长虹55英寸人工智能电视",
+                        "p_price": "2399.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab2/tab10.webp",
+                        "p_name": "长虹55英寸人工智能电视",
+                        "p_price": "2399.00"
+                    }
+                ],
+                [
+                    {
+                        "src": "./images/index/F3/tab3/tab01.webp",
+                        "p_name": "海尔10kg滚筒洗衣机",
+                        "p_price": "2499.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab3/tab02.webp",
+                        "p_name": "海尔10kg滚筒洗衣机",
+                        "p_price": "2499.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab3/tab03.webp",
+                        "p_name": "海尔10kg滚筒洗衣机",
+                        "p_price": "2499.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab3/tab04.webp",
+                        "p_name": "海尔10kg滚筒洗衣机",
+                        "p_price": "2499.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab3/tab05.webp",
+                        "p_name": "海尔10kg滚筒洗衣机",
+                        "p_price": "2499.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab3/tab06.webp",
+                        "p_name": "海尔10kg滚筒洗衣机",
+                        "p_price": "2499.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab3/tab07.webp",
+                        "p_name": "海尔10kg滚筒洗衣机",
+                        "p_price": "2499.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab3/tab08.webp",
+                        "p_name": "海尔10kg滚筒洗衣机",
+                        "p_price": "2499.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab3/tab09.webp",
+                        "p_name": "海尔10kg滚筒洗衣机",
+                        "p_price": "2499.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab3/tab10.webp",
+                        "p_name": "海尔10kg滚筒洗衣机",
+                        "p_price": "2499.00"
+                    }
+                ],
+                [
+                    {
+                        "src": "./images/index/F3/tab4/tab01.webp",
+                        "p_name": "海尔258L三门冰箱",
+                        "p_price": "3199.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab4/tab02.webp",
+                        "p_name": "海尔258L三门冰箱",
+                        "p_price": "3199.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab4/tab03.webp",
+                        "p_name": "海尔258L三门冰箱",
+                        "p_price": "3199.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab4/tab04.webp",
+                        "p_name": "海尔258L三门冰箱",
+                        "p_price": "3199.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab4/tab05.webp",
+                        "p_name": "海尔258L三门冰箱",
+                        "p_price": "3199.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab4/tab06.webp",
+                        "p_name": "海尔258L三门冰箱",
+                        "p_price": "3199.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab4/tab07.webp",
+                        "p_name": "海尔258L三门冰箱",
+                        "p_price": "3199.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab4/tab08.webp",
+                        "p_name": "海尔258L三门冰箱",
+                        "p_price": "3199.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab4/tab09.webp",
+                        "p_name": "海尔258L三门冰箱",
+                        "p_price": "3199.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab4/tab10.webp",
+                        "p_name": "海尔258L三门冰箱",
+                        "p_price": "3199.00"
+                    }
+                ],
+                [
+                    {
+                        "src": "./images/index/F3/tab5/tab01.webp",
+                        "p_name": "伊莱克斯 1.5匹新三级变频空调 高温自清洁 智能柔湿制冷",
+                        "p_price": "1799.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab5/tab02.webp",
+                        "p_name": "伊莱克斯 1.5匹新三级变频空调 高温自清洁 智能柔湿制冷",
+                        "p_price": "1799.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab5/tab03.webp",
+                        "p_name": "伊莱克斯 1.5匹新三级变频空调 高温自清洁 智能柔湿制冷",
+                        "p_price": "1799.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab5/tab04.webp",
+                        "p_name": "伊莱克斯 1.5匹新三级变频空调 高温自清洁 智能柔湿制冷",
+                        "p_price": "1799.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab5/tab05.webp",
+                        "p_name": "伊莱克斯 1.5匹新三级变频空调 高温自清洁 智能柔湿制冷",
+                        "p_price": "1799.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab5/tab06.webp",
+                        "p_name": "伊莱克斯 1.5匹新三级变频空调 高温自清洁 智能柔湿制冷",
+                        "p_price": "1799.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab5/tab07.webp",
+                        "p_name": "伊莱克斯 1.5匹新三级变频空调 高温自清洁 智能柔湿制冷",
+                        "p_price": "1799.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab5/tab08.webp",
+                        "p_name": "伊莱克斯 1.5匹新三级变频空调 高温自清洁 智能柔湿制冷",
+                        "p_price": "1799.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab5/tab09.webp",
+                        "p_name": "伊莱克斯 1.5匹新三级变频空调 高温自清洁 智能柔湿制冷",
+                        "p_price": "1799.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab5/tab10.webp",
+                        "p_name": "伊莱克斯 1.5匹新三级变频空调 高温自清洁 智能柔湿制冷",
+                        "p_price": "1799.00"
+                    }
+                ],
+                [
+                    {
+                        "src": "./images/index/F3/tab6/tab01.webp",
+                        "p_name": "TCL 65英寸4K智能电视",
+                        "p_price": "3299.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab6/tab02.webp",
+                        "p_name": "TCL 65英寸4K智能电视",
+                        "p_price": "3299.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab6/tab03.webp",
+                        "p_name": "TCL 65英寸4K智能电视",
+                        "p_price": "3299.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab6/tab04.webp",
+                        "p_name": "TCL 65英寸4K智能电视",
+                        "p_price": "3299.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab6/tab05.webp",
+                        "p_name": "TCL 65英寸4K智能电视",
+                        "p_price": "3299.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab6/tab06.webp",
+                        "p_name": "TCL 65英寸4K智能电视",
+                        "p_price": "3299.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab6/tab07.webp",
+                        "p_name": "TCL 65英寸4K智能电视",
+                        "p_price": "3299.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab6/tab08.webp",
+                        "p_name": "TCL 65英寸4K智能电视",
+                        "p_price": "3299.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab6/tab09.webp",
+                        "p_name": "TCL 65英寸4K智能电视",
+                        "p_price": "3299.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab6/tab10.webp",
+                        "p_name": "TCL 65英寸4K智能电视",
+                        "p_price": "3299.00"
+                    }
+                ],
+                [
+                    {
+                        "src": "./images/index/F3/tab7/tab01.webp",
+                        "p_name": "康佳43英寸全高清智能电视",
+                        "p_price": "1299.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab7/tab02.webp",
+                        "p_name": "康佳43英寸全高清智能电视",
+                        "p_price": "1299.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab7/tab03.webp",
+                        "p_name": "康佳43英寸全高清智能电视",
+                        "p_price": "1299.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab7/tab04.webp",
+                        "p_name": "康佳43英寸全高清智能电视",
+                        "p_price": "1299.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab7/tab05.webp",
+                        "p_name": "康佳43英寸全高清智能电视",
+                        "p_price": "1299.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab7/tab06.webp",
+                        "p_name": "康佳43英寸全高清智能电视",
+                        "p_price": "1299.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab7/tab07.webp",
+                        "p_name": "康佳43英寸全高清智能电视",
+                        "p_price": "1299.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab7/tab08.webp",
+                        "p_name": "康佳43英寸全高清智能电视",
+                        "p_price": "1299.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab7/tab09.webp",
+                        "p_name": "康佳43英寸全高清智能电视",
+                        "p_price": "1299.00"
+                    },
+                    {
+                        "src": "./images/index/F3/tab7/tab10.webp",
+                        "p_name": "康佳43英寸全高清智能电视",
+                        "p_price": "1299.00"
+                    }
+                ]
+            ]
+        },
+        {
+            "floor": "4",
+            "headTitle": "厨房卫浴",
+            "headTab": [
+                "精选热卖",
+                "厨房小电",
+                "生活电器",
+                "电风扇",
+                "卫浴电器",
+                "厨房电器",
+                "净水/饮水",
+                "淘实惠"
+            ],
+            "bodyLeft": {
+                "leftImg": "./images/index/F4/left.jpg",
+                "background": "#41ccb8",
+                "channel_inner": [
+                    "手机",
+                    "充值",
+                    "电器城"
+                ],
+                "keywords": {
+                    "w55": [
+                        "荣耀",
+                        "iQOO",
+                        "华为",
+                        "热销推荐",
+                        "潮3c"
+                    ],
+                    "w43": [
+                        "配件",
+                        "全面屏",
+                        "保护套",
+                        "小米",
+                        "iPhone"
+                    ],
+                    "w62": [
+                        "淘实惠",
+                        "vivo",
+                        "中兴",
+                        "以旧换新",
+                        "OPPO"
+                    ]
+                }
+            },
+            "bodySwiper": {
+                "SwiperImg": [
+                    "./images/index/F4/Swiper/Swiper01.webp",
+                    "./images/index/F4/Swiper/Swiper02.webp",
+                    "./images/index/F4/Swiper/Swiper03.webp"
+                ],
+                "brandImg": [
+                    "./images/index/F4/brand/brand01.jpg",
+                    "./images/index/F4/brand/brand02.jpg",
+                    "./images/index/F4/brand/brand03.jpg",
+                    "./images/index/F4/brand/brand04.jpg",
+                    "./images/index/F4/brand/brand05.jpg",
+                    "./images/index/F4/brand/brand06.jpg",
+                    "./images/index/F4/brand/brand07.jpg",
+                    "./images/index/F4/brand/brand08.jpg",
+                    "./images/index/F4/brand/brand09.jpg",
+                    "./images/index/F4/brand/brand10.jpg",
+                    "./images/index/F4/brand/brand11.jpg",
+                    "./images/index/F4/brand/brand12.jpg",
+                    "./images/index/F4/brand/brand13.jpg",
+                    "./images/index/F4/brand/brand14.jpg",
+                    "./images/index/F4/brand/brand15.jpg",
+                    "./images/index/F4/brand/brand16.jpg",
+                    "./images/index/F4/brand/brand17.jpg",
+                    "./images/index/F4/brand/brand18.jpg",
+                    "./images/index/F4/brand/brand19.jpg",
+                    "./images/index/F4/brand/brand20.jpg",
+                    "./images/index/F4/brand/brand21.jpg",
+                    "./images/index/F4/brand/brand22.jpg",
+                    "./images/index/F4/brand/brand23.jpg",
+                    "./images/index/F4/brand/brand24.jpg"
+                ]
+            },
+            "bodyRight": [
+                "./images/index/F4/tab1/tab01.webp",
+                "./images/index/F4/tab1/tab02.webp",
+                "./images/index/F4/tab1/tab03.webp",
+                "./images/index/F4/tab1/tab04.webp",
+                "./images/index/F4/tab1/tab05.webp",
+                "./images/index/F4/tab1/tab06.webp"
+            ],
+            "tabOther": [
+                [
+                    {
+                        "src": "./images/index/F4/tab2/tab01.webp",
+                        "p_name": "东菱咖啡机DL-KF1061",
+                        "p_price": "459.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab2/tab02.webp",
+                        "p_name": "东菱咖啡机DL-KF1061",
+                        "p_price": "459.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab2/tab03.webp",
+                        "p_name": "东菱咖啡机DL-KF1061",
+                        "p_price": "459.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab2/tab04.webp",
+                        "p_name": "东菱咖啡机DL-KF1061",
+                        "p_price": "459.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab2/tab05.webp",
+                        "p_name": "东菱咖啡机DL-KF1061",
+                        "p_price": "459.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab2/tab06.webp",
+                        "p_name": "东菱咖啡机DL-KF1061",
+                        "p_price": "459.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab2/tab07.webp",
+                        "p_name": "东菱咖啡机DL-KF1061",
+                        "p_price": "459.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab2/tab08.webp",
+                        "p_name": "东菱咖啡机DL-KF1061",
+                        "p_price": "459.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab2/tab09.webp",
+                        "p_name": "东菱咖啡机DL-KF1061",
+                        "p_price": "459.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab2/tab10.webp",
+                        "p_name": "东菱咖啡机DL-KF1061",
+                        "p_price": "459.00"
+                    }
+                ],
+                [
+                    {
+                        "src": "./images/index/F4/tab3/tab01.webp",
+                        "p_name": "戴森(Dyson) 手持式吸尘器 SV10 DYSON V8 FLUFFY ORIGIN 进口吸尘器",
+                        "p_price": "2390.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab3/tab02.webp",
+                        "p_name": "戴森(Dyson) 手持式吸尘器 SV10 DYSON V8 FLUFFY ORIGIN 进口吸尘器",
+                        "p_price": "2390.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab3/tab03.webp",
+                        "p_name": "戴森(Dyson) 手持式吸尘器 SV10 DYSON V8 FLUFFY ORIGIN 进口吸尘器",
+                        "p_price": "2390.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab3/tab04.webp",
+                        "p_name": "戴森(Dyson) 手持式吸尘器 SV10 DYSON V8 FLUFFY ORIGIN 进口吸尘器",
+                        "p_price": "2390.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab3/tab05.webp",
+                        "p_name": "戴森(Dyson) 手持式吸尘器 SV10 DYSON V8 FLUFFY ORIGIN 进口吸尘器",
+                        "p_price": "2390.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab3/tab06.webp",
+                        "p_name": "戴森(Dyson) 手持式吸尘器 SV10 DYSON V8 FLUFFY ORIGIN 进口吸尘器",
+                        "p_price": "2390.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab3/tab07.webp",
+                        "p_name": "戴森(Dyson) 手持式吸尘器 SV10 DYSON V8 FLUFFY ORIGIN 进口吸尘器",
+                        "p_price": "2390.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab3/tab08.webp",
+                        "p_name": "戴森(Dyson) 手持式吸尘器 SV10 DYSON V8 FLUFFY ORIGIN 进口吸尘器",
+                        "p_price": "2390.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab3/tab09.webp",
+                        "p_name": "戴森(Dyson) 手持式吸尘器 SV10 DYSON V8 FLUFFY ORIGIN 进口吸尘器",
+                        "p_price": "2390.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab3/tab10.webp",
+                        "p_name": "戴森(Dyson) 手持式吸尘器 SV10 DYSON V8 FLUFFY ORIGIN 进口吸尘器",
+                        "p_price": "2390.00"
+                    }
+                ],
+                [
+                    {
+                        "src": "./images/index/F4/tab4/tab01.webp",
+                        "p_name": "奥克斯（AUX）FS1608RC 遥控落地扇/电风扇/五叶大风量风扇/家用风扇/空气流通/静音风扇",
+                        "p_price": "149.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab4/tab02.webp",
+                        "p_name": "奥克斯（AUX）FS1608RC 遥控落地扇/电风扇/五叶大风量风扇/家用风扇/空气流通/静音风扇",
+                        "p_price": "149.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab4/tab03.webp",
+                        "p_name": "奥克斯（AUX）FS1608RC 遥控落地扇/电风扇/五叶大风量风扇/家用风扇/空气流通/静音风扇",
+                        "p_price": "149.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab4/tab04.webp",
+                        "p_name": "奥克斯（AUX）FS1608RC 遥控落地扇/电风扇/五叶大风量风扇/家用风扇/空气流通/静音风扇",
+                        "p_price": "149.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab4/tab05.webp",
+                        "p_name": "奥克斯（AUX）FS1608RC 遥控落地扇/电风扇/五叶大风量风扇/家用风扇/空气流通/静音风扇",
+                        "p_price": "149.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab4/tab06.webp",
+                        "p_name": "奥克斯（AUX）FS1608RC 遥控落地扇/电风扇/五叶大风量风扇/家用风扇/空气流通/静音风扇",
+                        "p_price": "149.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab4/tab07.webp",
+                        "p_name": "奥克斯（AUX）FS1608RC 遥控落地扇/电风扇/五叶大风量风扇/家用风扇/空气流通/静音风扇",
+                        "p_price": "149.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab4/tab08.webp",
+                        "p_name": "奥克斯（AUX）FS1608RC 遥控落地扇/电风扇/五叶大风量风扇/家用风扇/空气流通/静音风扇",
+                        "p_price": "149.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab4/tab09.webp",
+                        "p_name": "奥克斯（AUX）FS1608RC 遥控落地扇/电风扇/五叶大风量风扇/家用风扇/空气流通/静音风扇",
+                        "p_price": "149.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab4/tab10.webp",
+                        "p_name": "奥克斯（AUX）FS1608RC 遥控落地扇/电风扇/五叶大风量风扇/家用风扇/空气流通/静音风扇",
+                        "p_price": "149.00"
+                    }
+                ],
+                [
+                    {
+                        "src": "./images/index/F4/tab5/tab01.webp",
+                        "p_name": "史密斯（A.O.Smith）80升电热水器 专利免更换镁棒 E_80VC0 金圭内胆 变频速热 新品",
+                        "p_price": "2498.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab5/tab02.webp",
+                        "p_name": "史密斯（A.O.Smith）80升电热水器 专利免更换镁棒 E_80VC0 金圭内胆 变频速热 新品",
+                        "p_price": "2498.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab5/tab03.webp",
+                        "p_name": "史密斯（A.O.Smith）80升电热水器 专利免更换镁棒 E_80VC0 金圭内胆 变频速热 新品",
+                        "p_price": "2498.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab5/tab04.webp",
+                        "p_name": "史密斯（A.O.Smith）80升电热水器 专利免更换镁棒 E_80VC0 金圭内胆 变频速热 新品",
+                        "p_price": "2498.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab5/tab05.webp",
+                        "p_name": "史密斯（A.O.Smith）80升电热水器 专利免更换镁棒 E_80VC0 金圭内胆 变频速热 新品",
+                        "p_price": "2498.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab5/tab06.webp",
+                        "p_name": "史密斯（A.O.Smith）80升电热水器 专利免更换镁棒 E_80VC0 金圭内胆 变频速热 新品",
+                        "p_price": "2498.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab5/tab07.webp",
+                        "p_name": "史密斯（A.O.Smith）80升电热水器 专利免更换镁棒 E_80VC0 金圭内胆 变频速热 新品",
+                        "p_price": "2498.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab5/tab08.webp",
+                        "p_name": "史密斯（A.O.Smith）80升电热水器 专利免更换镁棒 E_80VC0 金圭内胆 变频速热 新品",
+                        "p_price": "2498.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab5/tab09.webp",
+                        "p_name": "史密斯（A.O.Smith）80升电热水器 专利免更换镁棒 E_80VC0 金圭内胆 变频速热 新品",
+                        "p_price": "2498.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab5/tab10.webp",
+                        "p_name": "史密斯（A.O.Smith）80升电热水器 专利免更换镁棒 E_80VC0 金圭内胆 变频速热 新品",
+                        "p_price": "2498.00"
+                    }
+                ],
+                [
+                    {
+                        "src": "./images/index/F4/tab6/tab01.webp",
+                        "p_name": "万和(Vanward)烟机CXW-260-J320A 小尺寸大吸力侧吸吸油烟机",
+                        "p_price": "699.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab6/tab02.webp",
+                        "p_name": "万和(Vanward)烟机CXW-260-J320A 小尺寸大吸力侧吸吸油烟机",
+                        "p_price": "699.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab6/tab03.webp",
+                        "p_name": "万和(Vanward)烟机CXW-260-J320A 小尺寸大吸力侧吸吸油烟机",
+                        "p_price": "699.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab6/tab04.webp",
+                        "p_name": "万和(Vanward)烟机CXW-260-J320A 小尺寸大吸力侧吸吸油烟机",
+                        "p_price": "699.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab6/tab05.webp",
+                        "p_name": "万和(Vanward)烟机CXW-260-J320A 小尺寸大吸力侧吸吸油烟机",
+                        "p_price": "699.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab6/tab06.webp",
+                        "p_name": "万和(Vanward)烟机CXW-260-J320A 小尺寸大吸力侧吸吸油烟机",
+                        "p_price": "699.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab6/tab07.webp",
+                        "p_name": "万和(Vanward)烟机CXW-260-J320A 小尺寸大吸力侧吸吸油烟机",
+                        "p_price": "699.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab6/tab08.webp",
+                        "p_name": "万和(Vanward)烟机CXW-260-J320A 小尺寸大吸力侧吸吸油烟机",
+                        "p_price": "699.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab6/tab09.webp",
+                        "p_name": "万和(Vanward)烟机CXW-260-J320A 小尺寸大吸力侧吸吸油烟机",
+                        "p_price": "699.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab6/tab10.webp",
+                        "p_name": "万和(Vanward)烟机CXW-260-J320A 小尺寸大吸力侧吸吸油烟机",
+                        "p_price": "699.00"
+                    }
+                ],
+                [
+                    {
+                        "src": "./images/index/F4/tab7/tab01.webp",
+                        "p_name": "安吉尔净水器家用厨房大通量自来水过滤器软水机前置反渗透滤芯净水机官方旗舰小魔方J2904-ROB60",
+                        "p_price": "1798.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab7/tab02.webp",
+                        "p_name": "安吉尔净水器家用厨房大通量自来水过滤器软水机前置反渗透滤芯净水机官方旗舰小魔方J2904-ROB60",
+                        "p_price": "1798.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab7/tab03.webp",
+                        "p_name": "安吉尔净水器家用厨房大通量自来水过滤器软水机前置反渗透滤芯净水机官方旗舰小魔方J2904-ROB60",
+                        "p_price": "1798.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab7/tab04.webp",
+                        "p_name": "安吉尔净水器家用厨房大通量自来水过滤器软水机前置反渗透滤芯净水机官方旗舰小魔方J2904-ROB60",
+                        "p_price": "1798.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab7/tab05.webp",
+                        "p_name": "安吉尔净水器家用厨房大通量自来水过滤器软水机前置反渗透滤芯净水机官方旗舰小魔方J2904-ROB60",
+                        "p_price": "1798.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab7/tab06.webp",
+                        "p_name": "安吉尔净水器家用厨房大通量自来水过滤器软水机前置反渗透滤芯净水机官方旗舰小魔方J2904-ROB60",
+                        "p_price": "1798.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab7/tab07.webp",
+                        "p_name": "安吉尔净水器家用厨房大通量自来水过滤器软水机前置反渗透滤芯净水机官方旗舰小魔方J2904-ROB60",
+                        "p_price": "1798.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab7/tab08.webp",
+                        "p_name": "安吉尔净水器家用厨房大通量自来水过滤器软水机前置反渗透滤芯净水机官方旗舰小魔方J2904-ROB60",
+                        "p_price": "1798.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab7/tab09.webp",
+                        "p_name": "安吉尔净水器家用厨房大通量自来水过滤器软水机前置反渗透滤芯净水机官方旗舰小魔方J2904-ROB60",
+                        "p_price": "1798.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab7/tab10.webp",
+                        "p_name": "安吉尔净水器家用厨房大通量自来水过滤器软水机前置反渗透滤芯净水机官方旗舰小魔方J2904-ROB60",
+                        "p_price": "1798.00"
+                    }
+                ],
+                [
+                    {
+                        "src": "./images/index/F4/tab8/tab01.webp",
+                        "p_name": "东菱多士炉TA-8600第二代",
+                        "p_price": "59.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab8/tab02.webp",
+                        "p_name": "东菱多士炉TA-8600第二代",
+                        "p_price": "59.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab8/tab03.webp",
+                        "p_name": "东菱多士炉TA-8600第二代",
+                        "p_price": "59.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab8/tab04.webp",
+                        "p_name": "东菱多士炉TA-8600第二代",
+                        "p_price": "59.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab8/tab05.webp",
+                        "p_name": "东菱多士炉TA-8600第二代",
+                        "p_price": "59.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab8/tab06.webp",
+                        "p_name": "东菱多士炉TA-8600第二代",
+                        "p_price": "59.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab8/tab07.webp",
+                        "p_name": "东菱多士炉TA-8600第二代",
+                        "p_price": "59.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab8/tab08.webp",
+                        "p_name": "东菱多士炉TA-8600第二代",
+                        "p_price": "59.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab8/tab09.webp",
+                        "p_name": "东菱多士炉TA-8600第二代",
+                        "p_price": "59.00"
+                    },
+                    {
+                        "src": "./images/index/F4/tab8/tab10.webp",
+                        "p_name": "东菱多士炉TA-8600第二代",
+                        "p_price": "59.00"
+                    }
+                ]
+            ]
+        },
+        {
+            "floor": "5",
+            "headTitle": "国美超市",
+            "headTab": [
+                "精选热卖",
+                "母婴玩具",
+                "美妆个护",
+                "食品饮料",
+                "茗茶名酒",
+                "清洁用品",
+                "生鲜",
+                "家居百货"
+            ],
+            "bodyLeft": {
+                "leftImg": "./images/index/F5/left.jpg",
+                "background": "#e85cc5",
+                "channel_inner": [
+                    "手机",
+                    "充值",
+                    "电器城"
+                ],
+                "keywords": {
+                    "w55": [
+                        "荣耀",
+                        "iQOO",
+                        "华为",
+                        "热销推荐",
+                        "潮3c"
+                    ],
+                    "w43": [
+                        "配件",
+                        "全面屏",
+                        "保护套",
+                        "小米",
+                        "iPhone"
+                    ],
+                    "w62": [
+                        "淘实惠",
+                        "vivo",
+                        "中兴",
+                        "以旧换新",
+                        "OPPO"
+                    ]
+                }
+            },
+            "bodySwiper": {
+                "SwiperImg": [
+                    "./images/index/F5/Swiper/Swiper01.webp",
+                    "./images/index/F5/Swiper/Swiper02.webp",
+                    "./images/index/F5/Swiper/Swiper03.webp"
+                ],
+                "brandImg": [
+                    "./images/index/F5/brand/brand01.jpg",
+                    "./images/index/F5/brand/brand02.jpg",
+                    "./images/index/F5/brand/brand03.jpg",
+                    "./images/index/F5/brand/brand04.jpg",
+                    "./images/index/F5/brand/brand05.jpg",
+                    "./images/index/F5/brand/brand06.jpg",
+                    "./images/index/F5/brand/brand07.jpg",
+                    "./images/index/F5/brand/brand08.jpg",
+                    "./images/index/F5/brand/brand09.jpg",
+                    "./images/index/F5/brand/brand10.jpg",
+                    "./images/index/F5/brand/brand11.jpg",
+                    "./images/index/F5/brand/brand12.jpg"
+                ]
+            },
+            "bodyRight": [
+                "./images/index/F5/tab1/tab01.webp",
+                "./images/index/F5/tab1/tab02.webp",
+                "./images/index/F5/tab1/tab03.webp",
+                "./images/index/F5/tab1/tab04.webp",
+                "./images/index/F5/tab1/tab05.webp",
+                "./images/index/F5/tab1/tab06.webp"
+            ],
+            "tabOther": [
+                [
+                    {
+                        "src": "./images/index/F5/tab2/tab01.webp",
+                        "p_name": "东菱咖啡机DL-KF1061",
+                        "p_price": "459.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab2/tab02.webp",
+                        "p_name": "东菱咖啡机DL-KF1061",
+                        "p_price": "459.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab2/tab03.webp",
+                        "p_name": "东菱咖啡机DL-KF1061",
+                        "p_price": "459.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab2/tab04.webp",
+                        "p_name": "东菱咖啡机DL-KF1061",
+                        "p_price": "459.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab2/tab05.webp",
+                        "p_name": "东菱咖啡机DL-KF1061",
+                        "p_price": "459.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab2/tab06.webp",
+                        "p_name": "东菱咖啡机DL-KF1061",
+                        "p_price": "459.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab2/tab07.webp",
+                        "p_name": "东菱咖啡机DL-KF1061",
+                        "p_price": "459.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab2/tab08.webp",
+                        "p_name": "东菱咖啡机DL-KF1061",
+                        "p_price": "459.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab2/tab09.webp",
+                        "p_name": "东菱咖啡机DL-KF1061",
+                        "p_price": "459.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab2/tab10.webp",
+                        "p_name": "东菱咖啡机DL-KF1061",
+                        "p_price": "459.00"
+                    }
+                ],
+                [
+                    {
+                        "src": "./images/index/F5/tab3/tab01.webp",
+                        "p_name": "戴森(Dyson) 手持式吸尘器 SV10 DYSON V8 FLUFFY ORIGIN 进口吸尘器",
+                        "p_price": "2390.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab3/tab02.webp",
+                        "p_name": "戴森(Dyson) 手持式吸尘器 SV10 DYSON V8 FLUFFY ORIGIN 进口吸尘器",
+                        "p_price": "2390.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab3/tab03.webp",
+                        "p_name": "戴森(Dyson) 手持式吸尘器 SV10 DYSON V8 FLUFFY ORIGIN 进口吸尘器",
+                        "p_price": "2390.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab3/tab04.webp",
+                        "p_name": "戴森(Dyson) 手持式吸尘器 SV10 DYSON V8 FLUFFY ORIGIN 进口吸尘器",
+                        "p_price": "2390.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab3/tab05.webp",
+                        "p_name": "戴森(Dyson) 手持式吸尘器 SV10 DYSON V8 FLUFFY ORIGIN 进口吸尘器",
+                        "p_price": "2390.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab3/tab06.webp",
+                        "p_name": "戴森(Dyson) 手持式吸尘器 SV10 DYSON V8 FLUFFY ORIGIN 进口吸尘器",
+                        "p_price": "2390.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab3/tab07.webp",
+                        "p_name": "戴森(Dyson) 手持式吸尘器 SV10 DYSON V8 FLUFFY ORIGIN 进口吸尘器",
+                        "p_price": "2390.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab3/tab08.webp",
+                        "p_name": "戴森(Dyson) 手持式吸尘器 SV10 DYSON V8 FLUFFY ORIGIN 进口吸尘器",
+                        "p_price": "2390.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab3/tab09.webp",
+                        "p_name": "戴森(Dyson) 手持式吸尘器 SV10 DYSON V8 FLUFFY ORIGIN 进口吸尘器",
+                        "p_price": "2390.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab3/tab10.webp",
+                        "p_name": "戴森(Dyson) 手持式吸尘器 SV10 DYSON V8 FLUFFY ORIGIN 进口吸尘器",
+                        "p_price": "2390.00"
+                    }
+                ],
+                [
+                    {
+                        "src": "./images/index/F5/tab4/tab01.webp",
+                        "p_name": "奥克斯（AUX）FS1608RC 遥控落地扇/电风扇/五叶大风量风扇/家用风扇/空气流通/静音风扇",
+                        "p_price": "149.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab4/tab02.webp",
+                        "p_name": "奥克斯（AUX）FS1608RC 遥控落地扇/电风扇/五叶大风量风扇/家用风扇/空气流通/静音风扇",
+                        "p_price": "149.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab4/tab03.webp",
+                        "p_name": "奥克斯（AUX）FS1608RC 遥控落地扇/电风扇/五叶大风量风扇/家用风扇/空气流通/静音风扇",
+                        "p_price": "149.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab4/tab04.webp",
+                        "p_name": "奥克斯（AUX）FS1608RC 遥控落地扇/电风扇/五叶大风量风扇/家用风扇/空气流通/静音风扇",
+                        "p_price": "149.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab4/tab05.webp",
+                        "p_name": "奥克斯（AUX）FS1608RC 遥控落地扇/电风扇/五叶大风量风扇/家用风扇/空气流通/静音风扇",
+                        "p_price": "149.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab4/tab06.webp",
+                        "p_name": "奥克斯（AUX）FS1608RC 遥控落地扇/电风扇/五叶大风量风扇/家用风扇/空气流通/静音风扇",
+                        "p_price": "149.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab4/tab07.webp",
+                        "p_name": "奥克斯（AUX）FS1608RC 遥控落地扇/电风扇/五叶大风量风扇/家用风扇/空气流通/静音风扇",
+                        "p_price": "149.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab4/tab08.webp",
+                        "p_name": "奥克斯（AUX）FS1608RC 遥控落地扇/电风扇/五叶大风量风扇/家用风扇/空气流通/静音风扇",
+                        "p_price": "149.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab4/tab09.webp",
+                        "p_name": "奥克斯（AUX）FS1608RC 遥控落地扇/电风扇/五叶大风量风扇/家用风扇/空气流通/静音风扇",
+                        "p_price": "149.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab4/tab10.webp",
+                        "p_name": "奥克斯（AUX）FS1608RC 遥控落地扇/电风扇/五叶大风量风扇/家用风扇/空气流通/静音风扇",
+                        "p_price": "149.00"
+                    }
+                ],
+                [
+                    {
+                        "src": "./images/index/F5/tab5/tab01.webp",
+                        "p_name": "史密斯（A.O.Smith）80升电热水器 专利免更换镁棒 E_80VC0 金圭内胆 变频速热 新品",
+                        "p_price": "2498.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab5/tab02.webp",
+                        "p_name": "史密斯（A.O.Smith）80升电热水器 专利免更换镁棒 E_80VC0 金圭内胆 变频速热 新品",
+                        "p_price": "2498.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab5/tab03.webp",
+                        "p_name": "史密斯（A.O.Smith）80升电热水器 专利免更换镁棒 E_80VC0 金圭内胆 变频速热 新品",
+                        "p_price": "2498.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab5/tab04.webp",
+                        "p_name": "史密斯（A.O.Smith）80升电热水器 专利免更换镁棒 E_80VC0 金圭内胆 变频速热 新品",
+                        "p_price": "2498.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab5/tab05.webp",
+                        "p_name": "史密斯（A.O.Smith）80升电热水器 专利免更换镁棒 E_80VC0 金圭内胆 变频速热 新品",
+                        "p_price": "2498.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab5/tab06.webp",
+                        "p_name": "史密斯（A.O.Smith）80升电热水器 专利免更换镁棒 E_80VC0 金圭内胆 变频速热 新品",
+                        "p_price": "2498.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab5/tab07.webp",
+                        "p_name": "史密斯（A.O.Smith）80升电热水器 专利免更换镁棒 E_80VC0 金圭内胆 变频速热 新品",
+                        "p_price": "2498.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab5/tab08.webp",
+                        "p_name": "史密斯（A.O.Smith）80升电热水器 专利免更换镁棒 E_80VC0 金圭内胆 变频速热 新品",
+                        "p_price": "2498.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab5/tab09.webp",
+                        "p_name": "史密斯（A.O.Smith）80升电热水器 专利免更换镁棒 E_80VC0 金圭内胆 变频速热 新品",
+                        "p_price": "2498.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab5/tab10.webp",
+                        "p_name": "史密斯（A.O.Smith）80升电热水器 专利免更换镁棒 E_80VC0 金圭内胆 变频速热 新品",
+                        "p_price": "2498.00"
+                    }
+                ],
+                [
+                    {
+                        "src": "./images/index/F5/tab6/tab01.webp",
+                        "p_name": "万和(Vanward)烟机CXW-260-J320A 小尺寸大吸力侧吸吸油烟机",
+                        "p_price": "699.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab6/tab02.webp",
+                        "p_name": "万和(Vanward)烟机CXW-260-J320A 小尺寸大吸力侧吸吸油烟机",
+                        "p_price": "699.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab6/tab03.webp",
+                        "p_name": "万和(Vanward)烟机CXW-260-J320A 小尺寸大吸力侧吸吸油烟机",
+                        "p_price": "699.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab6/tab04.webp",
+                        "p_name": "万和(Vanward)烟机CXW-260-J320A 小尺寸大吸力侧吸吸油烟机",
+                        "p_price": "699.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab6/tab05.webp",
+                        "p_name": "万和(Vanward)烟机CXW-260-J320A 小尺寸大吸力侧吸吸油烟机",
+                        "p_price": "699.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab6/tab06.webp",
+                        "p_name": "万和(Vanward)烟机CXW-260-J320A 小尺寸大吸力侧吸吸油烟机",
+                        "p_price": "699.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab6/tab07.webp",
+                        "p_name": "万和(Vanward)烟机CXW-260-J320A 小尺寸大吸力侧吸吸油烟机",
+                        "p_price": "699.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab6/tab08.webp",
+                        "p_name": "万和(Vanward)烟机CXW-260-J320A 小尺寸大吸力侧吸吸油烟机",
+                        "p_price": "699.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab6/tab09.webp",
+                        "p_name": "万和(Vanward)烟机CXW-260-J320A 小尺寸大吸力侧吸吸油烟机",
+                        "p_price": "699.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab6/tab10.webp",
+                        "p_name": "万和(Vanward)烟机CXW-260-J320A 小尺寸大吸力侧吸吸油烟机",
+                        "p_price": "699.00"
+                    }
+                ],
+                [
+                    {
+                        "src": "./images/index/F5/tab7/tab01.webp",
+                        "p_name": "安吉尔净水器家用厨房大通量自来水过滤器软水机前置反渗透滤芯净水机官方旗舰小魔方J2904-ROB60",
+                        "p_price": "1798.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab7/tab02.webp",
+                        "p_name": "安吉尔净水器家用厨房大通量自来水过滤器软水机前置反渗透滤芯净水机官方旗舰小魔方J2904-ROB60",
+                        "p_price": "1798.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab7/tab03.webp",
+                        "p_name": "安吉尔净水器家用厨房大通量自来水过滤器软水机前置反渗透滤芯净水机官方旗舰小魔方J2904-ROB60",
+                        "p_price": "1798.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab7/tab04.webp",
+                        "p_name": "安吉尔净水器家用厨房大通量自来水过滤器软水机前置反渗透滤芯净水机官方旗舰小魔方J2904-ROB60",
+                        "p_price": "1798.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab7/tab05.webp",
+                        "p_name": "安吉尔净水器家用厨房大通量自来水过滤器软水机前置反渗透滤芯净水机官方旗舰小魔方J2904-ROB60",
+                        "p_price": "1798.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab7/tab06.webp",
+                        "p_name": "安吉尔净水器家用厨房大通量自来水过滤器软水机前置反渗透滤芯净水机官方旗舰小魔方J2904-ROB60",
+                        "p_price": "1798.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab7/tab07.webp",
+                        "p_name": "安吉尔净水器家用厨房大通量自来水过滤器软水机前置反渗透滤芯净水机官方旗舰小魔方J2904-ROB60",
+                        "p_price": "1798.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab7/tab08.webp",
+                        "p_name": "安吉尔净水器家用厨房大通量自来水过滤器软水机前置反渗透滤芯净水机官方旗舰小魔方J2904-ROB60",
+                        "p_price": "1798.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab7/tab09.webp",
+                        "p_name": "安吉尔净水器家用厨房大通量自来水过滤器软水机前置反渗透滤芯净水机官方旗舰小魔方J2904-ROB60",
+                        "p_price": "1798.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab7/tab10.webp",
+                        "p_name": "安吉尔净水器家用厨房大通量自来水过滤器软水机前置反渗透滤芯净水机官方旗舰小魔方J2904-ROB60",
+                        "p_price": "1798.00"
+                    }
+                ],
+                [
+                    {
+                        "src": "./images/index/F5/tab8/tab01.webp",
+                        "p_name": "东菱多士炉TA-8600第二代",
+                        "p_price": "59.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab8/tab02.webp",
+                        "p_name": "东菱多士炉TA-8600第二代",
+                        "p_price": "59.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab8/tab03.webp",
+                        "p_name": "东菱多士炉TA-8600第二代",
+                        "p_price": "59.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab8/tab04.webp",
+                        "p_name": "东菱多士炉TA-8600第二代",
+                        "p_price": "59.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab8/tab05.webp",
+                        "p_name": "东菱多士炉TA-8600第二代",
+                        "p_price": "59.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab8/tab06.webp",
+                        "p_name": "东菱多士炉TA-8600第二代",
+                        "p_price": "59.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab8/tab07.webp",
+                        "p_name": "东菱多士炉TA-8600第二代",
+                        "p_price": "59.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab8/tab08.webp",
+                        "p_name": "东菱多士炉TA-8600第二代",
+                        "p_price": "59.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab8/tab09.webp",
+                        "p_name": "东菱多士炉TA-8600第二代",
+                        "p_price": "59.00"
+                    },
+                    {
+                        "src": "./images/index/F5/tab8/tab10.webp",
+                        "p_name": "东菱多士炉TA-8600第二代",
+                        "p_price": "59.00"
+                    }
+                ]
+            ]
+        },
+        {
+            "floor": "6",
+            "headTitle": "家居家装",
+            "headTab": [
+                "精选热卖",
+                "家装建材",
+                "精品家具",
+                "材料装修"
+            ],
+            "bodyLeft": {
+                "leftImg": "./images/index/F6/left.png",
+                "background": "#abce5b",
+                "channel_inner": [
+                    "住宅家具",
+                    "家装建材"
+                ],
+                "keywords": {
+                    "w55": [
+                        "吸顶灯",
+                        "沙发",
+                        "床",
+                        "餐桌",
+                        "花洒"
+                    ]
+                }
+            },
+            "bodySwiper": {
+                "SwiperImg": [
+                    "./images/index/F6/Swiper/Swiper01.webp"
+                ],
+                "brandImg": [
+                    "./images/index/F6/brand/brand01.jpg",
+                    "./images/index/F6/brand/brand02.jpg",
+                    "./images/index/F6/brand/brand03.jpg",
+                    "./images/index/F6/brand/brand04.jpg",
+                    "./images/index/F6/brand/brand05.jpg",
+                    "./images/index/F6/brand/brand06.jpg",
+                    "./images/index/F6/brand/brand07.jpg",
+                    "./images/index/F6/brand/brand08.jpg",
+                    "./images/index/F6/brand/brand09.jpg",
+                    "./images/index/F6/brand/brand10.jpg",
+                    "./images/index/F6/brand/brand11.jpg",
+                    "./images/index/F6/brand/brand12.jpg",
+                    "./images/index/F6/brand/brand13.jpg",
+                    "./images/index/F6/brand/brand14.jpg",
+                    "./images/index/F6/brand/brand15.jpg",
+                    "./images/index/F6/brand/brand16.jpg"
+                ]
+            },
+            "bodyRight": [
+                "./images/index/F6/tab1/tab01.webp",
+                "./images/index/F6/tab1/tab02.webp",
+                "./images/index/F6/tab1/tab03.webp",
+                "./images/index/F6/tab1/tab04.webp",
+                "./images/index/F6/tab1/tab05.webp",
+                "./images/index/F6/tab1/tab06.webp"
+            ],
+            "tabOther": [
+                [
+                    {
+                        "src": "./images/index/F6/tab2/tab01.webp",
+                        "p_name": "JOMOO九牧 可升降淋浴花洒 空气能出水升级经典增压超薄淋浴器 莲蓬头花洒 36281(36281经典款)",
+                        "p_price": "549.00"
+                    },
+                    {
+                        "src": "./images/index/F6/tab2/tab02.webp",
+                        "p_name": "JOMOO九牧 可升降淋浴花洒 空气能出水升级经典增压超薄淋浴器 莲蓬头花洒 36281(36281经典款)",
+                        "p_price": "549.00"
+                    },
+                    {
+                        "src": "./images/index/F6/tab2/tab03.webp",
+                        "p_name": "JOMOO九牧 可升降淋浴花洒 空气能出水升级经典增压超薄淋浴器 莲蓬头花洒 36281(36281经典款)",
+                        "p_price": "549.00"
+                    },
+                    {
+                        "src": "./images/index/F6/tab2/tab04.webp",
+                        "p_name": "JOMOO九牧 可升降淋浴花洒 空气能出水升级经典增压超薄淋浴器 莲蓬头花洒 36281(36281经典款)",
+                        "p_price": "549.00"
+                    },
+                    {
+                        "src": "./images/index/F6/tab2/tab05.webp",
+                        "p_name": "JOMOO九牧 可升降淋浴花洒 空气能出水升级经典增压超薄淋浴器 莲蓬头花洒 36281(36281经典款)",
+                        "p_price": "549.00"
+                    },
+                    {
+                        "src": "./images/index/F6/tab2/tab06.webp",
+                        "p_name": "JOMOO九牧 可升降淋浴花洒 空气能出水升级经典增压超薄淋浴器 莲蓬头花洒 36281(36281经典款)",
+                        "p_price": "549.00"
+                    },
+                    {
+                        "src": "./images/index/F6/tab2/tab07.webp",
+                        "p_name": "JOMOO九牧 可升降淋浴花洒 空气能出水升级经典增压超薄淋浴器 莲蓬头花洒 36281(36281经典款)",
+                        "p_price": "549.00"
+                    },
+                    {
+                        "src": "./images/index/F6/tab2/tab08.webp",
+                        "p_name": "JOMOO九牧 可升降淋浴花洒 空气能出水升级经典增压超薄淋浴器 莲蓬头花洒 36281(36281经典款)",
+                        "p_price": "549.00"
+                    },
+                    {
+                        "src": "./images/index/F6/tab2/tab09.webp",
+                        "p_name": "JOMOO九牧 可升降淋浴花洒 空气能出水升级经典增压超薄淋浴器 莲蓬头花洒 36281(36281经典款)",
+                        "p_price": "549.00"
+                    },
+                    {
+                        "src": "./images/index/F6/tab2/tab10.webp",
+                        "p_name": "JOMOO九牧 可升降淋浴花洒 空气能出水升级经典增压超薄淋浴器 莲蓬头花洒 36281(36281经典款)",
+                        "p_price": "549.00"
+                    }
+                ],
+                [
+                    {
+                        "src": "./images/index/F6/tab3/tab01.webp",
+                        "p_name": "一米色彩 床垫 席梦思 弹簧床垫 双人软硬两用型单人椰棕床垫子 针织面料(白色 1800*2000)",
+                        "p_price": "733.00"
+                    },
+                    {
+                        "src": "./images/index/F6/tab3/tab02.webp",
+                        "p_name": "一米色彩 床垫 席梦思 弹簧床垫 双人软硬两用型单人椰棕床垫子 针织面料(白色 1800*2000)",
+                        "p_price": "733.00"
+                    },
+                    {
+                        "src": "./images/index/F6/tab3/tab03.webp",
+                        "p_name": "一米色彩 床垫 席梦思 弹簧床垫 双人软硬两用型单人椰棕床垫子 针织面料(白色 1800*2000)",
+                        "p_price": "733.00"
+                    },
+                    {
+                        "src": "./images/index/F6/tab3/tab04.webp",
+                        "p_name": "一米色彩 床垫 席梦思 弹簧床垫 双人软硬两用型单人椰棕床垫子 针织面料(白色 1800*2000)",
+                        "p_price": "733.00"
+                    },
+                    {
+                        "src": "./images/index/F6/tab3/tab05.webp",
+                        "p_name": "一米色彩 床垫 席梦思 弹簧床垫 双人软硬两用型单人椰棕床垫子 针织面料(白色 1800*2000)",
+                        "p_price": "733.00"
+                    },
+                    {
+                        "src": "./images/index/F6/tab3/tab06.webp",
+                        "p_name": "一米色彩 床垫 席梦思 弹簧床垫 双人软硬两用型单人椰棕床垫子 针织面料(白色 1800*2000)",
+                        "p_price": "733.00"
+                    },
+                    {
+                        "src": "./images/index/F6/tab3/tab07.webp",
+                        "p_name": "一米色彩 床垫 席梦思 弹簧床垫 双人软硬两用型单人椰棕床垫子 针织面料(白色 1800*2000)",
+                        "p_price": "733.00"
+                    },
+                    {
+                        "src": "./images/index/F6/tab3/tab08.webp",
+                        "p_name": "一米色彩 床垫 席梦思 弹簧床垫 双人软硬两用型单人椰棕床垫子 针织面料(白色 1800*2000)",
+                        "p_price": "733.00"
+                    },
+                    {
+                        "src": "./images/index/F6/tab3/tab09.webp",
+                        "p_name": "一米色彩 床垫 席梦思 弹簧床垫 双人软硬两用型单人椰棕床垫子 针织面料(白色 1800*2000)",
+                        "p_price": "733.00"
+                    },
+                    {
+                        "src": "./images/index/F6/tab3/tab10.webp",
+                        "p_name": "一米色彩 床垫 席梦思 弹簧床垫 双人软硬两用型单人椰棕床垫子 针织面料(白色 1800*2000)",
+                        "p_price": "733.00"
+                    }
+                ],
+                [
+                    {
+                        "src": "./images/index/F6/tab4/tab01.webp",
+                        "p_name": "九牧 健康饮用水龙头",
+                        "p_price": "269.00"
+                    },
+                    {
+                        "src": "./images/index/F6/tab4/tab02.webp",
+                        "p_name": "九牧 健康饮用水龙头",
+                        "p_price": "269.00"
+                    },
+                    {
+                        "src": "./images/index/F6/tab4/tab03.webp",
+                        "p_name": "九牧 健康饮用水龙头",
+                        "p_price": "269.00"
+                    },
+                    {
+                        "src": "./images/index/F6/tab4/tab04.webp",
+                        "p_name": "九牧 健康饮用水龙头",
+                        "p_price": "269.00"
+                    },
+                    {
+                        "src": "./images/index/F6/tab4/tab05.webp",
+                        "p_name": "九牧 健康饮用水龙头",
+                        "p_price": "269.00"
+                    },
+                    {
+                        "src": "./images/index/F6/tab4/tab06.webp",
+                        "p_name": "九牧 健康饮用水龙头",
+                        "p_price": "269.00"
+                    },
+                    {
+                        "src": "./images/index/F6/tab4/tab07.webp",
+                        "p_name": "九牧 健康饮用水龙头",
+                        "p_price": "269.00"
+                    },
+                    {
+                        "src": "./images/index/F6/tab4/tab08.webp",
+                        "p_name": "九牧 健康饮用水龙头",
+                        "p_price": "269.00"
+                    },
+                    {
+                        "src": "./images/index/F6/tab4/tab09.webp",
+                        "p_name": "九牧 健康饮用水龙头",
+                        "p_price": "269.00"
+                    },
+                    {
+                        "src": "./images/index/F6/tab4/tab10.webp",
+                        "p_name": "九牧 健康饮用水龙头",
+                        "p_price": "269.00"
+                    }
+                ]
+            ]
+        },
+        {
+            "floor": "7",
+            "headTitle": "汽车用品",
+            "headTab": [
+                "精选热卖",
+                "汽车玻璃水",
+                "内饰挂件",
+                "充电桩"
+            ],
+            "bodyLeft": {
+                "leftImg": "./images/index/F7/left.webp",
+                "background": "#abce5b",
+                "channel_inner": [
+                    "机油",
+                    "轮胎",
+                    "电瓶"
+                ],
+                "keywords": {
+                    "w55": [
+                        "行车记录",
+                        "机油",
+                        "改装配件",
+                        "车蜡",
+                        "整车"
+                    ],
+                    "w43": [
+                        "轮胎",
+                        "轮胎",
+                        "轮胎",
+                        "轮胎",
+                        "轮胎"
+                    ],
+                    "w62": [
+                        "儿童安全座椅",
+                        "儿童安全座椅",
+                        "儿童安全座椅",
+                        "儿童安全座椅",
+                        "儿童安全座椅"
+                    ]
+                }
+            },
+            "bodySwiper": {
+                "SwiperImg": [
+                    "./images/index/F7/Swiper/Swiper01.webp"
+                ],
+                "brandImg": [
+                    "./images/index/F7/brand/brand01.jpg",
+                    "./images/index/F7/brand/brand02.jpg",
+                    "./images/index/F7/brand/brand03.jpg",
+                    "./images/index/F7/brand/brand04.jpg",
+                    "./images/index/F7/brand/brand05.jpg",
+                    "./images/index/F7/brand/brand06.jpg"
+                ]
+            },
+            "bodyRight": [
+                "./images/index/F7/tab1/tab01.webp",
+                "./images/index/F7/tab1/tab02.webp",
+                "./images/index/F7/tab1/tab03.webp",
+                "./images/index/F7/tab1/tab04.webp",
+                "./images/index/F7/tab1/tab05.webp",
+                "./images/index/F7/tab1/tab06.webp"
+            ],
+            "tabOther": [
+                [
+                    {
+                        "src": "./images/index/F7/tab2/tab01.webp",
+                        "p_name": "玻璃水轩之梦汽车用玻璃水3桶装 -25-40四季通用车用雨刮水雨刷精(黑色 -40度防冻型)",
+                        "p_price": "22.60"
+                    },
+                    {
+                        "src": "./images/index/F7/tab2/tab02.webp",
+                        "p_name": "玻璃水轩之梦汽车用玻璃水3桶装 -25-40四季通用车用雨刮水雨刷精(黑色 -40度防冻型)",
+                        "p_price": "22.60"
+                    },
+                    {
+                        "src": "./images/index/F7/tab2/tab03.webp",
+                        "p_name": "玻璃水轩之梦汽车用玻璃水3桶装 -25-40四季通用车用雨刮水雨刷精(黑色 -40度防冻型)",
+                        "p_price": "22.60"
+                    },
+                    {
+                        "src": "./images/index/F7/tab2/tab04.webp",
+                        "p_name": "玻璃水轩之梦汽车用玻璃水3桶装 -25-40四季通用车用雨刮水雨刷精(黑色 -40度防冻型)",
+                        "p_price": "22.60"
+                    },
+                    {
+                        "src": "./images/index/F7/tab2/tab05.webp",
+                        "p_name": "玻璃水轩之梦汽车用玻璃水3桶装 -25-40四季通用车用雨刮水雨刷精(黑色 -40度防冻型)",
+                        "p_price": "22.60"
+                    },
+                    {
+                        "src": "./images/index/F7/tab2/tab06.webp",
+                        "p_name": "玻璃水轩之梦汽车用玻璃水3桶装 -25-40四季通用车用雨刮水雨刷精(黑色 -40度防冻型)",
+                        "p_price": "22.60"
+                    },
+                    {
+                        "src": "./images/index/F7/tab2/tab07.webp",
+                        "p_name": "玻璃水轩之梦汽车用玻璃水3桶装 -25-40四季通用车用雨刮水雨刷精(黑色 -40度防冻型)",
+                        "p_price": "22.60"
+                    },
+                    {
+                        "src": "./images/index/F7/tab2/tab08.webp",
+                        "p_name": "玻璃水轩之梦汽车用玻璃水3桶装 -25-40四季通用车用雨刮水雨刷精(黑色 -40度防冻型)",
+                        "p_price": "22.60"
+                    },
+                    {
+                        "src": "./images/index/F7/tab2/tab09.webp",
+                        "p_name": "玻璃水轩之梦汽车用玻璃水3桶装 -25-40四季通用车用雨刮水雨刷精(黑色 -40度防冻型)",
+                        "p_price": "22.60"
+                    },
+                    {
+                        "src": "./images/index/F7/tab2/tab10.webp",
+                        "p_name": "玻璃水轩之梦汽车用玻璃水3桶装 -25-40四季通用车用雨刮水雨刷精(黑色 -40度防冻型)",
+                        "p_price": "22.60"
+                    }
+                   
+                   
+                ],
+
+                [
+                    {
+                        "src": "./images/index/F7/tab3/tab01.webp",
+                        "p_name": "汽车遮阳挡防晒隔热自动伸缩车内用前挡遮阳档板车窗遮光帘(前后挡 材质)",
+                        "p_price": "175.00"
+                    },
+                    {
+                        "src": "./images/index/F7/tab3/tab02.webp",
+                        "p_name": "汽车遮阳挡防晒隔热自动伸缩车内用前挡遮阳档板车窗遮光帘(前后挡 材质)",
+                        "p_price": "175.00"
+                    },
+                    {
+                        "src": "./images/index/F7/tab3/tab03.webp",
+                        "p_name": "汽车遮阳挡防晒隔热自动伸缩车内用前挡遮阳档板车窗遮光帘(前后挡 材质)",
+                        "p_price": "175.00"
+                    },
+                    {
+                        "src": "./images/index/F7/tab3/tab04.webp",
+                        "p_name": "汽车遮阳挡防晒隔热自动伸缩车内用前挡遮阳档板车窗遮光帘(前后挡 材质)",
+                        "p_price": "175.00"
+                    },
+                    {
+                        "src": "./images/index/F7/tab3/tab05.webp",
+                        "p_name": "汽车遮阳挡防晒隔热自动伸缩车内用前挡遮阳档板车窗遮光帘(前后挡 材质)",
+                        "p_price": "175.00"
+                    },
+                    {
+                        "src": "./images/index/F7/tab3/tab06.webp",
+                        "p_name": "汽车遮阳挡防晒隔热自动伸缩车内用前挡遮阳档板车窗遮光帘(前后挡 材质)",
+                        "p_price": "175.00"
+                    },
+                    {
+                        "src": "./images/index/F7/tab3/tab07.webp",
+                        "p_name": "汽车遮阳挡防晒隔热自动伸缩车内用前挡遮阳档板车窗遮光帘(前后挡 材质)",
+                        "p_price": "175.00"
+                    },
+                    {
+                        "src": "./images/index/F7/tab3/tab08.webp",
+                        "p_name": "汽车遮阳挡防晒隔热自动伸缩车内用前挡遮阳档板车窗遮光帘(前后挡 材质)",
+                        "p_price": "175.00"
+                    },
+                    {
+                        "src": "./images/index/F7/tab3/tab09.webp",
+                        "p_name": "汽车遮阳挡防晒隔热自动伸缩车内用前挡遮阳档板车窗遮光帘(前后挡 材质)",
+                        "p_price": "175.00"
+                    },
+                    {
+                        "src": "./images/index/F7/tab3/tab10.webp",
+                        "p_name": "汽车遮阳挡防晒隔热自动伸缩车内用前挡遮阳档板车窗遮光帘(前后挡 材质)",
+                        "p_price": "175.00"
+                    }
+                ],
+
+                [
+                    {
+                        "src": "./images/index/F7/tab4/tab01.webp",
+                        "p_name": "领充锐系列7kW交流充电桩新能源电动汽车充电桩通用32A家用交流快充桩(黑色 立柱式单机标准版)",
+                        "p_price": "3199.00"
+                    },
+                    {
+                        "src": "./images/index/F7/tab4/tab02.webp",
+                        "p_name": "领充锐系列7kW交流充电桩新能源电动汽车充电桩通用32A家用交流快充桩(黑色 立柱式单机标准版)",
+                        "p_price": "3199.00"
+                    },
+                    {
+                        "src": "./images/index/F7/tab4/tab03.webp",
+                        "p_name": "领充锐系列7kW交流充电桩新能源电动汽车充电桩通用32A家用交流快充桩(黑色 立柱式单机标准版)",
+                        "p_price": "3199.00"
+                    },
+                    {
+                        "src": "./images/index/F7/tab4/tab04.webp",
+                        "p_name": "领充锐系列7kW交流充电桩新能源电动汽车充电桩通用32A家用交流快充桩(黑色 立柱式单机标准版)",
+                        "p_price": "3199.00"
+                    },
+                    {
+                        "src": "./images/index/F7/tab4/tab05.webp",
+                        "p_name": "领充锐系列7kW交流充电桩新能源电动汽车充电桩通用32A家用交流快充桩(黑色 立柱式单机标准版)",
+                        "p_price": "3199.00"
+                    },
+                    {
+                        "src": "./images/index/F7/tab4/tab06.webp",
+                        "p_name": "领充锐系列7kW交流充电桩新能源电动汽车充电桩通用32A家用交流快充桩(黑色 立柱式单机标准版)",
+                        "p_price": "3199.00"
+                    },
+                    {
+                        "src": "./images/index/F7/tab4/tab07.webp",
+                        "p_name": "领充锐系列7kW交流充电桩新能源电动汽车充电桩通用32A家用交流快充桩(黑色 立柱式单机标准版)",
+                        "p_price": "3199.00"
+                    },
+                    {
+                        "src": "./images/index/F7/tab4/tab08.webp",
+                        "p_name": "领充锐系列7kW交流充电桩新能源电动汽车充电桩通用32A家用交流快充桩(黑色 立柱式单机标准版)",
+                        "p_price": "3199.00"
+                    },
+                    {
+                        "src": "./images/index/F7/tab4/tab09.webp",
+                        "p_name": "领充锐系列7kW交流充电桩新能源电动汽车充电桩通用32A家用交流快充桩(黑色 立柱式单机标准版)",
+                        "p_price": "3199.00"
+                    },
+                    {
+                        "src": "./images/index/F7/tab4/tab04.webp",
+                        "p_name": "领充锐系列7kW交流充电桩新能源电动汽车充电桩通用32A家用交流快充桩(黑色 立柱式单机标准版)",
+                        "p_price": "3199.00"
+                    }
+                ]
+            ]
+        }
     ]
 ]
