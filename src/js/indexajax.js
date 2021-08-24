@@ -440,7 +440,6 @@ $(function () {
                         </a>
                     </li>
                 `;
-                console.log(item2);
                 $("#floorwrap").children("")
                     .eq(index).find(".mc_r_inner").append(bodyRightHtml);
             })
@@ -459,7 +458,6 @@ $(function () {
             // 3.对每一个item进行遍历
             let mainHtml = ``;
             item.forEach((item2, index2) => {
-
                 mainHtml = `
                 <div class="main">
                     <ul class="main_inner" id="main_inner">
@@ -468,22 +466,79 @@ $(function () {
                 `;
                 $("#floorwrap").children()
                 .eq(index).children().children(".mc").
-                children().append(mainHtml);
-                
+                children().eq(1).append(mainHtml);
+                // console.log(item2);
             })
         })
 
-        let sliderHtml=`
-                <div class="page_slider">
-                    <p class="page_down">
-                        <a href="javascript:void(0)"></a>
-                        <span class=".rightnext"></span>
-                    </p>
-                </div>
-        `;
-        $("#floorwrap").children()
-        .eq(index).children().children(".mc").
-        children().append(sliderHtml)
+        // 设置初始样式
+        for(var i=0;i<7;i++){
+            $("#floorwrap").children()
+            .eq(i).find(".main_warp").children(".main").eq(0)
+            .css("display","block").siblings(".main").css("display","none")
+
+            let sliderHtml=`
+            <div class="page_slider" style="z-Index=1000">
+                <p class="page_down">
+                    <a href="javascript:void(0)"></a>
+                    <span class=".rightnext"></span>
+                </p>
+            </div>
+            `;
+            $("#floorwrap").children()
+            .eq(i).children().children(".mc").
+            children().eq(1).append(sliderHtml)
+
+        }
+
+        // 把每个item单独加到每个ul里面去
+       tabOther.forEach((item,index)=>{
+           item.forEach((item2,index2)=>{
+                console.log(index2);//0,1,2
+                let tabUlHtml=``;
+                item2.forEach((item3,inde3)=>{
+                    tabUlHtml=`
+                    <li>
+                        <a>
+                            <img class="lazyloading" src=${item3.src} />
+                            <p class="p_name">${item3.p_name}</p>
+                            <p class="p_price">
+                            <span>¥</span>${item3.p_price}
+                            </p>
+                        </a>
+                    </li>
+                `;
+                $("#floorwrap").children().eq(index)
+                .children().children(".mc").children()
+                .eq(1).children().eq(index2+1).children().append(tabUlHtml)
+                })
+               
+
+           })
+       })
+
+
+    //    点击事件
+    console.log($(".page_slider"));
+    console.log($(".main_warp"));
+    console.log($(".main"));
+    // 设置ul下标
+    let tabMainIndex=0;
+    $(".page_slider").click(function(evt){
+        tabMainIndex++;
+        if( tabMainIndex>=$(this).parent().children(".main").length){
+            tabMainIndex=0;
+        }
+        $(this).parent().children().eq(tabMainIndex).css("display","block")
+        .siblings(".main").css("display","none");
+        // tab跟随切换
+        $(this).parent().parent().parent()
+        .children().eq(0).children().eq(1)
+        .children("li").eq(tabMainIndex)
+        .siblings().removeClass("tabCur").end().addClass("tabCur");
+    })
+      
+       
         // 其余tab的图片
         // 身体 end
         // ajax请求 
