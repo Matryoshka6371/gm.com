@@ -2367,6 +2367,18 @@ li {
   right: 0;
 }
 
+.__gome_not-care .floor .mc .main_warp .page_slider:hover a {
+  opacity: 0.5;
+}
+
+.__gome_not-care .floor .mc .main_warp .slider_down:hover a {
+  opacity: 0.5;
+}
+
+.__gome_not-care .floor .mc .main_warp .slider_up:hover a {
+  opacity: 0.5;
+}
+
 .hotlist {
   height: 400px;
 }

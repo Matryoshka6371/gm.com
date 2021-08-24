@@ -1709,8 +1709,7 @@
             "bodySwiper": {
                 "SwiperImg": [
                     "./images/index/F5/Swiper/Swiper01.webp",
-                    "./images/index/F5/Swiper/Swiper02.webp",
-                    "./images/index/F5/Swiper/Swiper03.webp"
+                    "./images/index/F5/Swiper/Swiper02.webp"
                 ],
                 "brandImg": [
                     "./images/index/F5/brand/brand01.jpg",
@@ -2333,7 +2332,7 @@
             },
             "bodyLeft": {
                 "leftImg": "./images/index/F7/left.webp",
-                "background": "#abce5b",
+                "background": "#829daa",
                 "channel_inner": [
                     "机油",
                     "轮胎",

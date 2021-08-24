@@ -550,6 +550,19 @@ $(function () {
 
         })
 
+        // 默认隐藏箭头,点击显示
+        $(".slider_page,.page_slider").css({"display":"none"});
+        // 移入时显示
+        $(".main_warp").hover(function(){
+            $(".slider_page,.page_slider").css({"display":"block"})
+        },function(){
+            $(".slider_page,.page_slider").css({"display":"none"})
+        })
+        // 移入时,透明度加深
+        // $(".page_slider").on("mouseenter",function(){
+
+        // })
+
 
         // 其余tab的图片
         // 身体 end
