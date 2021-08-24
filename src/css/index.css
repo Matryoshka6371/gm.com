@@ -66,6 +66,10 @@ html, body {
   margin: 0 auto;
 }
 
+li {
+  list-style: none;
+}
+
 .home .gm_title {
   height: 60px;
   width: 100%;
@@ -2132,9 +2136,9 @@ html, body {
 }
 
 .__gome_not-care .floor .mc .mc_l .keyAll .channelbg .channel .channel_inner li {
-  width: 180px;
   height: 32px;
   line-height: 32px;
+  margin-right: 10px;
   overflow: hidden;
   float: left;
 }
@@ -2201,7 +2205,6 @@ html, body {
   height: 470px;
   float: left;
   position: relative;
-  overflow: hidden;
 }
 
 .__gome_not-care .floor .mc .main_warp .main {
@@ -2244,6 +2247,12 @@ html, body {
   width: 18px;
   height: 4px;
   margin-top: 3px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.__gome_not-care .floor .mc .main_warp .main .mc_c .floornav .cur a {
+  background: #f5004b;
+  opacity: 1;
 }
 
 .__gome_not-care .floor .mc .main_warp .main .mc_c .slider li {
@@ -2318,7 +2327,6 @@ html, body {
   width: 198px;
   height: 235px;
   float: left;
-  overflow: hidden;
 }
 
 .__gome_not-care .floor .mc .main_warp .main .main_inner li a {
@@ -2327,7 +2335,6 @@ html, body {
   display: block;
   border-right: 1px solid #eee;
   border-bottom: 1px solid #eee;
-  overflow: hidden;
 }
 
 .__gome_not-care .floor .mc .main_warp .main .main_inner li a img {
@@ -2695,7 +2702,7 @@ html, body {
   display: inline-block;
   width: 3px;
   height: 10px;
-  background: url(/gmpro/1.0.0/public/1.0.0/css/i/ui.png);
+  background: url("../images/index/ui1.png");
   vertical-align: middle;
   background-position: -120px -1489px;
 }

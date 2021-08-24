@@ -47,7 +47,9 @@ html,body{
     width:1200px;
     margin:0 auto;
 }
-
+li{
+    list-style: none;
+}
 .home .gm_title {
     height: 60px;
     width: 100%;
@@ -1995,9 +1997,10 @@ html,body{
                                 margin-right: 15px;
                                 overflow: hidden;
                                 li{
-                                    width: 180px;
+                                    // width: 180px;
                                     height: 32px;
                                     line-height: 32px;
+                                    margin-right: 10px;
                                     overflow: hidden;
                                     float: left;
                                     a{
@@ -2064,7 +2067,7 @@ html,body{
                 height: 470px;
                 float: left;
                 position: relative;
-                overflow: hidden;
+                // overflow: hidden;
                 .main {
                     width: 990px;
                     height: 470px;
@@ -2093,11 +2096,19 @@ html,body{
                                 display: inline-block;
                                 zoom: 1;
                                 margin-left: 1px;
+                               
                                 a{
                                     display: block;
                                     width: 18px;
                                     height: 4px;
                                     margin-top: 3px;
+                                    background: rgba(255,255,255,.5);
+                                }
+                            }
+                            .cur{
+                                a{
+                                    background: #f5004b;
+                                    opacity: 1;
                                 }
                             }
                         }
@@ -2173,14 +2184,14 @@ html,body{
                             width: 198px;
                             height: 235px;
                             float: left;
-                            overflow: hidden;
+                            // overflow: hidden;
                             a{
                                 width: 197px;
                                 height: 234px;
                                 display: block;
                                 border-right: 1px solid #eee;
                                 border-bottom: 1px solid #eee;
-                                overflow: hidden;
+                                // overflow: hidden;
                                 img{
                                     display: block;
                                     width: 130px;
@@ -2524,7 +2535,7 @@ html,body{
                 display: inline-block;
                 width: 3px;
                 height: 10px;
-                background: url(/gmpro/1.0.0/public/1.0.0/css/i/ui.png);
+                background:url("../images/index/ui1.png");
                 vertical-align: middle;
                 background-position: -120px -1489px;
             }
