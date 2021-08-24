@@ -530,13 +530,24 @@ $(function () {
             if ($index >= $(this).parent().children(".main").length) {
                 $index = 0;
             }
-            $(this).parent().parent().parent()
+        $(this).parent().parent().parent()
                 .children().eq(0).children().eq(1)
                 .children("li").eq($index)
                 .siblings().removeClass("tabcur").end().addClass("tabcur");
-
         $(this).parent().children(".main").eq($index).css("display", "block")
             .siblings(".main").css("display", "none");
+        })
+
+        // tab栏点击事件
+        $(".mt").on("click",".tab a",function(evt){
+            // 获取这个值
+            let $index = $(this).parent().index();
+            console.log($index);
+            $(this).parent().siblings().removeClass("tabcur").end().addClass("tabcur");
+
+            $(this).parent().parent().parent().parent().children().eq(1).children().eq(1)
+            .children(".main").eq($index).siblings(".main").css("display","none").end().css("display","block")
+
         })
 
 
