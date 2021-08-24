@@ -626,6 +626,56 @@ $(function () {
         // $(".page_slider").on("mouseenter",function(){
 
         // })
+        // 第四个和第六个的样式单独设置一下
+        $("#floorwrap").children().eq(3).find(".mc_l")
+        .css({
+            width:"120px"
+        }).children("a").children("img").eq(0).css({
+            width:"120px"
+        })
+        
+        $("#floorwrap").children().eq(3).find(".main_warp")
+        .css({
+            width:"1080px"
+        }).end().find(".main").css("width","1080px").end()
+        .find(".mc_c").css({
+            width:"479px"
+        }).end().find(".channel").css({
+            "backgroundColor":"#2cc7b0",
+        }).find("ul").css({
+            width: 72,
+            marginLeft: 24,
+        }).children("li").css({
+            width:72,
+        }).children("a").css({
+            display: "inline-block",
+            fontSize: 14,
+        })
+
+        $("#floorwrap").children().eq(5).find(".mc_l")
+        .css({
+            width:"120px"
+        }).children("a").children("img").eq(0).css({
+            width:"120px"
+        })
+        
+        $("#floorwrap").children().eq(5).find(".main_warp")
+        .css({
+            width:"1080px"
+        }).end().find(".main").css("width","1080px").end()
+        .find(".mc_c").css({
+            width:"479px"
+        }).end().find(".channel").css({
+            "backgroundColor":"#9cc736",
+        }).find("ul").css({
+            width: 72,
+            marginLeft: 24,
+        }).children("li").css({
+            width:72,
+        }).children("a").css({
+            display: "inline-block",
+            fontSize: 14,
+        })
 
 
         // 其余tab的图片

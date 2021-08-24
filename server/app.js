@@ -18,7 +18,7 @@ server.use(express.json());
 server.use(cors());
 
 
-// 1.请求index轮播图数据
+// 1.请求index数据
 server.get("/api/index",async(request,response)=>{
     var bannerData=JSON.parse((await file.getData("./data/index/mainbanner.json"))||"[]");
     response.json({
@@ -27,6 +27,9 @@ server.get("/api/index",async(request,response)=>{
         code:200
     })
 })
+
+// 2.注册页面接口
+
 
 
 
