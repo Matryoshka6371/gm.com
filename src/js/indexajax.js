@@ -1,3 +1,4 @@
+
 $(function () {
     // ajax请求 start
     $(window).on("scroll", function () {
@@ -8,7 +9,7 @@ $(function () {
             $(".elevator").css("display", "none");
         }
 
-        if (scrollTop > 470) {
+        if (scrollTop > 600) {
             $(".stick-nav").css("display", "block")
         } else {
             $(".stick-nav").css("display", "none");

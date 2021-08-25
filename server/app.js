@@ -29,6 +29,34 @@ server.get("/api/index",async(request,response)=>{
 })
 
 // 2.注册页面接口
+server.post("/account/reg",async function(request,response){
+    let {user,pwd,phone}=request.body;
+    // 2,准备sql语句
+    let sql ="INSERT INTO `userinfo` (`uName`,`uPwd`,`uPhone`) VALUES(?,?,?,?);"
+
+
+    // md5的二次加密
+    let params=[user,md5(md5(pwd)+"lxw"),phone];
+
+    try{
+        let result=await db.exec(sql,params);
+        //注意:除了查询返回的是数组,
+        //其他 (插入,修改,删除)返回的 受影响行数
+        //不是undefined并且受影响行数大于等于1
+        console.log(result);
+        let isReg=result&&result.affectRows;
+        response.json({
+            msg:isReg?"注册成功":"注册失败",
+            code:200
+        })
+    }catch(error){
+        response.json({
+            msg:"注册失败",
+            err:error,
+            code:-200
+        })
+    }
+})
 
 
 

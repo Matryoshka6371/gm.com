@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="./js/libs/jquery.js"></script>
-    <script src="../layer-v3.5.1/layer/layer.js"></script>
+    <script src="./js/sliderVerify.js"></script>
+    <script src="./js/layer-v3.5.1/layer/layer.js"></script>
     <script src="./js/openreg.js"></script>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/reg.css">
-
+    <link rel="stylesheet" href="./css/sliderVerify.css">
+   
 </head>
 <body>
     <!-- head start -->
@@ -38,21 +40,21 @@
                     <li class="step-li2"></li>
                 </ul>
                 <!-- 第一步 -->
-                <div data-id="step1" class="step-active">
+                <div id="step1" class="step1 step-active">
                     <div class="step-icon-pos step-icon step-icon1">1</div>
                     <div class="step-info step-info1">
                         <div name="js_step_name_1">验证手机号</div>
                     </div>
                 </div>
                 <!-- 第二步 -->
-                <div  data-id="step2">
+                <div id="step2"  class="step2">
                     <div class="step-icon-pos step-icon step-icon2">2</div>
                     <div class="step-info step-info2">
                         <div name="js_step_name_2">填写账户信息</div>
                     </div>
                 </div>
                 <!-- 第三步 -->
-                <div  data-id="step3">
+                <div  id="step3"  class="step3">
                     <div class="step-icon-pos step-icon step-icon3">2</div>
                     <div class="step-info step-info3">
                         <div name="js_step_name_3">注册成功</div>
@@ -63,9 +65,34 @@
             <!-- 注册操作部分 -->
             <div class="step-content">
                 <form action="" autocomplete="off" id="verifyMobileForm">
+
+                    <!-- 手机号 -->
                     <div class="form-group">
                         <input type="text" id="mobile" name="mobile" class="form-control" placeholder="请输入常用手机号" autocomplete="off">
                         <i class="close mobile-close reg-icon"></i>
+                        <i class="inputSuc"></i>
+                        <div class="input-call-info pos-abs"></div>
+                        <div class="C_err_tips"></div>
+                    </div>
+
+
+                    <!-- 用户名 -->
+                    <div class="form-group">
+                        <input type="text" id="username" name="username" maxlength="20" 
+                        class="form-control" placeholder="请输入用户名" autocomplete="on">
+                        <i class="reg-icon close" style="display: none;"></i>
+                        <i class="inputSuc"></i>
+                        <div class="input-call-info pos-abs"></div>
+                        <div class="C_err_tips"></div>
+                    </div>
+
+                    <!-- 密码 -->
+                    <div class="form-group">
+                        <input type="password" id="mobile" name="mobile"
+                         class="form-control" placeholder="请设置登录密码" autocomplete="off">
+                         <i class="reg-icon close pwd-close"></i>
+                        <i class="reg-icon errOpen" id="eye"></i>
+                        <div id="capsLocked" class="capsLock">键盘大写锁定已打开，请注意大小写!</div>
                         <i class="inputSuc"></i>
                         <div class="input-call-info pos-abs"></div>
                         <div class="C_err_tips"></div>
@@ -77,6 +104,9 @@
                             <div class="dingxiang-title">为了账号安全，完成拼图验证</div>
                             <i class="close dingxiang-close"></i>
                         </div>
+                        <!-- 滑块验证 start -->
+                        <div id="slideBar"></div>
+                        <!-- 滑块验证 end -->
                         <a class="button btn-gray wbtn1" href="javascript:;">点击按钮进行验证</a>
                     </div>
                     <!-- 确定按钮 -->
@@ -210,12 +240,20 @@
         </div>
     </div>
     <!-- footer end -->
+   
 </body>
 </html>
 
 <!-- 页面结构加载完成立即弹出窗口 -->
 <script>
     $(function(){
+
+
+
+        // 用户名和密码框默认隐藏
+        $("#verifyMobileForm").children(".form-group").eq(1).css("display","none")
+        .end().end().children(".form-group").eq(2).css("display","none")
+        // 弹出层
         const LayIndex=layer.open({
             type:1,
             area:['900px','530px'],
@@ -269,4 +307,84 @@
             layer.close(LayIndex)
         })
     })
+     // 滑块默认消失
+     $("#slideBar").css("display","none");
+    //  手机号正则
+    const regPhone=/^1[3-9][0-9]{9}$/g;
+    // 设置标志位，默认为假
+    let showFlag=false;
+      // 暂时存取手机号
+      let pausePhone=0;
+    // 输入框事件
+    // 聚焦事件
+
+    $("#mobile").on("focus",function(){
+        $(".input-call-info").text("验证完成后,你可以使用该手机登录或找回密码");
+        $(".C_err_tips").text("");
+    })
+    $("#mobile").on("blur",function(){
+        $(".input-call-info").text("");
+    })
+    $("#mobile").on("input",function(){
+        if(regPhone.test($("#mobile").val().trim())){
+            $(".inputSuc").css("display","block");
+            $(".C_err_tips").css("display","none");
+            pausePhone=$("#mobile").val().trim();
+            showFlag=true;
+        }
+        if(regPhone.test($("#mobile").val().trim().length>=1)){
+            $(".mobile-close").css("display","block");
+        }
+    })
+    // 关闭点击事件,清空输入内容
+    $(".mobile-close").on("click",function(){
+        $("#mobile").val("");
+    })
+    // 按钮点击事件
+    $(".btn-gray").on("click",function(){
+      if(  $("#mobile").val().trim()==0){
+          $(".C_err_tips").text("请输入手机号!");
+      }
+      else if(regPhone.test($("#mobile").val().trim())){
+        $(".C_err_tips").text("");
+      }else{
+        $(".C_err_tips").text("手机号格式有误!请重新输入");
+      }
+      if(showFlag==true){
+        $("#slideBar").css("display","block");
+      }
+      
+    })
+    // 设置是否成功的标志位
+    let susFlag=false;
+     // 滑块验证
+     var dataList = ["0","1"];
+        var options = {
+            dataList: dataList,
+            success:function(){  
+                console.log("show");
+                susFlag=true;
+                $("#slideBar").css("display","none");
+            },
+            fail: function(){
+                console.log("fail");  
+            }
+        };
+        SliderBar("slideBar", options);
+
+      
+       
+
+    // 点击下一步发送请求，判断手机号是否存在
+    $(".btn-primary").on("click",function(){
+        if(!susFlag){
+            return false;
+        }
+        $("$step2").addClass("active")
+        $("#step1").css({
+            backgroundPosition:"0 0"
+        })
+
+    })
+
 </script>
