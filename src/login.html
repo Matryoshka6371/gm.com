@@ -115,7 +115,7 @@
                                  <!-- 自动登录 end -->
                                  <!-- 登录按钮 start -->
                                  <div class="actions">
-                                    <input type="button" value="登 录" class="btnnuw">
+                                    <input type="submit" value="登 录" class="btnnuw">
                                  </div>
                                  <!-- 登录按钮 end -->
                                  <!-- 手机号快速登录  start-->
@@ -407,15 +407,39 @@
     let nameLength=$("#loginName").val().trim().length;
     let passwordLength=$("#loginPassword").val().trim().length;
     $("form").eq(0).on("submit",function(){
-        // if(!(nameLength>0&&passwordLength>0)){
-        //     $("#err-tip").css("display","block").children(".errMsg").text("账号或者密码错误,请重新输入");
-        //     return false
-        // }
-        // if(!())
-
-
-
-
+        if(!(nameLength>0)){
+            $("#err-tip").css("display","block")
+            .children(".errMsg").text("请输入用户名");
+        }
+        if(!(passwordLength>0)){
+            $("#err-tip").css("display","block")
+            .children(".errMsg").text("请输入密码");
+        }
+        var oUser={
+            user:$("#loginName").val().trim(),
+            pwd:$("#loginPassword").val().trim()
+        }
+        $.ajax({
+            url:"/accout/login",
+            type:"post",
+            data:oUser
+        }).then(function(res){
+            console.log(res);
+            if(res.msg=="登录失败"){
+                $("#err-tip").css("display","block")
+                .children(".errMsg").text("账号或者密码错误,请重新输入");
+            }
+            layer.msg(res.msg);
+            if(res.data&&res.code==200){
+                // 把当前登录人的信息保存到 localStorage
+                // 关闭浏览器也会保存
+                localStorage.setItem("userinfo",JSON.stringify(res.data));
+                setTimeout(function(){
+                    layer.msg("登录成功,将自动跳转到首页!");
+                    location.assign("./index.html");
+                },2000)
+            }
+        })
         // 取消默认行为
         return false
     })
