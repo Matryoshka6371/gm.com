@@ -334,8 +334,8 @@
     // 聚焦事件
 
     $("#mobile").on("focus",function(){
-        $(".input-call-info").text("验证完成后,你可以使用该手机登录或找回密码");
-        $(".C_err_tips").text("");
+        $("#mobile").parent().find(".input-call-info").text("验证完成后,你可以使用该手机登录或找回密码");
+        $("#mobile").parent().find(".C_err_tips").text("");
         $("#mobile").removeClass("err");
     })
 
@@ -385,7 +385,7 @@
     new blurInput({
         el:"#username",
         reg:regUserName,
-        tips:"4-20个字符，建议由汉字、字母，数字与"-"、“_”组成",
+        tips:"4-20个字符，建议由汉字、字母，数字与'-'、'_'组成",
         please:"请输入用户名"
     })
     new blurInput({
@@ -396,24 +396,24 @@
     })
     // 输入框失去焦点 start
     $("#mobile").on("blur",function(){
-        $(".input-call-info").text("");
-        if(  $("#mobile").val().trim().length==0){
-          $(".C_err_tips").text("请输入手机号!");
-           $(".mobile-close").css("display","none");
+        $("#mobile").parent().find(".input-call-info").text("");
+        if( $("#mobile").val().trim().length==0){
+            $("#mobile").parent().find(".C_err_tips").text("请输入手机号!");
+          $("#mobile").parent().find(".mobile-close").css("display","none");
            $("#mobile").addClass("err");
       }
     });
      // 输入框失去焦点 end
     $("#mobile").on("input",function(){
         if(regPhone.test($("#mobile").val().trim())){
-            $(".inputSuc").css("display","block");
+            $("#mobile").parent().find(".inputSuc").css("display","block");
             $("#mobile").parent().find(".C_err_tips").css("display","none");
             $("#mobile").removeClass("err");
             pausePhone=$("#mobile").val().trim();
             showFlag=true;
         }
         if($("#mobile").val().trim().length>=1){
-            $(".mobile-close").css("display","block");
+            $("#mobile").parent().find(".mobile-close").css("display","block");
         }
     })
 
@@ -445,21 +445,21 @@
         }
     })
     // 关闭点击事件,清空输入内容
-    $(".mobile-close").on("click",function(){
+    $("#mobile").parent().find(".mobile-close").on("click",function(){
         $("#mobile").val("");
-        $(".mobile-close").css("display","none");
+        $("#mobile").parent().find(".mobile-close").css("display","none");
     })
     // 按钮点击事件
     $(".btn-gray").on("click",function(){
       if(  $("#mobile").val().trim().length==0){
-          $(".C_err_tips").text("请输入手机号!");
-           $(".mobile-close").css("display","none");
+        $("#mobile").parent().find(".C_err_tips").text("请输入手机号!");
+        $("#mobile").parent().find(".mobile-close").css("display","none");
            $("#mobile").addClass("err");
       }
       else if(regPhone.test($("#mobile").val().trim())){
-        $(".C_err_tips").text("");
+        $("#mobile").parent().find(".C_err_tips").text("");
       }else{
-        $(".C_err_tips").text("手机号格式有误!请重新输入");
+        $("#mobile").parent().find(".C_err_tips").text("手机号格式有误!请重新输入");
 
       }
       if(showFlag==true){
@@ -513,10 +513,12 @@
         if(!(susFlag&&$("#verifyCode").val().trim()=="123456")){
             return false;
         }
-        $(".step1").text("")
         $(".step1").css({
             backgroundImage:"url('./images/reg/newRegister.png')",
             backgroundPosition:"0px 0px"
+        })
+        $(".step-li1").css({
+            backgroungColor:"#ff4c4c",
         })
         $(".step2").addClass("step-active")
        
@@ -526,6 +528,7 @@
         $("#verifyMobileForm").children(".form-group").eq(0).css("display","none");
         // 用户名框和密码框显示
         $("#verifyMobileForm").children(".form-group").slice(1,3).css("display","block");
+        // 判断用户名框和密码框是否为block,如果是则进行下一步判断
     })
 
 </script>
