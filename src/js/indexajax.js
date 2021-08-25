@@ -140,7 +140,7 @@ $(function () {
         $(".nav").children().eq(0).addClass("cur")
         // 设计类
         class MainSwiper {
-            constructor(el) {
+            constructor({el}) {
                 this.$el = $(el);
                 this.$Uls = this.$el.find("#focus_box");
                 this.$Ols = this.$el.find(".nav");
@@ -153,6 +153,7 @@ $(function () {
             }
             // 方法一,定时播放
             IntervalPlay() {
+                clearInterval(this.SwiperTimer1);
                 this.SwiperTimer1 = setInterval(() => {
                     this.oImgIndex++;
                     this.Play();
@@ -202,7 +203,9 @@ $(function () {
         }
 
         //创建类的实例
-        new MainSwiper(".main_data");
+        new MainSwiper({
+            el:".main_data"
+        });
         // 2. 轮播图渲染完毕
         // floor渲染 start
         const floorData = data[2];
@@ -460,6 +463,7 @@ $(function () {
             }
             // 方法一 ul中的图片和Ol样式自动轮播
             IntervalPlay() {
+                clearInterval(this.SmallTimer);
                 this.SmallTimer = setInterval(() => {
                     this.oImgIndex++;
                     this.Play();
@@ -478,17 +482,28 @@ $(function () {
                 this.$Uls.children("li").eq(this.oImgIndex)
                     .animate({"opacity":1})
                     .siblings("li")
-                    .animate({"opacity":0})
-                    ;
+                    .animate({"opacity":0});
                 //轮播图小点行为
                 this.$Ols.children("li").eq(this.oImgIndex)
                     .siblings("li").removeClass("cur").end()
                     .addClass("cur");
             }
             // 方法四,商标不跟随定时器动,但是跟着
+            BrandPlay(){
+                if (this.oImgIndex > this.$Uls.children().length-1) {
+                    this.oImgIndex = 0;
+                }
+                if (this.oImgIndex < 0) {
+                    this.oImgIndex = this.$Uls.children().length;
+                }
+                this.$Brands.children("ul").eq(this.oImgIndex)
+                .animate({"opacity":1})
+                .siblings("ul")
+                .animate({"opacity":0});
+            }
             // 方法三,鼠标移入暂停
             mouseHandler() {
-                this.$el.hover(() => {
+                this.$els.hover(() => {
                     clearInterval(this.SmallTimer);
                 }, () => {
                     this.IntervalPlay();
@@ -501,10 +516,12 @@ $(function () {
                 this.$Slider.on("click", ".slider_up", function (evt) {
                     _self.oImgIndex--;
                     _self.Play();
+                    _self.BrandPlay();
                 })
                 this.$Slider.on("click", "#slider_down", function (evt) {
                     _self.oImgIndex++;
                     _self.Play();
+                    _self.BrandPlay();
                 })
             }
         }
