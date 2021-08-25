@@ -117,6 +117,7 @@ $(function () {
         })
         //1. 商品分类,数据渲染完毕 end
 
+
         //   2.主要轮播图区渲染 start
         let SwiperHtml = ``;
         let SwiperPointHtml = ``;
@@ -124,7 +125,7 @@ $(function () {
             SwiperHtml += `
                 <li style="background:rgb${item.rgb};">
                     <a href=${item.href} data-code=${item.id}>
-                        <img src=${item.src}  />
+                        <img src=${item.src} alt=""/>
                     </a>
                 </li>
             `
@@ -771,6 +772,5 @@ $(function () {
             }
         }
         // 猜你喜欢 end
-
     })
 })

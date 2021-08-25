@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>首页</title>
+    <script src="./js/lazyload-2.x/lazyload.js"></script>
     <link rel="stylesheet" href="./css/index.css">
     <script src="./js/libs/jquery.js"></script>
-    <script src="./js/lazyload-2.x/lazyload.js"></script>
+   
     <script src="./js/libs/lodash.js"></script>
     <script src="./js/indexajax.js"></script>
     <script src="./js/index.js"></script>
@@ -461,7 +462,7 @@
     <!-- 2021年8月20日 8:30 -->
     <!-- 轮播图 start -->
     <div class="gm_main">
-        <div class="focus">
+        <div class="focus lazyload" data-src="./images/lazyload/loading.gif">
             <div class="focus_img_bg"></div>
             <div class="main_data">
                 <!-- 轮播图 -->
