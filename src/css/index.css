@@ -1154,7 +1154,7 @@ li {
 }
 
 .gm_main .focus_box li:first-child {
-  display: block;
+  opacity: 1;
 }
 
 .focus {
