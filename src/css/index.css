@@ -1138,7 +1138,7 @@ li {
   position: absolute;
   height: 450px;
   width: 100%;
-  display: none;
+  opacity: 0;
 }
 
 .gm_main .focus_box li a {

@@ -71,7 +71,7 @@ $(function () {
         for (let j = 0; j < matchArr.length; j++) {
             for (let i = 0; i < data[1].length; i++) {
                 if (data[1][i].id.includes($(matchArr[j]).attr("modelid"))) {
-                    console.log($(matchArr[j]).attr("modelid"));
+                    // console.log($(matchArr[j]).attr("modelid"));
                     let catelink = $("<a data-code=" + data[1][i].id + "href=" + data[1][i].href + ">" + data[1][i].des + "</a>")
                     $(matchArr[j]).children("h3").append(catelink);
                 } else {
@@ -169,8 +169,11 @@ $(function () {
                 }
                 // 轮播图图片行为
                 this.$Uls.children().eq(this.oImgIndex)
-                    .css("display", "block")
-                    .siblings().css("display", "none");
+                    .animate({"opacity":1})
+                    .siblings()
+                    .animate({"opacity":0})
+
+                    ;
                 //轮播图小点行为
                 this.$Ols.children().eq(this.oImgIndex)
                     .siblings().removeClass("cur").end()
@@ -317,7 +320,7 @@ $(function () {
                         <a style="display:block">${item2}</a>
                     </li>
                 `;
-                console.log(item2);
+                // console.log(item2);
                 $("#floorwrap").children("")
                     .eq(index).find(".channel_inner").append(channel_innerHtml);
             })
@@ -395,71 +398,8 @@ $(function () {
             $("#floorwrap").children().eq(i).
                 find("#floornav").children("li").eq(0).addClass("cur")
         }
-        // 2.设置定时器,自动轮播小图
-        // 设置下标
-        // 设置类
-        class SmallBanner {
-            constructor(el) {
-                this.$el = $(el);
-                this.$Uls = this.$el.children("#slider");
-                this.$Ols = this.$el.children(".floornav");
-                this.$Slider = this.$el.children(".slider_page");
-                this.$Brands = this.$el.children(".brand_slider");
-                this.oImgIndex = 0;
-                this.IntervalPlay();
-                this.mouseHandler();
-                this.clickHandler();
 
-            }
-            // 方法一 ul中的图片和Ol样式自动轮播
-            IntervalPlay() {
-                this.SmallTimer = setInterval(() => {
-                    this.oImgIndex++;
-                    this.Play();
-                }, 300)
-            }
-            // 方法二 ,播放行为
-            Play() {
-                if (this.oImgIndex >= this.$Uls.length) {
-                    this.oImgIndex = 0;
-                }
-                if (this.oImgIndex <= 0) {
-                    this.oImgIndex = this.$Uls.length;
-                }
-                // 轮播图图片行为
-                // 轮播图图片行为
-                this.$Uls.children("li").eq(this.oImgIndex)
-                    .css("display", "block")
-                    .siblings("li").css("display", "none");
-                //轮播图小点行为
-                this.$Ols.children("li").eq(this.oImgIndex)
-                    .siblings("li").removeClass("cur").end()
-                    .addClass("cur");
-            }
-            // 方法三,鼠标移入暂停
-            mouseHandler() {
-                this.$el.hover(() => {
-                    clearInterval(this.SmallTimer);
-                }, () => {
-                    this.IntervalPlay();
-                })
-            }
-            // 方法四,点击事件
-            clickHandler() {
-                console.log(this.$Slider);
-                let _self = this
-                this.$Slider.on("click", ".slider_up", function (evt) {
-                    _self.oImgIndex--;
-                    _self.Play();
-                })
-                this.$Slider.on("click", "#slider_down", function (evt) {
-                    _self.oImgIndex++;
-                    _self.Play();
-                })
-            }
-        }
-        // 创建实例
-        new SmallBanner(".mc_c");
+
         // 2.遍历获取每个商标
         let brandImg = [];
         floorData.forEach((item) => {
@@ -495,6 +435,89 @@ $(function () {
             })
         })
         // 进行遍历,其中有需要单独进行设置的
+        // 2.设置定时器,自动轮播小图
+        // 设置下标
+        // 设置类
+        //设置每一个单独的轮播图
+        class SmallBanner {
+            constructor({el}) {
+                this.$el = $(el);//floor
+                this.$els=this.$el.children().eq(0).//temp0
+                children().eq(1).//mc
+                children().eq(1).//main_wrap
+                children().eq(0).//main
+                children().eq(0)
+                // console.log(this.$els);
+                this.$Uls = this.$els.children("#slider");
+                this.$Ols = this.$els.children(".floornav");
+                this.$Slider = this.$els.children(".slider_page");
+                this.$Brands = this.$els.children(".brand_slider");
+                this.oImgIndex = 0;
+                this.IntervalPlay();
+                this.mouseHandler();
+                this.clickHandler();
+                console.log(this.$Uls.children().length);
+            }
+            // 方法一 ul中的图片和Ol样式自动轮播
+            IntervalPlay() {
+                this.SmallTimer = setInterval(() => {
+                    this.oImgIndex++;
+                    this.Play();
+                }, 2000);
+            }
+            // 方法二 ,播放行为
+            Play() {
+                if (this.oImgIndex > this.$Uls.children().length-1) {
+                    this.oImgIndex = 0;
+                }
+                if (this.oImgIndex < 0) {
+                    this.oImgIndex = this.$Uls.children().length;
+                }
+                // 轮播图图片行为
+                // 轮播图图片行为
+                this.$Uls.children("li").eq(this.oImgIndex)
+                    .animate({"opacity":1})
+                    .siblings("li")
+                    .animate({"opacity":0})
+                    ;
+                //轮播图小点行为
+                this.$Ols.children("li").eq(this.oImgIndex)
+                    .siblings("li").removeClass("cur").end()
+                    .addClass("cur");
+            }
+            // 方法四,商标不跟随定时器动,但是跟着
+            // 方法三,鼠标移入暂停
+            mouseHandler() {
+                this.$el.hover(() => {
+                    clearInterval(this.SmallTimer);
+                }, () => {
+                    this.IntervalPlay();
+                })
+            }
+            // 方法四,点击事件
+            clickHandler() {
+                // console.log(this.$Slider);
+                let _self = this
+                this.$Slider.on("click", ".slider_up", function (evt) {
+                    _self.oImgIndex--;
+                    _self.Play();
+                })
+                this.$Slider.on("click", "#slider_down", function (evt) {
+                    _self.oImgIndex++;
+                    _self.Play();
+                })
+            }
+        }
+         // 遍历,获取每一个对应的长度
+        // 循环
+        for(let i=0;i<=$("#floorwrap").children().length;i++){
+            $("#floorwrap").children().eq(i).addClass("floorNum"+(i+1));
+            // console.log(i);
+            // 创建实例
+            new SmallBanner({
+                el:".floorNum"+(i+1)
+            });
+        }
         // 中间 小轮播图区域 end
 
         // 右边 start
@@ -684,14 +707,11 @@ $(function () {
         },100))
         //  盖楼层 end
 
-
-        // 下拉框
+        //   滚轮事件的下拉框
         // 把分类和搜索框克隆进去
        $(".stick-nav>div").append($(".searchbox").clone(true));
        $(".stick-nav>div").append($(".sidecategory").clone(true));
 
-
-       
         // 猜你喜欢产品ID
         // 获取数据,打印
         const maybelike=data[3];
@@ -718,7 +738,6 @@ $(function () {
                 .append( $("#j-imgload-recomm").children("ul").eq(j).children("li").eq(0).clone(true));
             }
         }
-
         // 猜你喜欢 end
 
     })
