@@ -545,9 +545,35 @@
     $(".formSubmit").on("click",function(){
         // 1.判断用户名和密码的标志位是否为true
         if(!( uPwdFlag&&uNameFlag)){
-            layer.msg("提交不合法,请重新输入!")
+            layer.msg("提交不合法,请重新输入!");
+            console.log(pausePhone);
         }
-        
+        var oUser={
+            user:$("#username").val().trim(),
+            pwd:$("#password").val().trim(),
+            phone:pausePhone
+        }
+        $.ajax({
+            url:"/account/reg",
+            type:"post",
+            data:oUser
+
+        }).done(function(res){
+            timeOut1=setTimeout(function(){
+                layer.msg(res.msg);
+            console.log(res);
+            },3000)
+            if(!(res.msg=="注册成功")){
+                location.reload();
+                clearTimeout(timeOut1);
+            }else{
+                layer.msg("注册成功!3秒后跳转到登录叶页面进行登录!")
+                setTimeout(function(){
+                    location.assign("./login.html");
+                },3000)
+            }
+        })
+
 
     })
 </script>
