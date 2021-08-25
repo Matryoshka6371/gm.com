@@ -460,7 +460,6 @@ $(function () {
         }
         // 创建实例
         new SmallBanner(".mc_c");
-
         // 2.遍历获取每个商标
         let brandImg = [];
         floorData.forEach((item) => {
@@ -633,9 +632,9 @@ $(function () {
         $(".slider_page,.page_slider").css({ "display": "none" });
         // 移入时显示
         $(".main_warp").hover(function () {
-            $(".slider_page,.page_slider").css({ "display": "block" })
+           $(this).find(".slider_page,.page_slider").css({ "display": "block" })
         }, function () {
-            $(".slider_page,.page_slider").css({ "display": "none" })
+            $(this).find(".slider_page,.page_slider").css({ "display": "none" })
         })
         // 移入时,透明度加深
         // $(".page_slider").on("mouseenter",function(){
@@ -720,7 +719,7 @@ $(function () {
             }
         }
 
-
+        // 猜你喜欢 end
 
     })
 })

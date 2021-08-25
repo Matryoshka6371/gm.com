@@ -96,16 +96,19 @@ server.post("/accout/login",async (request,response)=>{
         })
     }
 })
-// 2021/08/25 20:15
-// 获取所有产品信息
-// server.get("/api/prodList/",async (request,response)=>{
-//     var data=JSON.parse((await file.getData("./data/index/production.json"))||'[]');
-//     response.json({
-//         msg:"查询成功",
-//         data,
-//         code:200
-//     })
-// })
+
+//4. 加载单个产品
+server.get("/api/index/:id",async(request,response)=>{
+    let id=request.params.id
+    var dataList=JSON.parse((await file.getData("./data/index/mainbanner.json"))||"[]");
+    let data=dataList[3].find(item=>item.pId==id);
+    response.json({
+        msg:"查询成功",
+        data,
+        code:200
+    })
+})
+
 
 
 // 设置端口
