@@ -692,5 +692,35 @@ $(function () {
        $(".stick-nav>div").append($(".sidecategory").clone(true));
 
 
+       
+        // 猜你喜欢产品ID
+        // 获取数据,打印
+        const maybelike=data[3];
+        console.log(maybelike);
+        // 遍历创建ul,
+        let maybeLikeHtml=``;
+        maybelike.forEach((item,index)=>{
+            maybeLikeHtml+=`
+                <ul data-pId=${item.pId}>
+                    <li>
+                        <a href="./details.html?id=${item.pId}">
+                            <img src="${item.img}" alt="">
+                            <p class="guess_title">${item.pName}</p>
+                            <p class="guess_price"><span class="yuan">¥</span>${item.pPrice}</p>
+                        </a>
+                    </li>
+                </ul>
+            `
+        })
+        $("#j-imgload-recomm").html(maybeLikeHtml);
+        for(var j=0;j<3;j++){
+            for(var i=1;i<=5;i++){
+                $("#j-imgload-recomm").children("ul").eq(j)
+                .append( $("#j-imgload-recomm").children("ul").eq(j).children("li").eq(0).clone(true));
+            }
+        }
+
+
+
     })
 })

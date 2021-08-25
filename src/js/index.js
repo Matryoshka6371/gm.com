@@ -207,12 +207,12 @@ $(function () {
 
     //猜你喜欢 开始
     //1. ul中的li复制5个追加到最后面
-    for(var j=0;j<3;j++){
-        for(var i=1;i<=5;i++){
-            $("#j-imgload-recomm").children("ul").eq(j)
-            .append( $("#j-imgload-recomm").children("ul").eq(j).children("li").eq(0).clone(true));
-           }
-    }
+    // for(var j=0;j<3;j++){
+    //     for(var i=1;i<=5;i++){
+    //         $("#j-imgload-recomm").children("ul").eq(j)
+    //         .append( $("#j-imgload-recomm").children("ul").eq(j).children("li").eq(0).clone(true));
+    //        }
+    // }
   
     //    设置ul的下标
     let maybeulIndex=0;
