@@ -64,6 +64,16 @@
                     <div class="login-wrap" id="accountlogin">
                         <form action="" id="frm">
                             <div class="normalLogin">
+                                <!-- 请输入你的密码 -->
+                                <div id="err-tip">
+                                    <span class="icon"></span>
+                                    <div>
+                                        <p>
+                                            <b class="errMsg" style="font-weight: normal;"></b>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- 勾选自动登录提示 -->
                                 <p class="tips warningTip">
                                     <em></em>
                                     公共场所不建议自动登录，以防账号丢失
@@ -71,17 +81,9 @@
                                 <!-- 登录账号区域 start -->
                                 <div class="login-item login-item-name" id="loginNameDiv">
                                     <!--a 清空  -->
-                                    <a href="" class="clear-btn"></a>
+                                    <a href="javascript:void(0)" class="clear-btn"></a>
                                     <!-- 账号站位提示 -->
-                                    <span class="default" id="loginNameDefault" style="display: block;">
-                                        手机号码
-                                        <em>/</em>
-                                        用户名
-                                        <em>/</em>
-                                        邮箱
-                                        <em>/</em>
-                                        门店会员卡号
-                                        </span>
+                                    <span class="default" id="loginNameDefault">目前只支持手机号码登录!</span>
                                         <!-- 输入框 -->
                                     <input name="loginName" id="loginName" tabindex="1" type="text" class="txt txt-focus">
                                 </div>
@@ -362,4 +364,60 @@
         },1500)
 
     })
+    // 清空点击事件
+    // 默认隐藏
+    $(".clear-btn").css("display","none")
+    class Input{
+        constructor({el}){
+            this.$el=$(el);
+            this.$clearBtn=this.$el.parent().children(".clear-btn");
+            this.$default=this.$el.parent().children(".default");
+            this.inputHandler();
+            this.clickBtnHandler();
+        }
+        // 1.点击清空输入框事件
+        inputHandler(){
+            this.$el.on("input",()=>{
+                if(this.$el.val().trim().length>=1){
+                    this.$clearBtn.css("display","block");
+                    this.$default.css("display","none");
+                }else{
+                    this.$clearBtn.css("display","none");
+                    this.$default.css("display","block");
+                }
+            })
+        }
+        // 2.点击清空事件
+        clickBtnHandler(){
+            this.$clearBtn.on("click",()=>{
+                this.$el.val("");
+                this.$clearBtn.css("display","none");
+                this.$default.css("display","block");
+            })
+        }
+    }
+    new Input({
+        el:"#loginName"
+    })
+    new Input({
+        el:"#loginPassword"
+    })
+
+    // 登录事件判断
+    let nameLength=$("#loginName").val().trim().length;
+    let passwordLength=$("#loginPassword").val().trim().length;
+    $("form").eq(0).on("submit",function(){
+        // if(!(nameLength>0&&passwordLength>0)){
+        //     $("#err-tip").css("display","block").children(".errMsg").text("账号或者密码错误,请重新输入");
+        //     return false
+        // }
+        // if(!())
+
+
+
+
+        // 取消默认行为
+        return false
+    })
+
 </script>

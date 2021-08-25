@@ -173,6 +173,8 @@ a {
             position: relative;
             padding: 5px 10px 0;
             display: none;
+            // 错误提示
+
         }
         .loginBox {
             min-height: 241px;
@@ -252,6 +254,38 @@ a {
                 width: 300px;
                 position: relative;
                 padding: 5px 10px 0;
+                // 错误提示部分 start
+                #err-tip {
+                    width: 290px;
+                    line-height: 22px;
+                    background: #fee;
+                    color: #e3111e;
+                    font-family: simsun;
+                    display: none;
+                    z-index: 3;
+                    overflow: hidden;
+                    margin-top: -21px;
+                    margin-bottom: 4px;
+                    span.icon {
+                        width: 14px;
+                        height: 14px;
+                        overflow: hidden;
+                        float: left;
+                        margin: 4px 5px 0 10px;
+                        display: inline-block;
+                        background-position: -41px -54px;
+                    }
+                    div {
+                        float: left;
+                        width: 260px;
+                    }
+                    p {
+                        float: left;
+                        margin: 0;
+                    }
+                }
+                // 错误提示部分 end
+
 
                 //提示部分,勾选自动登录时显示
                 .tips {
@@ -469,6 +503,11 @@ a {
 // 大写锁定默认隐藏
 #capital_tip{
     display: none;
+}
+
+// input错误
+.errInput{
+    border: 1px solid #e3111e;
 }
 // footer start
 

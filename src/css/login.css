@@ -3627,6 +3627,39 @@ a {
   padding: 5px 10px 0;
 }
 
+.content-bg .login-box-wrap .loginBox .login-wrap #err-tip {
+  width: 290px;
+  line-height: 22px;
+  background: #fee;
+  color: #e3111e;
+  font-family: simsun;
+  display: none;
+  z-index: 3;
+  overflow: hidden;
+  margin-top: -21px;
+  margin-bottom: 4px;
+}
+
+.content-bg .login-box-wrap .loginBox .login-wrap #err-tip span.icon {
+  width: 14px;
+  height: 14px;
+  overflow: hidden;
+  float: left;
+  margin: 4px 5px 0 10px;
+  display: inline-block;
+  background-position: -41px -54px;
+}
+
+.content-bg .login-box-wrap .loginBox .login-wrap #err-tip div {
+  float: left;
+  width: 260px;
+}
+
+.content-bg .login-box-wrap .loginBox .login-wrap #err-tip p {
+  float: left;
+  margin: 0;
+}
+
 .content-bg .login-box-wrap .loginBox .login-wrap .tips {
   width: 290px;
   height: 22px;
@@ -3848,4 +3881,8 @@ a {
 
 #capital_tip {
   display: none;
+}
+
+.errInput {
+  border: 1px solid #e3111e;
 }
