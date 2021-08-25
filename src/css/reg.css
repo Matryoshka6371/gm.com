@@ -3741,6 +3741,7 @@ a.button {
   position: absolute;
   color: #555;
   font-size: 13px;
+  margin-top: 5px;
 }
 
 .regmain-wrap .step-progress .step-content .form-group .C_err_tips {

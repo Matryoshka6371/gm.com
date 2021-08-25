@@ -78,7 +78,7 @@
                     <div class="form-group">
                         <input type="text" id="username" name="username" maxlength="20" 
                         class="form-control" placeholder="请输入用户名" autocomplete="on">
-                        <i class="reg-icon close" style="display: none;"></i>
+                        <i class="reg-icon close"></i>
                         <i class="inputSuc"></i>
                         <div class="input-call-info pos-abs"></div>
                         <div class="C_err_tips"></div>
@@ -89,7 +89,6 @@
                          class="form-control" placeholder="请设置登录密码" autocomplete="off">
                          <i class="reg-icon close pwd-close"></i>
                         <i class="reg-icon errOpen" id="eye"></i>
-                        <div id="capsLocked" class="capsLock">键盘大写锁定已打开，请注意大小写!</div>
                         <i class="inputSuc"></i>
                         <div class="input-call-info pos-abs"></div>
                         <div class="C_err_tips"></div>
@@ -322,7 +321,11 @@
      // 滑块默认消失
      $("#slideBar").css("display","none");
     //  手机号正则
-    const regPhone=/^1[3-9][0-9]{9}$/g;
+    const regPhone=/^1[3-9][0-9]{9}$/;
+    // 用户名正则
+    const regUserName=/^.{4,20}\S$/;
+    // 密码正则
+    const regPwd=/^.{6,20}\S$/;
     // 设置标志位，默认为假
     let showFlag=false;
       // 暂时存取手机号
@@ -336,6 +339,61 @@
         $("#mobile").removeClass("err");
     })
 
+
+    // 输入框失去焦点函数
+    class blurInput{
+        constructor({el,reg,tips,please}){
+            this.$el=$(el);
+            this.tips=tips;
+            this.reg=reg;
+            this.$please=please;
+            this.$close=this.$el.siblings(".close").eq(0);
+            this.blurHandler();
+            this.focusHandler();
+            this.closeHandler();            
+        }
+        // 失去焦点事件
+        blurHandler(please){
+           this.$el.on("blur",()=>{
+            this.$el.parent().children(".input-call-info").text("");
+                if(this.$el.val().trim().length==0){
+                    this.$el.parent().find(".C_err_tips").text(this.$please);
+                    this.$el.parent().find(".mobile-close").css("display","none");
+                    this.$el.addClass("err");
+                
+            
+                }
+            })
+        }
+        // 获得焦点事件
+        focusHandler(tips){
+            this.$el.on("focus",()=>{
+                this.$el.parent().find(".input-call-info")
+                .text(this.tips);
+                this.$el.parent().find(".C_err_tips").text("");
+                this.$el.removeClass("err");
+            })
+        }
+        // 关闭点击事件清空内容
+        closeHandler(){
+            this.$close.on("click",()=>{
+                this.$el.val("");
+                this.$close.css("display","none");
+            })
+        }
+    }
+    new blurInput({
+        el:"#username",
+        reg:regUserName,
+        tips:"4-20个字符，建议由汉字、字母，数字与"-"、“_”组成",
+        please:"请输入用户名"
+    })
+    new blurInput({
+        el:"#password",
+        reg:regPwd,
+        tips:"6-20个字符，建议使用字母、数字和符号两种以上的组合,区分大小写",
+        please:"请输入密码"
+    })
     // 输入框失去焦点 start
     $("#mobile").on("blur",function(){
         $(".input-call-info").text("");
@@ -344,21 +402,46 @@
            $(".mobile-close").css("display","none");
            $("#mobile").addClass("err");
       }
-    })
-
+    });
      // 输入框失去焦点 end
-
     $("#mobile").on("input",function(){
         if(regPhone.test($("#mobile").val().trim())){
             $(".inputSuc").css("display","block");
-            $(".C_err_tips").css("display","none");
+            $("#mobile").parent().find(".C_err_tips").css("display","none");
             $("#mobile").removeClass("err");
-
             pausePhone=$("#mobile").val().trim();
             showFlag=true;
         }
         if($("#mobile").val().trim().length>=1){
             $(".mobile-close").css("display","block");
+        }
+    })
+
+    let uNameFlag=false;
+    $("#username").on("input",function(){
+        if(regUserName.test( $("#username").val().trim())){
+            $("#username").parent().find(".inputSuc").css("display","block");
+            $("#username").parent().find(".C_err_tips").css("display","none");
+            $("#username").removeClass("err");
+            // pauseUserName=$("#username").val().trim();
+            UserNameFlag=true;
+        }
+        if($("#username").val().trim().length>=1){
+            $("#username").parent().find(".mobile-close").css("display","block");
+        }
+    })
+
+    let uPwdFlag=false
+    $("#password").on("input",function(){
+        if(regPwd.test($("#password").val().trim())){
+            $("#password").parent().find(".inputSuc").css("display","block");
+            $("#password").parent().find(".C_err_tips").css("display","none");
+            $("#password").removeClass("err");
+            // pausePhone=$("#mobile").val().trim();
+            uPwdFlag=true;
+        }
+        if( $("#password").val().trim().length>=1){
+            $("#password").parent().find(".mobile-close").css("display","block");
         }
     })
     // 关闭点击事件,清空输入内容
@@ -384,6 +467,28 @@
       }
       
     })
+      // 设置倒计时函数
+      var countdown=60; 
+    function settime(val) {
+            if (countdown == 0) {
+                val.removeAttr("disabled");
+                val.value = "免费获取验证码";
+                countdown = 60;
+            } else {
+                val.attr("disabled", true);
+                val.text("重新发送(" + countdown + ")")
+                countdown--;
+            }
+            setTimeout(function () {
+                settime(val)
+            }, 1000)
+        }
+    // 获取短信验证码点击事件
+    $("#getVerifyCode").on("click",function(){
+        $("#getVerifyCode").css("display","none");
+        $(".remain-btn").css("display","inline-block");
+        settime( $(".remain-btn"))
+    })
     // 设置是否成功的标志位
     let susFlag=false;
      // 滑块验证
@@ -405,38 +510,22 @@
         SliderBar("slideBar", options);
     // 点击下一步发送请求，判断手机号是否存在
     $(".btn-primary").on("click",function(){
-        if(!susFlag){
+        if(!(susFlag&&$("#verifyCode").val().trim()=="123456")){
             return false;
         }
-        $("$step2").addClass("active")
-        $("#step1").css({
-            backgroundPosition:"0 0"
+        $(".step1").text("")
+        $(".step1").css({
+            backgroundImage:"url('./images/reg/newRegister.png')",
+            backgroundPosition:"0px 0px"
         })
-        // 用户名和密码显示,手机号消失
-    })
-
-
-    // 设置倒计时函数
-    var countdown=60; 
-    function settime(val) {
-            if (countdown == 0) {
-                val.removeAttr("disabled");
-                val.value = "免费获取验证码";
-                countdown = 60;
-            } else {
-                val.attr("disabled", true);
-                val.text("重新发送(" + countdown + ")")
-                countdown--;
-            }
-            setTimeout(function () {
-                settime(val)
-            }, 1000)
-        }
-    // 获取短信验证码点击事件
-    $("#getVerifyCode").on("click",function(){
-        $("#getVerifyCode").css("display","none");
-        $(".remain-btn").css("display","inline-block");
-        settime( $(".remain-btn"))
+        $(".step2").addClass("step-active")
+       
+        console.log("填写成功");
+        // 手机号码框消 失,短信验证框消失
+        $("#verifyMobileForm").children(".form-group").eq(4).css("display","none");
+        $("#verifyMobileForm").children(".form-group").eq(0).css("display","none");
+        // 用户名框和密码框显示
+        $("#verifyMobileForm").children(".form-group").slice(1,3).css("display","block");
     })
 
 </script>
