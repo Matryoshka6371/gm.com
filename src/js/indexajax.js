@@ -170,9 +170,9 @@ $(function () {
                 }
                 // 轮播图图片行为
                 this.$Uls.children().eq(this.oImgIndex)
-                    .animate({"opacity":1})
+                    .stop().animate({"opacity":1})
                     .siblings()
-                    .animate({"opacity":0})
+                    .stop().animate({"opacity":0})
 
                     ;
                 //轮播图小点行为
@@ -459,6 +459,7 @@ $(function () {
                 this.IntervalPlay();
                 this.mouseHandler();
                 this.clickHandler();
+                this.mouseOlHnadler();
                 console.log(this.$Uls.children().length);
             }
             // 方法一 ul中的图片和Ol样式自动轮播
@@ -475,37 +476,30 @@ $(function () {
                     this.oImgIndex = 0;
                 }
                 if (this.oImgIndex < 0) {
-                    this.oImgIndex = this.$Uls.children().length;
+                    this.oImgIndex = this.$Uls.children().length-1;
                 }
                 // 轮播图图片行为
                 // 轮播图图片行为
                 this.$Uls.children("li").eq(this.oImgIndex)
-                    .animate({"opacity":1})
+                    .stop().animate({"opacity":1})
                     .siblings("li")
-                    .animate({"opacity":0});
+                    .stop().animate({"opacity":0});
                 //轮播图小点行为
                 this.$Ols.children("li").eq(this.oImgIndex)
                     .siblings("li").removeClass("cur").end()
                     .addClass("cur");
-            }
-            // 方法四,商标不跟随定时器动,但是跟着
-            BrandPlay(){
-                if (this.oImgIndex > this.$Uls.children().length-1) {
-                    this.oImgIndex = 0;
-                }
-                if (this.oImgIndex < 0) {
-                    this.oImgIndex = this.$Uls.children().length;
-                }
                 this.$Brands.children("ul").eq(this.oImgIndex)
-                .animate({"opacity":1})
-                .siblings("ul")
-                .animate({"opacity":0});
+                    .stop().animate({"opacity":1})
+                    .siblings("ul")
+                    .stop().animate({"opacity":0});
             }
+            // 方法五,商标不跟随定时器动,但是跟着
             // 方法三,鼠标移入暂停
             mouseHandler() {
                 this.$els.hover(() => {
                     clearInterval(this.SmallTimer);
                 }, () => {
+                    clearInterval(this.SmallTimer);
                     this.IntervalPlay();
                 })
             }
@@ -516,14 +510,35 @@ $(function () {
                 this.$Slider.on("click", ".slider_up", function (evt) {
                     _self.oImgIndex--;
                     _self.Play();
-                    _self.BrandPlay();
                 })
                 this.$Slider.on("click", "#slider_down", function (evt) {
                     _self.oImgIndex++;
                     _self.Play();
-                    _self.BrandPlay();
                 })
             }
+            // 方法六
+            // 移入到ol的上面,获取这个li的下标
+            mouseOlHnadler(){
+                let _self=this
+                this.$Ols.on("mouseenter","li",function(){
+                    let $OlsIndex=$(this).index();
+                    // console.log($OlsIndex);
+                    _self.$Uls.children("li").eq($OlsIndex)
+                    .stop().animate({"opacity":1})
+                    .siblings("li")
+                    .stop().animate({"opacity":0});
+                    //轮播图小点行为
+                    _self.$Ols.children("li").eq($OlsIndex)
+                        .siblings("li").removeClass("cur").end()
+                        .addClass("cur");
+                    _self.$Brands.children("ul").eq($OlsIndex)
+                        .stop().animate({"opacity":1})
+                        .siblings("ul")
+                        .stop().animate({"opacity":0});
+                })
+                
+            }
+
         }
          // 遍历,获取每一个对应的长度
         // 循环
