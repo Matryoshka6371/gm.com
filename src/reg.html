@@ -65,17 +65,15 @@
             <!-- 注册操作部分 -->
             <div class="step-content">
                 <form action="" autocomplete="off" id="verifyMobileForm">
-
                     <!-- 手机号 -->
                     <div class="form-group">
-                        <input type="text" id="mobile" name="mobile" class="form-control" placeholder="请输入常用手机号" autocomplete="off">
+                        <input type="text" id="mobile" name="mobile" class="form-control" 
+                        placeholder="请输入常用手机号" autocomplete="off">
                         <i class="close mobile-close reg-icon"></i>
                         <i class="inputSuc"></i>
                         <div class="input-call-info pos-abs"></div>
                         <div class="C_err_tips"></div>
                     </div>
-
-
                     <!-- 用户名 -->
                     <div class="form-group">
                         <input type="text" id="username" name="username" maxlength="20" 
@@ -85,10 +83,9 @@
                         <div class="input-call-info pos-abs"></div>
                         <div class="C_err_tips"></div>
                     </div>
-
                     <!-- 密码 -->
                     <div class="form-group">
-                        <input type="password" id="mobile" name="mobile"
+                        <input type="password" id="password" name="password"
                          class="form-control" placeholder="请设置登录密码" autocomplete="off">
                          <i class="reg-icon close pwd-close"></i>
                         <i class="reg-icon errOpen" id="eye"></i>
@@ -97,7 +94,6 @@
                         <div class="input-call-info pos-abs"></div>
                         <div class="C_err_tips"></div>
                     </div>
-                  
                     <!-- 点击按钮进行验证 -->
                     <div class="form-group" id="js-dingxiang">
                         <div class="dingxiang-box" style=" display: none;">
@@ -108,6 +104,22 @@
                         <div id="slideBar"></div>
                         <!-- 滑块验证 end -->
                         <a class="button btn-gray wbtn1" href="javascript:;">点击按钮进行验证</a>
+                    </div>
+                    <!-- 短信验证 -->
+                    <div class="form-group clearfix err" id="js-verifyCodeBox"> 
+                        <input type="text" name="verifyCode" id="verifyCode" maxlength="6" class="form-control col-1" 
+                        placeholder="输入验证码" autocomplete="off" verify="false"> 
+
+                        <a href="javascript:;" class="button btn-gray col-2" 
+                        id="getVerifyCode"  
+                        >获取短信验证码</a> 
+
+                        <a href="javascript:;" class="button btn-gray col-2 remain-btn" disabled="" 
+                        style="display:inline-block"><span id="remainSeconds"></span>秒后重新获取</a>
+
+                         <div class="success-mobile-msg input-call-info top50" style="display: none;">
+                    </div> 
+                    <div class="C_err_tips top50" id="TipverifyCode">请输入短信验证码</div> 
                     </div>
                     <!-- 确定按钮 -->
                     <div class="form-group-submit">
@@ -247,12 +259,12 @@
 <!-- 页面结构加载完成立即弹出窗口 -->
 <script>
     $(function(){
-
-
-
-        // 用户名和密码框默认隐藏
-        $("#verifyMobileForm").children(".form-group").eq(1).css("display","none")
-        .end().end().children(".form-group").eq(2).css("display","none")
+        // 用户名和密码框默认隐藏,短信验证码框默认隐藏
+        $("#verifyMobileForm").children(".form-group").slice(1,3).css("display","none");
+        $("#verifyMobileForm").children(".form-group").eq(4).css("display","none");
+        $("#TipverifyCode").css("display","none")
+        // 获取短信验证码的倒计时消失,点击获取开始计时,
+        $(".remain-btn").css("display","none")
         // 弹出层
         const LayIndex=layer.open({
             type:1,
@@ -321,34 +333,51 @@
     $("#mobile").on("focus",function(){
         $(".input-call-info").text("验证完成后,你可以使用该手机登录或找回密码");
         $(".C_err_tips").text("");
+        $("#mobile").removeClass("err");
     })
+
+    // 输入框失去焦点 start
     $("#mobile").on("blur",function(){
         $(".input-call-info").text("");
+        if(  $("#mobile").val().trim().length==0){
+          $(".C_err_tips").text("请输入手机号!");
+           $(".mobile-close").css("display","none");
+           $("#mobile").addClass("err");
+      }
     })
+
+     // 输入框失去焦点 end
+
     $("#mobile").on("input",function(){
         if(regPhone.test($("#mobile").val().trim())){
             $(".inputSuc").css("display","block");
             $(".C_err_tips").css("display","none");
+            $("#mobile").removeClass("err");
+
             pausePhone=$("#mobile").val().trim();
             showFlag=true;
         }
-        if(regPhone.test($("#mobile").val().trim().length>=1)){
+        if($("#mobile").val().trim().length>=1){
             $(".mobile-close").css("display","block");
         }
     })
     // 关闭点击事件,清空输入内容
     $(".mobile-close").on("click",function(){
         $("#mobile").val("");
+        $(".mobile-close").css("display","none");
     })
     // 按钮点击事件
     $(".btn-gray").on("click",function(){
-      if(  $("#mobile").val().trim()==0){
+      if(  $("#mobile").val().trim().length==0){
           $(".C_err_tips").text("请输入手机号!");
+           $(".mobile-close").css("display","none");
+           $("#mobile").addClass("err");
       }
       else if(regPhone.test($("#mobile").val().trim())){
         $(".C_err_tips").text("");
       }else{
         $(".C_err_tips").text("手机号格式有误!请重新输入");
+
       }
       if(showFlag==true){
         $("#slideBar").css("display","block");
@@ -365,16 +394,15 @@
                 console.log("show");
                 susFlag=true;
                 $("#slideBar").css("display","none");
+                layer.msg('验证成功');
+                $("#verifyMobileForm").children(".form-group").eq(3).css("display","none");
+                $("#verifyMobileForm").children(".form-group").eq(4).css("display","block");
             },
             fail: function(){
                 console.log("fail");  
             }
         };
         SliderBar("slideBar", options);
-
-      
-       
-
     // 点击下一步发送请求，判断手机号是否存在
     $(".btn-primary").on("click",function(){
         if(!susFlag){
@@ -384,7 +412,31 @@
         $("#step1").css({
             backgroundPosition:"0 0"
         })
+        // 用户名和密码显示,手机号消失
+    })
 
+
+    // 设置倒计时函数
+    var countdown=60; 
+    function settime(val) {
+            if (countdown == 0) {
+                val.removeAttr("disabled");
+                val.value = "免费获取验证码";
+                countdown = 60;
+            } else {
+                val.attr("disabled", true);
+                val.text("重新发送(" + countdown + ")")
+                countdown--;
+            }
+            setTimeout(function () {
+                settime(val)
+            }, 1000)
+        }
+    // 获取短信验证码点击事件
+    $("#getVerifyCode").on("click",function(){
+        $("#getVerifyCode").css("display","none");
+        $(".remain-btn").css("display","inline-block");
+        settime( $(".remain-btn"))
     })
 
 </script>

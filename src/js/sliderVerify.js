@@ -96,12 +96,12 @@
             var cutWidth = _this.cutBlock.offsetWidth;                // 裁剪区域宽
             var cutHeight = _this.cutBlock.offsetHeight;              // 裁剪区域高
             // left 
-            _this.resultX = Math.floor(Math.random() * (_this.imgWidth - cutWidth * 2 - 4) + cutWidth);
+            _this.resultX = Math.floor(Math.random() * (_this.imgWidth - cutWidth * 2 - 4) + cutWidth+60);
             // top
-            var cutTop = Math.floor(Math.random() * (_this.imgHeight - cutHeight * 2) + cutHeight);
+            var cutTop = Math.floor(Math.random() * (_this.imgHeight - cutHeight * 2) + cutHeight+35);
             // 设置样式
             _this.cutBlock.style.cssText = "top:" + cutTop + "px;" + "left:" + _this.resultX + "px; display: block;";
-            _this.slideBlock.style.top = cutTop + "px";
+            _this.slideBlock.style.top = cutTop+ "px";
             _this.slideBlock.style.backgroundPosition = "-" + _this.resultX + "px -" + cutTop + "px";
             _this.slideBlock.style.opacity = "1";
         },
