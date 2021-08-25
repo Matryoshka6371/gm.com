@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>登录</title>
     <script src="./js/libs/jquery.js"></script>
+    <script src="./js/layer-v3.5.1/layer/layer.js"></script>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/login.css">
 </head>
@@ -41,6 +42,7 @@
                     </div>
                 </div>
                 <div class="loginBox">
+                    <!-- 扫码登录区域 -->
                     <div class="sm-login-box login-wrap" id="sm-login">
                         <div class="default-state">
                             <div class="qrcode-main clearfix" id="barcodeId">
@@ -59,7 +61,7 @@
                         <a href="javascript:void(0)" class="fontBlink fr registerBtn">免费注册</a>
                     </div>
                     <!-- 账号登陆区域 start -->
-                    <div class="login-wrap">
+                    <div class="login-wrap" id="accountlogin">
                         <form action="" id="frm">
                             <div class="normalLogin">
                                 <p class="tips warningTip">
@@ -88,7 +90,7 @@
                                 <div class="login-item login-item-pwd" id="loginPasswordDiv">
                                     <a href="javascript:;" class="clear-btn"></a>
                                     <span class="default" id="loginPasswordDefault">密码</span>
-                                    <input type="password" class="txt txt-focus"  id="loginPassword" autocomplete="off">
+                                    <input type="password" class="txt txt-focus"  id="loginPassword" autocomplete="off" onkeypress ="testCapsLock(event)" >
                                     <!-- 密码输入提示大写,默认隐藏 -->
                                     <span id="capital_tip" class="capital-tip">大写锁定已打开</span>  
                                 </div>
@@ -125,6 +127,8 @@
                     </div>
                     <!-- 账号登录 end -->
                 </div>
+
+                <!-- 第三方登录区域 start -->
                 <dl class="corp-login" id="corp-login">
                     <dd class="play_icon clearfix">
                         <a href="" class="borderLine">门店会员卡登录</a>
@@ -139,6 +143,7 @@
                         <a class="more" id="arrowbtn"></a>
                     </dd>
                 </dl>
+                <!-- 第三方登录区域 end -->
             </div>
 
             <a href="" class="survey">
@@ -267,14 +272,41 @@
 </body>
 </html>
 <script>
+
+    // 建议显示记住密码建议显示
+    // 建议显示默认为关
+    // 账号登陆默认隐藏
+    $(function(){
+        // 表单动态属性,用prop()方法去获取
+        $("#autoLoginFlag").on("click",function(){
+           if($("#autoLoginFlag").prop("checked")){
+               $(".warningTip").css("display","block")
+           }
+           if(!$("#autoLoginFlag").prop("checked")){
+               $(".warningTip").css("display","none")
+           }
+        })
+    })
+
+    // 简单判断判断大小写函数
+    function  testCapsLock(event){  
+    var valueCapsLock = event.keyCode ? event.keyCode:event.which; // 按键   
+    var valueShift = event.shiftKey ? event.shiftKey:((valueCapsLock == 16 ) ? true : false ); // shift键是否按住  
+    if (((valueCapsLock >= 65 && valueCapsLock <= 90 ) && !valueShift) // 输入了大写字母，并且shift键没有按住，说明Caps Lock打开
+        || ((valueCapsLock >= 97 && valueCapsLock <= 122 ) && valueShift)){// 输入了小写字母，并且按住 shift键，说明Caps Lock打开
+            $("#capital_tip").css("display","block");
+            return true;
+        } else {
+            $("#capital_tip").css("display","none")
+            return false;
+        } 
+    }   
     // 调研部分,移入移出事件
     $(".survey").hover(function(){
         $(this).addClass("surveyhover")
     },function(){
         $(this).removeClass("surveyhover")
     })
-
-    
     // 默认扫码登录为红色
     $("#tabLeft").children("a").addClass("cur")
     // 登录界面点击事件
@@ -282,8 +314,21 @@
         //事件委托
         let e=evt.window||evt.srcElement;
         $(this).children("a").addClass("cur")
-        .parent().siblings().children("a").removeClass("cur")
+        .parent().siblings().children("a").removeClass("cur");
+        // 获取点击登录事件的下标
+        let $index=$(this).index();
+        console.log($index);
+        if($index==0){
+            $("#sm-login").css("display","block"),
+            $("#accountlogin").css("display","none")
+        }
+        if($index==1){
+            $("#sm-login").css("display","none"),
+            $("#accountlogin").css("display","block")
+        }
+
     })
+    // 点击账号登陆跳转到Z行号登录,扫码登录消失
 
     $(".qrcode-Image").css({"left":75})
     // 移入二维码时的动画效果
@@ -309,4 +354,12 @@
                 $(".loginhide").show();
             }
         })
+    // 点击跳转跳转到登录页面
+    $(".registerBtn").on("click",function(){
+        layer.msg("即将跳转,请稍候!")
+        setTimeout(function(){
+            location.assign("./reg.html");
+        },1500)
+
+    })
 </script>
