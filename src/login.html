@@ -64,8 +64,13 @@
                     <div class="login-wrap" id="accountlogin">
                         <form action="" id="frm">
                             <div class="normalLogin">
-                                <!-- 请输入你的密码 -->
-                                <div id="err-tip">
+                                <!-- 勾选自动登录提示 -->
+                                <p class="tips warningTip">
+                                    <em></em>
+                                    公共场所不建议自动登录，以防账号丢失
+                                </p>
+                                 <!-- 请输入你的密码 -->
+                                 <div id="err-tip">
                                     <span class="icon"></span>
                                     <div>
                                         <p>
@@ -73,11 +78,6 @@
                                         </p>
                                     </div>
                                 </div>
-                                <!-- 勾选自动登录提示 -->
-                                <p class="tips warningTip">
-                                    <em></em>
-                                    公共场所不建议自动登录，以防账号丢失
-                                </p>
                                 <!-- 登录账号区域 start -->
                                 <div class="login-item login-item-name" id="loginNameDiv">
                                     <!--a 清空  -->
@@ -404,43 +404,53 @@
     })
 
     // 登录事件判断
-    let nameLength=$("#loginName").val().trim().length;
-    let passwordLength=$("#loginPassword").val().trim().length;
     $("form").eq(0).on("submit",function(){
-        if(!(nameLength>0)){
-            $("#err-tip").css("display","block")
-            .children(".errMsg").text("请输入用户名");
-        }
+        let nameLength=$("#loginName").val().trim().length;
+        let passwordLength=$("#loginPassword").val().trim().length;
+
         if(!(passwordLength>0)){
             $("#err-tip").css("display","block")
-            .children(".errMsg").text("请输入密码");
+            .find(".errMsg").text("请输入密码");
         }
-        var oUser={
-            user:$("#loginName").val().trim(),
-            pwd:$("#loginPassword").val().trim()
+        else if(!(nameLength>0)){
+            $("#err-tip").css("display","block")
+            .find(".errMsg").text("请输入用户名");
         }
-        $.ajax({
+        //只有符合条件才能进入判断
+
+        if(nameLength>0&&passwordLength>0){
+            // 清空错误提示信息
+            $("#err-tip").css("display","none");
+            var oUser={
+                phone:$("#loginName").val().trim(),
+                pwd:$("#loginPassword").val().trim()
+            }
+            console.log();
+            $.ajax({
             url:"/accout/login",
             type:"post",
             data:oUser
-        }).then(function(res){
-            console.log(res);
-            if(res.msg=="登录失败"){
-                $("#err-tip").css("display","block")
-                .children(".errMsg").text("账号或者密码错误,请重新输入");
-            }
-            layer.msg(res.msg);
-            if(res.data&&res.code==200){
-                // 把当前登录人的信息保存到 localStorage
-                // 关闭浏览器也会保存
-                localStorage.setItem("userinfo",JSON.stringify(res.data));
-                setTimeout(function(){
-                    layer.msg("登录成功,将自动跳转到首页!");
-                    location.assign("./index.html");
-                },2000)
-            }
-        })
+            }).then(function(res){
+                console.log(res);
+                if(res.msg=="登录失败"){
+                    $(". warningTip").hide();
+                    layer.msg(res.msg);
+                    $("#err-tip").css("display","block")
+                    .find(".errMsg").text("账号或者密码错误,请重新输入");
+                }
+                if(res.data&&res.code==200){
+                    // 把当前登录人的信息保存到 localStorage
+                    // 关闭浏览器也会保存
+                    localStorage.setItem("userinfo",JSON.stringify(res.data));
+                    setTimeout(function(){
+                        layer.msg("登录成功,将自动跳转到首页!");
+                        location.assign("./index.html");
+                    },2000)
+                }
+            })
         // 取消默认行为
+        }
+       
         return false
     })
 

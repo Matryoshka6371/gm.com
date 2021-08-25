@@ -65,13 +65,15 @@ server.post("/accout/login",async (request,response)=>{
     // 1.接受前端的数据(手机号和密码)
     let {phone,pwd}=request.body;
     // 2.准备sql语句
-    let sql="SELECT `uId`,`uName`,`uSex`,`uPhone` FROM `userinfo` WHERE uname=? AND upwd=? AND ustatus=1;";
+    let sql="SELECT `uId`,`uName`,`uSex`,`uPhone` FROM `userinfo` WHERE uPhone=? AND uPwd=? AND uStatus=1;";
     let params=[
         phone,
         md5(md5(pwd)+"lxw")
     ]
     try{
         let result=await db.exec(sql,params);
+        console.log(result);
+        console.log(md5(md5(pwd)+"lxw"));
         if(result&&result.length>=1){
             // 查询语句返回数组
             response.json({
