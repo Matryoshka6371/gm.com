@@ -3,7 +3,7 @@ const cors=require("cors");
 const db=require("./libs/DBhelper");
 const file=require("./libs/fileHelper");
 const md5=require("md5");
-const { response } = require("express");
+const { response, request } = require("express");
 
 
 // 创建对象
@@ -97,7 +97,15 @@ server.post("/accout/login",async (request,response)=>{
     }
 })
 // 2021/08/25 20:15
-
+// 获取所有产品信息
+// server.get("/api/prodList/",async (request,response)=>{
+//     var data=JSON.parse((await file.getData("./data/index/production.json"))||'[]');
+//     response.json({
+//         msg:"查询成功",
+//         data,
+//         code:200
+//     })
+// })
 
 
 // 设置端口

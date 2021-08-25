@@ -194,19 +194,18 @@
             "href": "javascript:void(0)"
         }
     ],
-    
     [
         {
             "floor": "1",
-           "head":{
-            "headTitle": "手机通讯",
-            "headTab": [
-                "活动精选",
-                "新品速增",
-                "热销推荐",
-                "畅享低价"
-            ]
-           },
+            "head": {
+                "headTitle": "手机通讯",
+                "headTab": [
+                    "活动精选",
+                    "新品速增",
+                    "热销推荐",
+                    "畅享低价"
+                ]
+            },
             "bodyLeft": {
                 "leftImg": "./images/index/F1/left.webp",
                 "background": "#719ef7",
@@ -421,7 +420,7 @@
         },
         {
             "floor": "2",
-            "head":{
+            "head": {
                 "headTitle": "电脑数码",
                 "headTab": [
                     "精选热卖",
@@ -810,7 +809,7 @@
         },
         {
             "floor": "3",
-            "head":{
+            "head": {
                 "headTitle": "家用电器",
                 "headTab": [
                     "精选热卖",
@@ -1206,7 +1205,7 @@
         },
         {
             "floor": "4",
-            "head":{
+            "head": {
                 "headTitle": "厨房卫浴",
                 "headTab": [
                     "精选热卖",
@@ -1647,7 +1646,7 @@
         },
         {
             "floor": "5",
-            "head":{
+            "head": {
                 "headTitle": "国美超市",
                 "headTab": [
                     "精选热卖",
@@ -2089,7 +2088,7 @@
         },
         {
             "floor": "6",
-            "head":{
+            "head": {
                 "headTitle": "家居家装",
                 "headTab": [
                     "精选热卖",
@@ -2307,7 +2306,7 @@
         },
         {
             "floor": "7",
-            "head":{
+            "head": {
                 "headTitle": "汽车用品",
                 "headTab": [
                     "精选热卖",
@@ -2421,10 +2420,7 @@
                         "p_name": "玻璃水轩之梦汽车用玻璃水3桶装 -25-40四季通用车用雨刮水雨刷精(黑色 -40度防冻型)",
                         "p_price": "22.60"
                     }
-                   
-                   
                 ],
-
                 [
                     {
                         "src": "./images/index/F7/tab3/tab01.webp",
@@ -2477,7 +2473,6 @@
                         "p_price": "175.00"
                     }
                 ],
-
                 [
                     {
                         "src": "./images/index/F7/tab4/tab01.webp",
@@ -2531,6 +2526,104 @@
                     }
                 ]
             ]
+        }
+    ],
+    [
+        {
+            "pId": "8014755741",
+            "pName": "嗨吃家网红酸辣粉130g*6桶红薯粉大桶装",
+            "pPrice": "11",
+            "img": "./images/details/lsf/maybelike01.webp",
+            "imgs": {
+                "bigImg": [
+                    "./images/details/lsf/big/big01.webp",
+                    "./images/details/lsf/big/big02.webp",
+                    "./images/details/lsf/big/big03.webp",
+                    "./images/details/lsf/big/big04.webp",
+                    "./images/details/lsf/big/big05.webp",
+                    "./images/details/lsf/big/big06.webp",
+                    "./images/details/lsf/big/big07.webp",
+                    "./images/details/lsf/big/big08.webp"
+                ],
+                "middleImg": [
+                    "./images/details/lsf/middle/middle01.webp",
+                    "./images/details/lsf/middle/middle02.webp",
+                    "./images/details/lsf/middle/middle03.webp",
+                    "./images/details/lsf/middle/middle04.webp",
+                    "./images/details/lsf/middle/middle05.webp",
+                    "./images/details/lsf/middle/middle06.webp",
+                    "./images/details/lsf/middle/middle07.webp",
+                    "./images/details/lsf/middle/middle08.webp"
+                ],
+                "smallImg": [
+                    "./images/details/lsf/small/small01.webp",
+                    "./images/details/lsf/small/small02.webp",
+                    "./images/details/lsf/small/small03.webp",
+                    "./images/details/lsf/small/small04.webp",
+                    "./images/details/lsf/small/small05.webp",
+                    "./images/details/lsf/small/small06.webp",
+                    "./images/details/lsf/small/small07.webp",
+                    "./images/details/lsf/small/small08.webp"
+                ]
+            }
+        },
+        {
+            "pId": "8014045850",
+            "pName": "无骨鸡爪零食凤爪【去骨柠檬味150g/盒】 即食卤味鸡爪子网红去骨脱骨凤爪小吃熟食泡椒酸辣下饭凤爪休闲小吃零食",
+            "pPrice": "11",
+            "img": "./images/details/goods02/maybelike02.webp",
+            "imgs": {
+                "bigImg": [
+                    "./images/details/goods02/big/big01.webp",
+                    "./images/details/goods02/big/big02.webp",
+                    "./images/details/goods02/big/big03.webp",
+                    "./images/details/goods02/big/big04.webp",
+                    "./images/details/goods02/big/big05.webp"
+                ],
+                "middleImg": [
+                    "./images/details/goods02/middle/middle01.webp",
+                    "./images/details/goods02/middle/middle02.webp",
+                    "./images/details/goods02/middle/middle03.webp",
+                    "./images/details/goods02/middle/middle04.webp",
+                    "./images/details/goods02/middle/middle05.webp"
+                ],
+                "smallImg": [
+                    "./images/details/goods02/small/small01.webp",
+                    "./images/details/goods02/small/small02.webp",
+                    "./images/details/goods02/small/small03.webp",
+                    "./images/details/goods02/small/small04.webp",
+                    "./images/details/goods02/small/small05.webp"
+                ]
+            }
+        },
+        {
+            "pId": "8014962524",
+            "pName": "鲜果突击队突尼斯软籽石榴10斤装红心石榴应季水果新鲜甜石榴10斤装(i 10斤)",
+            "pPrice": "30",
+            "img": "./images/details/goods03/maybelike03.webp",
+            "imgs": {
+                "bigImg": [
+                    "./images/details/goods03/big/big01.webp",
+                    "./images/details/goods03/big/big02.webp",
+                    "./images/details/goods03/big/big03.webp",
+                    "./images/details/goods03/big/big04.webp",
+                    "./images/details/goods03/big/big05.webp"
+                ],
+                "middleImg": [
+                    "./images/details/goods03/middle/middle01.webp",
+                    "./images/details/goods03/middle/middle02.webp",
+                    "./images/details/goods03/middle/middle03.webp",
+                    "./images/details/goods03/middle/middle04.webp",
+                    "./images/details/goods03/middle/middle05.webp"
+                ],
+                "smallImg": [
+                    "./images/details/goods03/small/small01.webp",
+                    "./images/details/goods03/small/small02.webp",
+                    "./images/details/goods03/small/small03.webp",
+                    "./images/details/goods03/small/small04.webp",
+                    "./images/details/goods03/small/small05.webp"
+                ]
+            }
         }
     ]
 ]
